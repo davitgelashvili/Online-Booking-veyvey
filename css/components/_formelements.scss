@@ -1,0 +1,65 @@
+.selectpicker {
+    position: relative;
+
+    &__head {
+        cursor: pointer;
+        color: $mainColor;
+        font-size: 16px;
+        font-weight: 400;
+
+        img {
+            margin-left: 5px;
+        }
+
+        .text {
+            margin-right: 16px;
+        }
+    }
+
+    &__body {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 999;
+        display: none;
+        width: 160px;
+        padding: 5px 0;
+        margin: 2px 0 0;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(4, 9, 33, 0.08);
+        border-radius: 6px;
+
+        .selected {
+            color: $mainColor;
+            font-weight: 700;
+        }
+
+        li {
+            padding: 9px 16px;
+            display: block;
+            color: $mainColor;
+            font-size: 16px;
+            font-weight: 400;
+            cursor: pointer;
+        }
+    }
+
+    &.open & {
+        &__body {
+            display: block;
+        }
+    }
+
+    .caret {
+        position: relative;
+    
+        &:before {
+            content: url('../../img/arrow-down-light.svg');
+            display: block;
+            bottom: -7px;
+            right: 0;
+            position: absolute;
+        }
+    }
+}
+

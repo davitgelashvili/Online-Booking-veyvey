@@ -1,0 +1,39 @@
+.overview {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 21px;
+
+    &__title {
+        color: $mainColor;
+        font-size: 18px;
+    }
+
+    &__stats {
+        margin-top: 35px;
+        margin-left: -21px;
+        margin-right: -21px;
+
+        &--item {
+            width: calc(100% / 3);
+            border-right: 1px solid color($mainColor, .08);
+            padding: 0 20px;
+
+            &:last-child {
+                border-right: 1px solid transparent;
+            }
+        }
+
+        &--title {
+            color: color($mainColor, .5);
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        &--count {
+            margin-left: 60px;
+            color: color($mainColor, 1);
+            font-size: 34px;
+            font-weight: 700;
+        }
+    }
+}

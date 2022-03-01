@@ -1,0 +1,445 @@
+.reservation {
+    &__list {
+        width: 100%;
+        margin-top: 12px;
+        padding: 24px 0;
+        background-color: #fff;
+        border-radius: 12px;
+
+        &--checked {
+            min-width: 32px;
+            min-height: 32px;
+            background: #34C488;
+            border-radius: 8px;
+        }
+        
+        &--item {
+            max-width: 230px;
+            height: 42px;
+            padding: 0 24px;
+            border-right: 1px solid color($mainColor, .16);
+            flex: 1;
+            color: color($mainColor, 1);
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 400;
+            overflow: hidden;
+            flex-basis: content;
+    flex-grow: initial;
+
+            p {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                align-self: flex-start;
+                justify-content: center;
+            }
+
+            &:nth-of-type(1) {
+                flex-grow:1;
+                flex-basis:100%;
+            }
+            &:nth-of-type(2) {
+                flex-grow:1;
+                flex-basis:100%;
+            }
+
+            &:nth-of-type(4) {
+                flex-grow:1;
+                flex-basis:100%;
+            }
+
+            &:last-child {
+                border-right: 1px solid transparent;
+            }
+        }
+    }
+
+    &--head {
+        padding: 0 41px;
+        height: 20px;
+        border: none;
+        color: color($mainColor, .5);
+        cursor: pointer;
+        flex-grow: unset;
+
+        &:hover {
+            color: color($mainColor, 1);
+        }
+        
+        p {
+            justify-content: flex-start;
+        }
+    }
+
+    &.smoll {
+        .reservation__list--item{
+            width: 170px;
+            padding: 0 25px;
+            flex-grow: 0;
+            flex-basis: content;
+
+            &:nth-of-type(1){
+                flex-grow: 0;
+                flex-basis: auto;
+            }
+
+            &:nth-of-type(2){
+                flex-grow: 0;
+                flex-basis: auto;
+            }
+
+            &:nth-of-type(3){
+                flex-grow: 0;
+                flex-basis: 15%;
+            }
+        }
+    }
+
+    &__select {
+        margin-left: 5px;
+
+        &.border {
+            border: 1px solid transparent;
+        }
+        
+        .selectpicker {
+            &__head {
+                padding: 11px 19px;
+
+                &--text {
+                    font-weight: 700;
+                }
+            }
+        }
+
+        &:hover {
+            &.border {
+                border: 1px solid rgba(4, 9, 33, 0.08);
+            }
+        }
+    }
+
+    &__date {
+        width: 360px;
+    }
+
+    &__search {
+        width: 500px;
+        max-height: 638px;
+        margin: 5px 0 0 0;
+        padding: 0;
+        border-radius: 16px;
+        overflow: hidden;
+
+        &--content {
+            background-color: #fff;
+        }
+
+        &--head {
+            padding: 25px;
+            border-bottom: 1px solid rgba(4, 9, 33, 0.16);
+        }
+        
+        &--head-title {
+            color: color($mainColor, 1);
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        &--btn-out {
+            padding: 32px 25px 0 25px;
+        }
+
+        &--btn {
+            width: 100%;
+            padding: 16px 25px;
+            background-color: transparent;
+            color: $mainColor;
+            font-size: 16px;
+            font-weight: 700;
+
+            img {
+                transform: rotate(90deg);
+                margin-right: 17px;
+            }
+        }
+
+        &--lists {
+            width: 100%;
+            height: 100vh;
+            max-height: 430px;
+            display: block;
+            overflow: auto;
+        }
+
+        &--list {
+            padding: 0 25px 0 25px;
+            border-bottom: 1px solid rgba(4, 9, 33, 0.16);
+        }
+
+        &--list-name {
+            padding-top: 16px;
+            padding-bottom: 16px;
+            padding-left: 25px;
+            color: $mainColor;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        &--item {
+            margin-bottom: 16px;
+        }
+
+        &--item-cover {
+            max-width: 138px;
+            height: 100px;
+            margin-right: 20px;
+        }
+
+        &--item-texts {
+            max-width: 257px;
+            width: 100%;
+        }
+    }
+
+    .detail {
+        &__section {
+            border-radius: 8px;
+            background-color: #fff;
+            border: 1px solid rgba(4, 9, 33, 0.08);
+
+            &--title {
+                margin-bottom: 24px;
+                color: $mainColor;
+                font-size: 24px;
+                font-weight: 700;
+            }
+        }
+
+        &__hotel {
+            width: 50%;
+            padding: 32px 0 32px 32px;
+
+
+            &--cover {
+                min-width: 138px;
+                height: 100px;
+                margin-right: 24px;
+                border-radius: 8px;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            &--texts {
+                width: 100%;
+                border-right: 1px solid rgba(4, 9, 33, 0.16);
+            }
+
+            &--title {
+                margin-bottom: 12px;
+                color: color($mainColor, .48);
+                font-size: 16px;
+                font-weight: 400;
+            }
+
+            &--desc {
+                color: color($mainColor, 1);
+                font-size: 18px;
+                font-weight: 700;
+            }
+        }
+
+        &__booking {
+            padding: 50px 50px 50px 0;
+            border-bottom: 1px solid rgba(4, 9, 33, 0.08);
+        }
+
+        &__paymant {
+            display: none;
+            margin-top: 32px;
+            padding-left: 40px;
+            
+            &--btn {
+                width: 32px;
+                height: 32px;
+                padding: 5px;
+                margin-left: 38px;
+                background-color: transparent;
+                border-radius: 50%;
+
+                &:hover {
+                    background-color: rgba(4, 9, 33, 0.04);
+                }
+            }
+
+            &--lists {
+                border-top: 1px solid rgba(4, 9, 33, 0.08);
+                padding-top: 32px;
+            }
+
+            &--list{
+                padding: 24px 0;
+                border-bottom: 1px solid rgba(4, 9, 33, 0.08);
+            }
+
+            &--head {
+                color: color($mainColor, 1);
+                font-size: 18px;
+                font-weight: 700;
+            }
+
+            &--info {
+                color: color($mainColor, .88);
+                font-size: 18px;
+                font-weight: 400;
+            }
+
+            &--footer {
+                margin-top: 26px;
+                padding: 24px;
+                background: rgba(4, 9, 33, 0.04);
+                border-radius: 4px;
+                color: #000;
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+
+        &__profile {
+            margin-bottom: 24px;
+
+            &--content {
+                padding: 24px 40px;
+            }
+
+            &--profile {
+                min-width: 70px;
+                height: 70px;
+                margin-right: 16px;
+                border-radius: 50%;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            &--fullname {
+                margin-bottom: 6px;
+                color: $mainColor;
+                font-size: 16px;
+                font-weight: 700;
+            }
+
+            &--joindate {
+                color: $mainColor;
+                font-size: 14px;
+                font-weight: 400;
+            }
+
+            &--bio {
+                margin-top: 16px;
+                border-bottom: 1px solid rgba(4, 9, 33, 0.08);
+                color: $mainColor;
+                font-size: 16px;
+                font-weight: 400;
+
+                span {
+                    margin-bottom: 20px;
+                    
+                    img {
+                        margin-right: 15px;
+                    }
+                }
+            }
+
+            &--verifid {
+                margin-top: 22px;
+
+                span {
+                    margin-bottom: 20px;
+                    color: $mainColor;
+                    font-size: 16px;
+                    font-weight: 400;
+
+                    &.disabled {
+                        color: color($mainColor, .48);
+                    }
+                }
+            }
+        }
+
+        &__menu {
+            margin-bottom: 24px;
+
+            &--content {
+                padding: 32px 40px;
+            }
+
+            &--title {
+                margin-bottom: 26px;
+                color: $mainColor;
+                font-size: 18px;
+                font-weight: 700;
+            }
+
+            &--item {
+                list-style: none;
+            }
+
+            &--link {
+                margin-bottom: 26px;
+                color: color($mainColor, 1);
+                font-size: 14px;
+                font-weight: 700;
+                text-decoration: none;
+                opacity: .8;
+
+                &:hover {
+                    opacity: 1;
+                }
+
+                img {
+                    margin-right: 14px;
+                }
+            }
+        }
+
+        &__notepad {
+            margin-bottom: 24px;
+
+            &--content {
+                padding: 32px 40px;
+            }
+
+            &--title {
+                margin-top: 8px;
+                margin-bottom: 16px;
+                color: $mainColor;
+                font-size: 18px;
+                font-weight: 700;
+            }
+
+            &--title {
+                color: color($mainColor, .5);
+                font-size: 14px;
+                font-weight: 700;
+            }
+
+            &--btn {
+                background: rgba(157, 80, 255, 0.08);
+                border-radius: 50%;
+                padding: 14px;
+            }
+        }
+    }
+}
+

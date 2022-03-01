@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./css/components.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container d-flex align-items-center justify-content-between">
+            <div class="header__logo">
+                <img src="./img/logo.svg" alt="">
+            </div>
+            <ul class="header__menu d-flex">
+                <li class="header__menu--item d-flex">
+                    <a href="" class="header__menu--link d-flex align-items-center active">Home</a>
+                </li>
+                <li class="header__menu--item d-flex">
+                    <a href="" class="header__menu--link d-flex align-items-center">Performance</a>
+                </li>
+            </ul>
+            <div class="header__buttons d-flex align-items-center">
+                <div class="select">
+                    <select id="standard-select">
+                        <option value="Option 1">Option 1</option>
+                        <option value="Option 2">Option 2</option>
+                        <option value="Option 3">Option 3</option>
+                        <option value="Option 4">Option 4</option>
+                        <option value="Option 5">Option 5</option>
+                        <option value="Option length">Option that has too long of a value to fit</option>
+                    </select>
+                    <span class="focus"></span>
+                </div>
+                <button class="header__buttons--profile btn">
+                    <img src="./img/profile.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <div class="home">
+        <div class="container mycontainer">
+            <div class="row">
+                <div class="col" style="max-width: 290px; width: 100%;">
+                    <div class="sidebar">
+                        <div class="sidebar__content">
+                            <div class="d-flex justify-content-end">
+                                <div class="col-4">
+                                    <div class="sidebar__content--section">
+                                        <button class="sidebar__goback btn border">
+                                            Go back
+                                        </button>
+                                    </div>
+                                    <div class="sidebar__content--section">
+                                        <div class="sidebar__cover d-flex align-items-end justify-content-center" style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50.34%, rgba(0, 0, 0, 0.48) 100%), url('./img/cover/ersa23.png');">
+                                            <a href="" class="sidebar__cover--link d-flex align-items-center">
+                                                <img src="./img/link-white.svg" alt="">
+                                                View listing
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="sidebar__content--section">
+                                        <h1 class="sidebar__title d-flex align-items-center">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            <img src="./img/arrow-down-light.svg" alt="">
+                                        </h1>
+                                    </div>
+                                    <div class="sidebar__content--section">
+                                        <div class="sidebar__id home__item--id border">
+                                            ID <span>546458</span>
+                                        </div>
+                                    </div>
+                                    <div class="sidebar__content--section">
+                                        <ul class="sidebar__menu">
+                                            <li class="sidebar__menu--item">
+                                                <a href="" class="sidebar__menu--link">Overview</a>
+                                            </li>
+                                            <li class="sidebar__menu--item">
+                                                <a href="" class="sidebar__menu--link">General Info</a>
+                                            </li>
+                                            <li class="sidebar__menu--item">
+                                                <a href="" class="sidebar__menu--link">Facilities</a>
+                                            </li>
+                                            <li class="sidebar__menu--item">
+                                                <a href="" class="sidebar__menu--link">Amenities</a>
+                                            </li>
+                                            <li class="sidebar__menu--item">
+                                                <a href="" class="sidebar__menu--link">Pricing</a>
+                                            </li>
+                                            <li class="sidebar__menu--item">
+                                                <a href="" class="sidebar__menu--link">Policies</a>
+                                            </li>
+                                            <li class="sidebar__menu--item">
+                                                <a href="" class="sidebar__menu--link">Co-hosts</a>
+                                            </li>
+                                            <li class="sidebar__menu--item">
+                                                <a href="" class="sidebar__menu--link">Overview</a>
+                                            </li>
+                                            <li class="sidebar__menu--item">
+                                                <a href="" class="sidebar__menu--link">Overview</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="sidebar__content--section">
+                                        <div class="sidebar__select">
+                                            <div id="bts-ex-5" class="selectpicker" data-clear="true" data-live="true">
+                                                <div data-id="prov" class="dropdown-toggle selectpicker__head border d-flex justify-content-between align-items-center">
+                                                    <div class="selectpicker__head--text">
+                                                        <img src="./img/active.svg" alt="">
+                                                        Sbject
+                                                    </div>
+                                                    <img src="./img/arrow-down-light.svg" alt="">
+                                                </div>
+                                                <div class="selectpicker__body">
+                                                    <li class="items bg-gradient" data-filter="995" data-value="0">
+                                                        <img src="./img/active.svg" alt="">
+                                                        Active
+                                                    </li>
+                                                    <li class="items bg-gradient" data-filter="995" data-value="1">
+                                                        <img src="./img/snoozed.svg" alt="">
+                                                        Snoozed
+                                                    </li>
+                                                    <li class="items bg-gradient" data-filter="444" data-value="2">
+                                                        <img src="./img/deactivated.svg" alt="">
+                                                        Deactivated
+                                                    </li>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sidebar__content--section">
+                                        <button class="sidebar__delete btn">
+                                            Delete listing
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" style="max-width: 1020px; width: 100%;">
+                    <div class="page-head">
+                        <h1 class="page-head__title">
+                            Overview
+                        </h1>
+                    </div>
+                    <div class="overview">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h1 class="overview__title">Sort</h1>
+                            <div id="bts-ex-5" class="selectpicker" data-clear="true" data-live="true">
+                                <div data-id="prov" class="dropdown-toggle selectpicker__head d-flex justify-content-between align-items-center">
+                                    <div class="selectpicker__head--text">
+                                        Sbject
+                                    </div>
+                                    <img src="./img/arrow-down-light.svg" alt="">
+                                </div>
+                                <div class="selectpicker__body">
+                                    <li class="items bg-gradient" data-filter="995" data-value="1">
+                                        Sbject 1
+                                    </li>
+                                    <li class="items bg-gradient" data-filter="444" data-value="2">
+                                        Sbject 2
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="overview__stats d-flex align-items-center justify-content-between">
+                            <div class="overview__stats--item d-flex align-items-center justify-content-between">
+                                <div>
+                                    <img src="./img/calendar-inc.svg" alt="" class="">
+                                    <h2 class="overview__stats--title">Check-in</h2>
+                                </div>
+                                <div>
+                                    <p class="overview__stats--count">42</p>
+                                </div>
+                            </div>
+                            <div class="overview__stats--item d-flex align-items-center justify-content-between">
+                                <div>
+                                    <img src="./img/calendar-dec.svg" alt="" class="">
+                                    <h2 class="overview__stats--title">Check-out</h2>
+                                </div>
+                                <div>
+                                    <p class="overview__stats--count">42</p>
+                                </div>
+                            </div>
+                            <div class="overview__stats--item d-flex align-items-center justify-content-between">
+                                <div>
+                                    <img src="./img/file-reser.svg" alt="" class="">
+                                    <h2 class="overview__stats--title">Reservation</h2>
+                                </div>
+                                <div>
+                                    <p class="overview__stats--count">42</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reservation smoll">
+                        <div class="page-head d-flex justify-content-between align-items-center">
+                            <h1 class="page-head__title">
+                                Reservations
+                            </h1>
+                            <a href="" class="home__stats--tab-link text gradient">See all reservations</a>
+                        </div>
+                        <!-- head -->
+                        <div class="d-flex justify-content-between">
+                            <div class="reservation__list--item reservation--head d-flex align-items-center">
+                                <p>
+                                    Room name
+                                </p>
+                            </div>
+                            <div class="reservation__list--item reservation--head d-flex align-items-center">
+                                <p>
+                                    Guest
+                                </p>
+                            </div>
+                            <div class="reservation__list--item reservation--head d-flex align-items-center">
+                                <p>
+                                    Check-in
+                                </p>
+                            </div>
+                            <div class="reservation__list--item reservation--head d-flex align-items-center">
+                                <p>
+                                    Check-out
+                                </p>                                
+                            </div>
+                            <div class="reservation__list--item reservation--head d-flex align-items-center">
+                                <p>
+                                    Payment
+                                </p>
+                            </div>
+                            <div class="reservation__list--item reservation--head d-flex align-items-center">
+                                <p>
+                                    Number
+                                </p>
+                            </div>
+                            <div class="reservation__list--item reservation--head d-flex align-items-center">
+                                <p>
+                                    Status
+                                </p>
+                            </div>
+                        </div><!-- head end -->
+                        <!-- body -->
+                        <div class="reservation__list d-flex justify-content-between">
+                            <div class="reservation__list--item d-flex align-items-center">
+                                <p>
+                                    Standard King Room with Forest View
+                                </p>
+                            </div>
+                            <div class="reservation__list--item d-flex align-items-center">
+                                <p>
+                                    Alexandra Kasatkina
+                                </p>
+                            </div>
+                            <div class="reservation__list--item d-flex align-items-center">
+                                <p>
+                                    Mar 8, 2021
+                                </p>
+                            </div>
+                            <div class="reservation__list--item d-flex align-items-center">
+                                <p>
+                                    Mar 8, 2021
+                                </p>                                
+                            </div>
+                            <div class="reservation__list--item d-flex align-items-center">
+                                <p>
+                                    GEL 2,500
+                                </p>
+                            </div>
+                            <div class="reservation__list--item d-flex align-items-center">
+                                <p>
+                                    #12348
+                                </p>
+                            </div>
+                            <div class="reservation__list--item d-flex align-items-center">
+                                <div class="reservation__list--checked d-flex align-items-center justify-content-center">
+                                    <img src="./img/check-white.svg" alt="">
+                                </div>
+                            </div>
+                        </div><!-- body end -->
+                    </div>
+
+                    <div class="review">
+                        <div class="page-head d-flex justify-content-between align-items-center">
+                            <h1 class="page-head__title">
+                                Reviews
+                            </h1>
+                            <a href="" class="home__stats--tab-link text gradient">See all reviews</a>
+                        </div>
+                        <div class="review__item border d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-start">
+                                <figure class="review__item--profile">
+                                    <img src="./img/cover/profile.png" alt="">
+                                </figure>
+                                <div class="review__item--text">
+                                    <div class="d-flex align-items-center">
+                                        <h1 class="review__item--name">Harry Johnson</h1>
+                                        <div>
+                                            <img src="./img/rating-star.svg" alt="" class="review__item--star">
+                                            <img src="./img/rating-star.svg" alt="" class="review__item--star">
+                                            <img src="./img/rating-star.svg" alt="" class="review__item--star">
+                                            <img src="./img/rating-star.svg" alt="" class="review__item--star">
+                                            <img src="./img/rating-star.svg" alt="" class="review__item--star noactive">
+                                        </div>
+                                    </div>
+                                    <div class="review__item--date">
+                                        Trip dates • Aug 17,2020 - Aug 25, 2020
+                                    </div>
+                                    <div class="review__item--desc">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dignissimos eveniet consequatur ipsam voluptates et quam vel illum. Perspiciatis, odit?
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column justify-content-center">
+                                <button class="review__item--btn btn text">
+                                    <p class="gradient notgradient">Write a review</p>
+                                </button>
+                                <p class="review__item--status">Reply to your guest’s comment</p>
+                            </div>
+                        </div><!-- end -->
+                        <div class="review__item border d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-start">
+                                <figure class="review__item--profile">
+                                    <img src="./img/cover/profile.png" alt="">
+                                </figure>
+                                <div class="review__item--text">
+                                    <div class="d-flex align-items-center">
+                                        <h1 class="review__item--name">Harry Johnson</h1>
+                                        <div>
+                                            <img src="./img/rating-star.svg" alt="" class="review__item--star">
+                                            <img src="./img/rating-star.svg" alt="" class="review__item--star">
+                                            <img src="./img/rating-star.svg" alt="" class="review__item--star">
+                                            <img src="./img/rating-star.svg" alt="" class="review__item--star">
+                                            <img src="./img/rating-star.svg" alt="" class="review__item--star noactive">
+                                        </div>
+                                    </div>
+                                    <div class="review__item--date">
+                                        Trip dates • Aug 17,2020 - Aug 25, 2020
+                                    </div>
+                                    <div class="review__item--desc">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dignissimos eveniet consequatur ipsam voluptates et quam vel illum. Perspiciatis, odit?
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column justify-content-center">
+                                <button class="review__item--btn btn text">
+                                    <p class="gradient notgradient">Write a review</p>
+                                </button>
+                                <p class="review__item--status">Reply to your guest’s comment</p>
+                            </div>
+                        </div><!-- end -->
+                    </div>
+
+                    <div class="messages">
+                        <div class="page-head d-flex justify-content-between align-items-center">
+                            <h1 class="page-head__title">
+                                New messages
+                            </h1>
+                            <a href="" class="home__stats--tab-link text gradient">See all messages</a>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="messages__item border d-flex align-items-start">
+                                    <figure class="messages__item--profile">
+                                        <img src="./img/cover/profile.png" alt="">
+                                    </figure>
+                                    <div class="messages__item--text">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <h1 class="messages__item--name">Harry</h1>
+                                            <p class="messages__item--date">10.08.2020</p>
+                                        </div>
+                                        <p class="messages__item--long-date">Trip completed • Aug 17, 2020 - Aug 25, 2020</p>
+                                        <div class="messages__item--desc d-flex align-items-center">
+                                            <img src="./img/sms.svg" alt="">
+                                            Scusa, mi signiori.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- end -->
+                            <div class="col-6">
+                                <div class="messages__item border d-flex align-items-start">
+                                    <figure class="messages__item--profile">
+                                        <img src="./img/cover/profile.png" alt="">
+                                    </figure>
+                                    <div class="messages__item--text">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <h1 class="messages__item--name">Harry</h1>
+                                            <p class="messages__item--date">10.08.2020</p>
+                                        </div>
+                                        <p class="messages__item--long-date">Trip completed • Aug 17, 2020 - Aug 25, 2020</p>
+                                        <div class="messages__item--desc d-flex align-items-center">
+                                            <img src="./img/sms.svg" alt="">
+                                            Scusa, mi signiori.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- end -->
+                            <div class="col-6">
+                                <div class="messages__item border d-flex align-items-start">
+                                    <figure class="messages__item--profile">
+                                        <img src="./img/cover/profile.png" alt="">
+                                    </figure>
+                                    <div class="messages__item--text">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <h1 class="messages__item--name">Harry</h1>
+                                            <p class="messages__item--date">10.08.2020</p>
+                                        </div>
+                                        <p class="messages__item--long-date">Trip completed • Aug 17, 2020 - Aug 25, 2020</p>
+                                        <div class="messages__item--desc d-flex align-items-center">
+                                            <img src="./img/sms.svg" alt="">
+                                            Scusa, mi signiori.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- end -->
+                            <div class="col-6">
+                                <div class="messages__item border d-flex align-items-start">
+                                    <figure class="messages__item--profile">
+                                        <img src="./img/cover/profile.png" alt="">
+                                    </figure>
+                                    <div class="messages__item--text">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <h1 class="messages__item--name">Harry</h1>
+                                            <p class="messages__item--date">10.08.2020</p>
+                                        </div>
+                                        <p class="messages__item--long-date">Trip completed • Aug 17, 2020 - Aug 25, 2020</p>
+                                        <div class="messages__item--desc d-flex align-items-center">
+                                            <img src="./img/sms.svg" alt="">
+                                            Scusa, mi signiori.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- end -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col" style="max-width: 400px; width: 100%;">
+                    <div class="home__stats">
+                        <div class="home__stats--head home__stats--head-border d-flex justify-content-between align-items-center">
+                            <h1 class="home__stats--tab-title">Earnings</h1>
+                            <div>
+                                <div id="bts-ex-5" class="selectpicker" data-clear="true" data-live="true">
+                                    <div data-id="prov" class="dropdown-toggle selectpicker__head d-flex justify-content-between align-items-center">
+                                        <div class="selectpicker__head--text">
+                                            Sbject
+                                        </div>
+                                        <img src="./img/arrow-down-light.svg" alt="">
+                                    </div>
+                                    <div class="selectpicker__body">
+                                        <li class="items bg-gradient" data-filter="995" data-value="1">
+                                            Sbject 1
+                                        </li>
+                                        <li class="items bg-gradient" data-filter="444" data-value="2">
+                                            Sbject 2
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home__stats--body-padding">
+                            <div class="home__stats--info d-flex align-items-center justify-content-between">
+                                <p>Check-in</p>
+                                <span>23</span>
+                            </div>
+                            <div class="home__stats--info d-flex align-items-center justify-content-between">
+                                <p>Check-out</p>
+                                <span>23</span>
+                            </div>
+                            <div class="home__stats--info d-flex align-items-center justify-content-between">
+                                <p>Reservation</p>
+                                <span>23</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="home__stats">
+                        <div class="home__stats--head d-flex justify-content-between align-items-center">
+                            <h1 class="home__stats--tab-title">Page score tips</h1>
+                        </div>
+                        <div class="home__stats--body">
+                            <div class="home__stats--item d-flex align-items-center">
+                                <h1 class="home__stats--item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                                <div class="">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </div><!-- item end -->
+                            <div class="home__stats--item d-flex align-items-center">
+                                <h1 class="home__stats--item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                                <div class="home__stats--item-desc">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, hic.
+                                </div>
+                            </div><!-- item end -->
+                            <div class="home__stats--item d-flex align-items-center">
+                                <h1 class="home__stats--item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                                <div class="home__stats--item-desc">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, hic.
+                                </div>
+                            </div><!-- item end -->
+                        </div>
+                    </div>
+
+                    <div class="home__stats">
+                        <div class="home__stats--head d-flex justify-content-between align-items-center">
+                            <h1 class="home__stats--tab-title">Activities</h1>
+                            <a href="" class="home__stats--tab-link">See all</a>
+                        </div>
+                        <div class="home__stats--body">
+                            <div class="home__stats--item d-flex">
+                                <figure class="home__stats--item-profile">
+                                    <img src="./img/cover/profile.png" alt="" />
+                                </figure>
+                                <div>
+                                    <h1 class="home__stats--item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                                    <div class="home__stats--item-desc">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, hic.
+                                    </div>
+                                    <p class="home__stats--item-date">22.02.22</p>
+                                </div>
+                            </div><!-- item end -->
+                            <div class="home__stats--item d-flex">
+                                <figure class="home__stats--item-profile">
+                                    <img src="./img/cover/profile.png" alt="" />
+                                </figure>
+                                <div>
+                                    <h1 class="home__stats--item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                                    <div class="home__stats--item-desc">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, hic.
+                                    </div>
+                                    <p class="home__stats--item-date">22.02.22</p>
+                                </div>
+                            </div><!-- item end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./function/select/bootstrap-select.js"></script>
+    <script src="./function/select/bundle.min.js"></script>
+    <script src="./function/select/livefilter.min.js"></script>
+    <script src="./function/select/tabcomplete.min.js"></script>
+</body>
+</html>

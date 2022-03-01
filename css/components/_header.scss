@@ -1,0 +1,49 @@
+.header {
+    width: 100%;
+    margin-bottom: $headMarginBottom;
+    position: relative;
+    background-color: #fff;
+    z-index: 1;
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.06));
+
+    &__menu {
+        height: 80px; 
+
+        &--item {
+            list-style: none;
+            margin: 0 25px;
+        }
+
+        &--link {
+            position: relative;
+            color: $mainColor;
+            font-size: 16px;
+            font-weight: 400;
+            text-decoration: none;
+            opacity: .6;
+
+            &:hover,
+            &.active{
+                opacity: 1;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 3px;
+                    display: block;
+                    bottom: 0;
+                    background-color: $mainColor;
+                }
+            }
+        }
+    }
+
+    &__buttons {
+        &--profile {
+            padding: 12px 13px;
+            border-radius: 10px;
+            background-color: $mainColor;
+        }
+    }
+}

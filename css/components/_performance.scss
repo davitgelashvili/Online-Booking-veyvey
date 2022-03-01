@@ -1,0 +1,28 @@
+.performance {
+    &--head {
+        margin-bottom: 48px;
+    }
+
+    &__item {
+        width: 100%;
+        margin-bottom: 32px;
+        background: #FFFFFF;
+        border: 1px solid #D7D8DB;
+        box-sizing: border-box;
+        border-radius: 24px;
+        padding: 30px 44px;
+
+        &--title {
+            margin-bottom: 10px;
+            color: $mainColor;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        &--desc {
+            color: $mainColor;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+}

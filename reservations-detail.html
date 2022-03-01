@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./css/components.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container d-flex align-items-center justify-content-between">
+            <div class="header__logo">
+                <img src="./img/logo.svg" alt="">
+            </div>
+            <ul class="header__menu d-flex">
+                <li class="header__menu--item d-flex">
+                    <a href="" class="header__menu--link d-flex align-items-center active">Home</a>
+                </li>
+                <li class="header__menu--item d-flex">
+                    <a href="" class="header__menu--link d-flex align-items-center">Performance</a>
+                </li>
+            </ul>
+            <div class="header__buttons d-flex align-items-center">
+                <div class="select">
+                    <select id="standard-select">
+                        <option value="Option 1">Option 1</option>
+                        <option value="Option 2">Option 2</option>
+                        <option value="Option 3">Option 3</option>
+                        <option value="Option 4">Option 4</option>
+                        <option value="Option 5">Option 5</option>
+                        <option value="Option length">Option that has too long of a value to fit</option>
+                    </select>
+                    <span class="focus"></span>
+                </div>
+                <button class="header__buttons--profile btn">
+                    <img src="./img/profile.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <div class="reservation detail">
+        <div class="container">
+            <div class="page-head d-flex justify-content-between align-items-center">
+                <h1 class="page-head__title">
+                    Reservation details
+                </h1>
+            </div>
+            <div class="row">
+                <div class="col-9">
+                    <!-- hotel -->
+                    <h1 class="detail__section--title">
+                        Hotel info
+                    </h1>
+                    <div class="detail__section">
+                        <div class="row">
+                            <div class="col-9 d-flex justify-content-between">
+                                <div class="detail__hotel d-flex align-items-center">
+                                    <figure class="detail__hotel--cover">
+                                        <img src="./img/cover/ersa23.png" alt="">
+                                    </figure>
+                                    <div class="detail__hotel--texts">
+                                        <h1 class="detail__hotel--title">Room name</h1>
+                                        <h2 class="detail__hotel--desc">Newport Hotel Kutaisi</h2>
+                                    </div>
+                                </div>
+                                <div class="detail__hotel d-flex align-items-center">
+                                    <figure class="detail__hotel--cover">
+                                        <img src="./img/cover/ersa23.png" alt="">
+                                    </figure>
+                                    <div class="detail__hotel--texts">
+                                        <h1 class="detail__hotel--title">Room name</h1>
+                                        <h2 class="detail__hotel--desc">Newport Hotel Kutaisi</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 d-flex align-items-center justify-content-around">
+                                <img src="./img/check-green.svg" alt="">
+                                <div>
+                                    <h1 class="detail__hotel--title">Status</h1>
+                                    <h2 class="detail__hotel--desc">Trip completed</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- hotel end -->
+                    <!-- booking & trips -->
+                    <div class="row">
+                        <div class="col-6">
+                            <h1 class="detail__section--title">
+                                Booking details
+                            </h1>
+                            <div class="detail__section">
+                                <div class="detail__booking d-flex align-items-center justify-content-between">
+                                    <div class="home__item--info d-flex align-items-center">
+                                        <img src="./img/calendar-inc.svg" alt="" class="home__item--info-icon">
+                                        <div>
+                                            <h2 class="home__item--info-title">Check-in</h2>
+                                            <p class="home__item--info-desc">42 guests</p>
+                                        </div>
+                                    </div>
+                                    <div class="home__item--info d-flex align-items-center">
+                                        <img src="./img/calendar-dec.svg" alt="" class="home__item--info-icon">
+                                        <div>
+                                            <h2 class="home__item--info-title">Check-out</h2>
+                                            <p class="home__item--info-desc">42 guests</p>
+                                        </div>
+                                    </div>
+                                    <div class="home__item--info d-flex align-items-center">
+                                        <img src="./img/file-reser.svg" alt="" class="home__item--info-icon">
+                                        <div>
+                                            <h2 class="home__item--info-title">Reservation</h2>
+                                            <p class="home__item--info-desc">42 total</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="detail__booking d-flex align-items-center justify-content-between">
+                                    <div class="home__item--info d-flex align-items-center">
+                                        <img src="./img/calendar-inc.svg" alt="" class="home__item--info-icon">
+                                        <div>
+                                            <h2 class="home__item--info-title">Check-in</h2>
+                                            <p class="home__item--info-desc">42 guests</p>
+                                        </div>
+                                    </div>
+                                    <div class="home__item--info d-flex align-items-center">
+                                        <img src="./img/calendar-dec.svg" alt="" class="home__item--info-icon">
+                                        <div>
+                                            <h2 class="home__item--info-title">Check-out</h2>
+                                            <p class="home__item--info-desc">42 guests</p>
+                                        </div>
+                                    </div>
+                                    <div class="home__item--info d-flex align-items-center">
+                                        <img src="./img/file-reser.svg" alt="" class="home__item--info-icon">
+                                        <div>
+                                            <h2 class="home__item--info-title">Reservation</h2>
+                                            <p class="home__item--info-desc">42 total</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <h1 class="detail__section--title">
+                                Trip details
+                            </h1>
+                            <div class="detail__section">
+                                <div class="detail__booking d-flex align-items-center justify-content-between">
+                                    <div class="home__item--info d-flex align-items-center">
+                                        <img src="./img/calendar-inc.svg" alt="" class="home__item--info-icon">
+                                        <div>
+                                            <h2 class="home__item--info-title">Check-in</h2>
+                                            <p class="home__item--info-desc">42 guests</p>
+                                        </div>
+                                    </div>
+                                    <div class="home__item--info d-flex align-items-center">
+                                        <img src="./img/calendar-dec.svg" alt="" class="home__item--info-icon">
+                                        <div>
+                                            <h2 class="home__item--info-title">Check-out</h2>
+                                            <p class="home__item--info-desc">42 guests</p>
+                                        </div>
+                                    </div>
+                                    <div class="home__item--info d-flex align-items-center">
+                                        <img src="./img/file-reser.svg" alt="" class="home__item--info-icon">
+                                        <div>
+                                            <h2 class="home__item--info-title">Reservation</h2>
+                                            <p class="home__item--info-desc">42 total</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="detail__booking d-flex align-items-center justify-content-between">
+                                    <div class="home__item--info d-flex align-items-center">
+                                        <img src="./img/calendar-inc.svg" alt="" class="home__item--info-icon">
+                                        <div>
+                                            <h2 class="home__item--info-title">Check-in</h2>
+                                            <p class="home__item--info-desc">42 guests</p>
+                                        </div>
+                                    </div>
+                                    <div class="home__item--info d-flex align-items-center">
+                                        <img src="./img/calendar-dec.svg" alt="" class="home__item--info-icon">
+                                        <div>
+                                            <h2 class="home__item--info-title">Check-out</h2>
+                                            <p class="home__item--info-desc">42 guests</p>
+                                        </div>
+                                    </div>
+                                    <div class="home__item--info d-flex align-items-center">
+                                        <img src="./img/file-reser.svg" alt="" class="home__item--info-icon">
+                                        <div>
+                                            <h2 class="home__item--info-title">Reservation</h2>
+                                            <p class="home__item--info-desc">42 total</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- booking & trips end -->
+                    <!-- paymant -->
+                    <h1 class="detail__section--title">
+                        Payment details
+                    </h1>
+                    <div class="detail__section">
+                        <div class="detail__booking">
+                            <div class=" d-flex align-items-center justify-content-between">
+                                <div class="home__item--info d-flex align-items-center">
+                                    <div>
+                                        <h2 class="home__item--info-title">Commisionable amount</h2>
+                                        <p class="home__item--info-desc">GEL 1,500</p>
+                                    </div>
+                                </div>
+                                <div class="home__item--info d-flex align-items-center">
+                                    <div>
+                                        <h2 class="home__item--info-title">Commision</h2>
+                                        <p class="home__item--info-desc">GEL 300</p>
+                                    </div>
+                                </div>
+                                <div class="home__item--info d-flex align-items-center">
+                                    <div>
+                                        <h2 class="home__item--info-title">Rate</h2>
+                                        <p class="home__item--info-desc">Non-refundable</p>
+                                    </div>
+                                </div>
+                                <div class="home__item--info d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <h2 class="home__item--info-title">Total amouint</h2>
+                                        <p class="home__item--info-desc">GEL 1,500</p>
+                                    </div>
+                                    <button class="detail__paymant--btn detail__paymant--open btn d-flex align-items-center justify-content-center">
+                                        <img src="./img/arrow-down-light.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="detail__paymant detail__paymant--show">
+                                <div class="detail__paymant--lists">
+                                    <!-- head -->
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <h1 class="detail__paymant--head">Date</h1>
+                                        </div>
+                                        <div class="col-3">
+                                            <h1 class="detail__paymant--head">Rate</h1>
+                                        </div>
+                                        <div class="col-6">
+                                            <h1 class="detail__paymant--head d-flex justify-content-end">Price per night</h1>
+                                        </div>
+                                    </div><!-- head end  -->
+                                    <!-- item -->
+                                    <div class="detail__paymant--list">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <p class="detail__paymant--info">June 04 - 05</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p class="detail__paymant--info">Standart rate </p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="detail__paymant--info d-flex justify-content-end">GEL 198</p>
+                                            </div>
+                                        </div>
+                                    </div><!-- item end -->
+                                    <!-- item -->
+                                    <div class="detail__paymant--list">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <p class="detail__paymant--info">June 04 - 05</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p class="detail__paymant--info">Standart rate </p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="detail__paymant--info d-flex justify-content-end">GEL 198</p>
+                                            </div>
+                                        </div>
+                                    </div><!-- item end -->
+                                    <div class="detail__paymant--footer d-flex align-items-center justify-content-between">
+                                        <p>Breakfast fee</p>
+                                        <p>GEL 247</p>
+                                    </div>
+                                    <div class="detail__paymant--footer d-flex align-items-center justify-content-between">
+                                        <p>Breakfast fee</p>
+                                        <p>GEL 247</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- paymant end -->
+                    <!-- guest -->
+                    <div class="d-flex align-items-center justify-content-between">
+                        <h1 class="detail__section--title">
+                            Guest review
+                        </h1>
+                        <a href="" class="home__stats--tab-link text gradient">See full review</a>
+                    </div>
+                    <!-- item -->
+                    <div class="review__item border d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-start">
+                            <figure class="review__item--profile">
+                                <img src="./img/cover/profile.png" alt="">
+                            </figure>
+                            <div class="review__item--text" style="max-width: 100%;">
+                                <div class="d-flex align-items-center">
+                                    <h1 class="review__item--name">Harry Johnson</h1>
+                                    <div>
+                                        <img src="./img/rating-star.svg" alt="" class="review__item--star">
+                                        <img src="./img/rating-star.svg" alt="" class="review__item--star">
+                                        <img src="./img/rating-star.svg" alt="" class="review__item--star">
+                                        <img src="./img/rating-star.svg" alt="" class="review__item--star">
+                                        <img src="./img/rating-star.svg" alt="" class="review__item--star noactive">
+                                    </div>
+                                </div>
+                                <div class="review__item--date">
+                                    Trip dates • Aug 17,2020 - Aug 25, 2020
+                                </div>
+                                <div class="review__item--desc">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dignissimos eveniet consequatur ipsam voluptates et quam vel illum. Perspiciatis, odit?
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- item end -->
+                    <!-- item -->
+                    <div class="review__item border d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-start">
+                            <figure class="review__item--profile">
+                                <img src="./img/cover/profile.png" alt="">
+                            </figure>
+                            <div class="review__item--text" style="max-width: 100%;">
+                                <div class="d-flex align-items-center">
+                                    <h1 class="review__item--name">Harry Johnson</h1>
+                                    <div>
+                                        <img src="./img/rating-star.svg" alt="" class="review__item--star">
+                                        <img src="./img/rating-star.svg" alt="" class="review__item--star">
+                                        <img src="./img/rating-star.svg" alt="" class="review__item--star">
+                                        <img src="./img/rating-star.svg" alt="" class="review__item--star">
+                                        <img src="./img/rating-star.svg" alt="" class="review__item--star noactive">
+                                    </div>
+                                </div>
+                                <div class="review__item--date">
+                                    Trip dates • Aug 17,2020 - Aug 25, 2020
+                                </div>
+                                <div class="review__item--desc">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dignissimos eveniet consequatur ipsam voluptates et quam vel illum. Perspiciatis, odit?
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- item end -->
+                    <!-- guest end -->
+                </div>
+                <div class="col-3">
+                    <div class="detail__profile">
+                        <div class="detail__section detail__profile--content">
+                            <div class="d-flex align-items-center">
+                                <figure class="detail__profile--profile">
+                                    <img src="./img/cover/profile.png" alt="">
+                                </figure>
+                                <div>
+                                    <h1 class="detail__profile--fullname">Davit Gelashvili</h1>
+                                    <p class="detail__profile--jondate">Joined September 2019</p>
+                                </div>
+                            </div>
+                            <div class="detail__profile--bio d-flex flex-column">
+                                <span class="d-flex align-items-center">
+                                    <img src="./img/home.svg" alt="">
+                                    Lives in Tbilisi, Georgia
+                                </span>
+                                <span class="d-flex align-items-center">
+                                    <img src="./img/location.svg" alt="">
+                                    Speaks English, Russian, Georgian
+                                </span>
+                            </div>
+                            <div class="detail__profile--verifid">
+                                <span class="d-flex justify-content-between align-items-center">
+                                    ID Verified
+                                    <img src="./img/verified.svg" alt="">
+                                </span>
+                                <span class="d-flex justify-content-between align-items-center disabled">
+                                    24hrs until reservation
+                                    <img src="./img/verified.svg" alt="">
+                                </span>
+                                <span class="d-flex justify-content-between align-items-center">
+                                    Mail Verified
+                                    <img src="./img/verified.svg" alt="">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detail__menu">
+                        <div class="detail__section detail__menu--content">
+                            <h1 class="detail__menu--title">Update this reservation</h1>
+                            <ul class="detail__menu--list">
+                                <li class="detail__menu--item">
+                                    <a href="" class="detail__menu--link  d-flex align-items-center">
+                                        <img src="./img/print.svg" alt="">
+                                        Print this page
+                                    </a>
+                                </li>
+                                <li class="detail__menu--item">
+                                    <a href="" class="detail__menu--link  d-flex align-items-center">
+                                        <img src="./img/calendar.svg" alt="">
+                                        Change reservation dates & prices
+                                    </a>
+                                </li>
+                                <li class="detail__menu--item">
+                                    <a href="" class="detail__menu--link  d-flex align-items-center">
+                                        <img src="./img/viewnot.svg" alt="">
+                                        Mark as a no-show
+                                    </a>
+                                </li>
+                                <li class="detail__menu--item">
+                                    <a href="" class="detail__menu--link  d-flex align-items-center">
+                                        <img src="./img/flag.svg" alt="">
+                                        Report this guest
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="detail__notepad">
+                        <div class="detail__section detail__notepad--content d-flex align-items-center justify-content-between">
+                            <div class="detail__notepad--text">
+                                <span class="detail__notepad--desc">
+                                    Notepad
+                                </span>
+                                <h1 class="detail__notepad--title">Add your note</h1>
+                                <span class="detail__notepad--desc">
+                                    <img src="./img/locker.svg" alt="">
+                                    Notepad
+                                </span>
+                            </div>
+                            <button class="detail__notepad--btn btn">
+                                <img src="./img/pen.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js" ></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" ></script>
+    <script src="./function/select/bootstrap-select.js"></script>
+    <script src="./function/select/bundle.min.js"></script>
+    <script src="./function/select/livefilter.min.js"></script>
+    <script src="./function/select/tabcomplete.min.js"></script>
+    <script src="./function/calendar.js"></script>
+    <script src="./function/function.js"></script>
+    <script>
+        calendar('.calendar1');
+    </script>
+</body>
+</html>
