@@ -7,10 +7,6 @@
   font-family: 'regular';
 }
 
-.general__item--active {
-  display: block !important;
-}
-
 @font-face {
   font-family: 'regular';
   src: url(../../fonts/Sk-Modernist-Regular.otf);
