@@ -288,6 +288,11 @@ body {
   cursor: pointer;
 }
 
+.selectpicker__body li:hover {
+  background: -webkit-gradient(linear, left top, right top, color-stop(11.55%, rgba(157, 80, 255, 0.05)), color-stop(104.8%, rgba(157, 80, 255, 0.05)));
+  background: linear-gradient(to right, rgba(157, 80, 255, 0.05) 11.55%, rgba(157, 80, 255, 0.05) 104.8%);
+}
+
 .selectpicker.open .selectpicker__body {
   display: block;
 }
@@ -350,6 +355,16 @@ body {
   padding: 12px 13px;
   border-radius: 10px;
   background-color: #040921;
+}
+
+.header__buttons--switch {
+  margin-right: 16px;
+  padding: 6px 12px;
+  background-color: rgba(4, 9, 33, 0.04);
+  border-radius: 6px;
+  color: #040921;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .home__add-listing {
@@ -635,6 +650,10 @@ body {
 
 .home__stats--head {
   padding: 32px 32px 23px 32px;
+}
+
+.home__stats--head img {
+  margin-right: 14px;
 }
 
 .home__stats--head-border {
