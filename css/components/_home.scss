@@ -7,8 +7,18 @@
         font-size: 14px;
         font-weight: 700;
 
-        img {
+        svg {
             margin-right: 14px;
+
+            path {
+                fill: #fff;
+            }
+        }
+
+        &:hover {
+            path {
+                fill: #583CF0;
+            }
         }
     }
 
@@ -198,6 +208,14 @@
 
         &--info {
             padding-left: 40px;
+
+            &.deactive {
+                opacity: .5;
+
+                .home__item--info-desc {
+                    text-decoration: line-through;
+                }
+            }
         }
 
         &--info-title {
@@ -368,6 +386,47 @@
             font-weight: 400;
         }
 
+        &--status {
+            padding: 16px 24px;
+            text-decoration: none;
+
+            svg {
+                path {
+                    fill: #040921;
+                }
+            }
+
+            &:hover {
+                svg {
+                    path {
+                        fill: #583CF0;
+                    }
+                }
+            }
+
+            h1 {
+                color: rgba($mainColor, 1);
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 20px;
+            }
+
+            span {
+                margin-top: 10px;
+                color: rgba($mainColor, 1);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 16px;
+
+                .active {
+                    color: #55DA40;
+                }
+
+                img {
+                    margin-right: 7px;
+                }
+            }
+        }
 
     }
 }

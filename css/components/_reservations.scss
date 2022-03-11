@@ -27,7 +27,7 @@
             font-weight: 400;
             overflow: hidden;
             flex-basis: content;
-    flex-grow: initial;
+            flex-grow: initial;
 
             p {
                 width: 100%;
@@ -71,6 +71,7 @@
         
         p {
             justify-content: flex-start;
+            line-height: 14px;
         }
     }
 
