@@ -18,7 +18,7 @@ $('.detail__paymant--open').on('click', function(){
     $('.detail__paymant--show').toggle()
 })
 
-$('.general__item--edit').on('click', function(){
+$('.js-edit-btn').on('click', function(){
     var thisElement = $(this).parent().parent().parent();
     thisElement.hide()
     $('.general__item--active').each(function(id, elem){
@@ -28,7 +28,7 @@ $('.general__item--edit').on('click', function(){
     })
 })
 
-$('.general__item--btn').on('click', function(){
+$('.js-save-btn').on('click', function(){
     var thisElement = $(this).parent().parent().parent().parent();
     thisElement.hide()
     $('.general__item--deactive').each(function(id, elem){
