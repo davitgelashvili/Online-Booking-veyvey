@@ -861,6 +861,10 @@ body {
   background-color: #fff;
 }
 
+.sidebar__content > div {
+  background-color: #fff;
+}
+
 .sidebar__content--section {
   padding-right: 30px;
 }
@@ -881,6 +885,10 @@ body {
   color: #fff;
   font-size: 16px;
   font-weight: 700;
+  text-decoration: none;
+}
+
+.sidebar__cover--link:hover {
   text-decoration: underline;
 }
 
@@ -931,7 +939,7 @@ body {
 }
 
 .sidebar__menu--link:hover {
-  color: #040921;
+  color: #583cf0;
 }
 
 .sidebar__select {
@@ -1658,6 +1666,63 @@ body {
   font-weight: 400;
 }
 
+.general .selectpicker__head {
+  padding: 20px 24px;
+}
+
+.general .selectpicker__body {
+  width: 100%;
+}
+
+.general .textarea {
+  width: 100%;
+  height: 136px;
+  padding: 15px;
+  cursor: auto;
+  resize: none;
+}
+
+.general .number {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.general .number input {
+  padding: 20px;
+  color: #040921;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  border: none;
+}
+
+.general .number__index {
+  width: 120px;
+  border-right: 1px solid rgba(4, 9, 33, 0.16) !important;
+  border-left: 1px solid rgba(4, 9, 33, 0.16) !important;
+  color: rgba(4, 9, 33, 0.5) !important;
+}
+
+.general .number__input {
+  width: 100%;
+}
+
+.general .number__verify {
+  padding: 9px 21px;
+  right: 12px;
+  position: absolute;
+  border-radius: 8px;
+  background-color: rgba(4, 9, 33, 0.72);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.general .number__verify:hover {
+  background-color: #040921;
+}
+
 .general__menu {
   margin-bottom: 40px;
 }
@@ -1690,12 +1755,15 @@ body {
 
 .general__item {
   margin-bottom: 15px;
-  padding: 24px;
   background-color: #fff;
 }
 
 .general__item--active {
   display: none;
+}
+
+.general__item--deactive .general__item--head {
+  padding: 24px;
 }
 
 .general__item:hover {
@@ -1763,65 +1831,14 @@ body {
   font-weight: 700;
 }
 
+.general__item--head {
+  padding: 15px 24px;
+}
+
 .general__item--body {
   margin-top: 12px;
-}
-
-.general__item--body .selectpicker__head {
-  padding: 22px 24px;
-}
-
-.general__item--body .selectpicker__body {
-  width: 100%;
-}
-
-.general__item--body .textarea {
-  width: 100%;
-  height: 136px;
-  padding: 15px;
-  cursor: auto;
-  resize: none;
-}
-
-.general__item--body .number {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-}
-
-.general__item--body .number input {
-  padding: 18px 20px;
-  color: #040921;
-  font-size: 16px;
-  font-weight: 400;
-  outline: none;
-  border: none;
-}
-
-.general__item--body .number__index {
-  width: 120px;
-  border-right: 1px solid rgba(4, 9, 33, 0.16) !important;
-  border-left: 1px solid rgba(4, 9, 33, 0.16) !important;
-  color: rgba(4, 9, 33, 0.5) !important;
-}
-
-.general__item--body .number__input {
-  width: 100%;
-}
-
-.general__item--body .number__verify {
-  padding: 9px 21px;
-  right: 12px;
-  position: absolute;
-  border-radius: 8px;
-  background-color: rgba(4, 9, 33, 0.72);
-  color: #fff;
-  font-size: 14px;
-  font-weight: 400;
-}
-
-.general__item--body .number__verify:hover {
-  background-color: #040921;
+  border-top: 1px solid rgba(4, 9, 33, 0.16);
+  padding: 15px 24px;
 }
 
 .general__item .rating .rate {

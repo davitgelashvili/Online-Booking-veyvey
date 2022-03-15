@@ -8,6 +8,10 @@
         top: -$headMarginBottom;
         position: absolute;
         background-color: #fff;
+
+        & > div {
+            background-color: #fff;
+        }
         
         &--section {
             padding-right: 30px;
@@ -29,7 +33,11 @@
             color: #fff;
             font-size: 16px;
             font-weight: 700;
-            text-decoration: underline;
+            text-decoration: none;
+            
+            &:hover {
+                text-decoration: underline;
+            }
 
             img {
                 margin-right: 5px;
@@ -76,7 +84,7 @@
             text-decoration: none;
 
             &:hover {
-                color: color( $mainColor, 1);
+                color: color( #583CF0, 1);
             }
         }
     }

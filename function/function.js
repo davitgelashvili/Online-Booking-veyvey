@@ -1,3 +1,10 @@
+if( $('body').height() < 900) {
+    $('.sidebar__content > div').css('height', 1100)
+}else {
+    $('.sidebar__content > div').css('height',$('body').height())
+}
+// console.log($('body').height())
+
 function calendar(className){
     const date = new Date();
     const [month, day, year]       = [(date.getMonth() + 1), date.getDate(), date.getFullYear()];
