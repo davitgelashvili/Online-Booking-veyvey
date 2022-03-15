@@ -2301,4 +2301,61 @@ body {
   background-color: #fff;
   border-radius: 50%;
 }
+
+.activities__item {
+  margin-top: 15px;
+  margin-bottom: 25px;
+  padding: 24px;
+  background-color: #fff;
+}
+
+.activities__item--profile {
+  width: 48px;
+  min-width: 48px;
+  max-width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.activities__item--profile img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.activities__item--text {
+  margin-left: 24px;
+}
+
+.activities__item--auth {
+  color: #040921;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.activities__item--date {
+  color: rgba(4, 9, 33, 0.72);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.activities__item--title {
+  margin-top: 8px;
+  color: #040921;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.activities__item--desc {
+  margin-top: 16px;
+  color: rgba(4, 9, 33, 0.72);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
 /*# sourceMappingURL=components.css.map */
