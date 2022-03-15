@@ -1723,6 +1723,78 @@ body {
   background-color: #040921;
 }
 
+.general .langs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.general .langs__item {
+  margin-right: 16px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #040921;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.general .langs__item.active {
+  background-color: #040921;
+  color: #fff;
+}
+
+.general .langs__ckeck {
+  margin-right: 16px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: transparent;
+  color: rgba(4, 9, 33, 0.5);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.general .langs__ckeck--inc {
+  display: block;
+}
+
+.general .langs__ckeck--dec {
+  display: none;
+}
+
+.general .langs__ckeck figure {
+  margin-right: 5px;
+}
+
+.general .langs__ckeck figure img {
+  opacity: .5;
+}
+
+.general .langs__ckeck.active {
+  color: #040921;
+  border: 1px solid #040921;
+}
+
+.general .langs__ckeck.active figure img {
+  opacity: 1;
+}
+
+.general .langs__ckeck.active .langs__ckeck--inc {
+  display: none;
+}
+
+.general .langs__ckeck.active .langs__ckeck--dec {
+  display: block;
+}
+
 .general__menu {
   margin-bottom: 40px;
 }
