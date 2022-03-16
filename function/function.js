@@ -1,11 +1,15 @@
 $(window).resize(function() {
+    setSidebarBg();
+});
+
+function setSidebarBg(){
     if( $('body').height() < 900) {
         $('.sidebar__content > div').css('height', 1100)
     }else {
         $('.sidebar__content > div').css('height',$('body').height())
     }
-});
-// console.log($('body').height())
+}
+setSidebarBg();
 
 function calendar(className){
     const date = new Date();

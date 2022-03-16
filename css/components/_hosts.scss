@@ -1,0 +1,63 @@
+.hosts {
+    &__item {
+        margin-bottom: 24px;
+        padding: 24px;
+        background-color: #fff;
+        border-radius: 12px;
+
+        &--profile {
+            width: 48px;
+            height: 48px;
+            min-width: 48px;
+            max-width: 48px;
+            margin-right: 24px;
+            border-radius: 50%;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &--role {
+            color: color($mainColor, .72);
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 18px;
+
+            &.admin {
+                color: color(#583CF0, 1);
+            }
+        }
+
+        &--name {
+            margin-top: 4px;
+            color: color($mainColor, 1);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+
+            span {
+                color: color($mainColor, .72);
+            }
+        }
+
+        &--btn {
+            button {
+                margin-left: 16px;
+                padding: 15px;
+                background-color: transparent;
+                color: color($mainColor, .72);
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 16px;
+
+                span {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}

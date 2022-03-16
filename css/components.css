@@ -2358,4 +2358,65 @@ body {
   font-weight: 400;
   line-height: 16px;
 }
+
+.hosts__item {
+  margin-bottom: 24px;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.hosts__item--profile {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  max-width: 48px;
+  margin-right: 24px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.hosts__item--profile img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hosts__item--role {
+  color: rgba(4, 9, 33, 0.72);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.hosts__item--role.admin {
+  color: #583cf0;
+}
+
+.hosts__item--name {
+  margin-top: 4px;
+  color: #040921;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.hosts__item--name span {
+  color: rgba(4, 9, 33, 0.72);
+}
+
+.hosts__item--btn button {
+  margin-left: 16px;
+  padding: 15px;
+  background-color: transparent;
+  color: rgba(4, 9, 33, 0.72);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.hosts__item--btn button span {
+  margin-left: 10px;
+}
 /*# sourceMappingURL=components.css.map */
