@@ -98,3 +98,18 @@ function fileUploadImage(input) {
 $('.upload').on('click', '.upload__cover--delete', function(){
     $(this).parent().parent().remove();
 })
+
+$('.open').on('click', function(){
+    $('body').addClass('overflow-hidden')
+})
+$('.close').on('click', function(){
+    $('body').removeClass('overflow-hidden')
+})
+
+$('.review-popup-open').on('click', function(){
+    $('.writing').addClass('active')
+})
+
+$('.review-popup-close').on('click', function(){
+    $('.writing').removeClass('active')
+})
