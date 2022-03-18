@@ -60,6 +60,64 @@
         }
     }
 
+    .upload {
+
+        &__cover {
+            width: 160px;
+            height: 160px;
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-right: 16px;
+            margin-bottom: 16px;
+
+            &--img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            &--btns {
+                position: absolute;
+                top: 8px;
+                right: 8px;
+            }
+
+            &--btn {
+                background-color: #fff;
+                padding: 5px;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+        }
+
+        &__label {
+            width: 160px;
+            height: 160px;
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px dashed #040921;
+            cursor: pointer;
+
+            &--input {
+                position: absolute;
+                opacity: 0;
+                z-index: -1;
+            }
+
+            &--icon {
+                margin-bottom: 10px;
+            }
+
+            &--text {
+                color: color($mainColor, 1);
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+    }
+
     .langs {
         display: flex;
         flex-wrap: wrap;
@@ -410,64 +468,6 @@
                     ~ div{
                         background-color: #9D50FF;
                     }
-                }
-            }
-        }
-
-        .upload {
-
-            &__cover {
-                width: 160px;
-                height: 160px;
-                position: relative;
-                border-radius: 8px;
-                overflow: hidden;
-                margin-right: 16px;
-                margin-bottom: 16px;
-
-                &--img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-
-                &--btns {
-                    position: absolute;
-                    top: 8px;
-                    right: 8px;
-                }
-
-                &--btn {
-                    background-color: #fff;
-                    padding: 5px;
-                    border-radius: 4px;
-                    cursor: pointer;
-                }
-            }
-
-            &__label {
-                width: 160px;
-                height: 160px;
-                position: relative;
-                border-radius: 8px;
-                overflow: hidden;
-                border: 1px dashed #040921;
-                cursor: pointer;
-
-                &--input {
-                    position: absolute;
-                    opacity: 0;
-                    z-index: -1;
-                }
-
-                &--icon {
-                    margin-bottom: 10px;
-                }
-
-                &--text {
-                    color: color($mainColor, 1);
-                    font-size: 16px;
-                    font-weight: 400;
                 }
             }
         }

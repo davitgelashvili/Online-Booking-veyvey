@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./css/components.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container mycontainer d-flex align-items-center justify-content-between">
+            <div class="header__logo">
+                <img src="./img/logo.svg" alt="">
+            </div>
+            <ul class="header__menu d-flex">
+                <li class="header__menu--item d-flex">
+                    <a href="" class="header__menu--link d-flex align-items-center active">Home</a>
+                </li>
+                <li class="header__menu--item d-flex">
+                    <a href="" class="header__menu--link d-flex align-items-center">Performance</a>
+                </li>
+                <li class="header__menu--item d-flex">
+                    <a href="" class="header__menu--link d-flex align-items-center">Reservations</a>
+                </li>
+                <li class="header__menu--item d-flex">
+                    <a href="" class="header__menu--link d-flex align-items-center">Reviews</a>
+                </li>
+                <li class="header__menu--item d-flex">
+                    <a href="" class="header__menu--link d-flex align-items-center">Earnings</a>
+                </li>
+                <li class="header__menu--item d-flex">
+                    <a href="" class="header__menu--link d-flex align-items-center">Messages</a>
+                </li>
+            </ul>
+            <div class="header__buttons d-flex align-items-center">
+                <div class="select">
+                    <select id="standard-select">
+                        <option value="Option 1">Option 1</option>
+                        <option value="Option 2">Option 2</option>
+                        <option value="Option 3">Option 3</option>
+                        <option value="Option 4">Option 4</option>
+                        <option value="Option 5">Option 5</option>
+                        <option value="Option length">Option that has too long of a value to fit</option>
+                    </select>
+                    <span class="focus"></span>
+                </div>
+                <button class="header__buttons--profile btn">
+                    <img src="./img/profile.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <div class="general">
+        <div class="container mycontainer">
+            <div class="row justify-content-between">
+                <div class="col" style="max-width: 290px; width: 100%;">
+                    <div class="sidebar">
+                        <div class="sidebar__content">
+                            <div class="d-flex justify-content-end">
+                                <div class="col-4">
+                                    <div class="sidebar__content--section">
+                                        <button class="sidebar__goback btn border d-flex align-items-center">
+                                            <img src="./img/go-back.svg" alt="">
+                                            Go back
+                                        </button>
+                                    </div>
+                                    <div class="sidebar__content--section">
+                                        <div class="sidebar__cover d-flex align-items-end justify-content-center" style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50.34%, rgba(0, 0, 0, 0.48) 100%), url('./img/cover/ersa23.png');">
+                                            <a href="" class="sidebar__cover--link d-flex align-items-center">
+                                                <img src="./img/link-white.svg" alt="">
+                                                View listing
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="sidebar__content--section">
+                                        <h1 class="sidebar__title d-flex align-items-center">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            <img src="./img/arrow-down-light.svg" alt="">
+                                        </h1>
+                                    </div>
+                                    <div class="sidebar__content--section">
+                                        <div class="sidebar__id home__item--id border">
+                                            ID <span>546458</span>
+                                        </div>
+                                    </div>
+                                    <div class="sidebar__content--section">
+                                        <ul class="sidebar__menu">
+                                            <li class="sidebar__menu--item">
+                                                <a href="" class="sidebar__menu--link">Calendar</a>
+                                            </li>
+                                            <li class="sidebar__menu--item">
+                                                <a href="" class="sidebar__menu--link">Listing info</a>
+                                            </li>
+                                            <li class="sidebar__menu--item">
+                                                <a href="" class="sidebar__menu--link">Rates & pricing</a>
+                                            </li>
+                                            <li class="sidebar__menu--item">
+                                                <a href="" class="sidebar__menu--link">Photos</a>
+                                            </li>
+                                            <li class="sidebar__menu--item">
+                                                <a href="" class="sidebar__menu--link">Policies</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" style="max-width: 730px; width: 100%;">
+                    <div class="page-head d-flex justify-content-between align-items-center">
+                        <h1 class="page-head__title">
+                            Hotel photos
+                        </h1>
+                    </div>
+                    <div class="photos">
+                        <div class="upload d-flex flex-row flex-wrap">
+                            <label class="photos__upload--label d-flex flex-column align-items-center justify-content-center">
+                                <input type="file" class="photos__upload--input">
+                                <img src="./img/upload-img.svg" alt="" class="photos__upload--icon">
+                                <div class="photos__upload--text">
+                                    ატვირთე ფოტო
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" style="max-width: 400px; width: 100%;">
+
+                    <div class="home__stats">
+                        <div class="home__stats--head d-flex justify-content-start align-items-center">
+                            <img src="./img/chart-stats.svg" alt="">
+                            <h1 class="home__stats--tab-title">Page score tips</h1>
+                        </div>
+                        <div class="home__stats--body">
+                            <div class="home__stats--item">
+                                <span class="home__stats--item-title">
+                                    Add amenities •
+                                </span>for your listings, including advance notice and trip duration settings.
+                            </div><!-- item end -->
+                            <div class="home__stats--item">
+                                <span class="home__stats--item-title">
+                                    Add amenities •
+                                </span>for your listings, including advance notice and trip duration settings.
+                            </div><!-- item end -->
+                            <div class="home__stats--item">
+                                <span class="home__stats--item-title">
+                                    Add amenities •
+                                </span>for your listings, including advance notice and trip duration settings.
+                            </div><!-- item end -->
+                        </div>
+                    </div>
+
+                    <div class="home__stats">
+                        <div class="home__stats--head d-flex justify-content-between align-items-center">
+                            <h1 class="home__stats--tab-title">Activities</h1>
+                            <a href="" class="home__stats--tab-link text gradient">See all</a>
+                        </div>
+                        <div class="home__stats--body">
+                            <div class="home__stats--item d-flex">
+                                <figure class="home__stats--item-profile">
+                                    <img src="./img/cover/profile.png" alt="" />
+                                </figure>
+                                <div>
+                                    <h1 class="home__stats--item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                                    <div class="home__stats--item-desc">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, hic.
+                                    </div>
+                                    <p class="home__stats--item-date">22.02.22</p>
+                                </div>
+                            </div><!-- item end -->
+                            <div class="home__stats--item d-flex">
+                                <figure class="home__stats--item-profile">
+                                    <img src="./img/cover/profile.png" alt="" />
+                                </figure>
+                                <div>
+                                    <h1 class="home__stats--item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                                    <div class="home__stats--item-desc">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, hic.
+                                    </div>
+                                    <p class="home__stats--item-date">22.02.22</p>
+                                </div>
+                            </div><!-- item end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./function/select/bootstrap-select.js"></script>
+    <script src="./function/select/bundle.min.js"></script>
+    <script src="./function/select/livefilter.min.js"></script>
+    <script src="./function/select/tabcomplete.min.js"></script>
+    <script src="./function/function.js"></script>
+</body>
+</html>

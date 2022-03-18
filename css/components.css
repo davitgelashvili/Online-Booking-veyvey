@@ -1779,6 +1779,62 @@ body {
   background-color: #040921;
 }
 
+.general .upload__cover {
+  width: 160px;
+  height: 160px;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+
+.general .upload__cover--img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.general .upload__cover--btns {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.general .upload__cover--btn {
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.general .upload__label {
+  width: 160px;
+  height: 160px;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px dashed #040921;
+  cursor: pointer;
+}
+
+.general .upload__label--input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.general .upload__label--icon {
+  margin-bottom: 10px;
+}
+
+.general .upload__label--text {
+  color: #040921;
+  font-size: 16px;
+  font-weight: 400;
+}
+
 .general .langs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2125,62 +2181,6 @@ body {
 
 .general__item .radiobox__input:checked ~ div {
   background-color: #9D50FF;
-}
-
-.general__item .upload__cover {
-  width: 160px;
-  height: 160px;
-  position: relative;
-  border-radius: 8px;
-  overflow: hidden;
-  margin-right: 16px;
-  margin-bottom: 16px;
-}
-
-.general__item .upload__cover--img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.general__item .upload__cover--btns {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-}
-
-.general__item .upload__cover--btn {
-  background-color: #fff;
-  padding: 5px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.general__item .upload__label {
-  width: 160px;
-  height: 160px;
-  position: relative;
-  border-radius: 8px;
-  overflow: hidden;
-  border: 1px dashed #040921;
-  cursor: pointer;
-}
-
-.general__item .upload__label--input {
-  position: absolute;
-  opacity: 0;
-  z-index: -1;
-}
-
-.general__item .upload__label--icon {
-  margin-bottom: 10px;
-}
-
-.general__item .upload__label--text {
-  color: #040921;
-  font-size: 16px;
-  font-weight: 400;
 }
 
 .general__item .time {

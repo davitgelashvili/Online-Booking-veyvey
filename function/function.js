@@ -113,3 +113,33 @@ $('.review-popup-open').on('click', function(){
 $('.review-popup-close').on('click', function(){
     $('.writing').removeClass('active')
 })
+
+
+$('.photos__upload--input').on('change', function(){
+    hotelPhotoUpload(this);
+})
+
+function hotelPhotoUpload(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            input.value = null;
+            $('.upload').prepend(`
+                <div class="upload__cover">
+                    <img src="${e.target.result}" alt="" class="upload__cover--img">
+                    <div class="upload__cover--btns d-block align-items-center">
+                        <img src="img/reset.svg" alt="" class="upload__cover--btn">
+                        <img src="img/cancel.svg" alt="" class="upload__cover--btn upload__cover--delete">
+                    </div>
+                </div>
+            `)
+        };
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+$('.upload').on('click', '.upload__cover--delete', function(){
+    $(this).parent().parent().remove();
+})
