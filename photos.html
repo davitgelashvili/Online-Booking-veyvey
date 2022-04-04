@@ -116,15 +116,40 @@
                             Hotel photos
                         </h1>
                     </div>
-                    <div class="photos">
-                        <div class="upload d-flex flex-row flex-wrap">
-                            <label class="photos__upload--label d-flex flex-column align-items-center justify-content-center">
-                                <input type="file" class="photos__upload--input">
-                                <img src="./img/upload-img.svg" alt="" class="photos__upload--icon">
-                                <div class="photos__upload--text">
-                                    ატვირთე ფოტო
+                    <div class="photos d-flex flex-column">
+                        <div class="photos__head">
+                            <div class="photos__item">
+                                <label class="photos__upload upload d-flex flex-column align-items-center justify-content-center">
+                                    <input type="file" class="photos__upload--input photos__head--upload">
+                                    <img src="./img/upload-img.svg" alt="" class="photos__upload--icon">
+                                    <div class="photos__upload--text">
+                                        ატვირთე ფოტო
+                                    </div>
+                                </label>
+                            </div>
+                            <ul class="photos__dragdrop dragdrop">
+                                <!-- image upload for js | dont delete -->
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="page-head d-flex justify-content-between align-items-center">
+                                <h1 class="page-head__title">
+                                    Hotel photos
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="photos__body">
+                            <div class="photos__body--list">
+                                <div class="photos__item">
+                                    <label class="photos__upload upload d-flex flex-column align-items-center justify-content-center">
+                                        <input type="file" class="photos__upload--input photos__body--upload">
+                                        <img src="./img/upload-img.svg" alt="" class="photos__upload--icon">
+                                        <div class="photos__upload--text">
+                                            ატვირთე ფოტო
+                                        </div>
+                                    </label>
                                 </div>
-                            </label>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -192,10 +217,12 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
     <script src="./function/select/bootstrap-select.js"></script>
     <script src="./function/select/bundle.min.js"></script>
     <script src="./function/select/livefilter.min.js"></script>
     <script src="./function/select/tabcomplete.min.js"></script>
+    <script src="./function/drag.js"></script>
     <script src="./function/function.js"></script>
 </body>
 </html>

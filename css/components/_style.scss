@@ -40,6 +40,11 @@ $headMarginBottom: 45px;
     @return linear-gradient(to right, color($color1, $opacity) 11.55%, color($color2, $opacity) 104.8%);
 }
 
+.title {
+    text-decoration: none;
+    color: unset;
+}
+
 .text {
     .gradient {
         background: gradient();
