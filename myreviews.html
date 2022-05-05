@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/png" href="./img/active.svg">
+    <link rel="stylesheet" href="./css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/components.css">
+</head>
+<body class="page-profile">
+    <header class="header">
+        <div class="container d-flex align-items-center justify-content-between" style="max-width: 1280px;">
+            <div class="header__logo">
+                <img src="./img/logo.svg" alt="">
+            </div>
+            <ul class="header__menu d-flex">
+                <li class="header__menu--item d-flex">
+                    <a href="" class="header__menu--link d-flex align-items-center active">Home</a>
+                </li>
+                <li class="header__menu--item d-flex">
+                    <a href="" class="header__menu--link d-flex align-items-center">Performance</a>
+                </li>
+                <li class="header__menu--item d-flex">
+                    <a href="" class="header__menu--link d-flex align-items-center">Reservations</a>
+                </li>
+                <li class="header__menu--item d-flex">
+                    <a href="" class="header__menu--link d-flex align-items-center">Reviews</a>
+                </li>
+                <li class="header__menu--item d-flex">
+                    <a href="" class="header__menu--link d-flex align-items-center">Earnings</a>
+                </li>
+                <li class="header__menu--item d-flex">
+                    <a href="" class="header__menu--link d-flex align-items-center">Messages</a>
+                </li>
+            </ul>
+            <div class="header__buttons d-flex align-items-center">
+                <div class="select">
+                    <select id="standard-select">
+                        <option value="Option 1">Option 1</option>
+                        <option value="Option 2">Option 2</option>
+                        <option value="Option 3">Option 3</option>
+                        <option value="Option 4">Option 4</option>
+                        <option value="Option 5">Option 5</option>
+                        <option value="Option length">Option that has too long of a value to fit</option>
+                    </select>
+                    <span class="focus"></span>
+                </div>
+                <button class="header__buttons--profile btn">
+                    <img src="./img/profile.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <div class="trips">
+        <div class="container" style="max-width: 1280px;">
+            <h1 class="page-head__title">My Reviews</h1>
+            <div class="trips__menu">
+                <button class="trips__menu--btn btn active" data-id="0">
+                    From hosts (4)
+                </button>
+                <button class="trips__menu--btn btn" data-id="1">
+                    My reviews
+                </button>
+            </div>
+            <div class="trips__body active" data-id="0">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="profile__reviews--list border trips__review">
+                            <div class="d-flex align-items-center">
+                                <figure class="trips__review--profile profile__reviews--profile">
+                                    <img src="./img/cover/profile.png" alt="">
+                                </figure>
+                                <div class="trips__review--head d-flex align-items-start justify-content-between">
+                                    <div>
+                                        <h1 class="profile__reviews--name">
+                                            Jonathan
+                                        </h1>
+                                        <p class="profile__reviews--date">June 2020 · Tbilisi, Georgia</p>
+                                    </div>
+                                    <button class="trips__review--like btn border">
+                                        Recommend guest
+                                        <img src="./img/review-like.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <br /><br />
+                            <h1 class="profile__reviews--name">Review from host</h1>
+                            <p class="profile__reviews--desc trips__review--text">The place was very specious and cozy with the amazing balcony 
+                                and view on Tbilisi. Had a lovely time there so highly recommended.
+                            </p>
+                            <div>
+                                <h1 class="profile__reviews--name">Your reply</h1>
+                                <br /><br />
+                                <textarea class="textarea border trips__review--textarea" name="" id=""></textarea>
+                                <button class="trips__review--send review__item--btn btn text">
+                                    <p class="gradient notgradient">Send</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div><!-- item end -->
+                    <div class="col-6">
+                        <div class="profile__reviews--list border trips__review">
+                            <div class="d-flex align-items-center">
+                                <figure class="trips__review--profile profile__reviews--profile">
+                                    <img src="./img/cover/profile.png" alt="">
+                                </figure>
+                                <div class="trips__review--head d-flex align-items-start justify-content-between">
+                                    <div>
+                                        <h1 class="profile__reviews--name">
+                                            Jonathan
+                                        </h1>
+                                        <p class="profile__reviews--date">June 2020 · Tbilisi, Georgia</p>
+                                    </div>
+                                    <button class="home__add-listing btn d-flex align-items-center">
+                                        4.9
+                                    </button>
+                                </div>
+                            </div>
+                            <br /><br />
+                            <h1 class="profile__reviews--name">Total score by you</h1>
+                            <br /><br />
+                            <div class="trips__review--text">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="trips__score d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center">
+                                                <img src="./img/calendar-dec.svg" alt="">
+                                                <p>Cleanliness</p>
+                                            </div>
+                                            <p>5.0</p>
+                                        </div>
+                                        <div class="trips__score d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center">
+                                                <img src="./img/calendar-dec.svg" alt="">
+                                                <p>Cleanliness</p>
+                                            </div>
+                                            <p>5.0</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="trips__score d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center">
+                                                <img src="./img/calendar-dec.svg" alt="">
+                                                <p>Cleanliness</p>
+                                            </div>
+                                            <p>5.0</p>
+                                        </div>
+                                        <div class="trips__score d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center">
+                                                <img src="./img/calendar-dec.svg" alt="">
+                                                <p>Cleanliness</p>
+                                            </div>
+                                            <p>5.0</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h1 class="profile__reviews--name">Your review</h1>
+                            <p class="profile__reviews--desc">The place was very specious and cozy with the amazing balcony 
+                                and view on Tbilisi. Had a lovely time there so highly recommended.
+                            </p>
+                        </div>
+                    </div><!-- item end -->
+                </div>
+            </div>
+            <div class="trips__body" data-id="1">
+                2
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./function/select/bootstrap-select.js"></script>
+    <script src="./function/select/bundle.min.js"></script>
+    <script src="./function/select/livefilter.min.js"></script>
+    <script src="./function/select/tabcomplete.min.js"></script>
+    <script src="./function/owl.carousel.min.js"></script>
+    <script src="./function/function.js"></script>
+    <script>
+        profileItemSlider();
+    </script>
+</body>
+</html>

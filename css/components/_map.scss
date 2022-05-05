@@ -1,0 +1,208 @@
+.maps {
+
+    &__title {
+        margin-bottom: 24px;
+        color: $mainColor;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 24px;
+
+        &--bold {
+            font-weight: 700;
+        }
+    }
+    &__container {
+        width: 50%;
+        height:  calc(100vh - 120px);
+        position: absolute;
+        right: 0;
+
+        &--map {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    }
+
+    &__list {
+        width: 100%;
+        height: calc(100vh - 120px);
+        display: block;
+        overflow: auto;
+        /* width */
+        &::-webkit-scrollbar {
+            width: 1px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+            width: 1px;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            width: 1px;
+        }
+    }
+
+    &__item {
+        width: 100%;
+        margin-bottom: 12px;
+
+        &--slider-out {
+            width: 290px;
+            height: 200px;
+            position: relative;
+        }
+
+        &--slider {
+            width: 290px;
+            height: 200px;
+        }
+
+        &--cover {
+            width: 290px;
+            height: 200px;
+            position: relative;
+            // padding-bottom: 100%;
+            overflow: hidden;
+            border-radius: 16px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+            }
+        }
+
+        &--dots {
+            width: 100%;
+            position: absolute;
+            bottom: 10px;
+            z-index: 1;
+
+            button {
+                width: 4px;
+                height: 4px;
+                margin: 0 4px;
+                background-color: color($mainColor, .5);
+                border-radius: 50%;
+                border: none;
+
+                &.active {
+                    background-color: #fff;
+                }
+            }
+        }
+
+        &--texts {
+            width: 100%;
+            margin-left: 40px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid color($mainColor, .05);
+        }
+
+        &--location {
+            color: color($mainColor, .5);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+        }
+
+        &--rating {
+            .rate {
+                height: auto !important;
+                label {
+                    font-size: 17px !important;
+                }
+            }
+        }
+
+        &--title {
+            margin-top: 5px;
+            color: color($mainColor, 1);
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 21px;
+        }
+
+        &--fav {
+            background-color: transparent;
+        }
+
+        &--interier {
+            margin-top: 12px;
+            
+            li {
+                margin: 0 13px;
+                color: color($mainColor, .8);
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 17px;
+
+                &:first-child {
+                    list-style: none;
+                    margin: 0 10px 0 0;
+                }
+            }
+        }
+
+        &--detail {
+            width: fit-content;
+            margin-top: 10px;
+            padding: 9px 10px;
+            border-radius: 10px;
+            
+            li {
+                color: color($mainColor, .5);
+                margin: 0 13px;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 21px;
+                
+                &:first-child {
+                    list-style: none;
+                    margin: 0 10px;
+                }
+            }
+        }
+
+        &--pracent {
+            margin-bottom: 11px;
+            padding: 2px 8px;
+            background-color: $mainColor;
+            border-radius: 12px;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 21px;
+        }
+
+        &--price {
+            margin-bottom: 5px;
+            color: color($mainColor, 1);
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 21px;
+        }
+
+        &--leftroom {
+            margin-top: 10px;
+            padding: 5px 10px;
+            border-radius: 8px;
+
+            img {
+                margin-right: 8px;
+            }
+        }
+
+        &--old-price {
+            color: color($mainColor, .5);
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 21px;
+            text-decoration: line-through;
+        }
+    }
+}

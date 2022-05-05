@@ -99,10 +99,15 @@ $('.upload').on('click', '.upload__cover--delete', function(){
     $(this).parent().parent().remove();
 })
 
-$('.open').on('click', function(){
+$('body').on('click', '.open', function(){
     $('body').addClass('overflow-hidden')
 })
-$('.close').on('click', function(){
+$('body').on('click', '.close', function(){
+    $('body').removeClass('overflow-hidden')
+})
+
+
+$('body').on('click', 'body', function(){
     $('body').removeClass('overflow-hidden')
 })
 
@@ -125,7 +130,7 @@ function hotelHeadPhotoUpload(input) {
                 <div class="photos__dragdrop--item photos__item">
                     <div class="photos__item--in">
                         <div class="photos__item--btn d-flex align-items-center">
-                            <button class="photos__open-popup btn d-flex align-items-center">
+                            <button class="photos__open-popup open btn d-flex align-items-center">
                                 <img src="./img/item-edit.svg" alt="">
                                 Edit
                             </button>
@@ -213,6 +218,46 @@ $('body').on('click', '.photos__open-popup', function() {
     $('.photos__popup').show();
 });
 
+$('body').on('click', '.photos__popup--close', function() {
+    $('.photos__popup').hide();
+});
+
+$('.js-profile__reviews--btn').on('click', function(){
+    $('.js-profile__reviews--btn').removeClass('active');
+    var thisElement = $(this);
+    $(thisElement).addClass('active');
+    $('.profile__reviews--body').each(function(id, elem){
+        $(elem).removeClass('active');
+        if(thisElement.data('id') == $(elem).data('id')) {
+            $(elem).addClass('active');
+        } 
+    })
+})
+
+$('.trips__menu--btn').on('click', function(){
+    $('.trips__menu--btn').removeClass('active');
+    var thisElement = $(this);
+    $(thisElement).addClass('active');
+    $('.trips__body').each(function(id, elem){
+        $(elem).removeClass('active');
+        if(thisElement.data('id') == $(elem).data('id')) {
+            $(elem).addClass('active');
+        } 
+    })
+})
+
+$('.trips__item--more').on('click', function(){
+    $('.trips__item--more').removeClass('active');
+    var thisElement = $(this);
+    $(thisElement).addClass('active');
+    $('.trips__list--all').each(function(id, elem){
+        $(elem).removeClass('active');
+        if(thisElement.data('id') == $(elem).data('id')) {
+            $(elem).addClass('active');
+        } 
+    })
+})
+
 
 function projectSlider(){    
     $('.photos__slider').owlCarousel({
@@ -258,3 +303,52 @@ document.querySelectorAll('.range-slider').forEach(element => {
     range.addEventListener('input', setValue);
 
 });
+
+
+function profileItemSlider(){    
+    $('.profile__items--slider').owlCarousel({
+        margin:0,
+        responsiveClass: true,
+        dotsContainer: '.profile__items--dots',
+        dots: true,
+        nav: false,
+        responsive:{
+            0:{
+                items:1,
+            }
+        }
+    })
+    
+    $('.profile__items--dots .owl-dot').on( 'click', function() {
+        $('.profile__items').trigger('to.owl.carousel', [$(this).index(), 300]);
+        $( '.profile__items--dots .owl-dot' ).removeClass( 'active' );
+        $(this).addClass( 'active' );
+    })
+
+}
+profileItemSlider()
+
+function mapItemsSlider(){    
+    $('.maps__item--slider').owlCarousel({
+        margin:0,
+        responsiveClass: true,
+        dotsContainer: '.maps__item--dots',
+        // navContainer: '.photos__slider--navs',
+        // navText: [`<`,`>`],
+        dots: true,
+        nav: true,
+        responsive:{
+            0:{
+                items:1,
+            }
+        }
+    })
+    
+    $('.maps__item--dots .owl-dot').on( 'click', function() {
+        $('.maps__item').trigger('to.owl.carousel', [$(this).index(), 300]);
+        $( '.maps__item--dots .owl-dot' ).removeClass( 'active' );
+        $(this).addClass( 'active' );
+    })
+
+}
+mapItemsSlider()
