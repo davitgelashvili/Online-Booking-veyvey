@@ -3300,7 +3300,52 @@ body {
   margin-right: 7px;
 }
 
+.header-map {
+  -webkit-filter: none;
+          filter: none;
+  margin-bottom: 0;
+}
+
+.maps__head {
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(4, 9, 33, 0.04);
+  border-top: 1px solid rgba(4, 9, 33, 0.04);
+}
+
+.maps__head--add {
+  background-color: transparent;
+  color: #040921;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.maps__head--add:first-child {
+  margin-right: 32px;
+  border-right: 1px solid rgba(4, 9, 33, 0.04);
+  padding-right: 32px;
+}
+
+.maps__head--add p {
+  color: rgba(4, 9, 33, 0.75);
+}
+
+.maps__head--btn {
+  margin-left: 16px;
+  padding: 9px 20px;
+  background-color: transparent;
+  color: #040921;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.maps__head--btn img {
+  width: 18px;
+}
+
 .maps__title {
+  margin-top: 48px;
   margin-bottom: 24px;
   color: #040921;
   font-size: 22px;

@@ -1,6 +1,49 @@
+.header-map {
+    filter: none;
+    margin-bottom: 0;
+}
 .maps {
 
+    &__head {
+        padding: 15px 0;
+        border-bottom: 1px solid color($mainColor, .04);
+        border-top: 1px solid color($mainColor, .04);
+
+        &--add {
+            background-color: transparent;
+            color: color($mainColor, 1);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            
+            &:first-child {
+                margin-right: 32px;
+                border-right: 1px solid color($mainColor, .04);
+                padding-right: 32px;
+            }
+
+            p {
+                color: color($mainColor, .75);
+            }
+        }
+
+        &--btn {
+            margin-left: 16px;
+            padding: 9px 20px;
+            background-color: transparent;
+            color: color($mainColor, 1);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 21px;
+
+            img {
+                width: 18px;
+            }
+        }
+    }
+
     &__title {
+        margin-top: 48px;
         margin-bottom: 24px;
         color: $mainColor;
         font-size: 22px;
