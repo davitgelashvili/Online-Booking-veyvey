@@ -99,9 +99,9 @@ $('.upload').on('click', '.upload__cover--delete', function(){
     $(this).parent().parent().remove();
 })
 
-$('body').on('click', '.open', function(){
-    $('body').addClass('overflow-hidden')
-})
+// $('body').on('click', '.open', function(){
+//     $('body').addClass('overflow-hidden')
+// })
 $('body').on('click', '.close', function(){
     $('body').removeClass('overflow-hidden')
 })

@@ -1,0 +1,103 @@
+body {
+    background-color: #fff;
+}
+
+.header {
+    &__title {
+        margin-top: 18px;
+        color: $mainColor;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+    }
+
+    &--back {
+        background-color: transparent;
+        color: $mainColor;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+
+        img {
+            margin-right: 10px;
+        }
+    }
+
+    &__menu {
+        padding: 12px 0;
+        overflow: auto;
+        border-bottom: 1px solid color($mainColor, .16);
+
+        &--item {
+            list-style: none;
+        }
+
+        &--link {
+            padding: 10px 23px;
+            color: color($mainColor, .56);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 21px;
+            text-decoration: none;
+
+            &.active {
+                color: color($mainColor, 1);
+                border-bottom: 2px solid #583CF0;
+            }
+        }
+    }
+}
+
+.page {
+    &__head {
+        &--title {
+            color: $mainColor;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 24px;
+        }
+
+        &--btn {
+            background-color: transparent;
+            color: color($mainColor, .16);
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 18px;
+
+            img {
+                margin-left: 10px;
+                opacity: .16;
+            }
+        }
+    }
+    &__menu {
+        &--item {
+            list-style: none;
+            border-bottom: 1px solid color($mainColor, .16);
+            padding: 16px 0;
+        }
+
+        &--link {
+            text-decoration: none;
+        }
+
+        &--title {
+            color: color($mainColor, 1);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+        }
+        
+        &--desc {
+            margin-top: 12px;
+            color: color($mainColor, .56);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+        }
+
+        &--icon {
+            background-color: transparent;
+        }
+    }
+}
