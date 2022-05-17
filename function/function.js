@@ -352,3 +352,19 @@ function mapItemsSlider(){
 
 }
 mapItemsSlider()
+
+function menuPhotoSlider(){    
+    $('.page__photo').owlCarousel({
+        margin:8,
+        dots: false,
+        nav: false,
+        stagePadding: 50,
+        responsiveClass: true,
+        responsive:{
+            0:{
+                items:2,
+            }
+        }
+    })
+
+}

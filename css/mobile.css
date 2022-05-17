@@ -81,6 +81,10 @@ body {
   background-color: #fff;
 }
 
+.header {
+  padding-top: 24px;
+}
+
 .header__title {
   margin-top: 18px;
   color: #040921;
@@ -125,6 +129,15 @@ body {
   border-bottom: 2px solid #583CF0;
 }
 
+.page {
+  background-color: #fff;
+  padding-bottom: 32px;
+}
+
+.page__head {
+  margin-top: 32px;
+}
+
 .page__head--title {
   color: #040921;
   font-size: 20px;
@@ -143,6 +156,10 @@ body {
 .page__head--btn img {
   margin-left: 10px;
   opacity: .16;
+}
+
+.page__menu {
+  margin-top: 14px;
 }
 
 .page__menu--item {
@@ -172,5 +189,67 @@ body {
 
 .page__menu--icon {
   background-color: transparent;
+}
+
+.page__photo {
+  width: calc(100% + (50px + 12px));
+  margin-left: -50px;
+  margin-top: 16px;
+}
+
+.page__photo--cover {
+  width: 100%;
+  height: 96px;
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.page__photo--img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sidebar {
+  background-color: rgba(4, 9, 33, 0.04);
+  padding: 32px 24px 50px 24px;
+}
+
+.sidebar__container {
+  padding: 26px;
+  background-color: #fff;
+  border: 1px solid rgba(4, 9, 33, 0.16);
+  border-radius: 12px;
+}
+
+.sidebar__container--icon {
+  margin-bottom: 18px;
+}
+
+.sidebar__container--title {
+  margin-bottom: 8px;
+  color: #040921;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.sidebar__container--desc {
+  margin-bottom: 16px;
+  color: rgba(4, 9, 33, 0.56);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.sidebar__container--btn {
+  padding: 7px 17px;
+  background-color: transparent;
+  color: #583CF0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
 }
 /*# sourceMappingURL=mobile.css.map */
