@@ -77,6 +77,39 @@ body {
   overflow: hidden;
 }
 
+.empty {
+  width: 100%;
+  margin-top: 16px;
+  padding: 32px;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.empty__icon {
+  width: 160px;
+  margin-right: 40px;
+}
+
+.empty__icon img {
+  max-width: 100%;
+}
+
+.empty__title {
+  margin-bottom: 16px;
+  color: #040921;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.empty__desc {
+  margin-bottom: 16px;
+  color: rgba(4, 9, 33, 0.5);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
 body {
   background-color: #fff;
 }

@@ -92,3 +92,36 @@ $headMarginBottom: 45px;
 .overflow-hidden {
     overflow: hidden;
 }
+
+.empty {
+    width: 100%;
+    margin-top: 16px;
+    padding: 32px;
+    background-color: #fff;
+    border-radius: 12px;
+
+    &__icon {
+        width: 160px;
+        margin-right: 40px;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &__title {
+        margin-bottom: 16px;
+        color: color($mainColor, 1);
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 26px;
+    }
+
+    &__desc {
+        margin-bottom: 16px;
+        color: color($mainColor, .5);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+}
