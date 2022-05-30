@@ -1,5 +1,11 @@
 .reservation {
     margin-bottom: 48px;
+
+    &__container {
+        @media (max-width: 1579px) {
+            max-width: 1400px;
+        }
+    }
     
     &__list {
         width: 100%;
@@ -207,6 +213,20 @@
     }
 
     .detail {
+        &__container {
+            @media (max-width: 1579px) {
+                max-width: 1300px;
+            }
+
+            @media (max-width: 1300px) {
+                max-width: 1190px;
+            }
+
+            @media (max-width: 1200px) {
+                max-width: 1024px;
+            }
+        }
+
         &__section {
             border-radius: 8px;
             background-color: #fff;

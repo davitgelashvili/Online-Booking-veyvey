@@ -8,6 +8,10 @@
 
     &__menu {
         height: 80px; 
+        
+        @media (max-width: 1199px) {
+            display: none !important;
+        }
 
         &--item {
             list-style: none;

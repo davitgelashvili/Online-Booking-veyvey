@@ -38,6 +38,15 @@
 
 
 .general {
+    &--col {
+        max-width: 730px;
+        width: 100%;
+
+        @media (max-width: 1339px) {
+            max-width: 100%;
+        }
+    }
+
     .selectpicker {
         &__head {
             padding: 20px 24px;

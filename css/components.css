@@ -100,6 +100,12 @@ body {
   font-weight: 700;
 }
 
+@media (max-width: 1339px) {
+  .pie {
+    --w:96px;
+  }
+}
+
 .pie:before,
 .pie:after {
   content: "";
@@ -379,6 +385,12 @@ body {
   height: 80px;
 }
 
+@media (max-width: 1199px) {
+  .header__menu {
+    display: none !important;
+  }
+}
+
 .header__menu--item {
   list-style: none;
   margin: 0 25px;
@@ -421,6 +433,23 @@ body {
   color: #040921;
   font-size: 14px;
   font-weight: 500;
+}
+
+.home--col {
+  max-width: 910px;
+  width: 100%;
+}
+
+@media (max-width: 1579px) {
+  .home--col {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 1339px) {
+  .home--col {
+    max-width: calc(100% - 300px);
+  }
 }
 
 .home__add-listing {
@@ -743,6 +772,20 @@ body {
   font-weight: 700;
 }
 
+@media (max-width: 1339px) {
+  .home__stats--tab-title {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 1199px) {
+  .home__stats--tab-title {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
 .home__stats--tab-link {
   color: #040921;
   font-size: 16px;
@@ -1058,7 +1101,6 @@ body {
 }
 
 .overview__stats--count {
-  margin-left: 60px;
   color: #040921;
   font-size: 34px;
   font-weight: 700;
@@ -1066,6 +1108,12 @@ body {
 
 .reservation {
   margin-bottom: 48px;
+}
+
+@media (max-width: 1579px) {
+  .reservation__container {
+    max-width: 1400px;
+  }
 }
 
 .reservation__list {
@@ -1304,6 +1352,24 @@ body {
 .reservation__search--item-texts {
   max-width: 257px;
   width: 100%;
+}
+
+@media (max-width: 1579px) {
+  .reservation .detail__container {
+    max-width: 1300px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .reservation .detail__container {
+    max-width: 1190px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .reservation .detail__container {
+    max-width: 1024px;
+  }
 }
 
 .reservation .detail__section {
@@ -1556,7 +1622,8 @@ body {
 }
 
 .review__item--profile {
-  width: 72px;
+  min-width: 72px;
+  max-width: 72px;
   height: 72px;
   border-radius: 50%;
   overflow: hidden;
@@ -1653,8 +1720,16 @@ body {
 }
 
 .detail .review__item .home__item--cover {
-  width: 138px;
+  max-width: 138px;
+  min-width: 138px;
+  width: 100%;
   height: 100px;
+}
+
+@media (max-width: 1339px) {
+  .detail .review__item .home__item--cover {
+    min-width: 100px;
+  }
 }
 
 .detail .review__item .home__item--title {
@@ -1691,9 +1766,52 @@ body {
   overflow: auto;
 }
 
+.writing--container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.writing--container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.writing--container::-webkit-scrollbar-thumb {
+  background: #C4C4C4;
+  border-radius: 50px;
+}
+
 .writing--section {
   padding: 24px 70px;
   border-bottom: 1px solid rgba(4, 9, 33, 0.08);
+}
+
+.writing__rating {
+  margin-right: 24px;
+  padding: 15px 11px;
+  background-color: #040921;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+.writing__score {
+  margin-top: 24px;
+  color: #040921;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.writing__score div {
+  font-weight: 400;
+}
+
+.writing__score p {
+  font-weight: 700;
+}
+
+.writing__score img {
+  margin-right: 12px;
 }
 
 .messages {
@@ -1765,6 +1883,12 @@ body {
   padding: 30px 44px;
 }
 
+@media (max-width: 1339px) {
+  .performance__item {
+    padding: 32px;
+  }
+}
+
 .performance__item--title {
   margin-bottom: 10px;
   color: #040921;
@@ -1818,6 +1942,17 @@ body {
 .rating .rate > input:checked ~ label:hover ~ label,
 .rating .rate > label:hover ~ input:checked ~ label {
   color: #c59b08;
+}
+
+.general--col {
+  max-width: 730px;
+  width: 100%;
+}
+
+@media (max-width: 1339px) {
+  .general--col {
+    max-width: 100%;
+  }
 }
 
 .general .selectpicker__head {

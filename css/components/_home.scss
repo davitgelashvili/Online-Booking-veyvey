@@ -1,4 +1,18 @@
 .home {
+
+    &--col {
+        max-width: 910px;
+        width: 100%;
+
+        @media (max-width: 1579px) {
+            max-width: 700px;
+        }
+
+        @media (max-width: 1339px) {
+            max-width: calc(100% - 300px);
+        }
+    }
+
     &__add-listing {
         padding: 14px 16px;
         background: #040921;
@@ -314,6 +328,16 @@
             color: $mainColor;
             font-size: 24px;
             font-weight: 700;
+
+            @media (max-width: 1339px) {
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            @media (max-width: 1199px) {
+                font-size: 14px;
+                font-weight: 500;
+            }
         }
 
         &--tab-link {
