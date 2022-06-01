@@ -1932,8 +1932,23 @@ body {
   border-right: 1px solid rgba(4, 9, 33, 0);
 }
 
+@media (max-width: 1200px) {
+  .bank__list--item:nth-of-type(3) {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .bank__list--item:nth-of-type(2) {
+    -ms-flex-preferred-size: 94%;
+        flex-basis: 94%;
+  }
+  .bank__list--item:nth-of-type(1) {
+    -ms-flex-preferred-size: 73%;
+        flex-basis: 73%;
+  }
+}
+
 .bank__list--desc {
-  width: 80%;
+  width: calc(100% - 120px);
   margin-bottom: 8px;
   color: rgba(4, 9, 33, 0.5);
   font-size: 16px;
@@ -1941,12 +1956,24 @@ body {
   line-height: 19px;
 }
 
+@media (max-width: 1580px) {
+  .bank__list--desc {
+    width: calc(100% - 70px);
+  }
+}
+
 .bank__list--title {
-  width: 80%;
+  width: calc(100% - 120px);
   color: #040921;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
+}
+
+@media (max-width: 1580px) {
+  .bank__list--title {
+    width: calc(100% - 70px);
+  }
 }
 
 .bank-popup-first {
