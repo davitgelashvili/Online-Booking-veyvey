@@ -115,14 +115,6 @@
     }
 }
 
-.selectpicker {
-    &__head {
-        padding: 20px 24px;
-    }
-    &__body {
-        width: 100%;
-    }
-}
 
 .general {
     &--col {
@@ -131,6 +123,15 @@
 
         @media (max-width: 1339px) {
             max-width: 100%;
+        }
+    }
+
+    .selectpicker {
+        &__head {
+            padding: 20px 24px;
+        }
+        &__body {
+            width: 100%;
         }
     }
 

@@ -30,4 +30,13 @@
         padding: 12px;
         margin-bottom: 24px;
     }
+
+    .selectpicker {
+        &__head {
+            padding: 20px 24px;
+        }
+        &__body {
+            width: 100%;
+        }
+    }
 }

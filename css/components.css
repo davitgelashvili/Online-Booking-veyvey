@@ -2162,14 +2162,6 @@ body {
   background-color: #040921;
 }
 
-.selectpicker__head {
-  padding: 20px 24px;
-}
-
-.selectpicker__body {
-  width: 100%;
-}
-
 .general--col {
   max-width: 730px;
   width: 100%;
@@ -2179,6 +2171,14 @@ body {
   .general--col {
     max-width: 100%;
   }
+}
+
+.general .selectpicker__head {
+  padding: 20px 24px;
+}
+
+.general .selectpicker__body {
+  width: 100%;
 }
 
 .general .textarea {
@@ -3862,5 +3862,13 @@ body {
   outline: none;
   padding: 12px;
   margin-bottom: 24px;
+}
+
+.popup .selectpicker__head {
+  padding: 20px 24px;
+}
+
+.popup .selectpicker__body {
+  width: 100%;
 }
 /*# sourceMappingURL=components.css.map */
