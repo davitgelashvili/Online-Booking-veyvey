@@ -1,0 +1,33 @@
+.popup {
+    &__container {
+        max-width: 400px;
+        width: 100%;
+        height: auto;
+        min-height: 300px;
+        padding: 24px;
+    }
+
+    &__title {
+        margin-bottom: 12px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    &__desc {
+        margin-bottom: 24px;
+        color: color($mainColor, 1);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        opacity: .5;
+    }
+
+    &__textarea {
+        width: 100%;
+        outline: none;
+        padding: 12px;
+        margin-bottom: 24px;
+    }
+}

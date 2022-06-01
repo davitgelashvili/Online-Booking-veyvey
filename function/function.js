@@ -119,6 +119,12 @@ $('.review-popup-close').on('click', function(){
     $('.writing').removeClass('active')
 })
 
+$('.bank-popup-next').on('click', function(){
+    $('.bank-popup-first').css('display', 'none')
+    $('.bank-popup-second').css('display', 'block')
+})
+
+
 
 function hotelHeadPhotoUpload(input) {
     if (input.files && input.files[0]) {

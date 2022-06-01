@@ -331,6 +331,47 @@
                     </div>
                 </div><!-- body end -->
             </div>
+
+            <div class="page-head d-flex justify-content-between align-items-center">
+                <h1 class="page-head__title">
+                    Bank details
+                </h1>
+            </div>
+            <div>
+                <!-- body -->
+                <div class="bank__list d-flex">
+                    <div class="bank__list--item d-flex flex-column align-items-start">
+                        <p class="bank__list--desc">
+                            Property
+                        </p>
+                        <p class="bank__list--title">
+                            Jemaldi Jinikashvili
+                        </p>
+                    </div>
+                    <div class="bank__list--item d-flex flex-column align-items-center">
+                        <p class="bank__list--desc">
+                            Property
+                        </p>
+                        <p class="bank__list--title">
+                            GE81BG0000000698966996
+                        </p>
+                    </div>
+                    <div class="bank__list--item d-flex flex-column align-items-center">
+                        <p class="bank__list--desc">
+                            Property
+                        </p>
+                        <p class="bank__list--title">
+                            698966996
+                        </p>                                
+                    </div>
+                    <div class="bank__list--item d-flex flex-column align-items-end">
+                        <button class="review__item--btn btn text open review-popup-open">
+                            <p class="gradient notgradient">Save</p>
+                        </button>
+                    </div>
+                </div><!-- body end -->
+            </div>
+
             <div class="reservation__empty d-flex flex-column align-items-center">
                 <div class="reservation__empty--icon">
                     <img src="./img/empty-sms.svg" alt="">
@@ -342,6 +383,97 @@
                 </p>
                 <button class="review__item--btn btn text">
                     <p class="gradient notgradient">See Tips & Advice</p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="writing popup align-items-center justify-content-center">
+        <div class="writing--container popup__container bank-popup-first">
+            <div class="d-flex justify-content-end">
+                <button class="writing__close review-popup-close close btn">
+                    <img src="./img/cancel.svg" alt="">
+                </button>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <h1 class="detail__section--title popup__title">
+                    Select a verification method
+                </h1>
+                <p class="popup__desc">
+                    You’ll receive a 6-digit code.
+                </p>
+            </div>
+            <label class="radiobox d-flex align-items-center">
+                <div class="d-flex align-items-center">
+                    <input type="radio" class="radiobox__input" name="ragaca">
+                    <div class="radiobox__input--checked d-block">
+                    </div>
+                    <p class="radiobox__text">Phone call</p>
+                </div>
+            </label>
+            <label class="radiobox d-flex align-items-center">
+                <div class="d-flex align-items-center">
+                    <input type="radio" class="radiobox__input" name="ragaca">
+                    <div class="radiobox__input--checked d-block">
+                    </div>
+                    <p class="radiobox__text">Text message</p>
+                </div>
+            </label>
+            <label class="radiobox d-flex align-items-center">
+                <div class="d-flex align-items-center">
+                    <input type="radio" class="radiobox__input" name="ragaca">
+                    <div class="radiobox__input--checked d-block">
+                    </div>
+                    <p class="radiobox__text">Pulse</p>
+                </div>
+            </label>
+            <div class="d-flex justify-content-end">
+                <button class="review__item--btn btn text bank-popup-next">
+                    <p class="gradient notgradient">Next</p>
+                </button>
+            </div>
+        </div>
+        <div class="writing--container popup__container bank-popup-second">
+            <div class="d-flex justify-content-end">
+                <button class="writing__close review-popup-close close btn">
+                    <img src="./img/cancel.svg" alt="">
+                </button>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <h1 class="detail__section--title popup__title">
+                    Add acount
+                </h1>
+                <p class="popup__desc">
+                    Enter your bank account details
+                </p>
+            </div>
+            <label class="number border d-flex align-items-center">
+                <input type="text" class="number__input" value="" placeholder="Address">
+            </label>
+            <br />
+            <label class="number border d-flex align-items-center">
+                <input type="text" class="number__input" value="" placeholder="Address">
+            </label>
+            <br />
+            <div id="bts-ex-5" class="selectpicker" data-clear="true" data-live="true">
+                <div data-id="prov" class="dropdown-toggle selectpicker__head border general__item d-flex justify-content-between align-items-center">
+                    <div class="selectpicker__head--text">
+                        Sbject 
+                    </div>
+                    <img src="./img/arrow-down-light.svg" alt="">
+                </div>
+                <div class="selectpicker__body">
+                    <li class="items bg-gradient" data-filter="995" data-value="1">
+                        Sbject 1
+                    </li>
+                    <li class="items bg-gradient" data-filter="444" data-value="2">
+                        Sbject 2
+                    </li>
+                </div>
+            </div>
+            <div class="d-flex justify-content-end">
+                <button class="review__item--btn btn text">
+                    <p class="gradient notgradient">Finish</p>
                 </button>
             </div>
         </div>

@@ -1836,7 +1836,9 @@ body {
 }
 
 .writing.active {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .writing--container {
@@ -1897,6 +1899,62 @@ body {
 
 .writing__score img {
   margin-right: 12px;
+}
+
+.bank__list {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 32px 48px;
+}
+
+.bank__list--item {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  border-right: 1px solid rgba(4, 9, 33, 0.16);
+}
+
+.bank__list--item:nth-of-type(1) {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+
+.bank__list--item:nth-of-type(3) {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+
+.bank__list--item:nth-of-type(4) {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  border-right: 1px solid rgba(4, 9, 33, 0);
+}
+
+.bank__list--desc {
+  width: 80%;
+  margin-bottom: 8px;
+  color: rgba(4, 9, 33, 0.5);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.bank__list--title {
+  width: 80%;
+  color: #040921;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.bank-popup-first {
+  display: block;
+}
+
+.bank-popup-second {
+  display: none;
 }
 
 .messages {
@@ -2029,6 +2087,89 @@ body {
   color: #c59b08;
 }
 
+.radiobox {
+  margin-right: 34px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.radiobox__text {
+  margin-left: 10px;
+  color: rgba(4, 9, 33, 0.5);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.radiobox__input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.radiobox__input--checked {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(4, 9, 33, 0.08);
+  border-radius: 50%;
+}
+
+.radiobox__input:checked ~ .radiobox__text {
+  color: #040921;
+}
+
+.radiobox__input:checked ~ div {
+  background-color: #9D50FF;
+}
+
+.number {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.number input {
+  padding: 20px;
+  color: #040921;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  border: none;
+}
+
+.number__index {
+  width: 120px;
+  border-right: 1px solid rgba(4, 9, 33, 0.16) !important;
+  border-left: 1px solid rgba(4, 9, 33, 0.16) !important;
+  color: rgba(4, 9, 33, 0.5) !important;
+}
+
+.number__input {
+  width: 100%;
+}
+
+.number__verify {
+  padding: 9px 21px;
+  right: 12px;
+  position: absolute;
+  border-radius: 8px;
+  background-color: rgba(4, 9, 33, 0.72);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.number__verify:hover {
+  background-color: #040921;
+}
+
+.selectpicker__head {
+  padding: 20px 24px;
+}
+
+.selectpicker__body {
+  width: 100%;
+}
+
 .general--col {
   max-width: 730px;
   width: 100%;
@@ -2040,14 +2181,6 @@ body {
   }
 }
 
-.general .selectpicker__head {
-  padding: 20px 24px;
-}
-
-.general .selectpicker__body {
-  width: 100%;
-}
-
 .general .textarea {
   width: 100%;
   height: 136px;
@@ -2055,47 +2188,6 @@ body {
   cursor: auto;
   resize: none;
   outline: none;
-}
-
-.general .number {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-}
-
-.general .number input {
-  padding: 20px;
-  color: #040921;
-  font-size: 16px;
-  font-weight: 400;
-  outline: none;
-  border: none;
-}
-
-.general .number__index {
-  width: 120px;
-  border-right: 1px solid rgba(4, 9, 33, 0.16) !important;
-  border-left: 1px solid rgba(4, 9, 33, 0.16) !important;
-  color: rgba(4, 9, 33, 0.5) !important;
-}
-
-.general .number__input {
-  width: 100%;
-}
-
-.general .number__verify {
-  padding: 9px 21px;
-  right: 12px;
-  position: absolute;
-  border-radius: 8px;
-  background-color: rgba(4, 9, 33, 0.72);
-  color: #fff;
-  font-size: 14px;
-  font-weight: 400;
-}
-
-.general .number__verify:hover {
-  background-color: #040921;
 }
 
 .general .upload__cover {
@@ -2424,40 +2516,6 @@ body {
 
 .general__item .checkbox__input:checked ~ div img {
   display: block;
-}
-
-.general__item .radiobox {
-  margin-right: 34px;
-  margin-bottom: 20px;
-  cursor: pointer;
-}
-
-.general__item .radiobox__text {
-  margin-left: 10px;
-  color: rgba(4, 9, 33, 0.5);
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.general__item .radiobox__input {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
-}
-
-.general__item .radiobox__input--checked {
-  width: 16px;
-  height: 16px;
-  border: 1px solid rgba(4, 9, 33, 0.08);
-  border-radius: 50%;
-}
-
-.general__item .radiobox__input:checked ~ .radiobox__text {
-  color: #040921;
-}
-
-.general__item .radiobox__input:checked ~ div {
-  background-color: #9D50FF;
 }
 
 .general__item .time {
@@ -3772,5 +3830,37 @@ body {
   font-weight: 700;
   line-height: 21px;
   text-decoration: line-through;
+}
+
+.popup__container {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  padding: 24px;
+}
+
+.popup__title {
+  margin-bottom: 12px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.popup__desc {
+  margin-bottom: 24px;
+  color: #040921;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  opacity: .5;
+}
+
+.popup__textarea {
+  width: 100%;
+  outline: none;
+  padding: 12px;
+  margin-bottom: 24px;
 }
 /*# sourceMappingURL=components.css.map */
