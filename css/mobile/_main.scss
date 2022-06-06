@@ -190,3 +190,63 @@ body {
         overflow: auto;
     }
 }
+
+.radiobox {
+    margin-right: 34px;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+    &__text {
+        margin-left: 10px;
+        color: color($mainColor, .5);
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    &__input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+
+        &--checked {
+            width: 16px;
+            height: 16px;
+            border: 1px solid rgba(4, 9, 33, 0.08);
+            border-radius: 50%;
+        }
+
+        &:checked {
+            ~ .radiobox__text {
+                color: color($mainColor, 1);
+            }
+            
+            ~ div{
+                background-color: #9D50FF;
+            }
+        }
+    }
+}
+
+.text {
+    width: 100%;
+    margin-top: 16px;
+
+    &__title {
+        margin-bottom: 8px;
+        color: color($mainColor, 1);
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 14px;
+    }
+
+    &__input {
+        width: 100%;
+        color: color($mainColor, .56);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        border: none;
+        border-bottom: 1px solid color($mainColor, .16);
+        outline: none;
+    }
+}
