@@ -62,22 +62,24 @@
     color: $mainColor;
 }
 
-.upload{
+.upload {
     margin-top: 24px;
     margin-bottom: 24px;
-    &__cover{
+
+    &__cover {
         width: 100%;
         height: 321px;
         position: relative;
         padding-bottom: 100%;
 
-        &--img{
+        &--img {
             width: 100%;
             height: 100%;
             position: absolute;
             object-fit: cover;
         }
-        &--edit{
+
+        &--edit {
             position: absolute;
             top: 16px;
             right: 24px;
@@ -85,6 +87,55 @@
             padding: 10px;
             border-radius: 8px;
             background-color: #fff;
+        }
+    }
+}
+
+.amenities {
+    &__item {
+        border-bottom: 1px solid color($mainColor, .16);
+        margin-top: 16px;
+        padding-bottom: 16px;
+
+        &--title {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: $mainColor;
+
+            span {
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 14px;
+                background-color: color(#9D50FF, .1);
+                padding: 5px 8px;
+                color: #9D50FF;
+                border-radius: 4px;
+            }
+        }
+
+        &--desc {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+            color: color($mainColor, .56);
+            margin-top: 6px;
+
+            &.bold {
+                color: color($mainColor, 1);
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 20px;
+                text-decoration: underline;
+            }
+        }
+
+        &--btn {
+            border: 1px solid color($mainColor, .16);
+            border-radius: 8px;
+            background-color: transparent;
+            width: 32px;
+            height: 32px;
         }
     }
 }
