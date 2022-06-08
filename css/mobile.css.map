@@ -4,7 +4,8 @@
     "sources": [
         "mobile.scss",
         "components/_style.scss",
-        "mobile/_main.scss"
+        "mobile/_main.scss",
+        "mobile/_page.scss"
     ],
     "names": [],
     "file": "mobile.css"
