@@ -360,7 +360,7 @@ function mapItemsSlider(){
 mapItemsSlider()
 
 function menuPhotoSlider(){    
-    $('.page__photo').owlCarousel({
+    $('.page__photo--slider').owlCarousel({
         margin:8,
         dots: false,
         nav: false,

@@ -1,15 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #fff;
 }
 
 .header {
     padding-top: 24px;
+
     &__title {
         margin-top: 18px;
         color: $mainColor;
         font-size: 24px;
         font-weight: 700;
         line-height: 29px;
+    }
+
+    &__desc {
+        margin-top: 13px;
+        color: color($mainColor, .56);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
     }
 
     &--back {
@@ -76,6 +89,7 @@ body {
             }
         }
     }
+
     &__menu {
         margin-top: 14px;
 
@@ -95,7 +109,7 @@ body {
             font-weight: 400;
             line-height: 19px;
         }
-        
+
         &--desc {
             margin-top: 12px;
             color: color($mainColor, .56);
@@ -104,16 +118,40 @@ body {
             line-height: 17px;
         }
 
+        &--btn {
+            color: $mainColor;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 18px;
+        }
+
         &--icon {
+            margin-left: 10px;
             background-color: transparent;
+        }
+
+        &--notification {
+            margin-top: 16px;
+            color: #DE1313;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 16px;
+
+            img {
+                margin-right: 8px;
+            }
         }
     }
 
     &__photo {
-        width: calc(100% + (50px + 12px));
-        margin-left: -50px;
-        margin-top: 16px;
+
         // margin-right: -150px;
+
+        &--slider {
+            width: calc(100% + (50px + 12px));
+            margin-left: -50px;
+            margin-top: 16px;
+        }
 
         &--cover {
             width: 100%;
@@ -134,7 +172,7 @@ body {
 .sidebar {
     background-color: color($mainColor, .04);
     padding: 32px 24px 50px 24px;
-    
+
     &__container {
         padding: 26px;
         background-color: #fff;
@@ -203,6 +241,14 @@ body {
         font-weight: 400;
     }
 
+    &__desc {
+        margin-top: 6px;
+        color: color($mainColor, .56);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
     &__input {
         position: absolute;
         z-index: -1;
@@ -216,11 +262,11 @@ body {
         }
 
         &:checked {
-            ~ .radiobox__text {
+            ~.radiobox__text {
                 color: color($mainColor, 1);
             }
-            
-            ~ div{
+
+            ~div {
                 background-color: #9D50FF;
             }
         }

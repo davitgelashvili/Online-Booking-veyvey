@@ -110,6 +110,11 @@ body {
   line-height: 24px;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   background-color: #fff;
 }
@@ -124,6 +129,14 @@ body {
   font-size: 24px;
   font-weight: 700;
   line-height: 29px;
+}
+
+.header__desc {
+  margin-top: 13px;
+  color: rgba(4, 9, 33, 0.56);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
 }
 
 .header--back {
@@ -220,11 +233,31 @@ body {
   line-height: 17px;
 }
 
+.page__menu--btn {
+  color: #040921;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+}
+
 .page__menu--icon {
+  margin-left: 10px;
   background-color: transparent;
 }
 
-.page__photo {
+.page__menu--notification {
+  margin-top: 16px;
+  color: #DE1313;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.page__menu--notification img {
+  margin-right: 8px;
+}
+
+.page__photo--slider {
   width: calc(100% + (50px + 12px));
   margin-left: -50px;
   margin-top: 16px;
@@ -318,6 +351,14 @@ body {
   font-weight: 400;
 }
 
+.radiobox__desc {
+  margin-top: 6px;
+  color: rgba(4, 9, 33, 0.56);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+
 .radiobox__input {
   position: absolute;
   z-index: -1;
@@ -361,5 +402,92 @@ body {
   border: none;
   border-bottom: 1px solid rgba(4, 9, 33, 0.16);
   outline: none;
+}
+
+.btn-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 24px 0;
+}
+
+.save-btn {
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #9d50ff;
+  padding: 14px 0;
+  width: 80%;
+  border-radius: 8px;
+}
+
+.save-btn:disabled {
+  background-color: rgba(157, 80, 255, 0.32);
+}
+
+.feature--select {
+  margin-top: 32px;
+}
+
+.feature--select .radiobox {
+  border-bottom: 1px solid rgba(4, 9, 33, 0.16);
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+}
+
+.photos__upload {
+  width: 160px;
+  height: 160px;
+  position: relative;
+  float: left;
+  border: 1px dashed #040921;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.photos__upload--input {
+  opacity: 0;
+  position: absolute;
+  z-index: -2;
+}
+
+.photo_required_text {
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #040921;
+}
+
+.upload {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.upload__cover {
+  width: 100%;
+  height: 321px;
+  position: relative;
+  padding-bottom: 100%;
+}
+
+.upload__cover--img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.upload__cover--edit {
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  z-index: 1;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #fff;
 }
 /*# sourceMappingURL=mobile.css.map */
