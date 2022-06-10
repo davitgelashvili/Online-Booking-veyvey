@@ -642,4 +642,61 @@ body {
   line-height: 14px;
   color: #9D50FF;
 }
+
+.guidebooks__desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(4, 9, 33, 0.5);
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+
+.guidebooks__desc--read {
+  color: #9D50FF;
+}
+
+.create__item {
+  background: rgba(157, 80, 255, 0.16);
+  height: 158px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  padding: 8px 8px 17px 12px;
+}
+
+.create__item--menu {
+  height: 100%;
+  width: 60%;
+  padding-left: 5px;
+}
+
+.create__item--menu a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #9D50FF;
+  text-decoration: none;
+}
+
+.create__item--title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #9D50FF;
+}
+
+.create__item1 {
+  background-color: transparent;
+  height: 158px;
+  border: 1px solid rgba(4, 9, 33, 0.16);
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.create__item1--text {
+  margin-top: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+}
 /*# sourceMappingURL=mobile.css.map */
