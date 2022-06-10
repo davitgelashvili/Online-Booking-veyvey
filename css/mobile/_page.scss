@@ -266,6 +266,91 @@
             color: #9D50FF;
         }
     }
+
+    &__header {
+        padding-bottom: 24px;
+        border-bottom: 1px solid color($mainColor, .16);
+        padding-top: 24px;
+
+        &--profile {
+            width: 48px;
+            height: 48px;
+            overflow: hidden;
+            border-radius: 50%;
+            margin-right: 12px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &--name {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        &--desc {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: color($mainColor, .56);
+        }
+
+        &--btn {
+            width: 100%;
+            padding: 7px 0;
+            margin: 24px 4px 0 4px;
+            background-color: transparent;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 18px;
+            color: $mainColor;
+        }
+    }
+
+    &__item {
+        margin-top: 24px;
+
+        &--img {
+            width: 100%;
+            height: 188px;
+            overflow: hidden;
+            border-radius: 6px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            &.small {
+                height: 90px;
+                margin-bottom: 8px;
+            }
+        }
+
+        &--title {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            color: $mainColor;
+        }
+
+        &--desc {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: $mainColor;
+            margin-top: 12px;
+            margin-bottom: 16px;
+        }
+        &--desc-more{
+            text-decoration: none;
+            color: #9D50FF;
+        }
+    }
 }
 
 
