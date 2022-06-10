@@ -411,6 +411,7 @@ body {
   left: 0;
   width: 100%;
   padding: 24px 0;
+  background-color: #fff;
 }
 
 .btn-container-btn {
@@ -695,6 +696,86 @@ body {
 
 .create__item1--text {
   margin-top: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.policy {
+  padding-bottom: 80px;
+}
+
+.policy__header {
+  background-color: rgba(4, 9, 33, 0.04);
+  border-radius: 24px;
+  padding: 16px;
+  margin-top: 24px;
+}
+
+.policy__button {
+  color: #9D50FF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.policy__img {
+  padding: 7px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.policy__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.policy__content {
+  margin-top: 12px;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.policy__list {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 24px;
+  text-decoration: none;
+}
+
+.policy__list--title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 12px;
+  margin-top: 24px;
+}
+
+.policy__section--title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+
+.policy__yes-no {
+  border-bottom: 1px solid rgba(4, 9, 33, 0.16);
+}
+
+.policy__yes-no .btn {
+  padding: 7px 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  margin-top: 12px;
+  margin-right: 12px;
+  background-color: transparent;
+  border: 1px solid rgba(4, 9, 33, 0.16);
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
