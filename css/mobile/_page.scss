@@ -312,6 +312,16 @@
 
     &__item {
         margin-top: 24px;
+        &--link {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: $mainColor;
+                margin-bottom: 478px;
+                span {
+                    color: color($mainColor, .56);
+                }
+            }
 
         &--img {
             width: 100%;
@@ -346,7 +356,8 @@
             margin-top: 12px;
             margin-bottom: 16px;
         }
-        &--desc-more{
+
+        &--desc-more {
             text-decoration: none;
             color: #9D50FF;
         }
