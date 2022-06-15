@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/mobile.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <button class="header--back btn">
+                        <img src="../img/arrow-back.svg" alt="">
+                        Back
+                    </button>
+
+                </div>
+                <div class="col-6 d-inline-flex justify-content-end">
+                    <button class="btn">
+                        X
+                    </button>
+                </div>
+                <div class="col-12">
+                    <h1 class="d-flex align-items-center header__title">
+                        Create check-in instructions
+                    </h1>
+                    <p class="header__desc">We’ll share them with confirmed guests before
+                    they arrive.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <br /><br />
+
+    <div class="page">
+        <div class="container">
+            <div class="check">
+                <div class="check__item border">
+                    <h1 class="check__item--title">Step 1</h1>
+                    <p class="check__item--desc">What should guests look for to know they’re in the right place?</p>
+                    <div class="check__item--btn d-flex">
+                        <button class="btn save-btn check__item--photo">Add a photo</button>
+                        <button class="btn check__item--note">Add a note</button>
+                    </div>
+                </div>
+                <div class="check__item border">
+                    <h1 class="check__item--title">Step 1</h1>
+                    <p class="check__item--desc">What should guests look for to know they’re in the right place?</p>
+                    <div class="check__item--btn d-flex">
+                        <button class="btn save-btn check__item--photo" disabled>Add a photo</button>
+                        <button class="btn check__item--note" disabled>Add a note</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../function/select/bootstrap-select.js"></script>
+    <script src="../function/select/bundle.min.js"></script>
+    <script src="../function/select/livefilter.min.js"></script>
+    <script src="../function/select/tabcomplete.min.js"></script>
+    <script src="../function/drag.js"></script>
+    <script src="../function/owl.carousel.min.js"></script>
+    <script src="../function/function.js"></script>
+    <script>
+        menuPhotoSlider()
+    </script>
+</body>
+
+</html>

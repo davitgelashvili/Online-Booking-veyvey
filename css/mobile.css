@@ -879,4 +879,42 @@ body {
   font-size: 14px;
   line-height: 18px;
 }
+
+.check__item {
+  padding: 24px;
+  margin-bottom: 32px;
+}
+
+.check__item--title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #040921;
+  margin-bottom: 2px;
+}
+
+.check__item--desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #040921;
+  margin-bottom: 16px;
+}
+
+.check__item--photo {
+  max-width: 50%;
+  margin-right: 16px;
+}
+
+.check__item--note {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  background-color: transparent;
+  color: #9D50FF;
+}
+
+.check__item--note:disabled {
+  color: rgba(4, 9, 33, 0.56);
+}
 /*# sourceMappingURL=mobile.css.map */

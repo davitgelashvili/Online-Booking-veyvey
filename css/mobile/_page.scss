@@ -312,16 +312,18 @@
 
     &__item {
         margin-top: 24px;
+
         &--link {
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 20px;
-                color: $mainColor;
-                margin-bottom: 478px;
-                span {
-                    color: color($mainColor, .56);
-                }
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: $mainColor;
+            margin-bottom: 478px;
+
+            span {
+                color: color($mainColor, .56);
             }
+        }
 
         &--img {
             width: 100%;
@@ -488,6 +490,45 @@
             font-weight: 700;
             font-size: 14px;
             line-height: 18px;
+        }
+    }
+}
+
+.check {
+    &__item {
+        padding: 24px;
+        margin-bottom: 32px;
+
+        &--title {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 30px;
+            color: $mainColor;
+            margin-bottom: 2px;
+        }
+
+        &--desc {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 30px;
+            color: $mainColor;
+            margin-bottom: 16px;
+        }
+
+        &--photo {
+            max-width: 50%;
+            margin-right: 16px;
+        }
+
+        &--note {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            background-color: transparent;
+            color: #9D50FF;
+            &:disabled{
+                color: color($mainColor, .56);
+            }
         }
     }
 }
