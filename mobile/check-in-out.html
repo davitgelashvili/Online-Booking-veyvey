@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Check-in & checkout</title>
+        <link rel="stylesheet" href="../css/bootstrap-grid.css" />
+        <link rel="stylesheet" href="../css/mobile.css" />
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <button class="header--back btn">
+                            <img src="../img/arrow-back.svg" alt="" />
+                            Back
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="page mt-4 page-bottom-padding">
+            <div class="container">
+                <div class="pg-header">
+                    <h1 class="pg-header__title">Check-in & checkout</h1>
+                </div>
+
+                <form action="#" class="form">
+                    <h2 class="title-1 mb-3">Check-in window</h2>
+
+                    <div class="text-input">
+                        <label for="discountStart1" class="label label--sm label--black"> Arrive after </label>
+                        <input type="text" name="discountStart1" id="discountStart1" value="3:00 PM" />
+                    </div>
+
+                    <div class="text-input">
+                        <label for="discount1" class="label label--sm label--black"> Arrive before </label>
+                        <input type="text" name="discount1" id="discount1" value="Flexible" />
+                    </div>
+
+                    <div class="text-input">
+                        <label for="discount1" class="label label--sm label--black"> Minimum stay (Friday) </label>
+                        <input type="text" name="discount1" id="discount1" value="3" />
+                    </div>
+
+                    <h2 class="title-1 sp-mt-5 mb-3">Checkout window</h2>
+
+                    <div class="text-input">
+                        <label for="discount1" class="label label--sm label--black"> Leave before </label>
+                        <input type="text" name="discount1" id="discount1" value="12:00 PM" />
+                    </div>
+
+                    <h2 class="title-1 sp-mt-5">Days unavailable for check-in</h2>
+
+                    <li class="page__menu--item">
+                        <a href="" class="page__menu--link d-flex justify-content-between align-items-center">
+                            <div>
+                                <p class="page__menu--title">Not set</p>
+                            </div>
+                            <img src="../img/arrow-next.svg" alt="" class="page__menu--icon" />
+                        </a>
+                    </li>
+
+                    <div class="btn-container d-flex justify-content-center">
+                        <button class="btn save-btn" type="submit">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../function/select/bootstrap-select.js"></script>
+        <script src="../function/select/bundle.min.js"></script>
+        <script src="../function/select/livefilter.min.js"></script>
+        <script src="../function/select/tabcomplete.min.js"></script>
+        <script src="../function/drag.js"></script>
+        <script src="../function/owl.carousel.min.js"></script>
+        <script src="../function/function.js"></script>
+    </body>
+</html>

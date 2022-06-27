@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>How Guests Can Book</title>
+        <link rel="stylesheet" href="../css/bootstrap-grid.css" />
+        <link rel="stylesheet" href="../css/mobile.css" />
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <button class="header--back btn">
+                            <img src="../img/arrow-back.svg" alt="" />
+                            Back
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="page mt-4 page-bottom-padding">
+            <div class="container">
+                <div class="pg-header">
+                    <h1 class="pg-header__title">Choose how you want to host COVID-19 responders</h1>
+                    <p class="pg-header__subtitle">Choose how guests will book your home</p>
+                </div>
+
+                <form action="#" class="form">
+                    <div class="cstm-form__fields">
+                        <div>
+                            <label for="book-on" class="radio-btn cstm-well">
+                                <h2 class="radio-btn__label-text radio-btn__label-text--mb-12">Instant Book: on</h2>
+                                <p class="text-1 text-grey-1">
+                                    Guests who meet all your requirements can book instantly. Others will need to send a reservation
+                                    request. You can cancel 100% penalty-free if you’re ever uncomfortable with a reservation.
+                                </p>
+                                <!-- checkbox or radio as needed -->
+                                <input type="radio" name="how-to-book" id="book-on" checked />
+                                <span class="radio-btn__text-style"></span>
+                            </label>
+                        </div>
+
+                        <div>
+                            <label for="book-off" class="radio-btn cstm-well">
+                                <h2 class="radio-btn__label-text radio-btn__label-text--mb-12">Instant Book: off</h2>
+                                <p class="text-1 text-grey-1">All guests must send reservation requests.</p>
+                                <!-- checkbox or radio as needed -->
+                                <input type="radio" name="how-to-book" id="book-off" />
+                                <span class="radio-btn__text-style"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="btn-container d-flex justify-content-center">
+                        <button class="btn save-btn">Host responders</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../function/select/bootstrap-select.js"></script>
+        <script src="../function/select/bundle.min.js"></script>
+        <script src="../function/select/livefilter.min.js"></script>
+        <script src="../function/select/tabcomplete.min.js"></script>
+        <script src="../function/drag.js"></script>
+        <script src="../function/owl.carousel.min.js"></script>
+        <script src="../function/function.js"></script>
+    </body>
+</html>

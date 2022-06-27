@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Trip length</title>
+        <link rel="stylesheet" href="../css/bootstrap-grid.css" />
+        <link rel="stylesheet" href="../css/mobile.css" />
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <button class="header--back btn">
+                            <img src="../img/arrow-back.svg" alt="" />
+                            Back
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="page mt-4 page-bottom-padding">
+            <div class="container">
+                <div class="pg-header">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h1 class="pg-header__title">Trip length</h1>
+                        <button class="btn-square">
+                            <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.33301 11.5001H5.15967C5.24741 11.5006 5.33439 11.4838 5.41561 11.4506C5.49684 11.4175 5.57071 11.3686 5.63301 11.3068L10.2463 6.68679L12.1397 4.83346C12.2022 4.77148 12.2518 4.69775 12.2856 4.61651C12.3194 4.53527 12.3369 4.44813 12.3369 4.36012C12.3369 4.27211 12.3194 4.18498 12.2856 4.10374C12.2518 4.0225 12.2022 3.94876 12.1397 3.88679L9.31301 1.02679C9.25103 0.964303 9.1773 0.914707 9.09606 0.880861C9.01482 0.847015 8.92768 0.82959 8.83967 0.82959C8.75167 0.82959 8.66453 0.847015 8.58329 0.880861C8.50205 0.914707 8.42832 0.964303 8.36634 1.02679L6.48634 2.91346L1.85967 7.53346C1.79789 7.59575 1.749 7.66963 1.71583 7.75085C1.68265 7.83208 1.66583 7.91905 1.66634 8.00679V10.8335C1.66634 11.0103 1.73658 11.1798 1.8616 11.3049C1.98663 11.4299 2.1562 11.5001 2.33301 11.5001ZM8.83967 2.44012L10.7263 4.32679L9.77967 5.27346L7.89301 3.38679L8.83967 2.44012ZM2.99967 8.28012L6.95301 4.32679L8.83967 6.21346L4.88634 10.1668H2.99967V8.28012ZM12.9997 12.8335H0.999674C0.822863 12.8335 0.653294 12.9037 0.52827 13.0287C0.403246 13.1537 0.333008 13.3233 0.333008 13.5001C0.333008 13.6769 0.403246 13.8465 0.52827 13.9715C0.653294 14.0966 0.822863 14.1668 0.999674 14.1668H12.9997C13.1765 14.1668 13.3461 14.0966 13.4711 13.9715C13.5961 13.8465 13.6663 13.6769 13.6663 13.5001C13.6663 13.3233 13.5961 13.1537 13.4711 13.0287C13.3461 12.9037 13.1765 12.8335 12.9997 12.8335Z"
+                                    fill="#040921"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <form action="#" class="form">
+                    <div class="text-input">
+                        <label for="discountStart1" class="label label--sm label--black"> Minimum stay (nights) </label>
+                        <input type="text" name="discountStart1" id="discountStart1" value="2" />
+                    </div>
+
+                    <div class="text-input">
+                        <label for="discount1" class="label label--sm label--black"> Minimum stay (Monday) </label>
+                        <input type="text" name="discount1" id="discount1" value="3" />
+                    </div>
+
+                    <div class="text-input">
+                        <label for="discount1" class="label label--sm label--black"> Minimum stay (Friday) </label>
+                        <input type="text" name="discount1" id="discount1" value="3" />
+                    </div>
+
+                    <a href="#" class="link-block-accent" style="--fz: 14px">Customise by day of week</a>
+
+                    <div class="text-input sp-mt-4">
+                        <label for="discount1" class="label label--sm label--black"> Maximum stay (nights) </label>
+                        <input type="text" name="discount1" id="discount1" value="45" />
+                    </div>
+
+                    <p class="label label--sm label--black mb-2">For stays longer than 45 nights</p>
+
+                    <div class="bordered">
+                        <div>
+                            <label for="review" class="radio-btn">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="label label--md label--w-80">Manually review and approve reservation reqeusts</p>
+                                    <div>
+                                        <input type="radio" id="review" name="longerThan45" checked />
+                                        <div class="radio-btn__bullet"></div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div>
+                            <label for="noAllow" class="radio-btn">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="label label--md">Don’t allow reservation requests</p>
+                                    <div>
+                                        <input type="radio" id="noAllow" name="longerThan45" />
+                                        <div class="radio-btn__bullet"></div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <a href="#" class="link-block-accent" style="--fz: 14px">Add seasonal requirment</a>
+
+                    <div class="btn-container d-flex justify-content-center">
+                        <button class="btn save-btn" type="submit">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../function/select/bootstrap-select.js"></script>
+        <script src="../function/select/bundle.min.js"></script>
+        <script src="../function/select/livefilter.min.js"></script>
+        <script src="../function/select/tabcomplete.min.js"></script>
+        <script src="../function/drag.js"></script>
+        <script src="../function/owl.carousel.min.js"></script>
+        <script src="../function/function.js"></script>
+    </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Guest Requirements</title>
+        <link rel="stylesheet" href="../css/bootstrap-grid.css" />
+        <link rel="stylesheet" href="../css/mobile.css" />
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <button class="header--back btn">
+                            <img src="../img/arrow-back.svg" alt="" />
+                            Back
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="page mt-4">
+            <div class="container">
+                <div class="pg-header">
+                    <h1 class="pg-header__title">Guest requirements</h1>
+                    <p class="pg-header__subtitle">Your guests will awlays meet the following requirments before they book.</p>
+                </div>
+
+                <form action="#" class="form">
+                    <div class="bordered">
+                        <div>
+                            <div class="d-flex justify-content-between">
+                                <h3 class="text-2">Veyvey requirments</h3>
+                                <button class="btn-inline-accent" type="button">View</button>
+                            </div>
+                            <p class="text-1 text-grey-1 mt-2">Confirmed email address, Confirmed phone number...</p>
+                        </div>
+
+                        <div>
+                            <label for="requireProfilePhoto" class="radio-btn">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <p class="radio-btn__label-text">Require a profile photo to book</p>
+
+                                    <div class="switch">
+                                        <input type="checkbox" name="requireProfilePhoto" id="requireProfilePhoto" checked />
+                                        <span class="switch__slider"></span>
+                                    </div>
+                                </div>
+
+                                <p class="text-1 text-grey-1">
+                                    If you turn on this requirment, you’ll be able to see guests’ profile photos after a booking is
+                                    confirmed, but not before. <a href="#" class="text-black">Learn more</a>
+                                </p>
+                            </label>
+                        </div>
+                    </div>
+
+                    <h2 class="mt-4 text-semi-bold text-4">Instant Book only</h2>
+                    <p class="subtext mt-2 sp-mb-5">
+                        You can set these requirments if you alow guests to book instantly. Anyone who doesn’t meet your requirments will
+                        send a request.
+                    </p>
+
+                    <div class="bordered">
+                        <div>
+                            <label for="requireID" class="radio-btn">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="radio-btn__label-text">Government-issued ID</p>
+
+                                    <div class="switch">
+                                        <input type="checkbox" name="requireID" id="requireID" checked />
+                                        <span class="switch__slider"></span>
+                                    </div>
+                                </div>
+                                <p class="form-helper">Require guests to sumbit government issued ID to Veyvey.</p>
+                            </label>
+                        </div>
+
+                        <div class="pb-5">
+                            <label for="requireReccomendations" class="radio-btn">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="radio-btn__label-text">Reccommended by other hosts</p>
+                                    <div class="switch">
+                                        <input type="checkbox" name="requireReccomendations" id="requireReccomendations" />
+                                        <span class="switch__slider"></span>
+                                    </div>
+                                </div>
+                                <p class="form-helper">
+                                    Require guests to have recommendations from other Veyvey hosts and no negative reviews.
+                                </p>
+                                <p class="form-helper">Guests will see your message before they confirm their reservation.</p>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="btn-container d-flex justify-content-center">
+                        <button class="btn save-btn" type="submit">Host responders</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../function/select/bootstrap-select.js"></script>
+        <script src="../function/select/bundle.min.js"></script>
+        <script src="../function/select/livefilter.min.js"></script>
+        <script src="../function/select/tabcomplete.min.js"></script>
+        <script src="../function/drag.js"></script>
+        <script src="../function/owl.carousel.min.js"></script>
+        <script src="../function/function.js"></script>
+    </body>
+</html>

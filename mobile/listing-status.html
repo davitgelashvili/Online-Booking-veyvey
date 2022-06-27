@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Listing status</title>
+        <link rel="stylesheet" href="../css/bootstrap-grid.css" />
+        <link rel="stylesheet" href="../css/mobile.css" />
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <button class="header--back btn">
+                            <img src="../img/arrow-back.svg" alt="" />
+                            Back
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="page mt-4">
+            <div class="container">
+                <div class="pg-header">
+                    <h1 class="pg-header__title">Listing status</h1>
+                </div>
+
+                <div class="listing-status mb-4">
+                    <span class="listing-status__current listing-status__current--active">Activated </span>
+                    - Guests can book your listing
+                </div>
+
+                <h2 class="mt-4 text-semi-bold text-4">Change status</h2>
+
+                <div class="bordered">
+                    <div>
+                        <div class="d-flex justify-content-between">
+                            <h3 class="text-2">Snooze</h3>
+                            <button class="btn-inline-accent">Set</button>
+                        </div>
+                        <p class="text-1 text-grey-1 mt-2">Remove your listing from search results from a set periods of time</p>
+                    </div>
+                    <div>
+                        <div class="d-flex justify-content-between">
+                            <h3 class="text-2">Unlist</h3>
+                            <button class="btn-inline-accent">Hide</button>
+                        </div>
+                        <p class="text-1 text-grey-1 mt-2">Remove your listing from search results</p>
+                    </div>
+                    <div>
+                        <div class="d-flex justify-content-between">
+                            <h3 class="text-2">Deactivate</h3>
+                            <button class="btn-inline-accent">Remove</button>
+                        </div>
+                        <p class="text-1 text-grey-1 mt-2">Permanently remove your listing from VeyVey</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../function/select/bootstrap-select.js"></script>
+        <script src="../function/select/bundle.min.js"></script>
+        <script src="../function/select/livefilter.min.js"></script>
+        <script src="../function/select/tabcomplete.min.js"></script>
+        <script src="../function/drag.js"></script>
+        <script src="../function/owl.carousel.min.js"></script>
+        <script src="../function/function.js"></script>
+    </body>
+</html>
