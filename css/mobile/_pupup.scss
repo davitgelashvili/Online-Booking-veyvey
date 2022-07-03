@@ -1,0 +1,58 @@
+.popup {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: none;
+
+    &.open {
+        display: block;
+    }
+
+    &__backdrop {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.72);
+    }
+
+    &__container {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        max-height: 96vh;
+        background: #ffffff;
+        border-radius: 20px 20px 0 0;
+    }
+
+    &__close {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        width: 32px;
+        height: 32px;
+        display: grid;
+        place-content: center;
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+
+        svg {
+            display: block;
+            width: 16px;
+            height: 16px;
+            stroke: #040921;
+        }
+    }
+
+    &__content {
+        padding-top: 56px;
+        padding-bottom: 24px;
+        padding-inline: 24px;
+    }
+}

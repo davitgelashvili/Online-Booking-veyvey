@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Popup Markup</title>
+
+        <link rel="stylesheet" href="../css/mobile.css" />
+
+        <!-- popup js -->
+        <script src="../function/popup.js" defer></script>
+    </head>
+
+    <body>
+        <!-- add popup-open attribute to anything that opens popup -->
+        <button popup-open>open popup</button>
+
+        <!-- popup markup -->
+        <div class="popup" popup>
+            <div class="popup__backdrop"></div>
+
+            <div class="popup__container">
+                <button class="popup__close" popup-close aria-label="close popup">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <div class="popup__content">
+                    <div class="pg-header">
+                        <h1 class="pg-header__title">What you can expect when hosting responders</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
