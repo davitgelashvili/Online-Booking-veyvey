@@ -1,24 +1,40 @@
 ;(() => {
     'use strict'
 
+    if (!document.querySelector('[popup]')) return
+
     initPopup()
 
     function initPopup() {
-        if (!document.querySelector('[popup]')) return
+        const openPopupBtns = document.querySelectorAll('[popup-open]')
+        const closePopupBtns = document.querySelectorAll('[popup-close]')
 
-        const popup = document.querySelector('[popup]')
-        const openPopupBtn = document.querySelector('[popup-open]')
-        const closePopupBtn = popup.querySelector('[popup-close]')
-
-        function openPopup() {
+        function openPopup(popup) {
             popup.classList.add('open')
         }
 
         function closePopup() {
-            popup.classList.remove('open')
+            const popups = document.querySelectorAll('[popup]')
+            popups.forEach((popup) => {
+                if (popup.classList.contains('open')) {
+                    popup.classList.remove('open')
+                } else {
+                    return
+                }
+            })
         }
 
-        openPopupBtn.addEventListener('click', openPopup)
-        closePopupBtn.addEventListener('click', closePopup)
+        openPopupBtns.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                const popup = document.querySelector(`#${btn.dataset.popupTarget}`)
+                openPopup(popup)
+            })
+        })
+
+        closePopupBtns.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                closePopup()
+            })
+        })
     }
 })()

@@ -14,10 +14,11 @@
 
     <body>
         <!-- add popup-open attribute to anything that opens popup -->
-        <button popup-open>open popup</button>
+        <button popup-open data-popup-target="popup-1">open popup 1</button>
+        <button popup-open data-popup-target="popup-2">open popup 2</button>
 
         <!-- popup markup -->
-        <div class="popup" popup>
+        <div class="popup" popup id="popup-1">
             <div class="popup__backdrop"></div>
 
             <div class="popup__container">
@@ -29,7 +30,26 @@
 
                 <div class="popup__content">
                     <div class="pg-header">
-                        <h1 class="pg-header__title">What you can expect when hosting responders</h1>
+                        <h1 class="pg-header__title">Popup 1</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- popup markup -->
+        <div class="popup" popup id="popup-2">
+            <div class="popup__backdrop"></div>
+
+            <div class="popup__container">
+                <button class="popup__close" popup-close aria-label="close popup">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <div class="popup__content">
+                    <div class="pg-header">
+                        <h1 class="pg-header__title">Popup 2</h1>
                     </div>
                 </div>
             </div>
