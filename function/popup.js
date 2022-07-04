@@ -13,15 +13,8 @@
             popup.classList.add('open')
         }
 
-        function closePopup() {
-            const popups = document.querySelectorAll('[popup]')
-            popups.forEach((popup) => {
-                if (popup.classList.contains('open')) {
-                    popup.classList.remove('open')
-                } else {
-                    return
-                }
-            })
+        function closePopup(popup) {
+            popup.classList.remove('open')
         }
 
         openPopupBtns.forEach((btn) => {
@@ -32,8 +25,8 @@
         })
 
         closePopupBtns.forEach((btn) => {
-            btn.addEventListener('click', () => {
-                closePopup()
+            btn.addEventListener('click', function () {
+                closePopup(this.closest('.popup'))
             })
         })
     }

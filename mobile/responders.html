@@ -7,6 +7,9 @@
         <title>Responders</title>
         <link rel="stylesheet" href="../css/bootstrap-grid.css" />
         <link rel="stylesheet" href="../css/mobile.css" />
+
+        <!-- popup js -->
+        <script src="../function/popup.js" defer></script>
     </head>
 
     <body>
@@ -45,12 +48,89 @@
                     </li>
                 </ul>
 
-                <a href="#" class="text-black">Learn more</a>
+                <button class="open-popup-btn" popup-open data-popup-target="learn-more">Learn more</button>
             </div>
         </div>
 
         <div class="btn-container d-flex justify-content-center">
             <button class="btn save-btn">Next</button>
+        </div>
+
+        <!-- popup markup -->
+        <div class="popup" popup id="learn-more">
+            <div class="popup__backdrop"></div>
+
+            <div class="popup__container">
+                <button class="popup__close" popup-close aria-label="close popup">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <div class="popup__content">
+                    <div class="pg-header">
+                        <h1 class="pg-header__title">Frontline stays for Covid-19 responders</h1>
+                    </div>
+
+                    <div class="mini-article-container">
+                        <figure class="image">
+                            <img
+                                src="https://images.pexels.com/photos/2041627/pexels-photo-2041627.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                alt=""
+                                class="image__src"
+                            />
+                        </figure>
+                        <h2 class="title-2 title-2--black">What are Frontline stays?</h2>
+                        <p>
+                            Let’s go over some of the programme details so that you can feel confident welcoming COVID-19 responders into
+                            your place.
+                        </p>
+                    </div>
+
+                    <div class="mini-article-container">
+                        <figure class="image">
+                            <img
+                                src="https://images.pexels.com/photos/2041627/pexels-photo-2041627.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                alt=""
+                                class="image__src"
+                            />
+                        </figure>
+                        <h2 class="title-2 title-2--black">Who they are for?</h2>
+                        <p>
+                            Let’s go over some of the programme details so that you can feel confident welcoming COVID-19 responders into
+                            your place.
+                        </p>
+                    </div>
+
+                    <div class="mini-article-container">
+                        <figure class="image">
+                            <img
+                                src="https://images.pexels.com/photos/2041627/pexels-photo-2041627.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                alt=""
+                                class="image__src"
+                            />
+                        </figure>
+                        <h2 class="title-2 title-2--black">How to help</h2>
+                        <p>
+                            Let’s go over some of the programme details so that you can feel confident welcoming COVID-19 responders into
+                            your place.
+                        </p>
+                        <a href="#" class="text-black">Get started</a>
+                    </div>
+
+                    <div class="mini-article-container">
+                        <h2 class="title-2 title-2--black">Your questions answered</h2>
+                        <p>Find out more about the program and how to host COVID-19 responders.</p>
+                        <a href="#" class="text-black">Visit our resource center</a>
+                    </div>
+
+                    <div class="mini-article-container">
+                        <h2 class="title-2 title-2--black">Your questions answered</h2>
+                        <p>Find out more about the program and how to host COVID-19 responders.</p>
+                        <a href="#" class="text-black">Visit our resource center</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

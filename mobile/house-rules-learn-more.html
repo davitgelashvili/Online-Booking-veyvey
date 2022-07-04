@@ -7,6 +7,9 @@
         <title>How Guests Can Book</title>
         <link rel="stylesheet" href="../css/bootstrap-grid.css" />
         <link rel="stylesheet" href="../css/mobile.css" />
+
+        <!-- popup js -->
+        <script src="../function/popup.js" defer></script>
     </head>
 
     <body>
@@ -33,15 +36,48 @@
                 <p class="sp-mb-5">
                     You can say your listing isn’t suitable for infats or children if they are features that pose an unusual risk of farm to
                     children or damage to property. Guests will still be able to contact you for more details.
-                    <a href="#" class="link-inline-accent">Learn more</a>
+                    <button class="link-inline-accent" popup-open data-popup-target="house-rules">Learn more</button>
                 </p>
 
                 <h3 class="title-2 sp-mb-2">Pets</h3>
                 <p>
                     You can say your listing isn’t suitable for infats or children if they are features that pose an unusual risk of farm to
                     children or damage to property. Guests will still be able to contact you for more details.
-                    <a href="#" class="link-inline-accent">Learn more</a>
+                    <button class="link-inline-accent" popup-open data-popup-target="house-rules">Learn more</button>
                 </p>
+            </div>
+        </div>
+
+        <!-- House Rules popup markup -->
+        <div class="popup" popup id="house-rules">
+            <div class="popup__backdrop"></div>
+
+            <div class="popup__container">
+                <button class="popup__close" popup-close aria-label="close popup">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <div class="popup__content">
+                    <div class="pg-header">
+                        <h1 class="pg-header__title">Set your house rules</h1>
+                    </div>
+
+                    <h3 class="title-2 sp-mb-2">Infants and children</h3>
+                    <p class="sp-mb-5">
+                        You can say your listing isn’t suitable for infats or children if they are features that pose an unusual risk of
+                        farm to children or damage to property. Guests will still be able to contact you for more details.
+                        <button class="link-inline-accent" popup-open data-popup-target="house-rules">Learn more</button>
+                    </p>
+
+                    <h3 class="title-2 sp-mb-2">Pets</h3>
+                    <p>
+                        You can say your listing isn’t suitable for infats or children if they are features that pose an unusual risk of
+                        farm to children or damage to property. Guests will still be able to contact you for more details.
+                        <button class="link-inline-accent" popup-open data-popup-target="house-rules">Learn more</button>
+                    </p>
+                </div>
             </div>
         </div>
 

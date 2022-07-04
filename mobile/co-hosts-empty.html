@@ -7,6 +7,9 @@
         <title>Co-hosts (empty)</title>
         <link rel="stylesheet" href="../css/bootstrap-grid.css" />
         <link rel="stylesheet" href="../css/mobile.css" />
+
+        <!-- popup js -->
+        <script src="../function/popup.js" defer></script>
     </head>
 
     <body>
@@ -46,7 +49,7 @@
                     <img src="" alt="" class="image__src" />
                 </figure>
 
-                <button class="btn-invite">
+                <button class="btn-invite" popup-open data-popup-target="invite-friend">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M15 7H9V1C9 0.734784 8.89464 0.48043 8.70711 0.292893C8.51957 0.105357 8.26522 0 8 0C7.73478 0 7.48043 0.105357 7.29289 0.292893C7.10536 0.48043 7 0.734784 7 1V7H1C0.734784 7 0.48043 7.10536 0.292893 7.29289C0.105357 7.48043 0 7.73478 0 8C0 8.26522 0.105357 8.51957 0.292893 8.70711C0.48043 8.89464 0.734784 9 1 9H7V15C7 15.2652 7.10536 15.5196 7.29289 15.7071C7.48043 15.8946 7.73478 16 8 16C8.26522 16 8.51957 15.8946 8.70711 15.7071C8.89464 15.5196 9 15.2652 9 15V9H15C15.2652 9 15.5196 8.89464 15.7071 8.70711C15.8946 8.51957 16 8.26522 16 8C16 7.73478 15.8946 7.48043 15.7071 7.29289C15.5196 7.10536 15.2652 7 15 7Z"
@@ -55,6 +58,110 @@
                     </svg>
                     <span>Invite a friend</span>
                 </button>
+            </div>
+        </div>
+
+        <!-- Invite Friend popup markup -->
+        <div class="popup" popup id="invite-friend">
+            <div class="popup__backdrop"></div>
+
+            <div class="popup__container">
+                <button class="popup__close" popup-close aria-label="close popup">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <div class="popup__content">
+                    <div class="pg-header">
+                        <h1 class="pg-header__title">Invite a friend to host</h1>
+                    </div>
+
+                    <form action="#" class="add-cohost-form popup__form">
+                        <div class="add-cohost-form__email">
+                            <label for="email" class="label label--sm label--black"> Email address </label>
+                            <input type="email" name="email" id="email" />
+                        </div>
+                        <div class="add-cohost-form__select">
+                            <label for="" class="label label--sm label--black"> Choose role </label>
+                            <button type="button" class="add-cohost-form__select__btn" popup-open data-popup-target="select-role">
+                                Select
+                            </button>
+                        </div>
+
+                        <div class="agree-to-terms-checkbox sp-mt-4">
+                            <label for="agree-to-terms">
+                                <input type="checkbox" name="agree-to-terms" id="agree-to-terms" />
+                                <span>
+                                    By clicking the "Sign Up" button, you are creating a VeyVey account, and you agree to Veyvey’s Terms of
+                                    Use and Privacy Policy.
+                                </span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="popup__btn" disabled>Send invitation</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Choose Role popup markup -->
+        <div class="popup" popup id="select-role">
+            <div class="popup__backdrop"></div>
+
+            <div class="popup__container" style="--height: auto">
+                <button class="popup__close" popup-close aria-label="close popup">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <div class="popup__content">
+                    <div class="pg-header">
+                        <h1 class="pg-header__title">Edit permission</h1>
+                    </div>
+
+                    <form action="#" class="form">
+                        <div class="form__fields bordered">
+                            <div>
+                                <label for="admin" class="radio-btn">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <p class="radio-btn__label-text">Admin</p>
+                                            <p class="form-helper">User has all permissions</p>
+                                        </div>
+
+                                        <div>
+                                            <input type="radio" id="admin" name="role" checked />
+                                            <div class="radio-btn__bullet"></div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div>
+                                <label for="cohost" class="radio-btn">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <p class="radio-btn__label-text">Co-host</p>
+                                            <p class="form-helper">User has all permissions</p>
+                                        </div>
+
+                                        <div>
+                                            <input type="radio" id="cohost" name="role" />
+                                            <div class="radio-btn__bullet"></div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <button type="button" class="btn-danger">Delete this user</button>
+
+                        <div class="form-ctas" style="margin-top: 50px">
+                            <button>Cancel</button>
+                            <button class="form-ctas__default">Save</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
 

@@ -7,6 +7,9 @@
         <title>Listing status</title>
         <link rel="stylesheet" href="../css/bootstrap-grid.css" />
         <link rel="stylesheet" href="../css/mobile.css" />
+
+        <!-- popup js -->
+        <script src="../function/popup.js" defer></script>
     </head>
 
     <body>
@@ -34,30 +37,238 @@
                     - Guests can book your listing
                 </div>
 
-                <h2 class="mt-4 text-semi-bold text-4">Change status</h2>
+                <h2 class="mt-4 text-semi-bold text-4 sp-mb-4">Change status</h2>
 
                 <div class="bordered">
                     <div>
                         <div class="d-flex justify-content-between">
                             <h3 class="text-2">Snooze</h3>
-                            <button class="btn-inline-accent">Set</button>
+                            <button class="btn-inline-accent" popup-open data-popup-target="snooze">Set</button>
                         </div>
                         <p class="text-1 text-grey-1 mt-2">Remove your listing from search results from a set periods of time</p>
                     </div>
                     <div>
                         <div class="d-flex justify-content-between">
                             <h3 class="text-2">Unlist</h3>
-                            <button class="btn-inline-accent">Hide</button>
+                            <button class="btn-inline-accent" popup-open data-popup-target="unlist">Hide</button>
                         </div>
                         <p class="text-1 text-grey-1 mt-2">Remove your listing from search results</p>
                     </div>
                     <div>
                         <div class="d-flex justify-content-between">
                             <h3 class="text-2">Deactivate</h3>
-                            <button class="btn-inline-accent">Remove</button>
+                            <button class="btn-inline-accent" popup-open data-popup-target="deactivate">Remove</button>
                         </div>
                         <p class="text-1 text-grey-1 mt-2">Permanently remove your listing from VeyVey</p>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Snooze popup markup -->
+        <div class="popup" popup id="snooze">
+            <div class="popup__backdrop"></div>
+
+            <div class="popup__container">
+                <button class="popup__close" popup-close aria-label="close popup">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <div class="popup__content">
+                    <div class="pg-header">
+                        <h1 class="pg-header__title">Snoozing your listing</h1>
+                        <p class="pg-header__subtitle">
+                            Snooze your listing to removite it from search results and prevent guests from booking during the time perioud
+                            you set. While your listing is snoozed, you’ll still need to host the reservations that are already confirmed.
+                        </p>
+                    </div>
+
+                    <form action="#" class="popup__form">
+                        <div class="set-date sp-mb-5">
+                            <div class="add-cohost-form__select">
+                                <label for="" class="label label--sm label--black"> Start date </label>
+                                <button type="button" class="add-cohost-form__select__btn">Select date</button>
+                            </div>
+
+                            <div class="add-cohost-form__select">
+                                <label for="" class="label label--sm label--black"> End date </label>
+                                <button type="button" class="add-cohost-form__select__btn">Select date</button>
+                            </div>
+                        </div>
+
+                        <button type="button" class="popup__btn" popup-open data-popup-target="unlist-followup">Next</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Unlist popup markup -->
+        <div class="popup" popup id="unlist">
+            <div class="popup__backdrop"></div>
+
+            <div class="popup__container">
+                <button class="popup__close" popup-close aria-label="close popup">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <div class="popup__content">
+                    <div class="pg-header">
+                        <h1 class="pg-header__title">Let us know why you want to unlist</h1>
+                        <p class="pg-header__subtitle">
+                            A co-host can help host your space so you can get a little support. Invite someone you know and trust to help
+                            out.
+                        </p>
+                    </div>
+
+                    <form action="#" class="checkbox-form popup__form">
+                        <div class="checkbox-regular">
+                            <input type="checkbox" name="unlisting" id="not-earning" />
+                            <label for="not-earning">I’m not earning enough</label>
+                        </div>
+                        <div class="checkbox-regular">
+                            <input type="checkbox" name="unlisting" id="safety-concerns" />
+                            <label for="safety-concerns">Safety concerns</label>
+                        </div>
+                        <div class="checkbox-regular">
+                            <input type="checkbox" name="unlisting" id="negative-experience" />
+                            <label for="negative-experience">I had a negative experience</label>
+                        </div>
+                        <div class="checkbox-regular">
+                            <input type="checkbox" name="unlisting" id="other" />
+                            <label for="other">I have other reasons</label>
+                        </div>
+
+                        <button type="button" class="popup__btn" popup-open data-popup-target="unlist-followup">Next</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Unlist Followup popup markup -->
+        <div class="popup" popup id="unlist-followup">
+            <div class="popup__backdrop"></div>
+
+            <div class="popup__container">
+                <button class="popup__close" popup-close aria-label="close popup">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <div class="popup__content">
+                    <div class="pg-header">
+                        <h1 class="pg-header__title">Sorry to hear that</h1>
+                        <p class="pg-header__subtitle">
+                            Our support team may be able to help. Share your experience with us, adn we’ll do our best to assist you.
+                        </p>
+                    </div>
+
+                    <form action="#" class="popup__form">
+                        <div class="textarea-lg">
+                            <textarea
+                                name=""
+                                id=""
+                                placeholder="Please tell us more about why you’re deleting your listing (optional)"
+                            ></textarea>
+                        </div>
+
+                        <div class="form-ctas popup__cta-box">
+                            <button>Back</button>
+                            <button class="form-ctas__default">Next</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Deactivate popup markup -->
+        <div class="popup" popup id="deactivate">
+            <div class="popup__backdrop"></div>
+
+            <div class="popup__container">
+                <button class="popup__close" popup-close aria-label="close popup">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <div class="popup__content">
+                    <div class="pg-header">
+                        <h1 class="pg-header__title">Let us know why you want to unlist</h1>
+                        <p class="pg-header__subtitle">
+                            A co-host can help host your space so you can get a little support. Invite someone you know and trust to help
+                            out.
+                        </p>
+                    </div>
+
+                    <form action="#" class="checkbox-form popup__form">
+                        <div class="checkbox-regular">
+                            <input type="checkbox" name="deactivation" id="not-earning" />
+                            <label for="not-earning">I’m not earning enough</label>
+                        </div>
+                        <div class="checkbox-regular">
+                            <input type="checkbox" name="deactivation" id="safety-concerns" />
+                            <label for="safety-concerns">Safety concerns</label>
+                        </div>
+                        <div class="checkbox-regular">
+                            <input type="checkbox" name="deactivation" id="negative-experience" />
+                            <label for="negative-experience">I had a negative experience</label>
+                        </div>
+                        <div class="checkbox-regular">
+                            <input type="checkbox" name="deactivation" id="other" />
+                            <label for="other">I have other reasons</label>
+                        </div>
+
+                        <button type="button" class="popup__btn" popup-open data-popup-target="deactivate-followup">Next</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Deactivate Followup popup markup -->
+        <div class="popup" popup id="deactivate-followup">
+            <div class="popup__backdrop"></div>
+
+            <div class="popup__container">
+                <button class="popup__close" popup-close aria-label="close popup">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <div class="popup__content">
+                    <div class="pg-header">
+                        <h1 class="pg-header__title">Sorry to hear that</h1>
+                        <p class="pg-header__subtitle">
+                            Our support team may be able to help. Share your experience with us, adn we’ll do our best to assist you.
+                        </p>
+                    </div>
+
+                    <form action="#" class="popup__form">
+                        <div class="textarea-lg">
+                            <textarea
+                                name=""
+                                id=""
+                                placeholder="Please tell us more about why you’re deleting your listing (optional)"
+                            ></textarea>
+                        </div>
+
+                        <div class="agree-to-terms-checkbox">
+                            <label for="agree-to-terms">
+                                <input type="checkbox" name="agree-to-terms" id="agree-to-terms" />
+                                <span> I understand that clicking the button below will delete my listing </span>
+                            </label>
+                        </div>
+
+                        <div class="form-ctas popup__cta-box">
+                            <button>Back</button>
+                            <button class="form-ctas__default">Delete</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
