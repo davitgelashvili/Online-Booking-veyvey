@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Edit Photo - Crop</title>
+        <link rel="stylesheet" href="../css/bootstrap-grid.css" />
+        <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="../css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="../css/mobile.css" />
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <button class="text-btn text-btn--flex">
+                            <img src="../img/arrow-back.svg" alt="" />
+                            Back
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="page" style="margin-bottom: 80px">
+            <div class="upload">
+                <figure class="upload__cover">
+                    <img src="../img/cover/room.png" alt="" class="upload__cover--img" />
+                    <button class="upload__cover--edit">
+                        <img src="../img/pen-line.svg" alt="" />
+                    </button>
+                </figure>
+            </div>
+
+            <div class="photo-actions">
+                <button type="button">
+                    <svg width="40" height="24" viewBox="0 0 40 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="24" fill="#040921" />
+                        <line x1="11.5" y1="24" x2="11.5" y2="2.18556e-08" stroke="white" />
+                        <line x1="27.5" y1="24" x2="27.5" y2="2.18556e-08" stroke="white" />
+                        <line y1="7.5" x2="40" y2="7.5" stroke="white" />
+                        <line y1="15.5" x2="40" y2="15.5" stroke="white" />
+                    </svg>
+
+                    Landscape
+                </button>
+
+                <button type="button">
+                    <svg width="24" height="40" viewBox="0 0 24 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="23" y="1" width="38" height="22" transform="rotate(90 23 1)" stroke="#040921" stroke-width="2" />
+                    </svg>
+
+                    Portrait
+                </button>
+            </div>
+        </div>
+
+        <div class="fx-btn-box fx-btn-box--flex">
+            <button class="cta cta--secondary">Undo</button>
+            <button class="cta cta--primary">Apply</button>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../function/select/bootstrap-select.js"></script>
+        <script src="../function/select/bundle.min.js"></script>
+        <script src="../function/select/livefilter.min.js"></script>
+        <script src="../function/select/tabcomplete.min.js"></script>
+        <script src="../function/drag.js"></script>
+        <script src="../function/owl.carousel.min.js"></script>
+        <script src="../function/function.js"></script>
+        <script>
+            menuPhotoSlider()
+        </script>
+    </body>
+</html>

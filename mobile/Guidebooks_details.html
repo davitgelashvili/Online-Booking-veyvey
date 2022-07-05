@@ -16,7 +16,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-6">
-                        <button class="header--back text-btn text-btn--flex">
+                        <button class="text-btn text-btn--flex">
                             <img src="../img/arrow-back.svg" alt="" />
                             Back
                         </button>
@@ -444,6 +444,296 @@
             </div>
         </div>
 
+        <!-- Adding Details/Neighbourhood popup markup -->
+        <div class="popup" popup id="neighbourhood">
+            <div class="popup__backdrop"></div>
+
+            <div class="popup__container">
+                <button class="popup__close" popup-close aria-label="close popup">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <div class="popup__content">
+                    <button class="text-btn text-btn--flex">
+                        <img src="../img/arrow-back.svg" alt="" />
+                        Back
+                    </button>
+
+                    <div class="owl-carousel owl-theme neighbourhood-carousel">
+                        <div class="item">
+                            <figure>
+                                <img src="../img/cover/cover1.png" alt="" />
+                            </figure>
+                        </div>
+                        <div class="item">
+                            <figure>
+                                <img src="../img/cover/cover1.png" alt="" />
+                            </figure>
+                        </div>
+                        <div class="item">
+                            <figure>
+                                <img src="../img/cover/cover1.png" alt="" />
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="bordered">
+                        <div>
+                            <h4>Neighborhood</h4>
+                            <p>Vake</p>
+                        </div>
+
+                        <div>
+                            <h3>Why do you reccomend this place?</h3>
+                            <p>Write a tip that will help travellers get the most out of their visit.</p>
+                        </div>
+
+                        <div>
+                            <h3>Add your own images</h3>
+                            <p>Guests love it when you add your own photos to replace the defaults that VeyVey provides</p>
+
+                            <button class="bordered-btn bordered-btn--flex">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M23 19C23 19.5304 22.7893 20.0391 22.4142 20.4142C22.0391 20.7893 21.5304 21 21 21H3C2.46957 21 1.96086 20.7893 1.58579 20.4142C1.21071 20.0391 1 19.5304 1 19V8C1 7.46957 1.21071 6.96086 1.58579 6.58579C1.96086 6.21071 2.46957 6 3 6H7L9 3H15L17 6H21C21.5304 6 22.0391 6.21071 22.4142 6.58579C22.7893 6.96086 23 7.46957 23 8V19Z"
+                                        stroke="#040921"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M12 17C14.2091 17 16 15.2091 16 13C16 10.7909 14.2091 9 12 9C9.79086 9 8 10.7909 8 13C8 15.2091 9.79086 17 12 17Z"
+                                        stroke="#040921"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                                Add photo
+                            </button>
+                        </div>
+
+                        <div>
+                            <h3>Is public transport easy to access in this neighbourhood?</h3>
+
+                            <div class="flex-wrap">
+                                <button>yes</button>
+                                <button>no</button>
+                                <button>I’m not sure</button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3>Are you comfortable walking alone at night in this neighbourhood?</h3>
+
+                            <div class="flex-wrap">
+                                <button>yes</button>
+                                <button>no</button>
+                                <button>I’m not sure</button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3>Is this neighbourhood well lit at night?</h3>
+
+                            <div class="flex-wrap">
+                                <button>yes</button>
+                                <button>no</button>
+                                <button>I’m not sure</button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3>Is street parking easy in this neighbourhood?</h3>
+
+                            <div class="flex-wrap">
+                                <button>yes</button>
+                                <button>no</button>
+                                <button>I’m not sure</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fx-btn-box">
+                        <button class="cta cta--primary cta--block">Add to guidebook</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Adding Details/Places/Locality popup markup -->
+        <div class="popup open" popup id="places">
+            <div class="popup__backdrop"></div>
+
+            <div class="popup__container">
+                <button class="popup__close" popup-close aria-label="close popup">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <div class="popup__content">
+                    <button class="text-btn text-btn--flex">
+                        <img src="../img/arrow-back.svg" alt="" />
+                        Back
+                    </button>
+
+                    <div class="owl-carousel owl-theme places-carousel">
+                        <div class="item">
+                            <figure>
+                                <img src="../img/cover/cover1.png" alt="" />
+                            </figure>
+                        </div>
+                        <div class="item">
+                            <figure>
+                                <img src="../img/cover/cover1.png" alt="" />
+                            </figure>
+                        </div>
+                        <div class="item">
+                            <figure>
+                                <img src="../img/cover/cover1.png" alt="" />
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="bordered sp-mb-5">
+                        <div>
+                            <h4>Night club</h4>
+                            <p>Bassiani</p>
+                        </div>
+
+                        <div>
+                            <h3>Categorise this place (Required)</h3>
+                            <p>Organise your reccomendations by theme to help travellers find what they’re looking for.</p>
+
+                            <div>
+                                <label for="usd" class="radio-btn">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="radio-btn__label-text">My Favorite place in Tbilisi</p>
+                                        <div>
+                                            <input type="radio" id="usd" name="currency" />
+                                            <div class="radio-btn__bullet"></div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="usd" class="radio-btn">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="radio-btn__label-text">Food scene</p>
+                                    <div>
+                                        <input type="radio" id="usd" name="currency" />
+                                        <div class="radio-btn__bullet"></div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div>
+                            <label for="usd" class="radio-btn">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="radio-btn__label-text">Sightseeing</p>
+                                    <div>
+                                        <input type="radio" id="usd" name="currency" />
+                                        <div class="radio-btn__bullet"></div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+
+                        <button type="button" class="link-block-accent">Create a category</button>
+
+                        <div>
+                            <h3>Add your own images</h3>
+                            <p>Guests love it when you add your own photos to replace the defaults that VeyVey provides</p>
+
+                            <button class="bordered-btn bordered-btn--flex">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M23 19C23 19.5304 22.7893 20.0391 22.4142 20.4142C22.0391 20.7893 21.5304 21 21 21H3C2.46957 21 1.96086 20.7893 1.58579 20.4142C1.21071 20.0391 1 19.5304 1 19V8C1 7.46957 1.21071 6.96086 1.58579 6.58579C1.96086 6.21071 2.46957 6 3 6H7L9 3H15L17 6H21C21.5304 6 22.0391 6.21071 22.4142 6.58579C22.7893 6.96086 23 7.46957 23 8V19Z"
+                                        stroke="#040921"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M12 17C14.2091 17 16 15.2091 16 13C16 10.7909 14.2091 9 12 9C9.79086 9 8 10.7909 8 13C8 15.2091 9.79086 17 12 17Z"
+                                        stroke="#040921"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                                Add photo
+                            </button>
+                        </div>
+
+                        <div>
+                            <h3>What makes this place special?</h3>
+                            <p>Select any that apply.</p>
+
+                            <div class="flex-wrap">
+                                <button>Historic</button>
+                                <button>Great views</button>
+                                <button>Must visit</button>
+                                <button>Local favorite</button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3>Who would enjoy this place?</h3>
+                            <p>Select any that apply.</p>
+
+                            <div class="flex-wrap">
+                                <button>Families</button>
+                                <button>First-time visitors</button>
+                                <button>Solo travellers</button>
+                                <button>Groups</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fx-btn-box">
+                        <button class="cta cta--primary cta--block">Add to guidebook</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Adding Details/City Advice popup markup -->
+        <div class="popup open" popup id="city-advice">
+            <div class="popup__backdrop"></div>
+
+            <div class="popup__container">
+                <button class="popup__close" popup-close aria-label="close popup">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <div class="popup__content">
+                    <button class="text-btn text-btn--flex">
+                        <img src="../img/arrow-back.svg" alt="" />
+                        Back
+                    </button>
+
+                    <div class="pg-header">
+                        <h2 class="pg-header__title">What’s your advice about?</h2>
+                    </div>
+
+                    <div class="advices-list"></div>
+
+                    <div class="fx-btn-box">
+                        <button class="cta cta--primary cta--block">Add to guidebook</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <script src="../function/popup.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="../function/select/bootstrap-select.js"></script>
@@ -455,6 +745,11 @@
         <script src="../function/function.js"></script>
         <script>
             menuPhotoSlider()
+
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                items: 1,
+            })
         </script>
     </body>
 </html>

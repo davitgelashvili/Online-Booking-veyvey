@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Edit Photo - Brightness</title>
+        <link rel="stylesheet" href="../css/bootstrap-grid.css" />
+        <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="../css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="../css/mobile.css" />
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <button class="text-btn text-btn--flex">
+                            <img src="../img/arrow-back.svg" alt="" />
+                            Back
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="page" style="margin-bottom: 80px">
+            <div class="upload">
+                <figure class="upload__cover">
+                    <img src="../img/cover/room.png" alt="" class="upload__cover--img" />
+                    <button class="upload__cover--edit">
+                        <img src="../img/pen-line.svg" alt="" />
+                    </button>
+                </figure>
+            </div>
+
+            <div class="brightness">
+                <button type="button" aria-label="dark">
+                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19.6401 10.9997C19.4958 10.8803 19.3208 10.804 19.1352 10.7792C18.9496 10.7545 18.7607 10.7823 18.5901 10.8597C17.5327 11.3435 16.383 11.5926 15.2201 11.5897C13.069 11.5871 11.0061 10.7341 9.48127 9.21677C7.95644 7.69943 7.09333 5.64077 7.08014 3.48966C7.0847 2.8155 7.16861 2.14421 7.33014 1.48966C7.36441 1.3152 7.35156 1.13476 7.29289 0.966917C7.23423 0.799078 7.13187 0.649915 6.99638 0.534795C6.86088 0.419674 6.69714 0.342761 6.52203 0.311978C6.34692 0.281194 6.16677 0.297655 6.00014 0.359663C4.43246 1.06457 3.06971 2.15642 2.03989 3.53265C1.01008 4.90887 0.347015 6.52429 0.112984 8.22715C-0.121046 9.93001 0.081641 11.6644 0.702005 13.2674C1.32237 14.8704 2.34005 16.2894 3.65944 17.3911C4.97882 18.4928 6.55661 19.241 8.24458 19.5655C9.93255 19.8899 11.6753 19.7799 13.3091 19.2459C14.9429 18.7118 16.4141 17.7712 17.5845 16.5124C18.755 15.2536 19.5862 13.7179 20.0001 12.0497C20.0506 11.8587 20.0433 11.657 19.9792 11.4701C19.9151 11.2833 19.7971 11.1196 19.6401 10.9997ZM10.1401 17.6897C8.46189 17.6778 6.82834 17.1475 5.46313 16.1714C4.09792 15.1953 3.0678 13.821 2.51382 12.2368C1.95984 10.6526 1.90907 8.93585 2.36847 7.32167C2.82788 5.70749 3.77499 4.27476 5.08014 3.21966V3.48966C5.08278 6.17815 6.15195 8.75576 8.053 10.6568C9.95404 12.5578 12.5317 13.627 15.2201 13.6297C15.926 13.6323 16.6301 13.5585 17.3201 13.4097C16.63 14.7152 15.5966 15.8075 14.3313 16.5688C13.066 17.3301 11.6168 17.7315 10.1401 17.7297V17.6897Z"
+                            fill="#040921"
+                        />
+                    </svg>
+                </button>
+
+                <div class="brightness-slider">
+                    <div class="line"></div>
+                    <button type="button" aria-label="adjust brightness level">
+                        <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.70994 1.28994C7.61698 1.19621 7.50637 1.12182 7.38452 1.07105C7.26266 1.02028 7.13195 0.994141 6.99994 0.994141C6.86793 0.994141 6.73722 1.02028 6.61536 1.07105C6.4935 1.12182 6.3829 1.19621 6.28994 1.28994L1.28994 6.28994C1.19621 6.3829 1.12182 6.4935 1.07105 6.61536C1.02028 6.73722 0.994141 6.86793 0.994141 6.99994C0.994141 7.13195 1.02028 7.26266 1.07105 7.38452C1.12182 7.50637 1.19621 7.61698 1.28994 7.70994L6.28994 12.7099C6.3829 12.8037 6.4935 12.8781 6.61536 12.9288C6.73722 12.9796 6.86793 13.0057 6.99994 13.0057C7.13195 13.0057 7.26266 12.9796 7.38452 12.9288C7.50637 12.8781 7.61698 12.8037 7.70994 12.7099C7.80367 12.617 7.87806 12.5064 7.92883 12.3845C7.9796 12.2627 8.00574 12.132 8.00574 11.9999C8.00574 11.8679 7.9796 11.7372 7.92883 11.6154C7.87806 11.4935 7.80367 11.3829 7.70994 11.2899L3.40994 6.99994L7.70994 2.70994C7.80367 2.61698 7.87806 2.50638 7.92883 2.38452C7.9796 2.26266 8.00574 2.13195 8.00574 1.99994C8.00574 1.86793 7.9796 1.73722 7.92883 1.61536C7.87806 1.4935 7.80367 1.3829 7.70994 1.28994ZM18.7099 6.28994L13.7099 1.28994C13.6167 1.1967 13.506 1.12274 13.3842 1.07228C13.2624 1.02182 13.1318 0.995847 12.9999 0.995847C12.7336 0.995847 12.4782 1.10164 12.2899 1.28994C12.1967 1.38318 12.1227 1.49387 12.0723 1.61569C12.0218 1.73751 11.9958 1.86808 11.9958 1.99994C11.9958 2.26624 12.1016 2.52164 12.2899 2.70994L16.5899 6.99994L12.2899 11.2899C12.1962 11.3829 12.1218 11.4935 12.071 11.6154C12.0203 11.7372 11.9941 11.8679 11.9941 11.9999C11.9941 12.132 12.0203 12.2627 12.071 12.3845C12.1218 12.5064 12.1962 12.617 12.2899 12.7099C12.3829 12.8037 12.4935 12.8781 12.6154 12.9288C12.7372 12.9796 12.8679 13.0057 12.9999 13.0057C13.132 13.0057 13.2627 12.9796 13.3845 12.9288C13.5064 12.8781 13.617 12.8037 13.7099 12.7099L18.7099 7.70994C18.8037 7.61698 18.8781 7.50637 18.9288 7.38452C18.9796 7.26266 19.0057 7.13195 19.0057 6.99994C19.0057 6.86793 18.9796 6.73722 18.9288 6.61536C18.8781 6.4935 18.8037 6.3829 18.7099 6.28994Z"
+                                fill="#040921"
+                            />
+                        </svg>
+                    </button>
+                </div>
+
+                <button type="button" aria-label="bright">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 21V23" stroke="#040921" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M18.3604 18.3604L19.7804 19.7804"
+                            stroke="#040921"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        <path
+                            d="M4.21973 19.7804L5.63973 18.3604"
+                            stroke="#040921"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        <path d="M21 12H23" stroke="#040921" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M1 12H3" stroke="#040921" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17Z"
+                            stroke="#040921"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        <path
+                            d="M18.3604 5.63973L19.7804 4.21973"
+                            stroke="#040921"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        <path
+                            d="M4.21973 4.21973L5.63973 5.63973"
+                            stroke="#040921"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        <path d="M12 1V3" stroke="#040921" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="fx-btn-box fx-btn-box--flex">
+            <button class="cta cta--secondary">Undo</button>
+            <button class="cta cta--primary">Apply</button>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../function/select/bootstrap-select.js"></script>
+        <script src="../function/select/bundle.min.js"></script>
+        <script src="../function/select/livefilter.min.js"></script>
+        <script src="../function/select/tabcomplete.min.js"></script>
+        <script src="../function/drag.js"></script>
+        <script src="../function/owl.carousel.min.js"></script>
+        <script src="../function/function.js"></script>
+        <script>
+            menuPhotoSlider()
+        </script>
+    </body>
+</html>

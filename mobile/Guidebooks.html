@@ -1,111 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/bootstrap-grid.css" />
+        <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="../css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="../css/mobile.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/bootstrap-grid.css">
-    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="../css/owl.carousel.min.css">
-    <link rel="stylesheet" href="../css/mobile.css">
-</head>
-
-<body>
-    <header class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    <button class="header--back btn">
-                        <img src="../img/arrow-back.svg" alt="">
-                        Back
-                    </button>
-
-                </div>
-                <div class="col-6 d-inline-flex justify-content-end">
-                    <button class="btn">
-                        X
-                    </button>
-                </div>
-                <div class="col-12">
-                    <h1 class="d-flex align-items-center header__title">
-                        Your guidebooks
-                    </h1>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- <br /><br /> -->
-
-    <div class="page">
-        <div class="container">
-            <div class="guidebooks">
-                <p class="guidebooks__desc">Guidebooks are an easy way to share recommendations with guests. Take a few
-                    minutes to create one, it’s a great way to
-                    win over travellers - hosts with guidebooks tend to get more bookings.
-                    <span class="guidebooks__desc--read">Read our content policy later on</span>
-                </p>
-            </div>
-            <!-- აქედან არის გასარჩევი -->
-
-
-            <div class="create">
+    <body>
+        <header class="header">
+            <div class="container">
                 <div class="row">
                     <div class="col-6">
-                        <div class="create__item d-flex justify-content-between flex-column">
-                            <div class="d-flex justify-content-end">
-                                <button class="btn">
-                                    <img src="../img/frame.svg" alt="">
-                                </button>
-                            </div>
-                            <figure class="create__item--profile">
-                                <img src="../img/giorgi-profile.png" alt="">
-                            </figure>
-                            <h3 class="create__item--title">Giorgi’s guidebook</h3>
-                        </div>
+                        <button class="text-btn text-btn--flex">
+                            <img src="../img/arrow-back.svg" alt="" />
+                            Back
+                        </button>
                     </div>
-                    <div class="col-6">
-                        <div class="create__item1 d-flex flex-column align-items-center justify-content-center">
-                            <img src="../img/plus.svg" alt="">
-                            <p class="create__item1--text">Create new</p>
-                        </div>
+
+                    <div class="col-12">
+                        <h1 class="d-flex align-items-center header__title">Your guidebooks</h1>
                     </div>
-                    <div class="col-6">
-                        <div class="create__item d-flex justify-content-between flex-row-reverse align-items-start">
-                            <div class="d-flex justify-content-end">
-                                <button class="btn">
-                                    <img src="../img/guidebooks-censel.svg" alt="">
-                                </button>
+                </div>
+            </div>
+        </header>
+        <!-- <br /><br /> -->
+
+        <div class="page">
+            <div class="container">
+                <div class="guidebooks">
+                    <p class="guidebooks__desc">
+                        Guidebooks are an easy way to share recommendations with guests. Take a few minutes to create one, it’s a great way
+                        to win over travellers - hosts with guidebooks tend to get more bookings.
+                        <span class="guidebooks__desc--read">Read our content policy later on</span>
+                    </p>
+                </div>
+                <!-- აქედან არის გასარჩევი -->
+
+                <div class="create">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="create__item d-flex justify-content-between flex-column">
+                                <div class="d-flex justify-content-end">
+                                    <button class="btn">
+                                        <img src="../img/frame.svg" alt="" />
+                                    </button>
+                                </div>
+                                <figure class="create__item--profile">
+                                    <img src="../img/giorgi-profile.png" alt="" />
+                                </figure>
+                                <h3 class="create__item--title">Giorgi’s guidebook</h3>
                             </div>
-                           <ul class="create__item--menu d-flex flex-column justify-content-between">
-                               <a href="">Edit</a>
-                               <a href="">Share</a>
-                               <a href="">Preview</a>
-                               <a href="">Delete</a>
-                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <div class="create__item1 d-flex flex-column align-items-center justify-content-center">
+                                <img src="../img/plus.svg" alt="" />
+                                <p class="create__item1--text">Create new</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="create__item d-flex justify-content-between flex-row-reverse align-items-start">
+                                <div class="d-flex justify-content-end">
+                                    <button class="btn">
+                                        <img src="../img/guidebooks-censel.svg" alt="" />
+                                    </button>
+                                </div>
+                                <ul class="create__item--menu d-flex flex-column justify-content-between">
+                                    <a href="">Edit</a>
+                                    <a href="">Share</a>
+                                    <a href="">Preview</a>
+                                    <a href="">Delete</a>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
-    </div>
 
-
-
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="../function/select/bootstrap-select.js"></script>
-    <script src="../function/select/bundle.min.js"></script>
-    <script src="../function/select/livefilter.min.js"></script>
-    <script src="../function/select/tabcomplete.min.js"></script>
-    <script src="../function/drag.js"></script>
-    <script src="../function/owl.carousel.min.js"></script>
-    <script src="../function/function.js"></script>
-    <script>
-        menuPhotoSlider()
-    </script>
-</body>
-
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../function/select/bootstrap-select.js"></script>
+        <script src="../function/select/bundle.min.js"></script>
+        <script src="../function/select/livefilter.min.js"></script>
+        <script src="../function/select/tabcomplete.min.js"></script>
+        <script src="../function/drag.js"></script>
+        <script src="../function/owl.carousel.min.js"></script>
+        <script src="../function/function.js"></script>
+        <script>
+            menuPhotoSlider()
+        </script>
+    </body>
 </html>
