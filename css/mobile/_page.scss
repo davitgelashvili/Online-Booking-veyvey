@@ -1504,3 +1504,11 @@ img {
         right: 8px;
     }
 }
+
+.section {
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

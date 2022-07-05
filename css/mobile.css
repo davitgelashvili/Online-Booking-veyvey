@@ -1693,6 +1693,12 @@ img {
   right: 8px;
 }
 
+.section__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .popup {
   position: fixed;
   top: 0;
