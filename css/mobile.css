@@ -1386,6 +1386,8 @@ img {
   font-weight: 900;
   font-size: var(--fz, 12px);
   color: #583cf0;
+  background-color: transparent;
+  border: 0;
   text-decoration: none;
 }
 
@@ -1814,7 +1816,7 @@ img {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 16px 24px;
+  padding: 16px 12px;
   background-color: #fff;
   z-index: 100000;
 }
@@ -1845,6 +1847,9 @@ img {
 }
 .cta--primary:disabled {
   background: linear-gradient(246.12deg, rgba(157, 80, 255, 0.32) 11.55%, rgba(88, 60, 240, 0.32) 104.8%);
+}
+.cta--block {
+  width: 100%;
 }
 .cta--secondary {
   color: #040921;
@@ -1911,6 +1916,7 @@ img {
 .text-btn--flex {
   display: flex;
   align-items: center;
+  gap: var(--gap, 10px);
 }
 
 .fx-add-btn {

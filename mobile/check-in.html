@@ -1,84 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Create check-in instructions</title>
+        <link rel="stylesheet" href="../css/bootstrap-grid.css" />
+        <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="../css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="../css/mobile.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/bootstrap-grid.css">
-    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="../css/owl.carousel.min.css">
-    <link rel="stylesheet" href="../css/mobile.css">
-</head>
-
-<body>
-    <header class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    <button class="header--back btn">
-                        <img src="../img/arrow-back.svg" alt="">
-                        Back
-                    </button>
-
-                </div>
-                <div class="col-6 d-inline-flex justify-content-end">
-                    <button class="btn">
-                        X
-                    </button>
-                </div>
-                <div class="col-12">
-                    <h1 class="d-flex align-items-center header__title">
-                        Create check-in instructions
-                    </h1>
-                    <p class="header__desc">We’ll share them with confirmed guests before
-                    they arrive.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </header>
-    <br /><br />
-
-    <div class="page">
-        <div class="container">
-            <div class="check">
-                <div class="check__item border">
-                    <h1 class="check__item--title">Step 1</h1>
-                    <p class="check__item--desc">What should guests look for to know they’re in the right place?</p>
-                    <div class="check__item--btn d-flex">
-                        <button class="btn save-btn check__item--photo">Add a photo</button>
-                        <button class="btn check__item--note">Add a note</button>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <button class="text-btn text-btn--flex">
+                            <img src="../img/arrow-back.svg" alt="" />
+                            Back
+                        </button>
                     </div>
-                </div>
-                <div class="check__item border">
-                    <h1 class="check__item--title">Step 1</h1>
-                    <p class="check__item--desc">What should guests look for to know they’re in the right place?</p>
-                    <div class="check__item--btn d-flex">
-                        <button class="btn save-btn check__item--photo" disabled>Add a photo</button>
-                        <button class="btn check__item--note" disabled>Add a note</button>
+                    <div class="col-6 d-inline-flex justify-content-end">
+                        <button class="text-btn" popup-open data-popup-target="edit-check-in">
+                            <svg width="22" height="6" viewBox="0 0 22 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="3" cy="3" r="3" fill="#040921" />
+                                <circle cx="11" cy="3" r="3" fill="#040921" />
+                                <circle cx="19" cy="3" r="3" fill="#040921" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="col-12">
+                        <h1 class="d-flex align-items-center header__title">Create check-in instructions</h1>
+                        <p class="header__desc">We’ll share them with confirmed guests before they arrive.</p>
                     </div>
                 </div>
             </div>
+        </header>
+        <br /><br />
 
+        <div class="page">
+            <div class="container">
+                <div class="check">
+                    <div class="check__item border">
+                        <h1 class="check__item--title">Step 1</h1>
+                        <p class="check__item--desc">What should guests look for to know they’re in the right place?</p>
+                        <div class="check__item--btn d-flex">
+                            <button class="btn save-btn check__item--photo">Add a photo</button>
+                            <button class="btn check__item--note" popup-open data-popup-target="add-note">Add a note</button>
+                        </div>
+                    </div>
+                    <div class="check__item border">
+                        <h1 class="check__item--title">Step 1</h1>
+                        <p class="check__item--desc">What should guests look for to know they’re in the right place?</p>
+                        <div class="check__item--btn d-flex">
+                            <button class="btn save-btn check__item--photo" disabled>Add a photo</button>
+                            <button class="btn check__item--note" disabled>Add a note</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
 
+        <!-- Add Node popup markup -->
+        <div class="popup" popup id="add-note">
+            <div class="popup__backdrop"></div>
 
+            <div class="popup__container">
+                <button class="popup__close" popup-close aria-label="close popup">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
 
+                <div class="popup__content">
+                    <div class="pg-header">
+                        <h2 class="pg-header__title">Add Node</h2>
+                    </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="../function/select/bootstrap-select.js"></script>
-    <script src="../function/select/bundle.min.js"></script>
-    <script src="../function/select/livefilter.min.js"></script>
-    <script src="../function/select/tabcomplete.min.js"></script>
-    <script src="../function/drag.js"></script>
-    <script src="../function/owl.carousel.min.js"></script>
-    <script src="../function/function.js"></script>
-    <script>
-        menuPhotoSlider()
-    </script>
-</body>
+                    <form action="#" class="popup__form">
+                        <div class="textarea-lg">
+                            <textarea name="" id="" placeholder="Add a check-in step note "></textarea>
+                        </div>
 
+                        <div class="fx-btn-box">
+                            <button class="cta cta--primary cta--block">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Edit Check In popup markup -->
+        <div class="popup" popup id="edit-check-in">
+            <div class="popup__backdrop"></div>
+
+            <div class="popup__container">
+                <button class="popup__close" popup-close aria-label="close popup">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <div class="popup__content">
+                    <div class="pg-header">
+                        <h2 class="pg-header__title">Select a check in method</h2>
+                    </div>
+
+                    <form action="#">
+                        <section>
+                            <h2 class="title-2 title-2--semibold sp-mb-4">Self check-in</h2>
+                            <div class="bordered">
+                                <div>
+                                    <label for="moderate" class="radio-btn">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <p class="radio-btn__label-text">Smart lock</p>
+                                                <p class="form-helper">A lock guests open with a mobile app or keypad</p>
+                                            </div>
+                                            <div>
+                                                <input type="radio" id="moderate" name="cancellation" />
+                                                <div class="radio-btn__bullet"></div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label for="moderate" class="radio-btn">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <p class="radio-btn__label-text">Keypad</p>
+                                                <p class="form-helper">Guests can open the door with acode</p>
+                                            </div>
+                                            <div>
+                                                <input type="radio" id="moderate" name="cancellation" />
+                                                <div class="radio-btn__bullet"></div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label for="moderate" class="radio-btn">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <p class="radio-btn__label-text mb-2">Lockbox</p>
+                                                <button type="button" class="link-block-accent" popup-open data-popup-target="edit-details">
+                                                    Edit details
+                                                </button>
+                                            </div>
+                                            <div>
+                                                <input type="radio" id="moderate" name="cancellation" />
+                                                <div class="radio-btn__bullet"></div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label for="moderate" class="radio-btn">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <p class="radio-btn__label-text">Building staff</p>
+                                                <p class="form-helper">Someone is available 24 hours a day to let guests in</p>
+                                            </div>
+                                            <div>
+                                                <input type="radio" id="moderate" name="cancellation" />
+                                                <div class="radio-btn__bullet"></div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="sp-pb-5">
+                            <h2 class="title-2 title-2--semibold sp-mb-4">Self check-in</h2>
+
+                            <div class="bordered">
+                                <div>
+                                    <label for="moderate" class="radio-btn">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <p class="radio-btn__label-text">Keypad</p>
+                                                <p class="form-helper">Guests can open the door with acode</p>
+                                            </div>
+                                            <div>
+                                                <input type="radio" id="moderate" name="cancellation" />
+                                                <div class="radio-btn__bullet"></div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label for="moderate" class="radio-btn">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <p class="radio-btn__label-text">Keypad</p>
+                                                <p class="form-helper">Guests can open the door with acode</p>
+                                            </div>
+                                            <div>
+                                                <input type="radio" id="moderate" name="cancellation" />
+                                                <div class="radio-btn__bullet"></div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </section>
+
+                        <div class="fx-btn-box">
+                            <button class="cta cta--primary cta--block" disabled>Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Edit Details popup markup -->
+        <div class="popup" popup id="edit-details">
+            <div class="popup__backdrop"></div>
+
+            <div class="popup__container">
+                <button class="popup__close" popup-close aria-label="close popup">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <div class="popup__content">
+                    <div class="pg-header">
+                        <h2 class="pg-header__title">Add check-in details</h2>
+                        <p class="pg-header__subtitle">
+                            Check-in method: Lockbox only guests with a confirmed bookign will see these instructions during their stay.
+                        </p>
+                    </div>
+
+                    <form action="#" class="popup__form">
+                        <div class="textarea-lg">
+                            <textarea name="" id="" placeholder="E.g. Use the code 1234 to open the lockbox on the door."></textarea>
+                        </div>
+
+                        <div class="fx-btn-box">
+                            <button class="cta cta--primary cta--block" disabled>Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="../function/popup.js" defer></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../function/select/bootstrap-select.js"></script>
+        <script src="../function/select/bundle.min.js"></script>
+        <script src="../function/select/livefilter.min.js"></script>
+        <script src="../function/select/tabcomplete.min.js"></script>
+        <script src="../function/drag.js"></script>
+        <script src="../function/owl.carousel.min.js"></script>
+        <script src="../function/function.js"></script>
+        <script>
+            menuPhotoSlider()
+        </script>
+    </body>
 </html>
