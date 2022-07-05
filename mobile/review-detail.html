@@ -1,73 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/bootstrap-grid.css">
-    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="../css/owl.carousel.min.css">
-    <link rel="stylesheet" href="../css/mobile.css">
-</head>
-<body>
-    <header class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    <button class="header--back btn">
-                        <img src="../img/arrow-back.svg" alt="">
-                        Back
-                    </button>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/bootstrap-grid.css" />
+        <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="../css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="../css/mobile.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <button class="header--back btn">
+                            <img src="../img/arrow-back.svg" alt="" />
+                            Back
+                        </button>
+                    </div>
                 </div>
-                <div class="col-12">
-                    <h1 class="header__title">Add your outdoor extras</h1>
+            </div>
+        </header>
+
+        <div class="page mt-4 page-bottom-padding">
+            <div class="container">
+                <div class="pg-header">
+                    <h1 class="pg-header__title">Add your outdoor extras</h1>
+                    <p class="page__menu--desc">Description</p>
+                </div>
+
+                <div class="sidebar__container">
+                    <img src="../img/tree.svg" alt="" class="sidebar__container--icon" />
+                    <h1 class="sidebar__container--title">Showcase your outdoor extras</h1>
+                    <div class="sidebar__container--desc">Answer this question and 3 others that matter to guests.</div>
+                    <button class="sidebar__container--btn btn border" popup-open data-popup-target="add-details">Review details</button>
+                </div>
+
+                <div class="sidebar__container">
+                    <img src="../img/tree.svg" alt="" class="sidebar__container--icon" />
+                    <h1 class="sidebar__container--title">Showcase your outdoor extras</h1>
+                    <div class="sidebar__container--desc">Answer this question and 3 others that matter to guests.</div>
+                    <button class="sidebar__container--btn btn border">Review details</button>
                 </div>
             </div>
         </div>
-    </header>
 
-    <div class="page">
-        <div class="container">
-            <p class="page__menu--desc">Description</p>
-            
-            <div class="sidebar__container">
-                <img src="../img/tree.svg" alt="" class="sidebar__container--icon">
-                <h1 class="sidebar__container--title">Showcase your outdoor extras</h1>
-                <div class="sidebar__container--desc">
-                    Answer this question and 3 others that matter to guests.
-                </div>
-                <button class="sidebar__container--btn btn border">
-                    Review details
-                </button>
-            </div>
+        <!-- Add Details popup markup -->
+        <div class="popup" popup id="add-details">
+            <div class="popup__backdrop"></div>
 
-            <div class="sidebar__container">
-                <img src="../img/tree.svg" alt="" class="sidebar__container--icon">
-                <h1 class="sidebar__container--title">Showcase your outdoor extras</h1>
-                <div class="sidebar__container--desc">
-                    Answer this question and 3 others that matter to guests.
-                </div>
-                <button class="sidebar__container--btn btn border">
-                    Review details
+            <div class="popup__container">
+                <button class="popup__close" popup-close aria-label="close popup">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
                 </button>
+
+                <div class="popup__content">
+                    <div class="pg-header">
+                        <h1 class="pg-header__title">Outdoor amenities</h1>
+                    </div>
+
+                    <form action="#" class="popup__form">
+                        <div class="form__fields bordered">
+                            <div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p>BBQ grill</p>
+                                    <div class="btn-box">
+                                        <button class="btn-requirements btn-requirements--active" type="button">
+                                            <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.44141 4.00191L3.81541 6.37491L8.56141 1.62891"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                ></path>
+                                            </svg>
+                                        </button>
+
+                                        <button class="btn-requirements" type="button">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="10"
+                                                height="10"
+                                                fill="none"
+                                                viewBox="0 0 24 24"
+                                                stroke-width="2"
+                                            >
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p>Free pit</p>
+                                    <div class="btn-box">
+                                        <button class="btn-requirements btn-requirements--active" type="button">
+                                            <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.44141 4.00191L3.81541 6.37491L8.56141 1.62891"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                ></path>
+                                            </svg>
+                                        </button>
+
+                                        <button class="btn-requirements" type="button">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="10"
+                                                height="10"
+                                                fill="none"
+                                                viewBox="0 0 24 24"
+                                                stroke-width="2"
+                                            >
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p>Outdoor dining area</p>
+                                    <div class="btn-box">
+                                        <button class="btn-requirements btn-requirements--active" type="button">
+                                            <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.44141 4.00191L3.81541 6.37491L8.56141 1.62891"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                ></path>
+                                            </svg>
+                                        </button>
+
+                                        <button class="btn-requirements" type="button">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="10"
+                                                height="10"
+                                                fill="none"
+                                                viewBox="0 0 24 24"
+                                                stroke-width="2"
+                                            >
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p>Outdoor furniture</p>
+                                    <div class="btn-box">
+                                        <button class="btn-requirements btn-requirements--active" type="button">
+                                            <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.44141 4.00191L3.81541 6.37491L8.56141 1.62891"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                ></path>
+                                            </svg>
+                                        </button>
+
+                                        <button class="btn-requirements" type="button">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="10"
+                                                height="10"
+                                                fill="none"
+                                                viewBox="0 0 24 24"
+                                                stroke-width="2"
+                                            >
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p>Outdoor kitchen <span class="badge ms-2"><span>New</span></p>
+                                    <div class="btn-box">
+                                        <button class="btn-requirements" type="button">
+                                            <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.44141 4.00191L3.81541 6.37491L8.56141 1.62891"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                ></path>
+                                            </svg>
+                                        </button>
+
+                                        <button class="btn-requirements btn-requirements--active" type="button">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="10"
+                                                height="10"
+                                                fill="none"
+                                                viewBox="0 0 24 24"
+                                                stroke-width="2"
+                                            >
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-ctas popup__cta-box">
+                            <button>Cancel</button>
+                            <button class="form-ctas__default">Save</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-    
-    
         </div>
-    </div>
 
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="../function/select/bootstrap-select.js"></script>
-    <script src="../function/select/bundle.min.js"></script>
-    <script src="../function/select/livefilter.min.js"></script>
-    <script src="../function/select/tabcomplete.min.js"></script>
-    <script src="../function/drag.js"></script>
-    <script src="../function/owl.carousel.min.js"></script>
-    <script src="../function/function.js"></script>
-    <script>
-        menuPhotoSlider()
-    </script>
-</body>
+        <script src="../function/popup.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../function/select/bootstrap-select.js"></script>
+        <script src="../function/select/bundle.min.js"></script>
+        <script src="../function/select/livefilter.min.js"></script>
+        <script src="../function/select/tabcomplete.min.js"></script>
+        <script src="../function/drag.js"></script>
+        <script src="../function/owl.carousel.min.js"></script>
+        <script src="../function/function.js"></script>
+        <script>
+            menuPhotoSlider()
+        </script>
+    </body>
 </html>

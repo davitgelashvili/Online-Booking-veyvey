@@ -1,0 +1,134 @@
+// Fixed Button Container
+.fx-btn-box {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 16px 24px;
+    background-color: #fff;
+    z-index: 100000;
+
+    &--flex {
+        display: flex;
+        gap: 24px;
+
+        & > *:nth-child(1) {
+            width: 40%;
+        }
+        & > *:nth-child(2) {
+            width: 60%;
+        }
+    }
+}
+
+// Fixed Buttons
+.cta {
+    padding: 16px;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    background-color: transparent;
+    border: 0;
+
+    &--primary {
+        color: #fff;
+        background: linear-gradient(246.12deg, #9d50ff 11.55%, #583cf0 104.8%);
+        border-radius: 8px;
+
+        &:disabled {
+            background: linear-gradient(246.12deg, rgba(157, 80, 255, 0.32) 11.55%, rgba(88, 60, 240, 0.32) 104.8%);
+        }
+    }
+
+    &--secondary {
+        color: $mainColor;
+    }
+}
+
+.btn-square {
+    width: 32px;
+    height: 32px;
+    display: grid;
+    place-content: center;
+    background: #fff;
+    border: 1px solid rgba(4, 9, 33, 0.16);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-requirements {
+    @extend .btn-square;
+
+    svg {
+        stroke: #040921;
+    }
+
+    &--active {
+        background-color: #040921;
+
+        svg {
+            stroke: #ffffff;
+        }
+    }
+}
+
+.btn-box {
+    display: flex;
+    align-items: center;
+    gap: var(--gap, 16px);
+}
+
+.btn-more-info {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    svg {
+        display: block;
+    }
+}
+
+.open-popup-btn {
+    font-weight: 900;
+    font-size: 14px;
+    text-decoration: underline;
+    color: $mainColor;
+    background-color: transparent;
+    border: 0;
+}
+
+.text-btn {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 14px;
+    color: $mainColor;
+    text-transform: capitalize;
+    background-color: transparent;
+    border: 0;
+    text-decoration: none;
+
+    &--underlined {
+        text-decoration: underline;
+    }
+
+    &--flex {
+        display: flex;
+        align-items: center;
+    }
+}
+
+// Fixed Add (+) Button
+.fx-add-btn {
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+    display: grid;
+    place-content: center;
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(246.12deg, #9d50ff 11.55%, #583cf0 104.8%);
+    border: 0;
+    border-radius: 100%;
+    z-index: 1000;
+}

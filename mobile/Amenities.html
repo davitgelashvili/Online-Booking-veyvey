@@ -1,152 +1,725 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/bootstrap-grid.css" />
+        <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="../css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="../css/mobile.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/bootstrap-grid.css">
-    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="../css/owl.carousel.min.css">
-    <link rel="stylesheet" href="../css/mobile.css">
-</head>
-
-<body>
-    <header class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    <button class="header--back btn">
-                        <img src="../img/arrow-back.svg" alt="">
-                        Back
-                    </button>
-
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <button class="header--back btn">
+                            <img src="../img/arrow-back.svg" alt="" />
+                            Back
+                        </button>
+                    </div>
+                    <div class="col-6 d-inline-flex justify-content-end">
+                        <button class="btn btn-transparent" popup-open data-popup-target="filter-types">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.11693 15.9867H0.882812"
+                                    stroke="#040921"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M19.1184 15.9864C19.1184 17.577 17.829 18.8664 16.2384 18.8664C14.6478 18.8664 13.3584 17.577 13.3584 15.9864C13.3584 14.3947 14.6478 13.1064 16.2384 13.1064C17.829 13.1064 19.1184 14.3947 19.1184 15.9864Z"
+                                    stroke="#040921"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M11.8828 4.26206H19.1181"
+                                    stroke="#040921"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M0.882812 4.26184C0.882812 5.8536 2.17222 7.14184 3.76281 7.14184C5.3534 7.14184 6.64281 5.8536 6.64281 4.26184C6.64281 2.67125 5.3534 1.38184 3.76281 1.38184C2.17222 1.38184 0.882812 2.67125 0.882812 4.26184Z"
+                                    stroke="#040921"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
-                <div class="col-6 d-inline-flex justify-content-end">
-                    <button class="btn">
-                        X
-                    </button>
+            </div>
+        </header>
+
+        <div class="page mt-4 page-bottom-padding">
+            <div class="container">
+                <div class="pg-header">
+                    <h1 class="pg-header__title">Amenities</h1>
                 </div>
-                <div class="col-12">
-                    <h1 class="d-flex align-items-center header__title">
-                        Amenities
-                    </h1>
+
+                <form action="#" class="form">
+                    <h2 class="title-3 sp-mb-3">Popular</h2>
+                    <p class="header__desc sp-mb-4">These are the amenities that guests typically look for in a stay.</p>
+
+                    <div class="form__fields bordered">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <p>Essentials</p>
+                                    <p class="text-grey-1 text-1 mt-1">Towels, bed sheets, soap, toilet and pillows</p>
+                                </div>
+                                <div class="btn-box">
+                                    <button class="btn-requirements btn-requirements--active" type="button">
+                                        <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.44141 4.00191L3.81541 6.37491L8.56141 1.62891"
+                                                stroke-width="1.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            ></path>
+                                        </svg>
+                                    </button>
+
+                                    <button class="btn-requirements" type="button">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="10"
+                                            height="10"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="2"
+                                        >
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <p>Air conditioning</p>
+                                    <button class="open-popup-btn" type="button" popup-open data-popup-target="air-conditioning">
+                                        Add details
+                                    </button>
+                                </div>
+                                <div class="btn-box">
+                                    <button class="btn-requirements btn-requirements--active" type="button">
+                                        <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.44141 4.00191L3.81541 6.37491L8.56141 1.62891"
+                                                stroke-width="1.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            ></path>
+                                        </svg>
+                                    </button>
+
+                                    <button class="btn-requirements" type="button">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="10"
+                                            height="10"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="2"
+                                        >
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p>Cleaning products</p>
+                                <div class="btn-box">
+                                    <button class="btn-requirements btn-requirements--active" type="button">
+                                        <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.44141 4.00191L3.81541 6.37491L8.56141 1.62891"
+                                                stroke-width="1.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            ></path>
+                                        </svg>
+                                    </button>
+
+                                    <button class="btn-requirements" type="button">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="10"
+                                            height="10"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="2"
+                                        >
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <p>TV</p>
+                                    <button class="open-popup-btn" type="button" popup-open data-popup-target="tv-details">
+                                        Add details
+                                    </button>
+                                </div>
+                                <div class="btn-box">
+                                    <button class="btn-requirements btn-requirements--active" type="button">
+                                        <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.44141 4.00191L3.81541 6.37491L8.56141 1.62891"
+                                                stroke-width="1.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            ></path>
+                                        </svg>
+                                    </button>
+
+                                    <button class="btn-requirements" type="button">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="10"
+                                            height="10"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="2"
+                                        >
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <p>Washing machine</p>
+                                    <button class="open-popup-btn" type="button">Add details</button>
+                                </div>
+                                <div class="btn-box">
+                                    <button class="btn-requirements" type="button">
+                                        <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.44141 4.00191L3.81541 6.37491L8.56141 1.62891"
+                                                stroke-width="1.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            ></path>
+                                        </svg>
+                                    </button>
+
+                                    <button class="btn-requirements btn-requirements--active" type="button">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="10"
+                                            height="10"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="2"
+                                        >
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <p>Wifi</p>
+                                    <button type="button" class="open-popup-btn" popup-open data-popup-target="wifi-details">
+                                        Add details
+                                    </button>
+                                </div>
+                                <div class="btn-box">
+                                    <button class="btn-requirements" type="button">
+                                        <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.44141 4.00191L3.81541 6.37491L8.56141 1.62891"
+                                                stroke-width="1.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            ></path>
+                                        </svg>
+                                    </button>
+
+                                    <button class="btn-requirements btn-requirements--active" type="button">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="10"
+                                            height="10"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="2"
+                                        >
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 class="title-3 sp-mb-3 sp-mt-5">Bathroom</h2>
+
+                    <div class="form__fields bordered">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p>Bath</p>
+                                <div class="btn-box">
+                                    <button class="btn-requirements" type="button">
+                                        <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.44141 4.00191L3.81541 6.37491L8.56141 1.62891"
+                                                stroke-width="1.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            ></path>
+                                        </svg>
+                                    </button>
+
+                                    <button class="btn-requirements btn-requirements--active" type="button">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="10"
+                                            height="10"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="2"
+                                        >
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p>Bidet <span class="badge ms-2">New</span></p>
+                                <div class="btn-box">
+                                    <button class="btn-requirements" type="button">
+                                        <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.44141 4.00191L3.81541 6.37491L8.56141 1.62891"
+                                                stroke-width="1.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            ></path>
+                                        </svg>
+                                    </button>
+
+                                    <button class="btn-requirements btn-requirements--active" type="button">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="10"
+                                            height="10"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="2"
+                                        >
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p>Body soap</p>
+                                <div class="btn-box">
+                                    <button class="btn-requirements" type="button">
+                                        <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.44141 4.00191L3.81541 6.37491L8.56141 1.62891"
+                                                stroke-width="1.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            ></path>
+                                        </svg>
+                                    </button>
+
+                                    <button class="btn-requirements btn-requirements--active" type="button">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="10"
+                                            height="10"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="2"
+                                        >
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p>Cleaning products</p>
+                                <div class="btn-box">
+                                    <button class="btn-requirements" type="button">
+                                        <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.44141 4.00191L3.81541 6.37491L8.56141 1.62891"
+                                                stroke-width="1.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            ></path>
+                                        </svg>
+                                    </button>
+
+                                    <button class="btn-requirements btn-requirements--active" type="button">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="10"
+                                            height="10"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="2"
+                                        >
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p>Conditioner</p>
+                                <div class="btn-box">
+                                    <button class="btn-requirements" type="button">
+                                        <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.44141 4.00191L3.81541 6.37491L8.56141 1.62891"
+                                                stroke-width="1.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            ></path>
+                                        </svg>
+                                    </button>
+
+                                    <button class="btn-requirements btn-requirements--active" type="button">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="10"
+                                            height="10"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="2"
+                                        >
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p>Hair dryer</p>
+                                <div class="btn-box">
+                                    <button class="btn-requirements" type="button">
+                                        <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.44141 4.00191L3.81541 6.37491L8.56141 1.62891"
+                                                stroke-width="1.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            ></path>
+                                        </svg>
+                                    </button>
+
+                                    <button class="btn-requirements btn-requirements--active" type="button">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="10"
+                                            height="10"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="2"
+                                        >
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Amenity Types popup markup -->
+        <div class="popup" popup id="filter-types">
+            <div class="popup__backdrop"></div>
+
+            <div class="popup__container">
+                <button class="popup__close" popup-close aria-label="close popup">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <div class="popup__content">
+                    <div class="pg-header">
+                        <h1 class="pg-header__title">Amenity types</h1>
+                    </div>
+
+                    <form action="#" class="popup__form">
+                        <div class="checkbox-alt">
+                            <label for="popular">
+                                <span>Popular</span>
+                                <input type="checkbox" name="amenities" id="popular" />
+                            </label>
+                        </div>
+                        <div class="checkbox-alt">
+                            <label for="bathroom">
+                                <span>Bathroom</span>
+                                <input type="checkbox" name="amenities" id="bathroom" />
+                            </label>
+                        </div>
+                        <div class="checkbox-alt">
+                            <label for="bedroom-laundry">
+                                <span>Bedroom and laundry</span>
+                                <input type="checkbox" name="amenities" id="bedroom-laundry" />
+                            </label>
+                        </div>
+                        <div class="checkbox-alt">
+                            <label for="entertainment">
+                                <span>Entertainment</span>
+                                <input type="checkbox" name="amenities" id="entertainment" />
+                            </label>
+                        </div>
+                        <div class="checkbox-alt">
+                            <label for="family">
+                                <span>Family</span>
+                                <input type="checkbox" name="amenities" id="family" />
+                            </label>
+                        </div>
+                        <div class="checkbox-alt">
+                            <label for="heating-cooling">
+                                <span>Heating and cooling</span>
+                                <input type="checkbox" name="amenities" id="heating-cooling" />
+                            </label>
+                        </div>
+                        <div class="checkbox-alt">
+                            <label for="home-safety">
+                                <span>Home safety</span>
+                                <input type="checkbox" name="amenities" id="home-safety" />
+                            </label>
+                        </div>
+                        <div class="checkbox-alt">
+                            <label for="internet-office">
+                                <span>Internet and office</span>
+                                <input type="checkbox" name="amenities" id="internet-office" />
+                            </label>
+                        </div>
+                        <div class="checkbox-alt">
+                            <label for="kitchen-dining">
+                                <span>Kitchen and dining</span>
+                                <input type="checkbox" name="amenities" id="kitchen-dining" />
+                            </label>
+                        </div>
+                        <div class="checkbox-alt">
+                            <label for="location-features">
+                                <span>Location features</span>
+                                <input type="checkbox" name="amenities" id="location-features" />
+                            </label>
+                        </div>
+                        <div class="checkbox-alt">
+                            <label for="outdoor">
+                                <span>Outdoor</span>
+                                <input type="checkbox" name="amenities" id="outdoor" />
+                            </label>
+                        </div>
+                        <div class="checkbox-alt">
+                            <label for="parking-facilities">
+                                <span>Parking and facilities</span>
+                                <input type="checkbox" name="amenities" id="parking-facilities" />
+                            </label>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-    </header>
-    <br /><br />
 
-    <div class="page">
-        <div class="container">
-            <h1 class="page__head--title">Popular</h1>
-            <p class="header__desc">These are the amenities that guests typically look for in a stay.</p>
-            <div class="amenities">
-                <div class="amenities__item d-flex justify-content-between align-items-center">
-                    <div>
-                        <h1 class="amenities__item--title">Essentials</h1>
-                        <p class="amenities__item--desc">Towels, bed sheets, soap, toilet and pillows</p>
-                    </div>
-                    <div>
-                        <button class="btn amenities__item--btn">
-                            <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.44141 4.00191L3.81541 6.37491L8.56141 1.62891" stroke="#040921"
-                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
+        <!-- Air conditioning details popup markup -->
+        <div class="popup" popup id="air-conditioning">
+            <div class="popup__backdrop"></div>
 
-                        </button>
-                        <button class="btn amenities__item--btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 320 512">
-                                <path stroke="#040921"
-                                    d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z" />
-                            </svg>
-                        </button>
+            <div class="popup__container">
+                <button class="popup__close" popup-close aria-label="close popup">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <div class="popup__content">
+                    <div class="pg-header">
+                        <h1 class="pg-header__title">Air conditioning details</h1>
                     </div>
-                </div>
-                <div class="amenities__item d-flex justify-content-between align-items-center">
-                    <div>
-                        <h1 class="amenities__item--title">Air conditioning</h1>
-                        <p class="amenities__item--desc bold">Add details</p>
-                    </div>
-                    <div>
-                        <button class="btn amenities__item--btn">
-                            <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.44141 4.00191L3.81541 6.37491L8.56141 1.62891" stroke="#040921" stroke-width="1.5"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                
-                        </button>
-                        <button class="btn amenities__item--btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 320 512">
-                                <path stroke="#040921"
-                                    d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-                <div class="amenities__item d-flex justify-content-between align-items-center">
-                    <div>
-                        <h1 class="amenities__item--title">Cleaning products</h1>
-                    </div>
-                    <div>
-                        <button class="btn amenities__item--btn">
-                            <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.44141 4.00191L3.81541 6.37491L8.56141 1.62891" stroke="#040921" stroke-width="1.5"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                
-                        </button>
-                        <button class="btn amenities__item--btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 320 512">
-                                <path stroke="#040921"
-                                    d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <br /><br />
-            <h1 class="page__head--title">Bathroom</h1>
-            <div class="amenities">
-                <div class="amenities__item d-flex justify-content-between align-items-center">
-                    <div>
-                        <h1 class="amenities__item--title">Cleaning products <span>New</span></h1>
-                    </div>
-                    <div>
-                        <button class="btn amenities__item--btn">
-                            <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.44141 4.00191L3.81541 6.37491L8.56141 1.62891" stroke="#040921" stroke-width="1.5"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-            
-                        </button>
-                        <button class="btn amenities__item--btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 320 512">
-                                <path stroke="#040921"
-                                    d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z" />
-                            </svg>
-                        </button>
-                    </div>
+
+                    <h2 class="title-2 title-2--semibold sp-mb-5">Type</h2>
+
+                    <form action="#" class="popup__form">
+                        <div class="checkbox-alt">
+                            <label for="popular">
+                                <span>Popular</span>
+                                <input type="checkbox" name="amenities" id="popular" />
+                            </label>
+                        </div>
+                        <div class="checkbox-alt">
+                            <label for="central-air-conditioning">
+                                <span>Central air conditioning</span>
+                                <input type="checkbox" name="air-conditioning" id="central-air-conditioning" />
+                            </label>
+                        </div>
+                        <div class="checkbox-alt">
+                            <label for="portable-air-conditioning">
+                                <span>Portable air conditioning</span>
+                                <input type="checkbox" name="air-conditioning" id="portable-air-conditioning" />
+                            </label>
+                        </div>
+                        <div class="checkbox-alt">
+                            <label for="Window-AC-unit">
+                                <span>Window AC unit</span>
+                                <input type="checkbox" name="air-conditioning" id="Window-AC-unit" />
+                            </label>
+                        </div>
+
+                        <button class="popup__btn">Save</button>
+                    </form>
                 </div>
             </div>
         </div>
-    </div>
 
+        <!-- TV details popup markup -->
+        <div class="popup" popup id="tv-details">
+            <div class="popup__backdrop"></div>
 
+            <div class="popup__container">
+                <button class="popup__close" popup-close aria-label="close popup">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="../function/select/bootstrap-select.js"></script>
-    <script src="../function/select/bundle.min.js"></script>
-    <script src="../function/select/livefilter.min.js"></script>
-    <script src="../function/select/tabcomplete.min.js"></script>
-    <script src="../function/drag.js"></script>
-    <script src="../function/owl.carousel.min.js"></script>
-    <script src="../function/function.js"></script>
-    <script>
-        menuPhotoSlider()
-    </script>
-</body>
+                <div class="popup__content">
+                    <div class="pg-header">
+                        <h1 class="pg-header__title">TV details</h1>
+                    </div>
 
+                    <form action="#" class="popup__form">
+                        <h2 class="title-2 title-2--semibold sp-mb-5">Type</h2>
+
+                        <div class="radio-alt">
+                            <label for="hd">
+                                <span>HD</span>
+                                <input type="radio" name="tv" id="hd" />
+                            </label>
+                        </div>
+                        <div class="radio-alt">
+                            <label for="standard">
+                                <span>Standard</span>
+                                <input type="radio" name="tv" id="standard" />
+                            </label>
+                        </div>
+
+                        <h2 class="title-2 title-2--semibold sp-mb-5">Size</h2>
+
+                        <input type="text" name="tv-specs" id="tv-specs" placeholder="Enter your TV size details" />
+
+                        <h2 class="title-2 title-2--semibold sp-mb-5">Streaming services and devices</h2>
+                        <div class="checkbox-alt">
+                            <label for="popular">
+                                <span>Popular</span>
+                                <input type="checkbox" name="amenities" id="popular" />
+                            </label>
+                        </div>
+                        <div class="checkbox-alt">
+                            <label for="central-air-conditioning">
+                                <span>Central air conditioning</span>
+                                <input type="checkbox" name="air-conditioning" id="central-air-conditioning" />
+                            </label>
+                        </div>
+                        <div class="checkbox-alt">
+                            <label for="portable-air-conditioning">
+                                <span>Portable air conditioning</span>
+                                <input type="checkbox" name="air-conditioning" id="portable-air-conditioning" />
+                            </label>
+                        </div>
+                        <div class="checkbox-alt">
+                            <label for="Window-AC-unit">
+                                <span>Window AC unit</span>
+                                <input type="checkbox" name="air-conditioning" id="Window-AC-unit" />
+                            </label>
+                        </div>
+
+                        <button class="popup__btn">Save</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- WiFi details popup markup -->
+        <div class="popup" popup id="wifi-details">
+            <div class="popup__backdrop"></div>
+
+            <div class="popup__container">
+                <button class="popup__close" popup-close aria-label="close popup">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <div class="popup__content">
+                    <div class="pg-header">
+                        <h1 class="pg-header__title">Wifi details</h1>
+                    </div>
+
+                    <p class="page__menu--desc">
+                        Test your wifi speed, then save the resuls to your listing to let guests know what to expect. You’ll need to be at
+                        your place to run the test.
+                    </p>
+
+                    <button class="text-wifi-speed" type="button">Test wifi speed</button>
+
+                    <form action="#" class="popup__form">
+                        <input type="text" name="tv-specs" id="tv-specs" placeholder="Enter your TV size details" />
+
+                        <button class="popup__btn">Save</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="../function/popup.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../function/select/bootstrap-select.js"></script>
+        <script src="../function/select/bundle.min.js"></script>
+        <script src="../function/select/livefilter.min.js"></script>
+        <script src="../function/select/tabcomplete.min.js"></script>
+        <script src="../function/drag.js"></script>
+        <script src="../function/owl.carousel.min.js"></script>
+        <script src="../function/function.js"></script>
+        <script>
+            menuPhotoSlider()
+        </script>
+    </body>
 </html>

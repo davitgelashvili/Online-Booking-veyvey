@@ -1,0 +1,39 @@
+.agree-to-terms-checkbox {
+    margin-block: 24px;
+
+    label {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    input {
+        margin-top: 3px;
+        accent-color: #583cf0;
+    }
+
+    span {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0.1px;
+        color: $mainColor;
+    }
+}
+
+.search-places-form {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+
+    input[type='search'] {
+        width: 257px;
+        padding: 11px 16px;
+        border: 1px solid rgba(4, 9, 33, 0.16);
+        border-radius: 12px;
+
+        &::placeholder {
+            text-transform: capitalize;
+        }
+    }
+}

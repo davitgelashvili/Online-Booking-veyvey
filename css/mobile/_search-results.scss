@@ -1,0 +1,44 @@
+.search-results {
+    margin-block: 24px;
+}
+
+.results-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &__item {
+        display: flex;
+        gap: 11px;
+        align-items: flex-start;
+    }
+
+    svg {
+        display: block;
+        flex-shrink: 0;
+        height: 18px;
+        stroke: $mainColor;
+        stroke-width: 2px;
+        stroke-linecap: round;
+        fill: none;
+        stroke-linejoin: round;
+    }
+
+    h3 {
+        font-weight: 400;
+        font-size: 16px;
+        color: $mainColor;
+        line-height: 22px;
+    }
+}
+
+.no-results {
+    height: 50vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+}
