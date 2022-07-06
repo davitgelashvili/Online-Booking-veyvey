@@ -2225,6 +2225,18 @@ input[type=search] {
   color: #040921;
 }
 
+.textarea {
+  --height: 128px;
+  height: var(--height);
+  display: block;
+  width: 100%;
+}
+.textarea--border {
+  padding: 16px;
+  border: 1px solid rgba(4, 9, 33, 0.16);
+  border-radius: 12px;
+}
+
 .search-results {
   margin-block: 24px;
 }

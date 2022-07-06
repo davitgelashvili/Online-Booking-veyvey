@@ -76,3 +76,16 @@ input[type='search'] {
         }
     }
 }
+
+.textarea {
+    --height: 128px;
+    height: var(--height);
+    display: block;
+    width: 100%;
+
+    &--border {
+        padding: 16px;
+        border: 1px solid rgba(4, 9, 33, 0.16);
+        border-radius: 12px;
+    }
+}

@@ -7,9 +7,6 @@
         <title>How Guests Can Book</title>
         <link rel="stylesheet" href="../css/bootstrap-grid.css" />
         <link rel="stylesheet" href="../css/mobile.css" />
-
-        <!-- popup js -->
-        <script src="../function/popup.js" defer></script>
     </head>
 
     <body>
@@ -17,7 +14,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-6">
-                        <button class="header--back btn">
+                        <button class="text-btn text-btn--flex">
                             <img src="../img/arrow-back.svg" alt="" />
                             Back
                         </button>
@@ -201,15 +198,15 @@
             </div>
         </div>
 
-        <div class="btn-container d-flex justify-content-center">
-            <button class="btn save-btn" type="submit">Save</button>
+        <div class="fx-btn-box">
+            <button class="cta cta--primary cta--block">Save</button>
         </div>
 
         <!-- Add Details popup markup -->
         <div class="popup" popup id="add-details">
             <div class="popup__backdrop"></div>
 
-            <div class="popup__container" style="--height: auto">
+            <div class="popup__container page-bottom-padding" style="--height: auto">
                 <button class="popup__close" popup-close aria-label="close popup">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -222,16 +219,24 @@
                     </div>
 
                     <form action="#" class="popup__form">
-                        <div class="popup__form__field">
-                            <textarea name="additional-rules" id="additional-rules"></textarea>
+                        <div>
+                            <textarea
+                                class="textarea textarea--border"
+                                style="--height: 56px"
+                                name="additional-rules"
+                                id="additional-rules"
+                            ></textarea>
                         </div>
 
-                        <button class="popup__form__btn">Save</button>
+                        <div class="fx-btn-box">
+                            <button class="cta cta--primary cta--block">Save</button>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
 
+        <script src="../function/popup.js" defer></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="../function/select/bootstrap-select.js"></script>
         <script src="../function/select/bundle.min.js"></script>

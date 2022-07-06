@@ -18,7 +18,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-6">
-                        <button class="header--back btn">
+                        <button class="text-btn text-btn--flex">
                             <img src="../img/arrow-back.svg" alt="" />
                             Back
                         </button>
@@ -106,8 +106,8 @@
                         </div>
                     </div>
 
-                    <div class="btn-container d-flex justify-content-center">
-                        <button class="btn save-btn" type="submit">Host responders</button>
+                    <div class="fx-btn-box">
+                        <button class="cta cta--primary cta--block" type="submit">Host responders</button>
                     </div>
                 </form>
             </div>
@@ -197,6 +197,40 @@
                     <div class="divider"></div>
 
                     <button type="button" class="popup__btn popup__btn--invert sp-mb-4"><span>Give us your feedback</span></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add Details popup markup -->
+        <div class="popup open" popup id="pre-booking">
+            <div class="popup__backdrop"></div>
+
+            <div class="popup__container" style="--height: auto">
+                <button class="popup__close" popup-close aria-label="close popup">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <div class="popup__content page-bottom-padding">
+                    <div class="pg-header">
+                        <h1 class="pg-header__title">Pre-booking message</h1>
+                    </div>
+
+                    <form action="#" class="popup__form">
+                        <div>
+                            <textarea
+                                class="textarea textarea--border"
+                                name="additional-rules"
+                                id="additional-rules"
+                                placeholder="Say hello and share any details guests should know before they book."
+                            ></textarea>
+                        </div>
+
+                        <div class="fx-btn-box">
+                            <button class="cta cta--primary cta--block">Save</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
