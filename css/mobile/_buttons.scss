@@ -33,6 +33,26 @@
     background-color: transparent;
     border: 0;
 
+    &--invert {
+        background: linear-gradient(246.12deg, rgba(157, 80, 255, 0.16) 11.55%, rgba(88, 60, 240, 0.16) 104.8%);
+
+        span {
+            font-size: 16px;
+            font-weight: 900;
+            background: linear-gradient(246.12deg, #9d50ff 11.55%, #583cf0 104.8%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        &:disabled {
+            background: linear-gradient(246.12deg, rgba(157, 80, 255, 0.32) 11.55%, rgba(88, 60, 240, 0.32) 104.8%);
+            span {
+                color: #ffffff;
+            }
+        }
+    }
+
     &--primary {
         color: #fff;
         background: linear-gradient(246.12deg, #9d50ff 11.55%, #583cf0 104.8%);

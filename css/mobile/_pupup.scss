@@ -61,40 +61,6 @@
         flex-direction: column;
     }
 
-    &__btn {
-        margin-top: auto;
-        justify-self: flex-end;
-        width: 100%;
-        padding-block: 14px;
-        display: grid;
-        place-content: center;
-        background: linear-gradient(246.12deg, #9d50ff 11.55%, #583cf0 104.8%);
-        border: 0;
-        border-radius: 8px;
-        color: #ffffff;
-
-        &--invert {
-            background: linear-gradient(246.12deg, rgba(157, 80, 255, 0.16) 11.55%, rgba(88, 60, 240, 0.16) 104.8%);
-        }
-
-        &:disabled {
-            color: #ffffff;
-            background: linear-gradient(246.12deg, rgba(157, 80, 255, 0.32) 11.55%, rgba(88, 60, 240, 0.32) 104.8%);
-            span {
-                color: #ffffff;
-            }
-        }
-
-        span {
-            font-size: 16px;
-            font-weight: 900;
-            background: linear-gradient(246.12deg, #9d50ff 11.55%, #583cf0 104.8%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-    }
-
     &__form {
         display: flex;
         flex-direction: column;
@@ -113,23 +79,5 @@
                 border-radius: 12px;
             }
         }
-
-        &__btn {
-            margin-top: 24px;
-            padding-block: 16px;
-            width: 100%;
-            font-size: 16px;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-            color: #ffffff;
-            background: linear-gradient(246.12deg, #9d50ff 11.55%, #583cf0 104.8%);
-            border: 0;
-            border-radius: 8px;
-        }
-    }
-
-    &__cta-box {
-        margin-top: auto;
-        justify-self: flex-end;
     }
 }

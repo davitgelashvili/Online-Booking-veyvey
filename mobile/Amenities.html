@@ -603,7 +603,9 @@
                             </label>
                         </div>
 
-                        <button class="popup__btn">Save</button>
+                        <div class="fx-btn-box">
+                            <button class="cta cta--primary cta--block" type="submit">Save</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -620,58 +622,75 @@
                     </svg>
                 </button>
 
-                <div class="popup__content">
+                <div class="popup__content page-bottom-padding">
                     <div class="pg-header">
                         <h1 class="pg-header__title">TV details</h1>
                     </div>
 
                     <form action="#" class="popup__form">
-                        <h2 class="title-2 title-2--semibold sp-mb-5">Type</h2>
+                        <div class="bordered">
+                            <section>
+                                <h2 class="title-2 title-2--semibold sp-mb-5">Type</h2>
 
-                        <div class="radio-alt">
-                            <label for="hd">
-                                <span>HD</span>
-                                <input type="radio" name="tv" id="hd" />
-                            </label>
-                        </div>
-                        <div class="radio-alt">
-                            <label for="standard">
-                                <span>Standard</span>
-                                <input type="radio" name="tv" id="standard" />
-                            </label>
+                                <div class="radio-alt">
+                                    <label for="hd">
+                                        <span>HD</span>
+                                        <input type="radio" name="tv" id="hd" />
+                                    </label>
+                                </div>
+                                <div class="radio-alt">
+                                    <label for="standard">
+                                        <span>Standard</span>
+                                        <input type="radio" name="tv" id="standard" />
+                                    </label>
+                                </div>
+                            </section>
+
+                            <section>
+                                <h2 class="title-2 title-2--semibold sp-mb-5">Size</h2>
+
+                                <input
+                                    class="textarea textarea--border"
+                                    style="--height: 56px"
+                                    type="text"
+                                    name="tv-specs"
+                                    id="tv-specs"
+                                    placeholder="Enter your TV size details"
+                                />
+                            </section>
+
+                            <section>
+                                <h2 class="title-2 title-2--semibold sp-mb-5">Streaming services and devices</h2>
+                                <div class="checkbox-alt">
+                                    <label for="popular">
+                                        <span>Popular</span>
+                                        <input type="checkbox" name="amenities" id="popular" />
+                                    </label>
+                                </div>
+                                <div class="checkbox-alt">
+                                    <label for="central-air-conditioning">
+                                        <span>Central air conditioning</span>
+                                        <input type="checkbox" name="air-conditioning" id="central-air-conditioning" />
+                                    </label>
+                                </div>
+                                <div class="checkbox-alt">
+                                    <label for="portable-air-conditioning">
+                                        <span>Portable air conditioning</span>
+                                        <input type="checkbox" name="air-conditioning" id="portable-air-conditioning" />
+                                    </label>
+                                </div>
+                                <div class="checkbox-alt">
+                                    <label for="Window-AC-unit">
+                                        <span>Window AC unit</span>
+                                        <input type="checkbox" name="air-conditioning" id="Window-AC-unit" />
+                                    </label>
+                                </div>
+                            </section>
                         </div>
 
-                        <h2 class="title-2 title-2--semibold sp-mb-5">Size</h2>
-
-                        <input type="text" name="tv-specs" id="tv-specs" placeholder="Enter your TV size details" />
-
-                        <h2 class="title-2 title-2--semibold sp-mb-5">Streaming services and devices</h2>
-                        <div class="checkbox-alt">
-                            <label for="popular">
-                                <span>Popular</span>
-                                <input type="checkbox" name="amenities" id="popular" />
-                            </label>
+                        <div class="fx-btn-box">
+                            <button class="cta cta--primary cta--block" type="submit">Save</button>
                         </div>
-                        <div class="checkbox-alt">
-                            <label for="central-air-conditioning">
-                                <span>Central air conditioning</span>
-                                <input type="checkbox" name="air-conditioning" id="central-air-conditioning" />
-                            </label>
-                        </div>
-                        <div class="checkbox-alt">
-                            <label for="portable-air-conditioning">
-                                <span>Portable air conditioning</span>
-                                <input type="checkbox" name="air-conditioning" id="portable-air-conditioning" />
-                            </label>
-                        </div>
-                        <div class="checkbox-alt">
-                            <label for="Window-AC-unit">
-                                <span>Window AC unit</span>
-                                <input type="checkbox" name="air-conditioning" id="Window-AC-unit" />
-                            </label>
-                        </div>
-
-                        <button class="popup__btn">Save</button>
                     </form>
                 </div>
             </div>
@@ -693,18 +712,33 @@
                         <h1 class="pg-header__title">Wifi details</h1>
                     </div>
 
-                    <p class="page__menu--desc">
-                        Test your wifi speed, then save the resuls to your listing to let guests know what to expect. You’ll need to be at
-                        your place to run the test.
-                    </p>
+                    <div class="bordered">
+                        <section>
+                            <h2 class="title-2 title-2--semibold">Wifi speed</h2>
 
-                    <button class="text-wifi-speed" type="button">Test wifi speed</button>
+                            <p class="page__menu--desc">
+                                Test your wifi speed, then save the resuls to your listing to let guests know what to expect. You’ll need to
+                                be at your place to run the test.
+                            </p>
+                            <button class="bordered-btn mt-4" type="button">Test wifi speed</button>
+                        </section>
+                    </div>
+                    <section>
+                        <form action="#" class="popup__form">
+                            <input
+                                class="textarea textarea--border"
+                                style="--height: 56px"
+                                type="text"
+                                name="tv-specs"
+                                id="tv-specs"
+                                placeholder="Enter your TV size details"
+                            />
 
-                    <form action="#" class="popup__form">
-                        <input type="text" name="tv-specs" id="tv-specs" placeholder="Enter your TV size details" />
-
-                        <button class="popup__btn">Save</button>
-                    </form>
+                            <div class="fx-btn-box">
+                                <button class="cta cta--primary cta--block" type="submit">Save</button>
+                            </div>
+                        </form>
+                    </section>
                 </div>
             </div>
         </div>
