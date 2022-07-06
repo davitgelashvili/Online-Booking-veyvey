@@ -1,3 +1,8 @@
+input[type='radio'],
+input[type='checkbox'] {
+    accent-color: #583cf0;
+}
+
 .agree-to-terms-checkbox {
     margin-block: 24px;
 
@@ -34,6 +39,39 @@
 
         &::placeholder {
             text-transform: capitalize;
+        }
+    }
+}
+
+.counter-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    h3 {
+        font-weight: 400;
+        font-size: 16px;
+        color: $mainColor;
+        text-transform: capitalize;
+    }
+
+    p {
+        margin-top: 2px;
+        font-weight: 400;
+        font-size: 12px;
+        color: color($mainColor, 0.56);
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        span {
+            font-weight: 700;
+            font-size: 18px;
+            color: $mainColor;
         }
     }
 }

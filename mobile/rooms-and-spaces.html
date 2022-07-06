@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rooms and Spaces</title>
+        <link rel="stylesheet" href="../css/bootstrap-grid.css" />
+        <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="../css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="../css/mobile.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <button class="text-btn text-btn--flex">
+                            <img src="../img/arrow-back.svg" alt="" />
+                            Back
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <button popup-open data-popup-target="step-1">step 1</button>
+        <button popup-open data-popup-target="step-2">step 2</button>
+        <button popup-open data-popup-target="step-3">step 3</button>
+
+        <!-- Step 1 popup markup -->
+        <div class="popup" popup id="step-1">
+            <div class="popup__backdrop"></div>
+
+            <div class="popup__container">
+                <button class="popup__close" popup-close aria-label="close popup">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <div class="popup__content page-bottom-padding">
+                    <p class="step-counter">Step 1 of 3</p>
+                    <button type="button" class="link-block-accent link-block-accent--underline sp-mb-2">Save and exit.</button>
+                    <header class="pg-header">
+                        <h2 class="pg-header__title">Which areas can your guests use?</h2>
+                        <p class="pg-header__subtitle text-grey-1">
+                            Add all the rooms guests can use - event shared areas. Note that none of the present details for this new
+                            feature have been saved to your listing. We’ll only update it if you change any of these details yourself.
+                        </p>
+                    </header>
+
+                    <form action="#">
+                        <div class="bordered">
+                            <div class="counter-input">
+                                <div>
+                                    <h3>Bedroom</h3>
+                                </div>
+
+                                <div class="counter-input__actions">
+                                    <button type="button" class="btn-square" aria-label="increment">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15 7H9V1C9 0.734784 8.89464 0.48043 8.70711 0.292893C8.51957 0.105357 8.26522 0 8 0C7.73478 0 7.48043 0.105357 7.29289 0.292893C7.10536 0.48043 7 0.734784 7 1V7H1C0.734784 7 0.48043 7.10536 0.292893 7.29289C0.105357 7.48043 0 7.73478 0 8C0 8.26522 0.105357 8.51957 0.292893 8.70711C0.48043 8.89464 0.734784 9 1 9H7V15C7 15.2652 7.10536 15.5196 7.29289 15.7071C7.48043 15.8946 7.73478 16 8 16C8.26522 16 8.51957 15.8946 8.70711 15.7071C8.89464 15.5196 9 15.2652 9 15V9H15C15.2652 9 15.5196 8.89464 15.7071 8.70711C15.8946 8.51957 16 8.26522 16 8C16 7.73478 15.8946 7.48043 15.7071 7.29289C15.5196 7.10536 15.2652 7 15 7Z"
+                                                fill="#040921"
+                                            />
+                                        </svg>
+                                    </button>
+                                    <span>1</span>
+                                    <button type="button" class="btn-square" aria-label="decrement">
+                                        <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15 0H1C0.734784 0 0.48043 0.105357 0.292893 0.292893C0.105357 0.48043 0 0.734784 0 1C0 1.26522 0.105357 1.51957 0.292893 1.70711C0.48043 1.89464 0.734784 2 1 2H15C15.2652 2 15.5196 1.89464 15.7071 1.70711C15.8946 1.51957 16 1.26522 16 1C16 0.734784 15.8946 0.48043 15.7071 0.292893C15.5196 0.105357 15.2652 0 15 0Z"
+                                                fill="#040921"
+                                            />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="counter-input">
+                                <div>
+                                    <h3>Full bathroom</h3>
+                                    <p>Toilet, sink, shower and/or bath</p>
+                                </div>
+
+                                <div class="counter-input__actions">
+                                    <button type="button" class="btn-square" aria-label="increment">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15 7H9V1C9 0.734784 8.89464 0.48043 8.70711 0.292893C8.51957 0.105357 8.26522 0 8 0C7.73478 0 7.48043 0.105357 7.29289 0.292893C7.10536 0.48043 7 0.734784 7 1V7H1C0.734784 7 0.48043 7.10536 0.292893 7.29289C0.105357 7.48043 0 7.73478 0 8C0 8.26522 0.105357 8.51957 0.292893 8.70711C0.48043 8.89464 0.734784 9 1 9H7V15C7 15.2652 7.10536 15.5196 7.29289 15.7071C7.48043 15.8946 7.73478 16 8 16C8.26522 16 8.51957 15.8946 8.70711 15.7071C8.89464 15.5196 9 15.2652 9 15V9H15C15.2652 9 15.5196 8.89464 15.7071 8.70711C15.8946 8.51957 16 8.26522 16 8C16 7.73478 15.8946 7.48043 15.7071 7.29289C15.5196 7.10536 15.2652 7 15 7Z"
+                                                fill="#040921"
+                                            />
+                                        </svg>
+                                    </button>
+                                    <span>1</span>
+                                    <button type="button" class="btn-square" aria-label="decrement">
+                                        <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15 0H1C0.734784 0 0.48043 0.105357 0.292893 0.292893C0.105357 0.48043 0 0.734784 0 1C0 1.26522 0.105357 1.51957 0.292893 1.70711C0.48043 1.89464 0.734784 2 1 2H15C15.2652 2 15.5196 1.89464 15.7071 1.70711C15.8946 1.51957 16 1.26522 16 1C16 0.734784 15.8946 0.48043 15.7071 0.292893C15.5196 0.105357 15.2652 0 15 0Z"
+                                                fill="#040921"
+                                            />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="counter-input">
+                                <div>
+                                    <h3>Toilet with sink</h3>
+                                    <p>Toilet and sink</p>
+                                </div>
+
+                                <div class="counter-input__actions">
+                                    <button type="button" class="btn-square" aria-label="increment">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15 7H9V1C9 0.734784 8.89464 0.48043 8.70711 0.292893C8.51957 0.105357 8.26522 0 8 0C7.73478 0 7.48043 0.105357 7.29289 0.292893C7.10536 0.48043 7 0.734784 7 1V7H1C0.734784 7 0.48043 7.10536 0.292893 7.29289C0.105357 7.48043 0 7.73478 0 8C0 8.26522 0.105357 8.51957 0.292893 8.70711C0.48043 8.89464 0.734784 9 1 9H7V15C7 15.2652 7.10536 15.5196 7.29289 15.7071C7.48043 15.8946 7.73478 16 8 16C8.26522 16 8.51957 15.8946 8.70711 15.7071C8.89464 15.5196 9 15.2652 9 15V9H15C15.2652 9 15.5196 8.89464 15.7071 8.70711C15.8946 8.51957 16 8.26522 16 8C16 7.73478 15.8946 7.48043 15.7071 7.29289C15.5196 7.10536 15.2652 7 15 7Z"
+                                                fill="#040921"
+                                            />
+                                        </svg>
+                                    </button>
+                                    <span>1</span>
+                                    <button type="button" class="btn-square" aria-label="decrement">
+                                        <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15 0H1C0.734784 0 0.48043 0.105357 0.292893 0.292893C0.105357 0.48043 0 0.734784 0 1C0 1.26522 0.105357 1.51957 0.292893 1.70711C0.48043 1.89464 0.734784 2 1 2H15C15.2652 2 15.5196 1.89464 15.7071 1.70711C15.8946 1.51957 16 1.26522 16 1C16 0.734784 15.8946 0.48043 15.7071 0.292893C15.5196 0.105357 15.2652 0 15 0Z"
+                                                fill="#040921"
+                                            />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="counter-input">
+                                <div>
+                                    <h3>Full kitchen</h3>
+                                </div>
+
+                                <div class="counter-input__actions">
+                                    <button type="button" class="btn-square" aria-label="increment">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15 7H9V1C9 0.734784 8.89464 0.48043 8.70711 0.292893C8.51957 0.105357 8.26522 0 8 0C7.73478 0 7.48043 0.105357 7.29289 0.292893C7.10536 0.48043 7 0.734784 7 1V7H1C0.734784 7 0.48043 7.10536 0.292893 7.29289C0.105357 7.48043 0 7.73478 0 8C0 8.26522 0.105357 8.51957 0.292893 8.70711C0.48043 8.89464 0.734784 9 1 9H7V15C7 15.2652 7.10536 15.5196 7.29289 15.7071C7.48043 15.8946 7.73478 16 8 16C8.26522 16 8.51957 15.8946 8.70711 15.7071C8.89464 15.5196 9 15.2652 9 15V9H15C15.2652 9 15.5196 8.89464 15.7071 8.70711C15.8946 8.51957 16 8.26522 16 8C16 7.73478 15.8946 7.48043 15.7071 7.29289C15.5196 7.10536 15.2652 7 15 7Z"
+                                                fill="#040921"
+                                            />
+                                        </svg>
+                                    </button>
+                                    <span>1</span>
+                                    <button type="button" class="btn-square" aria-label="decrement">
+                                        <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15 0H1C0.734784 0 0.48043 0.105357 0.292893 0.292893C0.105357 0.48043 0 0.734784 0 1C0 1.26522 0.105357 1.51957 0.292893 1.70711C0.48043 1.89464 0.734784 2 1 2H15C15.2652 2 15.5196 1.89464 15.7071 1.70711C15.8946 1.51957 16 1.26522 16 1C16 0.734784 15.8946 0.48043 15.7071 0.292893C15.5196 0.105357 15.2652 0 15 0Z"
+                                                fill="#040921"
+                                            />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="counter-input">
+                                <div>
+                                    <h3>Kitchenette</h3>
+                                    <p>A compact space to prepare food</p>
+                                </div>
+
+                                <div class="counter-input__actions">
+                                    <button type="button" class="btn-square" aria-label="increment">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15 7H9V1C9 0.734784 8.89464 0.48043 8.70711 0.292893C8.51957 0.105357 8.26522 0 8 0C7.73478 0 7.48043 0.105357 7.29289 0.292893C7.10536 0.48043 7 0.734784 7 1V7H1C0.734784 7 0.48043 7.10536 0.292893 7.29289C0.105357 7.48043 0 7.73478 0 8C0 8.26522 0.105357 8.51957 0.292893 8.70711C0.48043 8.89464 0.734784 9 1 9H7V15C7 15.2652 7.10536 15.5196 7.29289 15.7071C7.48043 15.8946 7.73478 16 8 16C8.26522 16 8.51957 15.8946 8.70711 15.7071C8.89464 15.5196 9 15.2652 9 15V9H15C15.2652 9 15.5196 8.89464 15.7071 8.70711C15.8946 8.51957 16 8.26522 16 8C16 7.73478 15.8946 7.48043 15.7071 7.29289C15.5196 7.10536 15.2652 7 15 7Z"
+                                                fill="#040921"
+                                            />
+                                        </svg>
+                                    </button>
+                                    <span>1</span>
+                                    <button type="button" class="btn-square" aria-label="decrement">
+                                        <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15 0H1C0.734784 0 0.48043 0.105357 0.292893 0.292893C0.105357 0.48043 0 0.734784 0 1C0 1.26522 0.105357 1.51957 0.292893 1.70711C0.48043 1.89464 0.734784 2 1 2H15C15.2652 2 15.5196 1.89464 15.7071 1.70711C15.8946 1.51957 16 1.26522 16 1C16 0.734784 15.8946 0.48043 15.7071 0.292893C15.5196 0.105357 15.2652 0 15 0Z"
+                                                fill="#040921"
+                                            />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="counter-input">
+                                <div>
+                                    <h3>Living room</h3>
+                                </div>
+
+                                <div class="counter-input__actions">
+                                    <button type="button" class="btn-square" aria-label="increment">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15 7H9V1C9 0.734784 8.89464 0.48043 8.70711 0.292893C8.51957 0.105357 8.26522 0 8 0C7.73478 0 7.48043 0.105357 7.29289 0.292893C7.10536 0.48043 7 0.734784 7 1V7H1C0.734784 7 0.48043 7.10536 0.292893 7.29289C0.105357 7.48043 0 7.73478 0 8C0 8.26522 0.105357 8.51957 0.292893 8.70711C0.48043 8.89464 0.734784 9 1 9H7V15C7 15.2652 7.10536 15.5196 7.29289 15.7071C7.48043 15.8946 7.73478 16 8 16C8.26522 16 8.51957 15.8946 8.70711 15.7071C8.89464 15.5196 9 15.2652 9 15V9H15C15.2652 9 15.5196 8.89464 15.7071 8.70711C15.8946 8.51957 16 8.26522 16 8C16 7.73478 15.8946 7.48043 15.7071 7.29289C15.5196 7.10536 15.2652 7 15 7Z"
+                                                fill="#040921"
+                                            />
+                                        </svg>
+                                    </button>
+                                    <span>1</span>
+                                    <button type="button" class="btn-square" aria-label="decrement">
+                                        <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15 0H1C0.734784 0 0.48043 0.105357 0.292893 0.292893C0.105357 0.48043 0 0.734784 0 1C0 1.26522 0.105357 1.51957 0.292893 1.70711C0.48043 1.89464 0.734784 2 1 2H15C15.2652 2 15.5196 1.89464 15.7071 1.70711C15.8946 1.51957 16 1.26522 16 1C16 0.734784 15.8946 0.48043 15.7071 0.292893C15.5196 0.105357 15.2652 0 15 0Z"
+                                                fill="#040921"
+                                            />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fx-btn-box">
+                            <button class="cta cta--primary cta--right" disabled>Next</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 2 popup markup -->
+        <div class="popup" popup id="step-2">
+            <div class="popup__backdrop"></div>
+
+            <div class="popup__container">
+                <button class="popup__close" popup-close aria-label="close popup">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <div class="popup__content page-bottom-padding">
+                    <p class="step-counter">Step 2 of 3</p>
+                    <button type="button" class="link-block-accent link-block-accent--underline sp-mb-2">Save and exit.</button>
+                    <header class="pg-header">
+                        <h2 class="pg-header__title">Now double-check these details</h2>
+                        <p class="pg-header__subtitle text-grey-1">
+                            Help guests know what to expect when they book your place. Please add beds that you’ve previously listed in your
+                            common space to a specific room, like the living room or studio.
+                        </p>
+                    </header>
+
+                    <form action="#">
+                        <section class="section">
+                            <h3 class="section__title mb-3">Bedroom</h3>
+                            <div class="bordered">
+                                <div>
+                                    <label for="requireID" class="radio-btn">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p class="radio-btn__label-text">Shared with others</p>
+
+                                            <div class="switch">
+                                                <input type="checkbox" name="requireID" id="requireID" checked />
+                                                <span class="switch__slider"></span>
+                                            </div>
+                                        </div>
+                                        <p class="form-helper">Guests might share this space with me, other guests, or someone else</p>
+                                    </label>
+                                </div>
+                                <a href="" class="page__menu--link d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <p class="page__menu--title">Sleeping arrangements</p>
+                                        <p class="page__menu--desc">1 double bed</p>
+                                    </div>
+                                    <div class="text-btn text-btn--flex">
+                                        Edit
+                                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1 9L5 5L1 1"
+                                                stroke="#040921"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                    </div>
+                                </a>
+                                <div>
+                                    <label for="requireID" class="radio-btn">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p class="radio-btn__label-text">Shared with others</p>
+
+                                            <div class="switch">
+                                                <input type="checkbox" name="requireID" id="requireID" checked />
+                                                <span class="switch__slider"></span>
+                                            </div>
+                                        </div>
+                                        <p class="form-helper">Guests might share this space with me, other guests, or someone else</p>
+                                    </label>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="section mt-3">
+                            <h3 class="section__title mb-3">Full bathroom</h3>
+                            <div class="bordered">
+                                <div>
+                                    <label for="requireID" class="radio-btn">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p class="radio-btn__label-text">Shared with others</p>
+
+                                            <div class="switch">
+                                                <input type="checkbox" name="requireID" id="requireID" checked />
+                                                <span class="switch__slider"></span>
+                                            </div>
+                                        </div>
+                                        <p class="form-helper">Guests might share this space with me, other guests, or someone else</p>
+                                    </label>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="section mt-3">
+                            <h3 class="section__title mb-3">Full kitchen</h3>
+                            <div class="bordered">
+                                <div>
+                                    <label for="requireID" class="radio-btn">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p class="radio-btn__label-text">Shared with others</p>
+
+                                            <div class="switch">
+                                                <input type="checkbox" name="requireID" id="requireID" checked />
+                                                <span class="switch__slider"></span>
+                                            </div>
+                                        </div>
+                                        <p class="form-helper">Guests might share this space with me, other guests, or someone else</p>
+                                    </label>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="section mt-3">
+                            <h3 class="section__title mb-3">Living room</h3>
+                            <div class="bordered">
+                                <div>
+                                    <label for="requireID" class="radio-btn">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p class="radio-btn__label-text">Shared with others</p>
+
+                                            <div class="switch">
+                                                <input type="checkbox" name="requireID" id="requireID" checked />
+                                                <span class="switch__slider"></span>
+                                            </div>
+                                        </div>
+                                        <p class="form-helper">Guests might share this space with me, other guests, or someone else</p>
+                                    </label>
+                                </div>
+
+                                <a href="" class="page__menu--link d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <p class="page__menu--title">Sleeping arrangements</p>
+                                        <p class="page__menu--desc">1 double bed</p>
+                                    </div>
+                                    <div class="text-btn text-btn--flex">
+                                        Edit
+                                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1 9L5 5L1 1"
+                                                stroke="#040921"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                        </section>
+
+                        <section class="section mt-3">
+                            <h3 class="section__title sp-mb-2">For any of the spaces you’ve marked as shared, who else might be there?</h3>
+
+                            <p class="text-grey-1 sp-mb-4">Include anyone who might also use or be in the space</p>
+
+                            <div class="bordered">
+                                <div>
+                                    <label for="requireID" class="radio-btn">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p class="radio-btn__label-text">Me</p>
+
+                                            <div class="switch">
+                                                <input type="checkbox" name="requireID" id="requireID" checked />
+                                                <span class="switch__slider"></span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label for="requireID" class="radio-btn">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p class="radio-btn__label-text">Other guests</p>
+
+                                            <div class="switch">
+                                                <input type="checkbox" name="requireID" id="requireID" checked />
+                                                <span class="switch__slider"></span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label for="requireID" class="radio-btn">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p class="radio-btn__label-text">Friend, family or roomates</p>
+
+                                            <div class="switch">
+                                                <input type="checkbox" name="requireID" id="requireID" checked />
+                                                <span class="switch__slider"></span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </section>
+
+                        <div class="fx-btn-box fx-btn-box--flex">
+                            <button class="cta cta--secondary">back</button>
+                            <button class="cta cta--primary" disabled>Next</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 3 popup markup -->
+        <div class="popup" popup id="step-3">
+            <div class="popup__backdrop"></div>
+
+            <div class="popup__container">
+                <button class="popup__close" popup-close aria-label="close popup">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <div class="popup__content page-bottom-padding">
+                    <p class="step-counter">Step 3 of 3</p>
+                    <button type="button" class="link-block-accent link-block-accent--underline sp-mb-2">Save and exit.</button>
+                    <header class="pg-header">
+                        <h2 class="pg-header__title">Organise your photos</h2>
+                        <p class="pg-header__subtitle text-grey-1">Assign existing photos to each room</p>
+                    </header>
+
+                    <form action="#">
+                        <section class="section">
+                            <div class="bordered">
+                                <div>
+                                    <a href="" class="page__menu--link d-flex justify-content-between align-items-start">
+                                        <div>
+                                            <p class="page__menu--title">Bedroom</p>
+                                            <p class="page__menu--desc">No photos</p>
+                                        </div>
+                                        <div class="text-btn text-btn--flex">
+                                            Edit
+                                            <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1 9L5 5L1 1"
+                                                    stroke="#040921"
+                                                    stroke-width="2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="" class="page__menu--link d-flex justify-content-between align-items-start mb-3">
+                                        <div>
+                                            <p class="page__menu--title">Exterior</p>
+                                        </div>
+                                        <div class="text-btn text-btn--flex">
+                                            Edit
+                                            <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1 9L5 5L1 1"
+                                                    stroke="#040921"
+                                                    stroke-width="2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </div>
+                                    </a>
+
+                                    <div class="photos-grid">
+                                        <figure class="photo">
+                                            <img
+                                                src="https://images.pexels.com/photos/2451567/pexels-photo-2451567.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                                alt=""
+                                            />
+                                        </figure>
+                                        <figure class="photo">
+                                            <img
+                                                src="https://images.pexels.com/photos/5461569/pexels-photo-5461569.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                                alt=""
+                                            />
+                                        </figure>
+                                        <figure class="photo">
+                                            <img
+                                                src="https://images.pexels.com/photos/5461569/pexels-photo-5461569.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                                alt=""
+                                            />
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="" class="page__menu--link d-flex justify-content-between align-items-start mb-3">
+                                        <div>
+                                            <p class="page__menu--title">Full bathroom</p>
+                                        </div>
+                                        <div class="text-btn text-btn--flex">
+                                            Edit
+                                            <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1 9L5 5L1 1"
+                                                    stroke="#040921"
+                                                    stroke-width="2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </div>
+                                    </a>
+
+                                    <div class="photos-grid">
+                                        <figure class="photo">
+                                            <img
+                                                src="https://images.pexels.com/photos/2451567/pexels-photo-2451567.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                                alt=""
+                                            />
+                                        </figure>
+                                        <figure class="photo">
+                                            <img
+                                                src="https://images.pexels.com/photos/5461569/pexels-photo-5461569.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                                alt=""
+                                            />
+                                        </figure>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <a href="" class="page__menu--link d-flex justify-content-between align-items-start">
+                                        <div>
+                                            <p class="page__menu--title">Full kitchen</p>
+                                            <p class="page__menu--desc">No photos</p>
+                                        </div>
+                                        <div class="text-btn text-btn--flex">
+                                            Edit
+                                            <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1 9L5 5L1 1"
+                                                    stroke="#040921"
+                                                    stroke-width="2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div>
+                                    <a href="" class="page__menu--link d-flex justify-content-between align-items-start">
+                                        <div>
+                                            <p class="page__menu--title">Living room</p>
+                                            <p class="page__menu--desc">No photos</p>
+                                        </div>
+                                        <div class="text-btn text-btn--flex">
+                                            Edit
+                                            <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1 9L5 5L1 1"
+                                                    stroke="#040921"
+                                                    stroke-width="2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+
+                        <div class="fx-btn-box fx-btn-box--flex">
+                            <button class="cta cta--secondary">back</button>
+                            <button class="cta cta--primary" disabled>Next</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="../function/popup.js" defer></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../function/select/bootstrap-select.js"></script>
+        <script src="../function/select/bundle.min.js"></script>
+        <script src="../function/select/livefilter.min.js"></script>
+        <script src="../function/select/tabcomplete.min.js"></script>
+        <script src="../function/owl.carousel.min.js"></script>
+        <script src="../function/function.js"></script>
+        <script>
+            menuPhotoSlider()
+        </script>
+    </body>
+</html>

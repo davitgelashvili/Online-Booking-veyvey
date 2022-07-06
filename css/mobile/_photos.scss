@@ -1,0 +1,71 @@
+.cover-photo {
+    margin-top: 24px;
+    margin-bottom: 32px;
+    width: 100%;
+    height: 196px;
+    border-radius: 8px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.photos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 96px;
+    gap: 11px;
+}
+
+.photo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    label {
+        position: absolute;
+        inset: 0;
+    }
+
+    input {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 6px;
+        right: 6px;
+    }
+
+    &__reaarange-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        background-color: #fff;
+        width: 32px;
+        height: 32px;
+        border-radius: 100%;
+        display: grid;
+        place-content: center;
+
+        opacity: 0;
+        transition: opacity 150ms ease-in-out;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        svg {
+            display: block;
+        }
+    }
+}

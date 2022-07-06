@@ -541,7 +541,7 @@ img {
 }
 
 .page-bottom-padding {
-    padding-bottom: 110px;
+    padding-bottom: 110px !important;
 }
 
 // Utilities
@@ -1155,9 +1155,14 @@ img {
     font-weight: 900;
     font-size: var(--fz, 12px);
     color: #583cf0;
-    background-color: transparent;
-    border: 0;
+    text-align: left;
     text-decoration: none;
+    border: 0;
+    background-color: transparent;
+
+    &--underline {
+        text-decoration: underline;
+    }
 }
 
 .btn-danger {
@@ -1511,4 +1516,13 @@ img {
         justify-content: space-between;
         align-items: center;
     }
+}
+
+.step-counter {
+    margin-bottom: 32px;
+    font-weight: 700;
+    font-size: 16px;
+    color: $mainColor;
+    letter-spacing: -0.078px;
+    text-align: center;
 }

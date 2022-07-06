@@ -26,7 +26,7 @@
             </div>
         </header>
 
-        <div class="page mt-4">
+        <div class="page mt-4 page-bottom-padding">
             <div class="container">
                 <div class="pg-header">
                     <h1 class="pg-header__title">Photos</h1>
@@ -45,12 +45,15 @@
                     </header>
 
                     <figure class="cover-photo">
-                        <img src="../img/cover/cover1.png" alt="" />
+                        <img
+                            src="https://images.pexels.com/photos/2451567/pexels-photo-2451567.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt=""
+                        />
                     </figure>
                 </section>
 
                 <section class="section">
-                    <header class="section__header">
+                    <header class="section__header sp-mb-4">
                         <h2 class="section__title">Photo order</h2>
 
                         <a href="#" class="text-btn text-btn--flex">
@@ -61,15 +64,45 @@
                         </a>
                     </header>
 
-                    <div class="photos">
-                        <figure class="photo"><img src="../img/cover/cover1.png" alt="" /></figure>
-                        <figure class="photo"><img src="../img/cover/cover1.png" alt="" /></figure>
-                        <figure class="photo"><img src="../img/cover/cover1.png" alt="" /></figure>
-                        <figure class="photo"><img src="../img/cover/cover1.png" alt="" /></figure>
-                        <figure class="photo"><img src="../img/cover/cover1.png" alt="" /></figure>
-                        <figure class="photo"><img src="../img/cover/cover1.png" alt="" /></figure>
+                    <div class="photos-grid">
+                        <figure class="photo">
+                            <img
+                                src="https://images.pexels.com/photos/2451567/pexels-photo-2451567.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt=""
+                            />
+                        </figure>
+                        <figure class="photo">
+                            <img
+                                src="https://images.pexels.com/photos/5461569/pexels-photo-5461569.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt=""
+                            />
+                        </figure>
+                        <figure class="photo">
+                            <img
+                                src="https://images.pexels.com/photos/5461569/pexels-photo-5461569.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt=""
+                            />
+                        </figure>
+                        <figure class="photo">
+                            <img
+                                src="https://images.pexels.com/photos/2451567/pexels-photo-2451567.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt=""
+                            />
+                        </figure>
+                        <figure class="photo">
+                            <img
+                                src="https://images.pexels.com/photos/5461569/pexels-photo-5461569.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt=""
+                            />
+                        </figure>
+                        <figure class="photo">
+                            <img
+                                src="https://images.pexels.com/photos/2451567/pexels-photo-2451567.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt=""
+                            />
+                        </figure>
 
-                        <button type="button">
+                        <button type="button" class="add-photo-btn">
                             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M23.3332 11.3337C22.9795 11.3337 22.6404 11.4741 22.3904 11.7242C22.1403 11.9742 21.9998 12.3134 21.9998 12.667V17.1737L20.0265 15.2003C19.3297 14.5091 18.388 14.1212 17.4065 14.1212C16.425 14.1212 15.4833 14.5091 14.7865 15.2003L13.8532 16.147L10.5465 12.827C9.84973 12.1357 8.90801 11.7478 7.9265 11.7478C6.945 11.7478 6.00327 12.1357 5.3065 12.827L3.33317 14.8137V7.33366C3.33317 6.98004 3.47365 6.6409 3.7237 6.39085C3.97374 6.1408 4.31288 6.00033 4.6665 6.00033H15.3332C15.6868 6.00033 16.0259 5.85985 16.276 5.6098C16.526 5.35975 16.6665 5.02061 16.6665 4.66699C16.6665 4.31337 16.526 3.97423 16.276 3.72418C16.0259 3.47413 15.6868 3.33366 15.3332 3.33366H4.6665C3.60564 3.33366 2.58822 3.75509 1.83808 4.50523C1.08793 5.25538 0.666504 6.27279 0.666504 7.33366V23.627C0.670017 24.609 1.06167 25.5497 1.75604 26.2441C2.45042 26.9385 3.39118 27.3301 4.37317 27.3337H20.9598C21.3211 27.3308 21.6802 27.2769 22.0265 27.1737C22.7964 26.9577 23.4742 26.4951 23.9559 25.8569C24.4376 25.2186 24.6966 24.4399 24.6932 23.6403V12.667C24.6932 12.4896 24.6579 12.314 24.5892 12.1505C24.5205 11.987 24.4199 11.8388 24.2933 11.7146C24.1666 11.5905 24.0165 11.4928 23.8516 11.4274C23.6868 11.362 23.5105 11.3301 23.3332 11.3337ZM4.6665 24.667C4.31288 24.667 3.97374 24.5265 3.7237 24.2765C3.47365 24.0264 3.33317 23.6873 3.33317 23.3337V18.5737L7.1865 14.7203C7.38137 14.5265 7.64502 14.4178 7.91984 14.4178C8.19466 14.4178 8.4583 14.5265 8.65317 14.7203L18.6132 24.667H4.6665ZM21.9998 23.3337C21.9913 23.5918 21.9079 23.842 21.7598 24.0537L15.7332 18.0003L16.6798 17.067C16.7754 16.9694 16.8895 16.8919 17.0154 16.839C17.1414 16.7861 17.2766 16.7588 17.4132 16.7588C17.5498 16.7588 17.685 16.7861 17.8109 16.839C17.9368 16.8919 18.0509 16.9694 18.1465 17.067L21.9998 20.947V23.3337ZM25.9998 3.33366H24.6665V2.00033C24.6665 1.6467 24.526 1.30756 24.276 1.05752C24.0259 0.807468 23.6868 0.666992 23.3332 0.666992C22.9795 0.666992 22.6404 0.807468 22.3904 1.05752C22.1403 1.30756 21.9998 1.6467 21.9998 2.00033V3.33366H20.6665C20.3129 3.33366 19.9737 3.47413 19.7237 3.72418C19.4736 3.97423 19.3332 4.31337 19.3332 4.66699C19.3332 5.02061 19.4736 5.35975 19.7237 5.6098C19.9737 5.85985 20.3129 6.00033 20.6665 6.00033H21.9998V7.33366C21.9998 7.68728 22.1403 8.02642 22.3904 8.27647C22.6404 8.52652 22.9795 8.66699 23.3332 8.66699C23.6868 8.66699 24.0259 8.52652 24.276 8.27647C24.526 8.02642 24.6665 7.68728 24.6665 7.33366V6.00033H25.9998C26.3535 6.00033 26.6926 5.85985 26.9426 5.6098C27.1927 5.35975 27.3332 5.02061 27.3332 4.66699C27.3332 4.31337 27.1927 3.97423 26.9426 3.72418C26.6926 3.47413 26.3535 3.33366 25.9998 3.33366Z"

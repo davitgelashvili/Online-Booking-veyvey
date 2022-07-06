@@ -24,6 +24,7 @@
 
 // Fixed Buttons
 .cta {
+    display: block;
     padding: 16px;
     font-weight: 700;
     font-size: 16px;
@@ -36,6 +37,7 @@
         color: #fff;
         background: linear-gradient(246.12deg, #9d50ff 11.55%, #583cf0 104.8%);
         border-radius: 8px;
+        min-width: 50%;
 
         &:disabled {
             background: linear-gradient(246.12deg, rgba(157, 80, 255, 0.32) 11.55%, rgba(88, 60, 240, 0.32) 104.8%);
@@ -48,6 +50,10 @@
 
     &--secondary {
         color: $mainColor;
+    }
+
+    &--right {
+        margin-left: auto;
     }
 }
 
@@ -107,6 +113,7 @@
     font-family: inherit;
     font-weight: 700;
     font-size: 14px;
+    line-height: 1;
     color: $mainColor;
     text-transform: capitalize;
     background-color: transparent;
@@ -121,6 +128,10 @@
         display: flex;
         align-items: center;
         gap: var(--gap, 10px);
+    }
+
+    svg {
+        display: block;
     }
 }
 
@@ -137,4 +148,18 @@
     border: 0;
     border-radius: 100%;
     z-index: 1000;
+}
+
+.add-photo-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    color: $mainColor;
+    background-color: transparent;
+    border: 1px dashed rgba(4, 9, 33, 0.24);
+    border-radius: 8px;
 }
