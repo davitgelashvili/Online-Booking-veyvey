@@ -135,6 +135,39 @@
     }
 }
 
+.bordered-btn {
+    background-color: transparent;
+    border: 1px solid rgba(4, 9, 33, 0.16);
+    border-radius: 6px;
+    padding: 12px 16px;
+
+    font-weight: 700;
+    font-size: 16px;
+    color: $mainColor;
+
+    &--flex {
+        display: flex;
+        align-items: center;
+        gap: var(--gap, 10px);
+    }
+}
+
+.pill-btn {
+    padding: 10px;
+    min-width: 64px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $mainColor;
+    background-color: transparent;
+    border: 1px solid rgba(4, 9, 33, 0.16);
+    border-radius: 100vmax;
+
+    &--active {
+        border: 1px solid #040921;
+    }
+}
+
 // Fixed Add (+) Button
 .fx-add-btn {
     position: fixed;
