@@ -1712,6 +1712,83 @@ img {
   text-align: center;
 }
 
+.photo-actions {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.photo-actions button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 13px;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  color: #040921;
+  background-color: transparent;
+  border: 0;
+}
+.photo-actions button svg {
+  display: block;
+}
+
+.brightness {
+  margin-top: 50px;
+  padding-inline: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brightness button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 13px;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  color: #040921;
+  background-color: transparent;
+  border: 0;
+}
+.brightness button svg {
+  display: block;
+}
+.brightness__slider {
+  position: relative;
+}
+.brightness__slider .line {
+  position: relative;
+  width: 230px;
+  height: 3px;
+  background-color: rgba(4, 9, 33, 0.16);
+}
+.brightness__slider .line__filled {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 10%;
+  background-color: #34c488;
+}
+.brightness__slider button {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-content: center;
+  border-radius: 100%;
+  background: #ffffff;
+  border: 1px solid rgba(4, 9, 33, 0.16);
+}
+
 .popup {
   position: fixed;
   top: 0;
@@ -1976,7 +2053,8 @@ img {
 }
 
 input[type=radio],
-input[type=checkbox] {
+input[type=checkbox],
+input[type=search] {
   accent-color: #583cf0;
 }
 
