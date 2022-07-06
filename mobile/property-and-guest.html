@@ -28,53 +28,82 @@
             </div>
         </header>
 
-        <div class="page">
+        <div class="page mt-4">
             <div class="container">
                 <div>
-                    <label class="text d-block">
-                        <p class="text__title">Name</p>
-                        <input type="text" class="text__input" />
-                    </label>
-                    <label class="text d-block">
-                        <p class="text__title">Name</p>
-                        <input type="text" class="text__input" />
-                    </label>
+                    <div class="add-cohost-form__select">
+                        <label for="" class="label label--sm label--black"> Which is most like your place? </label>
+                        <button type="button" class="add-cohost-form__select__btn" popup-open data-popup-target="place-type">Select</button>
+                    </div>
+                    <div class="text-input mt-3">
+                        <label for="" class="label label--sm label--black"> Property type </label>
+                        <input type="text" name="" id="" placeholder="Rental unit" />
+                    </div>
+                    <div class="text-input mt-3">
+                        <label for="" class="label label--sm label--black"> Guests </label>
+                        <input type="text" name="" id="" placeholder="3" />
+                    </div>
                 </div>
 
-                <h1 class="header__title">Room type</h1>
-                <div>
-                    <label class="radiobox d-flex flex-column">
-                        <div class="d-flex justify-content-between">
-                            <p class="">Phone call</p>
-                            <div class="d-flex align-items-center">
-                                <input type="radio" class="radiobox__input" name="ragaca" />
-                                <div class="radiobox__input--checked d-block"></div>
+                <h2 class="title-4 title-bold mt-5 mb-3">Room type</h2>
+
+                <div class="bordered">
+                    <div>
+                        <label for="moderate" class="radio-btn">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <p class="radio-btn__label-text">Entire place</p>
+                                    <p class="form-helper">Guests might share this space with me, other guests, or someone else</p>
+                                </div>
+                                <div>
+                                    <input type="radio" id="moderate" name="cancellation" checked />
+                                    <div class="radio-btn__bullet"></div>
+                                </div>
                             </div>
-                        </div>
-                        <p class="radiobox__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </label>
-                    <label class="radiobox d-flex flex-column">
-                        <div class="d-flex justify-content-between">
-                            <p class="">Phone call</p>
-                            <div class="d-flex align-items-center">
-                                <input type="radio" class="radiobox__input" name="ragaca" />
-                                <div class="radiobox__input--checked d-block"></div>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="moderate" class="radio-btn">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <p class="radio-btn__label-text">Private room</p>
+                                    <p class="form-helper">Guests might share this space with me, other guests, or someone else</p>
+                                </div>
+                                <div>
+                                    <input type="radio" id="moderate" name="cancellation" />
+                                    <div class="radio-btn__bullet"></div>
+                                </div>
                             </div>
-                        </div>
-                        <p class="radiobox__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </label>
-                    <label class="radiobox d-flex flex-column">
-                        <div class="d-flex justify-content-between">
-                            <p class="">Phone call</p>
-                            <div class="d-flex align-items-center">
-                                <input type="radio" class="radiobox__input" name="ragaca" />
-                                <div class="radiobox__input--checked d-block"></div>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="moderate" class="radio-btn">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <p class="radio-btn__label-text">Shared room</p>
+                                    <p class="form-helper">Guests might share this space with me, other guests, or someone else</p>
+                                </div>
+                                <div>
+                                    <input type="radio" id="moderate" name="cancellation" />
+                                    <div class="radio-btn__bullet"></div>
+                                </div>
                             </div>
-                        </div>
-                        <p class="radiobox__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </label>
+                        </label>
+                    </div>
                 </div>
             </div>
+        </div>
+
+        <div id="place-type" class="choose-place">
+            <div class="choose-place__cta">
+                <button class="link-block-accent">Done</button>
+            </div>
+
+            <ul>
+                <li class="active"><span>Flat</span></li>
+                <li><span>House</span></li>
+                <li><span>Other</span></li>
+            </ul>
         </div>
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

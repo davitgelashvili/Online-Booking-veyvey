@@ -1692,3 +1692,96 @@ img {
     gap: 10px;
     flex-wrap: wrap;
 }
+
+.choose-place {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100000000;
+    background-color: #fff;
+
+    &__cta {
+        border-top: 1px solid rgba(4, 9, 33, 0.16);
+        border-bottom: 1px solid rgba(4, 9, 33, 0.16);
+
+        display: flex;
+        justify-content: flex-end;
+        padding: 8px 24px;
+    }
+
+    ul {
+        padding-block: 16px;
+
+        li {
+            padding-block: 4px;
+            border-radius: 4px;
+            text-align: center;
+            color: color($mainColor, 0.56);
+            margin-bottom: 10px;
+
+            span {
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            &.active {
+                background: linear-gradient(246.12deg, rgba(157, 80, 255, 0.16) 11.55%, rgba(88, 60, 240, 0.16) 104.8%);
+
+                span {
+                    background: linear-gradient(246.12deg, #9d50ff 11.55%, #583cf0 104.8%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                }
+            }
+        }
+    }
+}
+
+.stay-pricing-picker {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100000000;
+    background-color: #fff;
+
+    &__cta {
+        border-top: 1px solid rgba(4, 9, 33, 0.16);
+        border-bottom: 1px solid rgba(4, 9, 33, 0.16);
+
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 24px;
+    }
+
+    ul {
+        padding-block: 16px;
+
+        li {
+            padding-block: 4px;
+            border-radius: 4px;
+            text-align: center;
+
+            color: color($mainColor, 0.56);
+            margin-bottom: 10px;
+
+            span {
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            &.active {
+                background: linear-gradient(246.12deg, rgba(157, 80, 255, 0.16) 11.55%, rgba(88, 60, 240, 0.16) 104.8%);
+
+                span {
+                    background: linear-gradient(246.12deg, #9d50ff 11.55%, #583cf0 104.8%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                }
+            }
+        }
+    }
+}
