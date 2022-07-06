@@ -842,8 +842,20 @@ img {
   font-weight: 500;
 }
 
+.text-bold {
+  font-weight: 700;
+}
+
 .text-semi-bold {
   font-weight: 800;
+}
+
+.text-12 {
+  font-size: 12px;
+}
+
+.text-14 {
+  font-size: 14px;
 }
 
 .text-1 {
@@ -2061,6 +2073,12 @@ img {
   display: flex;
   align-items: center;
   gap: var(--gap, 10px);
+}
+.bordered-btn--accent span {
+  background: linear-gradient(246.12deg, #9d50ff 11.55%, #583cf0 104.8%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .pill-btn {
