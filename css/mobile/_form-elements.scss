@@ -4,6 +4,12 @@ input[type='search'] {
     accent-color: #583cf0;
 }
 
+input[type='text'],
+input[type='number'],
+textarea {
+    color: $mainColor !important;
+}
+
 .agree-to-terms-checkbox {
     margin-block: 24px;
 
