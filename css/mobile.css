@@ -2056,9 +2056,9 @@ img {
   overflow-y: auto;
 }
 .popup__close {
-  position: absolute;
+  position: sticky;
   top: 8px;
-  right: 8px;
+  left: calc(100% - 34px);
   width: 32px;
   height: 32px;
   display: grid;
@@ -2075,7 +2075,7 @@ img {
 }
 .popup__content {
   min-height: 100%;
-  padding-top: 56px;
+  padding-top: 30px;
   padding-bottom: 24px;
   padding-inline: var(--padding-inline, 24px);
   display: flex;
