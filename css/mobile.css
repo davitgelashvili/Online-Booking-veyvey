@@ -2043,6 +2043,10 @@ img {
   color: rgba(4, 9, 33, 0.7);
 }
 
+.list-style-none {
+  list-style-type: none;
+}
+
 .popup {
   position: fixed;
   top: 0;
