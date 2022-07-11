@@ -2412,6 +2412,16 @@ textarea {
   height: 18px;
 }
 
+.pseudo-input {
+  margin-top: 6px;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #040921;
+  border-bottom: 1px solid rgba(4, 9, 33, 0.16);
+}
+
 .search-results {
   margin-block: 24px;
 }
