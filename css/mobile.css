@@ -1904,9 +1904,10 @@ img {
 }
 .choose-place ul li span {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 400;
 }
 .choose-place ul li.active {
+  margin-bottom: 30px;
   background: linear-gradient(246.12deg, rgba(157, 80, 255, 0.16) 11.55%, rgba(88, 60, 240, 0.16) 104.8%);
 }
 .choose-place ul li.active span {
@@ -1914,6 +1915,9 @@ img {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  color: unset !important;
 }
 
 .stay-pricing-picker {
