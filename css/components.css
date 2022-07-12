@@ -2609,6 +2609,22 @@ body {
   font-weight: 700;
   line-height: 22px;
 }
+.profile__about {
+  margin-top: 38px;
+  margin-bottom: 49px;
+  line-height: 1.5;
+}
+.profile__about--list {
+  margin-top: 33px;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+.profile__about--list li {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
 .profile__menu--item {
   width: 100%;
   display: flex;
@@ -2624,7 +2640,7 @@ body {
   text-decoration: none;
 }
 .profile__menu--link:hover .profile__menu--icon, .profile__menu--link.active .profile__menu--icon {
-  background-color: #583CF0;
+  background-color: #583cf0;
 }
 .profile__menu--icon {
   width: 48px;
@@ -2637,16 +2653,28 @@ body {
   width: 100%;
   height: 100%;
 }
+.profile__verified {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 .profile__verified--item {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(4, 9, 33, 0.7);
+  font-weight: 400;
 }
 .profile__verified--link {
-  margin-bottom: 24px;
   color: rgba(4, 9, 33, 0.7);
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 24px;
   text-decoration: none;
+  display: flex;
+  gap: 9px;
+  color: #040921;
 }
 .profile__verified--icon {
   margin-right: 14px;
@@ -2674,13 +2702,16 @@ body {
   text-decoration: none;
 }
 .profile__soc--link:hover {
-  background-color: #583CF0;
+  background-color: #583cf0;
 }
 .profile__soc--icon {
   width: 36px;
   height: 36px;
   border-radius: 12px;
   background-color: #fff;
+}
+.profile__items {
+  margin-bottom: 32px;
 }
 .profile__items--item {
   position: relative;
@@ -2758,9 +2789,6 @@ body {
 .profile__reviews--body.active {
   display: block;
 }
-.profile__reviews--list {
-  margin-bottom: 48px;
-}
 .profile__reviews--profile {
   width: 70px;
   height: 70px;
@@ -2787,11 +2815,25 @@ body {
   line-height: 21px;
 }
 .profile__reviews--desc {
-  margin-top: 24px;
   color: #040921;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+}
+
+.from-host {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.from-host:not(:last-child) {
+  margin-bottom: 48px;
+}
+
+.with-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .trips__menu {
@@ -3207,6 +3249,10 @@ body {
   background-clip: text;
   text-fill-color: transparent;
   display: block;
+}
+
+.link-purple {
+  color: #583cf0;
 }
 
 /*# sourceMappingURL=components.css.map */
