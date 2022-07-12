@@ -7,7 +7,6 @@
         margin: 50px auto 50px auto;
 
         &--icon {
-
         }
 
         &--title {
@@ -33,7 +32,7 @@
             max-width: 1400px;
         }
     }
-    
+
     &__list {
         width: 100%;
         margin-top: 12px;
@@ -44,15 +43,15 @@
         &--checked {
             min-width: 32px;
             min-height: 32px;
-            background: #34C488;
+            background: #34c488;
             border-radius: 8px;
         }
-        
+
         &--item {
             // max-width: 230px;
-            height: 42px;
+            // height: 42px;
             padding: 0 25px;
-            border-right: 1px solid color($mainColor, .16);
+            border-right: 1px solid color($mainColor, 0.16);
             flex: 1;
             color: color($mainColor, 1);
             font-size: 14px;
@@ -61,6 +60,7 @@
             overflow: hidden;
             flex-basis: 127px;
             flex-grow: initial;
+            align-self: center;
 
             p {
                 // width: 100%;
@@ -71,37 +71,39 @@
             }
 
             &:nth-of-type(1) {
-                flex-grow:1;
-                flex-basis:180px;
+                flex-grow: 1;
+                flex-basis: 180px;
             }
             &:nth-of-type(2) {
-                flex-grow:1;
-                flex-basis:180px;
+                flex-grow: 1;
+                flex-basis: 180px;
             }
 
             &:nth-of-type(4) {
-                flex-grow:1;
-                flex-basis:127px;
+                flex-grow: 1;
+                flex-basis: 127px;
             }
 
             &:last-child {
                 border-right: 1px solid transparent;
+                flex-basis: unset;
             }
         }
     }
 
     &--head {
-        padding: 0 41px;
-        height: 20px;
+        // padding: 0 41px;
+        // height: 20px;
+        padding-inline: 25px;
         border: none;
-        color: color($mainColor, .5);
+        color: color($mainColor, 0.5);
         cursor: pointer;
         flex-grow: unset;
 
         &:hover {
             color: color($mainColor, 1);
         }
-        
+
         p {
             justify-content: flex-start;
             line-height: 14px;
@@ -109,14 +111,14 @@
     }
 
     &.smoll {
-        .reservation__list--item{
+        .reservation__list--item {
             flex-basis: 127px;
 
-            &:nth-of-type(1){
+            &:nth-of-type(1) {
                 flex-basis: 180px;
             }
 
-            &:nth-of-type(2){
+            &:nth-of-type(2) {
                 flex-basis: 180px;
             }
         }
@@ -128,7 +130,7 @@
         &.border {
             border: 1px solid transparent;
         }
-        
+
         .selectpicker {
             &__head {
                 padding: 11px 19px;
@@ -166,7 +168,7 @@
             padding: 25px;
             border-bottom: 1px solid rgba(4, 9, 33, 0.16);
         }
-        
+
         &--head-title {
             color: color($mainColor, 1);
             font-size: 16px;
@@ -261,7 +263,6 @@
             width: 50%;
             padding: 32px 0 32px 32px;
 
-
             &--cover {
                 min-width: 138px;
                 height: 100px;
@@ -283,7 +284,7 @@
 
             &--title {
                 margin-bottom: 12px;
-                color: color($mainColor, .48);
+                color: color($mainColor, 0.48);
                 font-size: 16px;
                 font-weight: 400;
             }
@@ -304,7 +305,7 @@
             display: none;
             margin-top: 32px;
             padding-left: 40px;
-            
+
             &--btn {
                 width: 32px;
                 height: 32px;
@@ -323,7 +324,7 @@
                 padding-top: 32px;
             }
 
-            &--list{
+            &--list {
                 padding: 24px 0;
                 border-bottom: 1px solid rgba(4, 9, 33, 0.08);
             }
@@ -335,7 +336,7 @@
             }
 
             &--info {
-                color: color($mainColor, .88);
+                color: color($mainColor, 0.88);
                 font-size: 18px;
                 font-weight: 400;
             }
@@ -394,7 +395,7 @@
 
                 span {
                     margin-bottom: 20px;
-                    
+
                     img {
                         margin-right: 15px;
                     }
@@ -411,7 +412,7 @@
                     font-weight: 400;
 
                     &.disabled {
-                        color: color($mainColor, .48);
+                        color: color($mainColor, 0.48);
                     }
                 }
             }
@@ -441,7 +442,7 @@
                 font-size: 14px;
                 font-weight: 700;
                 text-decoration: none;
-                opacity: .8;
+                opacity: 0.8;
 
                 &:hover {
                     opacity: 1;
@@ -469,7 +470,7 @@
             }
 
             &--desc {
-                color: color($mainColor, .5);
+                color: color($mainColor, 0.5);
                 font-size: 14px;
                 font-weight: 700;
             }
@@ -482,4 +483,3 @@
         }
     }
 }
-

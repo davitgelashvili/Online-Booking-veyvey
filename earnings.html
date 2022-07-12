@@ -1,495 +1,424 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/bootstrap-grid.css">
-    <link rel="stylesheet" href="./css/components.css">
-</head>
-<body>
-    <header class="header">
-        <div class="container d-flex align-items-center justify-content-between">
-            <div class="header__logo">
-                <img src="./img/logo.svg" alt="">
-            </div>
-            <ul class="header__menu d-flex">
-                <li class="header__menu--item d-flex">
-                    <a href="" class="header__menu--link d-flex align-items-center active">Home</a>
-                </li>
-                <li class="header__menu--item d-flex">
-                    <a href="" class="header__menu--link d-flex align-items-center">Performance</a>
-                </li>
-                <li class="header__menu--item d-flex">
-                    <a href="" class="header__menu--link d-flex align-items-center">Reservations</a>
-                </li>
-                <li class="header__menu--item d-flex">
-                    <a href="" class="header__menu--link d-flex align-items-center">Reviews</a>
-                </li>
-                <li class="header__menu--item d-flex">
-                    <a href="" class="header__menu--link d-flex align-items-center">Earnings</a>
-                </li>
-                <li class="header__menu--item d-flex">
-                    <a href="" class="header__menu--link d-flex align-items-center">Messages</a>
-                </li>
-            </ul>
-            <div class="header__buttons d-flex align-items-center">
-                <div class="select">
-                    <select id="standard-select">
-                        <option value="Option 1">Option 1</option>
-                        <option value="Option 2">Option 2</option>
-                        <option value="Option 3">Option 3</option>
-                        <option value="Option 4">Option 4</option>
-                        <option value="Option 5">Option 5</option>
-                        <option value="Option length">Option that has too long of a value to fit</option>
-                    </select>
-                    <span class="focus"></span>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/bootstrap-grid.css" />
+        <link rel="stylesheet" href="./css/components.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="container d-flex align-items-center justify-content-between">
+                <div class="header__logo">
+                    <img src="./img/logo.svg" alt="" />
                 </div>
-                <button class="header__buttons--profile btn">
-                    <img src="./img/profile.svg" alt="">
-                </button>
+                <ul class="header__menu d-flex">
+                    <li class="header__menu--item d-flex">
+                        <a href="" class="header__menu--link d-flex align-items-center active">Home</a>
+                    </li>
+                    <li class="header__menu--item d-flex">
+                        <a href="" class="header__menu--link d-flex align-items-center">Performance</a>
+                    </li>
+                    <li class="header__menu--item d-flex">
+                        <a href="" class="header__menu--link d-flex align-items-center">Reservations</a>
+                    </li>
+                    <li class="header__menu--item d-flex">
+                        <a href="" class="header__menu--link d-flex align-items-center">Reviews</a>
+                    </li>
+                    <li class="header__menu--item d-flex">
+                        <a href="" class="header__menu--link d-flex align-items-center">Earnings</a>
+                    </li>
+                    <li class="header__menu--item d-flex">
+                        <a href="" class="header__menu--link d-flex align-items-center">Messages</a>
+                    </li>
+                </ul>
+                <div class="header__buttons d-flex align-items-center">
+                    <div class="select">
+                        <select id="standard-select">
+                            <option value="Option 1">Option 1</option>
+                            <option value="Option 2">Option 2</option>
+                            <option value="Option 3">Option 3</option>
+                            <option value="Option 4">Option 4</option>
+                            <option value="Option 5">Option 5</option>
+                            <option value="Option length">Option that has too long of a value to fit</option>
+                        </select>
+                        <span class="focus"></span>
+                    </div>
+                    <button class="header__buttons--profile btn">
+                        <img src="./img/profile.svg" alt="" />
+                    </button>
+                </div>
             </div>
-        </div>
-    </header>
-    
-    <div class="reservation">
-        <div class="container">
-            <div class="page-head d-flex justify-content-between align-items-center">
-                <h1 class="page-head__title">
-                    Earnings
-                </h1>
-                <div class="d-flex">
-                    <div class="reservation__select border">
-                        <div id="bts-ex-5" class="selectpicker" data-clear="true" data-live="true">
-                            <div data-id="prov" class="dropdown-toggle selectpicker__head close open d-flex justify-content-between align-items-center">
-                                <div class="selectpicker__head--text align-items-center">
-                                    Search
-                                    <img src="./img/search.svg" alt="">
+        </header>
+
+        <div class="reservation">
+            <div class="container">
+                <div class="page-head d-flex justify-content-between align-items-center">
+                    <h1 class="page-head__title">Earnings</h1>
+                    <div class="d-flex">
+                        <div class="reservation__select border">
+                            <div id="bts-ex-5" class="selectpicker" data-clear="true" data-live="true">
+                                <div
+                                    data-id="prov"
+                                    class="dropdown-toggle selectpicker__head close open d-flex justify-content-between align-items-center"
+                                >
+                                    <div class="selectpicker__head--text align-items-center">
+                                        Search
+                                        <img src="./img/search.svg" alt="" />
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="selectpicker__body reservation__search">
-                                <div class="reservation__search--content">
-                                    <div class="reservation__search--head">
-                                        <h1 class="reservation__search--head-title">Search</h1>
-                                    </div>
-                                    <div class="reservation__search--btn-out">
-                                        <button class="reservation__search--btn btn border d-flex align-items-center">
-                                            <img src="img/arrow-down-light.svg" alt="">
-                                            Back to all listing
-                                        </button>
-                                    </div>
-                                    <div class="reservation__search--lists">
-                                        <h1 class="reservation__search--list-name">Hotels</h1>
-                                        <div class="reservation__search--list">
-                                            <div class="reservation__search--item d-flex align-items-center">
-                                                <figure class="home__item--cover reservation__search--item-cover">
-                                                    <img src="./img/cover/ersa23.png" alt="" class="home__item--img">
-                                                </figure>
-                                                <div class="home__item--texts reservation__search--item-texts">
-                                                    <h1 class="home__item--title">georgia Lorem ipsum dolor sit amet.</h1>
-                                                    <div class="home__item--id-rating  d-flex align-items-center">
-                                                        <div class="home__item--id">
-                                                            id: <span>546458</span>
-                                                        </div>
-                                                        <div class="home__item--rating d-flex align-items-center">
-                                                            <img src="./img/rating-star.svg" alt="">4.9 <span>(48)</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div><!-- item end -->
-                                            <div class="reservation__search--item d-flex align-items-center">
-                                                <figure class="home__item--cover reservation__search--item-cover">
-                                                    <img src="./img/cover/ersa23.png" alt="" class="home__item--img">
-                                                </figure>
-                                                <div class="home__item--texts reservation__search--item-texts">
-                                                    <h1 class="home__item--title">georgia Lorem ipsum dolor sit amet.</h1>
-                                                    <div class="home__item--id-rating  d-flex align-items-center">
-                                                        <div class="home__item--id">
-                                                            id: <span>546458</span>
-                                                        </div>
-                                                        <div class="home__item--rating d-flex align-items-center">
-                                                            <img src="./img/rating-star.svg" alt="">4.9 <span>(48)</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div><!-- item end -->
+                                <div class="selectpicker__body reservation__search">
+                                    <div class="reservation__search--content">
+                                        <div class="reservation__search--head">
+                                            <h1 class="reservation__search--head-title">Search</h1>
                                         </div>
-                                        <h1 class="reservation__search--list-name">Cars</h1>
-                                        <div class="reservation__search--list">
-                                            <div class="reservation__search--item d-flex align-items-center">
-                                                <figure class="home__item--cover reservation__search--item-cover">
-                                                    <img src="./img/cover/ersa23.png" alt="" class="home__item--img">
-                                                </figure>
-                                                <div class="home__item--texts reservation__search--item-texts">
-                                                    <h1 class="home__item--title">georgia Lorem ipsum dolor sit amet.</h1>
-                                                    <div class="home__item--id-rating  d-flex align-items-center">
-                                                        <div class="home__item--id">
-                                                            id: <span>546458</span>
-                                                        </div>
-                                                        <div class="home__item--rating d-flex align-items-center">
-                                                            <img src="./img/rating-star.svg" alt="">4.9 <span>(48)</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div><!-- item end -->
-                                            <div class="reservation__search--item d-flex align-items-center">
-                                                <figure class="home__item--cover reservation__search--item-cover">
-                                                    <img src="./img/cover/ersa23.png" alt="" class="home__item--img">
-                                                </figure>
-                                                <div class="home__item--texts reservation__search--item-texts">
-                                                    <h1 class="home__item--title">georgia Lorem ipsum dolor sit amet.</h1>
-                                                    <div class="home__item--id-rating  d-flex align-items-center">
-                                                        <div class="home__item--id">
-                                                            id: <span>546458</span>
-                                                        </div>
-                                                        <div class="home__item--rating d-flex align-items-center">
-                                                            <img src="./img/rating-star.svg" alt="">4.9 <span>(48)</span>
+                                        <div class="reservation__search--btn-out">
+                                            <button class="reservation__search--btn btn border d-flex align-items-center">
+                                                <img src="img/arrow-down-light.svg" alt="" />
+                                                Back to all listing
+                                            </button>
+                                        </div>
+                                        <div class="reservation__search--lists">
+                                            <h1 class="reservation__search--list-name">Hotels</h1>
+                                            <div class="reservation__search--list">
+                                                <div class="reservation__search--item d-flex align-items-center">
+                                                    <figure class="home__item--cover reservation__search--item-cover">
+                                                        <img src="./img/cover/ersa23.png" alt="" class="home__item--img" />
+                                                    </figure>
+                                                    <div class="home__item--texts reservation__search--item-texts">
+                                                        <h1 class="home__item--title">georgia Lorem ipsum dolor sit amet.</h1>
+                                                        <div class="home__item--id-rating d-flex align-items-center">
+                                                            <div class="home__item--id">id: <span>546458</span></div>
+                                                            <div class="home__item--rating d-flex align-items-center">
+                                                                <img src="./img/rating-star.svg" alt="" />4.9 <span>(48)</span>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div><!-- item end -->
+                                                <!-- item end -->
+                                                <div class="reservation__search--item d-flex align-items-center">
+                                                    <figure class="home__item--cover reservation__search--item-cover">
+                                                        <img src="./img/cover/ersa23.png" alt="" class="home__item--img" />
+                                                    </figure>
+                                                    <div class="home__item--texts reservation__search--item-texts">
+                                                        <h1 class="home__item--title">georgia Lorem ipsum dolor sit amet.</h1>
+                                                        <div class="home__item--id-rating d-flex align-items-center">
+                                                            <div class="home__item--id">id: <span>546458</span></div>
+                                                            <div class="home__item--rating d-flex align-items-center">
+                                                                <img src="./img/rating-star.svg" alt="" />4.9 <span>(48)</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- item end -->
+                                            </div>
+                                            <h1 class="reservation__search--list-name">Cars</h1>
+                                            <div class="reservation__search--list">
+                                                <div class="reservation__search--item d-flex align-items-center">
+                                                    <figure class="home__item--cover reservation__search--item-cover">
+                                                        <img src="./img/cover/ersa23.png" alt="" class="home__item--img" />
+                                                    </figure>
+                                                    <div class="home__item--texts reservation__search--item-texts">
+                                                        <h1 class="home__item--title">georgia Lorem ipsum dolor sit amet.</h1>
+                                                        <div class="home__item--id-rating d-flex align-items-center">
+                                                            <div class="home__item--id">id: <span>546458</span></div>
+                                                            <div class="home__item--rating d-flex align-items-center">
+                                                                <img src="./img/rating-star.svg" alt="" />4.9 <span>(48)</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- item end -->
+                                                <div class="reservation__search--item d-flex align-items-center">
+                                                    <figure class="home__item--cover reservation__search--item-cover">
+                                                        <img src="./img/cover/ersa23.png" alt="" class="home__item--img" />
+                                                    </figure>
+                                                    <div class="home__item--texts reservation__search--item-texts">
+                                                        <h1 class="home__item--title">georgia Lorem ipsum dolor sit amet.</h1>
+                                                        <div class="home__item--id-rating d-flex align-items-center">
+                                                            <div class="home__item--id">id: <span>546458</span></div>
+                                                            <div class="home__item--rating d-flex align-items-center">
+                                                                <img src="./img/rating-star.svg" alt="" />4.9 <span>(48)</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- item end -->
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="reservation__select border">
-                        <div id="bts-ex-5" class="selectpicker" data-clear="true" data-live="true">
-                            <div data-id="prov" class="dropdown-toggle selectpicker__head close open d-flex justify-content-between align-items-center">
-                                <div class="selectpicker__head--text">
-                                    Sbject
+                        <div class="reservation__select border">
+                            <div id="bts-ex-5" class="selectpicker" data-clear="true" data-live="true">
+                                <div
+                                    data-id="prov"
+                                    class="dropdown-toggle selectpicker__head close open d-flex justify-content-between align-items-center"
+                                >
+                                    <div class="selectpicker__head--text">Sbject</div>
+                                    <img src="./img/arrow-down-light.svg" alt="" />
                                 </div>
-                                <img src="./img/arrow-down-light.svg" alt="">
-                            </div>
-                            <div class="selectpicker__body">
-                                <li class="items bg-gradient" data-filter="995" data-value="1">
-                                    Sbject 1
-                                </li>
-                                <li class="items bg-gradient" data-filter="444" data-value="2">
-                                    Sbject 2
-                                </li>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="reservation__select border">
-                        <div id="bts-ex-5" class="selectpicker" data-clear="true" data-live="true">
-                            <div data-id="prov" class="dropdown-toggle selectpicker__head close open d-flex justify-content-between align-items-center">
-                                <div class="selectpicker__head--text">
-                                    Date filter
+                                <div class="selectpicker__body">
+                                    <li class="items bg-gradient" data-filter="995" data-value="1">Sbject 1</li>
+                                    <li class="items bg-gradient" data-filter="444" data-value="2">Sbject 2</li>
                                 </div>
-                                <img src="./img/arrow-down-light.svg" alt="">
-                            </div>
-                            <div class="selectpicker__body reservation__date">
-                                <div class="calendar1"></div>
                             </div>
                         </div>
-                    </div>
-                    <div class="reservation__select border">
-                        <a href="#"  class="selectpicker__head d-flex justify-content-between align-items-center">
-                            <div class="selectpicker__head--text">
-                                Export
+                        <div class="reservation__select border">
+                            <div id="bts-ex-5" class="selectpicker" data-clear="true" data-live="true">
+                                <div
+                                    data-id="prov"
+                                    class="dropdown-toggle selectpicker__head close open d-flex justify-content-between align-items-center"
+                                >
+                                    <div class="selectpicker__head--text">Date filter</div>
+                                    <img src="./img/arrow-down-light.svg" alt="" />
+                                </div>
+                                <div class="selectpicker__body reservation__date">
+                                    <div class="calendar1"></div>
+                                </div>
                             </div>
-                            <img src="./img/export.svg" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <!-- head -->
-                <div class="d-flex justify-content-between">
-                    <div class="reservation__list--item reservation--head d-flex align-items-center">
-                        <p>
-                            Property
-                        </p>
-                    </div>
-                    <div class="reservation__list--item reservation--head d-flex align-items-center">
-                        <p>
-                            Room name/Location
-                        </p>
-                    </div>
-                    <div class="reservation__list--item reservation--head d-flex align-items-center">
-                        <p>
-                            Reserv. date
-                        </p>
-                    </div>
-                    <div class="reservation__list--item reservation--head d-flex align-items-center">
-                        <p>
-                            Guest
-                        </p>
-                    </div>
-                    <div class="reservation__list--item reservation--head d-flex align-items-center">
-                        <p>
-                            Check-in
-                        </p>
-                    </div>
-                    <div class="reservation__list--item reservation--head d-flex align-items-center">
-                        <p>
-                            Check-out
-                        </p>                                
-                    </div>
-                    <div class="reservation__list--item reservation--head d-flex align-items-center">
-                        <p>
-                            Price
-                        </p>
-                    </div>
-                    <div class="reservation__list--item reservation--head d-flex align-items-center">
-                        <p>
-                            Status
-                        </p>
-                    </div>
-                </div><!-- head end -->
-                <!-- body -->
-                <div class="reservation__list d-flex justify-content-between">
-                    <div class="reservation__list--item d-flex align-items-center">
-                        <p>
-                            George's bright apartment with awesome view sada sfg sdgfd hdfah d 💦
-                        </p>
-                    </div>
-                    <div class="reservation__list--item d-flex align-items-center">
-                        <p>
-                            Standard King Room with Forest View
-                        </p>
-                    </div>
-                    <div class="reservation__list--item d-flex align-items-center">
-                        <p>
-                            <a href="">
-                                Download PDF
+                        </div>
+                        <div class="reservation__select border">
+                            <a href="#" class="selectpicker__head d-flex justify-content-between align-items-center">
+                                <div class="selectpicker__head--text">Export</div>
+                                <img src="./img/export.svg" alt="" />
                             </a>
-                        </p>
-                    </div>
-                    <div class="reservation__list--item d-flex align-items-center">
-                        <p>
-                            Oct 1, 2019 - Oct 31, 2019
-                        </p>
-                    </div>
-                    <div class="reservation__list--item d-flex align-items-center">
-                        <p>
-                            Mar 8, 2021
-                        </p>
-                    </div>
-                    <div class="reservation__list--item d-flex align-items-center">
-                        <p>
-                            Mar 8, 2021
-                        </p>                                
-                    </div>
-                    <div class="reservation__list--item d-flex align-items-center">
-                        <p>
-                            <a href="">View Statement</a>
-                        </p>
-                    </div>
-                    <div class="reservation__list--item d-flex align-items-center">
-                        <div class="reservation__list--checked d-flex align-items-center justify-content-center">
-                            <img src="./img/check-white.svg" alt="">
                         </div>
                     </div>
-                </div><!-- body end -->
-                <!-- body -->
-                <div class="reservation__list d-flex justify-content-between">
-                    <div class="reservation__list--item d-flex align-items-center">
-                        <p>
-                            George's bright apartment with awesome view sada sfg sdgfd hdfah d 💦
-                        </p>
-                    </div>
-                    <div class="reservation__list--item d-flex align-items-center">
-                        <p>
-                            Standard King Room with Forest View
-                        </p>
-                    </div>
-                    <div class="reservation__list--item d-flex align-items-center">
-                        <p>
-                            <a href="">
-                                Download PDF
-                            </a>
-                        </p>
-                    </div>
-                    <div class="reservation__list--item d-flex align-items-center">
-                        <p>
-                            Oct 1, 2019 - Oct 31, 2019
-                        </p>
-                    </div>
-                    <div class="reservation__list--item d-flex align-items-center">
-                        <p>
-                            Mar 8, 2021
-                        </p>
-                    </div>
-                    <div class="reservation__list--item d-flex align-items-center">
-                        <p>
-                            Mar 8, 2021
-                        </p>                                
-                    </div>
-                    <div class="reservation__list--item d-flex align-items-center">
-                        <p>
-                            <a href="">View Statement</a>
-                        </p>
-                    </div>
-                    <div class="reservation__list--item d-flex align-items-center">
-                        <div class="reservation__list--checked d-flex align-items-center justify-content-center">
-                            <img src="./img/check-white.svg" alt="">
+                </div>
+                <div>
+                    <!-- head -->
+                    <div class="d-flex justify-content-between">
+                        <div class="reservation__list--item reservation--head d-flex align-items-center">
+                            <p>Property</p>
+                        </div>
+                        <div class="reservation__list--item reservation--head d-flex align-items-center">
+                            <p>Room name/Location</p>
+                        </div>
+                        <div class="reservation__list--item reservation--head d-flex align-items-center">
+                            <p>Reserv. date</p>
+                        </div>
+                        <div class="reservation__list--item reservation--head d-flex align-items-center">
+                            <p>Guest</p>
+                        </div>
+                        <div class="reservation__list--item reservation--head d-flex align-items-center">
+                            <p>Check-in</p>
+                        </div>
+                        <div class="reservation__list--item reservation--head d-flex align-items-center">
+                            <p>Check-out</p>
+                        </div>
+                        <div class="reservation__list--item reservation--head d-flex align-items-center">
+                            <p>Price</p>
+                        </div>
+                        <div class="reservation__list--item reservation--head d-flex align-items-center">
+                            <p>Status</p>
                         </div>
                     </div>
-                </div><!-- body end -->
-            </div>
-
-            <div class="page-head d-flex justify-content-between align-items-center">
-                <h1 class="page-head__title">
-                    Bank details
-                </h1>
-            </div>
-            <div>
-                <!-- body -->
-                <div class="bank__list d-flex">
-                    <div class="bank__list--item d-flex flex-column align-items-start">
-                        <p class="bank__list--desc">
-                            Property
-                        </p>
-                        <p class="bank__list--title">
-                            Jemaldi Jinikashvili
-                        </p>
+                    <!-- head end -->
+                    <!-- body -->
+                    <div class="reservation__list d-flex justify-content-between">
+                        <div class="reservation__list--item d-flex align-items-center">
+                            <p>George's bright apartment with awesome view sada sfg sdgfd hdfah d 💦</p>
+                        </div>
+                        <div class="reservation__list--item d-flex align-items-center">
+                            <p>Standard King Room with Forest View</p>
+                        </div>
+                        <div class="reservation__list--item d-flex align-items-center">
+                            <p>
+                                <a href="" class="link-colored text-12 no-wrap" download=""> Download PDF </a>
+                            </p>
+                        </div>
+                        <div class="reservation__list--item d-flex align-items-center">
+                            <p>Oct 1, 2019 - Oct 31, 2019</p>
+                        </div>
+                        <div class="reservation__list--item d-flex align-items-center">
+                            <p>Mar 8, 2021</p>
+                        </div>
+                        <div class="reservation__list--item d-flex align-items-center">
+                            <p>Mar 8, 2021</p>
+                        </div>
+                        <div class="reservation__list--item d-flex align-items-center">
+                            <p>
+                                <a href="" class="link-colored text-12 no-wrap">View Statement</a>
+                            </p>
+                        </div>
+                        <div class="reservation__list--item d-flex align-items-center">
+                            <div class="reservation__list--checked d-flex align-items-center justify-content-center">
+                                <img src="./img/check-white.svg" alt="" />
+                            </div>
+                        </div>
                     </div>
-                    <div class="bank__list--item d-flex flex-column align-items-center">
-                        <p class="bank__list--desc">
-                            Property
-                        </p>
-                        <p class="bank__list--title">
-                            GE81BG0000000698966996
-                        </p>
+                    <!-- body end -->
+                    <!-- body -->
+                    <div class="reservation__list d-flex justify-content-between">
+                        <div class="reservation__list--item d-flex align-items-center">
+                            <p>George's bright apartment with awesome view sada sfg sdgfd hdfah d 💦</p>
+                        </div>
+                        <div class="reservation__list--item d-flex align-items-center">
+                            <p>Standard King Room with Forest View</p>
+                        </div>
+                        <div class="reservation__list--item d-flex align-items-center">
+                            <p>
+                                <a href="" class="link-colored text-12 no-wrap" download=""> Download PDF </a>
+                            </p>
+                        </div>
+                        <div class="reservation__list--item d-flex align-items-center">
+                            <p>Oct 1, 2019 - Oct 31, 2019</p>
+                        </div>
+                        <div class="reservation__list--item d-flex align-items-center">
+                            <p>Mar 8, 2021</p>
+                        </div>
+                        <div class="reservation__list--item d-flex align-items-center">
+                            <p>Mar 8, 2021</p>
+                        </div>
+                        <div class="reservation__list--item d-flex align-items-center">
+                            <p>
+                                <a href="" class="link-colored text-12 no-wrap">View Statement</a>
+                            </p>
+                        </div>
+                        <div class="reservation__list--item d-flex align-items-center">
+                            <div class="reservation__list--checked d-flex align-items-center justify-content-center">
+                                <img src="./img/check-white.svg" alt="" />
+                            </div>
+                        </div>
                     </div>
-                    <div class="bank__list--item d-flex flex-column align-items-center">
-                        <p class="bank__list--desc">
-                            Property
-                        </p>
-                        <p class="bank__list--title">
-                            698966996
-                        </p>                                
-                    </div>
-                    <div class="bank__list--item d-flex flex-column align-items-end">
-                        <button class="review__item--btn btn text open review-popup-open">
-                            <p class="gradient notgradient">Edit bank details</p>
-                        </button>
-                    </div>
-                </div><!-- body end -->
-            </div>
-
-            <div class="reservation__empty d-flex flex-column align-items-center">
-                <div class="reservation__empty--icon">
-                    <img src="./img/empty-sms.svg" alt="">
+                    <!-- body end -->
                 </div>
-                <h1 class="reservation__empty--title">You haven’t started earning yet</h1>
-                <p class="reservation__empty--desc">Looks like you don’t have any reservations at the moment,
-                    navigate to our blog and get tips, advice and much more to
-                    learn how to get customers to book your service.
-                </p>
-                <button class="review__item--btn btn text">
-                    <p class="gradient notgradient">See Tips & Advice</p>
-                </button>
+
+                <div class="page-head d-flex justify-content-between align-items-center">
+                    <h1 class="page-head__title">Bank details</h1>
+                </div>
+                <div>
+                    <!-- body -->
+                    <div class="bank__list d-flex">
+                        <div class="bank__list--item d-flex flex-column align-items-start">
+                            <p class="bank__list--desc">Property</p>
+                            <p class="bank__list--title">Jemaldi Jinikashvili</p>
+                        </div>
+                        <div class="bank__list--item d-flex flex-column align-items-center">
+                            <p class="bank__list--desc">Property</p>
+                            <p class="bank__list--title">GE81BG0000000698966996</p>
+                        </div>
+                        <div class="bank__list--item d-flex flex-column align-items-center">
+                            <p class="bank__list--desc">Property</p>
+                            <p class="bank__list--title">698966996</p>
+                        </div>
+                        <div class="bank__list--item d-flex flex-column align-items-end">
+                            <button class="review__item--btn btn text open review-popup-open">
+                                <p class="gradient notgradient">Edit bank details</p>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- body end -->
+                </div>
+
+                <div class="reservation__empty d-flex flex-column align-items-center">
+                    <div class="reservation__empty--icon">
+                        <img src="./img/empty-sms.svg" alt="" />
+                    </div>
+                    <h1 class="reservation__empty--title">You haven’t started earning yet</h1>
+                    <p class="reservation__empty--desc">
+                        Looks like you don’t have any reservations at the moment, navigate to our blog and get tips, advice and much more to
+                        learn how to get customers to book your service.
+                    </p>
+                    <button class="review__item--btn btn text">
+                        <p class="gradient notgradient">See Tips & Advice</p>
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="writing popup align-items-center justify-content-center">
-        <div class="writing--container popup__container bank-popup-first">
-            <div class="d-flex justify-content-end">
-                <button class="writing__close review-popup-close close btn">
-                    <img src="./img/cancel.svg" alt="">
-                </button>
+        <div class="writing popup align-items-center justify-content-center">
+            <div class="writing--container popup__container bank-popup-first">
+                <div class="d-flex justify-content-end">
+                    <button class="writing__close review-popup-close close btn">
+                        <img src="./img/cancel.svg" alt="" />
+                    </button>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                    <h1 class="detail__section--title popup__title">Select a verification method</h1>
+                    <p class="popup__desc">You’ll receive a 6-digit code.</p>
+                </div>
+                <label class="radiobox d-flex align-items-center">
+                    <div class="d-flex align-items-center">
+                        <input type="radio" class="radiobox__input" name="ragaca" />
+                        <div class="radiobox__input--checked d-block"></div>
+                        <p class="radiobox__text">Phone call</p>
+                    </div>
+                </label>
+                <label class="radiobox d-flex align-items-center">
+                    <div class="d-flex align-items-center">
+                        <input type="radio" class="radiobox__input" name="ragaca" />
+                        <div class="radiobox__input--checked d-block"></div>
+                        <p class="radiobox__text">Text message</p>
+                    </div>
+                </label>
+                <label class="radiobox d-flex align-items-center">
+                    <div class="d-flex align-items-center">
+                        <input type="radio" class="radiobox__input" name="ragaca" />
+                        <div class="radiobox__input--checked d-block"></div>
+                        <p class="radiobox__text">Pulse</p>
+                    </div>
+                </label>
+                <div class="d-flex justify-content-end">
+                    <button class="review__item--btn btn text bank-popup-next">
+                        <p class="gradient notgradient">Next</p>
+                    </button>
+                </div>
             </div>
-            <div class="d-flex flex-column align-items-center">
-                <h1 class="detail__section--title popup__title">
-                    Select a verification method
-                </h1>
-                <p class="popup__desc">
-                    You’ll receive a 6-digit code.
-                </p>
-            </div>
-            <label class="radiobox d-flex align-items-center">
-                <div class="d-flex align-items-center">
-                    <input type="radio" class="radiobox__input" name="ragaca">
-                    <div class="radiobox__input--checked d-block">
-                    </div>
-                    <p class="radiobox__text">Phone call</p>
+            <div class="writing--container popup__container bank-popup-second">
+                <div class="d-flex justify-content-end">
+                    <button class="writing__close review-popup-close close btn">
+                        <img src="./img/cancel.svg" alt="" />
+                    </button>
                 </div>
-            </label>
-            <label class="radiobox d-flex align-items-center">
-                <div class="d-flex align-items-center">
-                    <input type="radio" class="radiobox__input" name="ragaca">
-                    <div class="radiobox__input--checked d-block">
-                    </div>
-                    <p class="radiobox__text">Text message</p>
+                <div class="d-flex flex-column align-items-center">
+                    <h1 class="detail__section--title popup__title">Add acount</h1>
+                    <p class="popup__desc">Enter your bank account details</p>
                 </div>
-            </label>
-            <label class="radiobox d-flex align-items-center">
-                <div class="d-flex align-items-center">
-                    <input type="radio" class="radiobox__input" name="ragaca">
-                    <div class="radiobox__input--checked d-block">
+                <label class="number border d-flex align-items-center">
+                    <input type="text" class="number__input" value="" placeholder="Address" />
+                </label>
+                <br />
+                <label class="number border d-flex align-items-center">
+                    <input type="text" class="number__input" value="" placeholder="Address" />
+                </label>
+                <br />
+                <div id="bts-ex-5" class="selectpicker" data-clear="true" data-live="true">
+                    <div
+                        data-id="prov"
+                        class="dropdown-toggle selectpicker__head border general__item d-flex justify-content-between align-items-center"
+                    >
+                        <div class="selectpicker__head--text">Sbject</div>
+                        <img src="./img/arrow-down-light.svg" alt="" />
                     </div>
-                    <p class="radiobox__text">Pulse</p>
+                    <div class="selectpicker__body">
+                        <li class="items bg-gradient" data-filter="995" data-value="1">Sbject 1</li>
+                        <li class="items bg-gradient" data-filter="444" data-value="2">Sbject 2</li>
+                    </div>
                 </div>
-            </label>
-            <div class="d-flex justify-content-end">
-                <button class="review__item--btn btn text bank-popup-next">
-                    <p class="gradient notgradient">Next</p>
-                </button>
+                <div class="d-flex justify-content-end">
+                    <button class="review__item--btn btn text">
+                        <p class="gradient notgradient">Finish</p>
+                    </button>
+                </div>
             </div>
         </div>
-        <div class="writing--container popup__container bank-popup-second">
-            <div class="d-flex justify-content-end">
-                <button class="writing__close review-popup-close close btn">
-                    <img src="./img/cancel.svg" alt="">
-                </button>
-            </div>
-            <div class="d-flex flex-column align-items-center">
-                <h1 class="detail__section--title popup__title">
-                    Add acount
-                </h1>
-                <p class="popup__desc">
-                    Enter your bank account details
-                </p>
-            </div>
-            <label class="number border d-flex align-items-center">
-                <input type="text" class="number__input" value="" placeholder="Address">
-            </label>
-            <br />
-            <label class="number border d-flex align-items-center">
-                <input type="text" class="number__input" value="" placeholder="Address">
-            </label>
-            <br />
-            <div id="bts-ex-5" class="selectpicker" data-clear="true" data-live="true">
-                <div data-id="prov" class="dropdown-toggle selectpicker__head border general__item d-flex justify-content-between align-items-center">
-                    <div class="selectpicker__head--text">
-                        Sbject 
-                    </div>
-                    <img src="./img/arrow-down-light.svg" alt="">
-                </div>
-                <div class="selectpicker__body">
-                    <li class="items bg-gradient" data-filter="995" data-value="1">
-                        Sbject 1
-                    </li>
-                    <li class="items bg-gradient" data-filter="444" data-value="2">
-                        Sbject 2
-                    </li>
-                </div>
-            </div>
-            <div class="d-flex justify-content-end">
-                <button class="review__item--btn btn text">
-                    <p class="gradient notgradient">Finish</p>
-                </button>
-            </div>
-        </div>
-    </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js" ></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" ></script>
-    <script src="./function/select/bootstrap-select.js"></script>
-    <script src="./function/select/bundle.min.js"></script>
-    <script src="./function/select/livefilter.min.js"></script>
-    <script src="./function/select/tabcomplete.min.js"></script>
-    <script src="./function/calendar.js"></script>
-    <script src="./function/function.js"></script>
-    <script>
-        calendar('.calendar1');
-    </script>
-</body>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js" ></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <script src="./function/select/bootstrap-select.js"></script>
+        <script src="./function/select/bundle.min.js"></script>
+        <script src="./function/select/livefilter.min.js"></script>
+        <script src="./function/select/tabcomplete.min.js"></script>
+        <script src="./function/calendar.js"></script>
+        <script src="./function/function.js"></script>
+        <script>
+            calendar('.calendar1')
+        </script>
+    </body>
 </html>
