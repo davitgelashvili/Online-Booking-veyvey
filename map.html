@@ -1,295 +1,468 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="icon" type="image/png" href="./img/active.svg">
-    <link rel="stylesheet" href="./css/bootstrap-grid.css">
-    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="./css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./css/components.css">
-</head>
-<body class="page-profile">
-    <header class="header header-map">
-        <div class="container d-flex align-items-center justify-content-between" style="max-width: 1780px;">
-            <div class="header__logo">
-                <img src="./img/logo.svg" alt="">
-            </div>
-            <ul class="header__menu d-flex">
-                <li class="header__menu--item d-flex">
-                    <a href="" class="header__menu--link d-flex align-items-center active">Home</a>
-                </li>
-                <li class="header__menu--item d-flex">
-                    <a href="" class="header__menu--link d-flex align-items-center">Performance</a>
-                </li>
-                <li class="header__menu--item d-flex">
-                    <a href="" class="header__menu--link d-flex align-items-center">Reservations</a>
-                </li>
-                <li class="header__menu--item d-flex">
-                    <a href="" class="header__menu--link d-flex align-items-center">Reviews</a>
-                </li>
-                <li class="header__menu--item d-flex">
-                    <a href="" class="header__menu--link d-flex align-items-center">Earnings</a>
-                </li>
-                <li class="header__menu--item d-flex">
-                    <a href="" class="header__menu--link d-flex align-items-center">Messages</a>
-                </li>
-            </ul>
-            <div class="header__buttons d-flex align-items-center">
-                <div class="select">
-                    <select id="standard-select">
-                        <option value="Option 1">Option 1</option>
-                        <option value="Option 2">Option 2</option>
-                        <option value="Option 3">Option 3</option>
-                        <option value="Option 4">Option 4</option>
-                        <option value="Option 5">Option 5</option>
-                        <option value="Option length">Option that has too long of a value to fit</option>
-                    </select>
-                    <span class="focus"></span>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="icon" type="image/png" href="./img/active.svg" />
+        <link rel="stylesheet" href="./css/bootstrap-grid.css" />
+        <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="./css/components.css" />
+    </head>
+    <body class="page-profile">
+        <header class="header header-map">
+            <div class="container d-flex align-items-center justify-content-between" style="max-width: 1780px">
+                <div class="header__logo">
+                    <img src="./img/logo.svg" alt="" />
                 </div>
-                <button class="header__buttons--profile btn">
-                    <img src="./img/profile.svg" alt="">
-                </button>
+                <ul class="header__menu d-flex">
+                    <li class="header__menu--item d-flex">
+                        <a href="" class="header__menu--link d-flex align-items-center active">Home</a>
+                    </li>
+                    <li class="header__menu--item d-flex">
+                        <a href="" class="header__menu--link d-flex align-items-center">Performance</a>
+                    </li>
+                    <li class="header__menu--item d-flex">
+                        <a href="" class="header__menu--link d-flex align-items-center">Reservations</a>
+                    </li>
+                    <li class="header__menu--item d-flex">
+                        <a href="" class="header__menu--link d-flex align-items-center">Reviews</a>
+                    </li>
+                    <li class="header__menu--item d-flex">
+                        <a href="" class="header__menu--link d-flex align-items-center">Earnings</a>
+                    </li>
+                    <li class="header__menu--item d-flex">
+                        <a href="" class="header__menu--link d-flex align-items-center">Messages</a>
+                    </li>
+                </ul>
+                <div class="header__buttons d-flex align-items-center">
+                    <div class="select">
+                        <select id="standard-select">
+                            <option value="Option 1">Option 1</option>
+                            <option value="Option 2">Option 2</option>
+                            <option value="Option 3">Option 3</option>
+                            <option value="Option 4">Option 4</option>
+                            <option value="Option 5">Option 5</option>
+                            <option value="Option length">Option that has too long of a value to fit</option>
+                        </select>
+                        <span class="focus"></span>
+                    </div>
+                    <button class="header__buttons--profile btn">
+                        <img src="./img/profile.svg" alt="" />
+                    </button>
+                </div>
             </div>
-        </div>
-    </header>
-    
-    <div class="maps">
-        <div class="maps__head">
-            <div class="container" style="max-width: 1800px;">
+        </header>
+
+        <div class="maps">
+            <div class="maps__head">
+                <div class="container" style="max-width: 1800px">
+                    <div class="row">
+                        <div class="col-6 d-inline-flex justify-content-between">
+                            <div class="d-flex">
+                                <button class="maps__head--add btn d-flex flex-column align-items-start">
+                                    <p>Date</p>
+                                    Add date
+                                </button>
+                                <button class="maps__head--add btn d-flex flex-column align-items-start">
+                                    <p>Guests</p>
+                                    Add guests
+                                </button>
+                            </div>
+                            <div>
+                                <button class="maps__head--btn border btn">Invite friend</button>
+                                <button class="maps__head--btn border btn">More filters</button>
+                                <button class="maps__head--btn border btn" data-modal-target="#settings">
+                                    <img src="./img/map-setting.svg" alt="" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="max-width: 1800px">
                 <div class="row">
-                    <div class="col-6 d-inline-flex justify-content-between">
-                        <div class="d-flex">
-                            <button class="maps__head--add btn d-flex flex-column align-items-start">
-                                <p>Date</p>
-                                Add date
-                            </button>
-                            <button class="maps__head--add btn d-flex flex-column align-items-start">
-                                <p>Guests</p>
-                                Add guests
-                            </button>
-                        </div>
-                        <div>
-                            <button class="maps__head--btn border btn">
-                                Invite friend
-                            </button>
-                            <button class="maps__head--btn border btn">
-                                More filters
-                            </button>
-                            <button class="maps__head--btn border btn">
-                                <img src="./img/map-setting.svg" alt="">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container" style="max-width: 1800px;">
-            <div class="row">
-                <div class="col-6">
-                    <div class="maps__list">
-                        <h3 class="maps__title">
-                            300+ Stays in <span class="maps__title--bold">Tbilisi</span>
-                        </h3>
-                        <div class="maps__item d-inline-flex">
-                            <div class="maps__item--slider-out">
-                                <div class="maps__item--slider owl-carousel owl-theme owl-loaded">
-                                    <div class="maps__item--cover">
-                                        <img src="./img//cover/cover1.png" alt="">
-                                    </div>
-                                    <div class="maps__item--cover">
-                                        <img src="./img//cover/room.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="maps__item--dots d-flex justify-content-center"></div>
-                                <div class="photos__slider--navs"></div>
-                            </div>
-                            <div class="maps__item--texts d-inline-flex flex-column justify-content-between">
-                                <div>
-                                    <div class="d-flex justify-content-between align-items-start">
-                                        <div>
-                                            <div class="d-flex align-items-center">
-                                                <p class="maps__item--location">Hotel in vake </p>
-                                                <div class="maps__item--rating rating d-flex">
-                                                    <div class="rate">
-                                                        <input type="radio" id="star5" name="rate" value="5" />
-                                                        <label for="star5" title="text"></label>
-                                                        <input type="radio" id="star4" name="rate" value="4" />
-                                                        <label for="star4" title="text"></label>
-                                                        <input type="radio" id="star3" name="rate" value="3" />
-                                                        <label for="star3" title="text"></label>
-                                                        <input type="radio" id="star2" name="rate" value="2" />
-                                                        <label for="star2" title="text"></label>
-                                                        <input type="radio" id="star1" name="rate" value="1" />
-                                                        <label for="star1" title="text"></label>
-                                                      </div>  
-                                                </div>
-                                            </div>
-                                            <h1 class="maps__item--title">Stambas Sastumros Saxeli</h1>
+                    <div class="col-6">
+                        <div class="maps__list">
+                            <h3 class="maps__title">300+ Stays in <span class="maps__title--bold">Tbilisi</span></h3>
+                            <div class="maps__item d-inline-flex">
+                                <div class="maps__item--slider-out">
+                                    <div class="maps__item--slider owl-carousel owl-theme owl-loaded">
+                                        <div class="maps__item--cover">
+                                            <img src="./img//cover/cover1.png" alt="" />
                                         </div>
-                                        <button class="maps__item--fav btn">
-                                            <img src="./img/map-list-fav.svg" alt="">
-                                            <img src="./img/map-list-fav-active.svg" alt="">
-                                        </button>
+                                        <div class="maps__item--cover">
+                                            <img src="./img//cover/room.png" alt="" />
+                                        </div>
                                     </div>
-                                    <ul class="maps__item--interier d-flex">
-                                        <li>4 guests</li>
-                                        <li>Double room</li>
-                                        <li>Pool</li>
-                                    </ul>
-                                    <ul class="maps__item--detail d-flex border">
-                                        <li>Breakfast included</li>
-                                        <li>Free cancelation</li>
-                                        <li>No Prepayment</li>
-                                    </ul>
+                                    <div class="maps__item--dots d-flex justify-content-center"></div>
+                                    <div class="photos__slider--navs"></div>
                                 </div>
-                                <div class="maps__item--foter">
+                                <div class="maps__item--texts d-inline-flex flex-column justify-content-between">
                                     <div>
-                                        <button class="maps__item--leftroom home__add-list--btn btn text">
-                                            <p class="gradient notgradient d-flex align-items-center">
-                                                <img src="./img/fire.svg" alt="">
-                                                2 Rooms left
-                                            </p>
-                                        </button>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-end">
-                                        <div class="home__item--rating d-flex align-items-center">
-                                            4.5 <span>(2,429)</span>
-                                        </div>
-                                        <div class="d-flex flex-column align-items-end">
-                                            <div class="maps__item--pracent">
-                                                -30%
-                                            </div>
-                                            <div class="maps__item--price">
-                                                <span class="maps__item--old-price">$54</span>
-                                                <span>$24 / night</span>
-                                            </div>
-                                            <div id="bts-ex-5" class="selectpicker" data-clear="true" data-live="true">
-                                                <div data-id="prov" class="dropdown-toggle selectpicker__head close open d-flex justify-content-between align-items-center">
-                                                    <div class="selectpicker__head--text">
-                                                        Sbject
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <div>
+                                                <div class="d-flex align-items-center">
+                                                    <p class="maps__item--location">Hotel in vake</p>
+                                                    <div class="maps__item--rating rating d-flex">
+                                                        <div class="rate">
+                                                            <input type="radio" id="star5" name="rate" value="5" />
+                                                            <label for="star5" title="text"></label>
+                                                            <input type="radio" id="star4" name="rate" value="4" />
+                                                            <label for="star4" title="text"></label>
+                                                            <input type="radio" id="star3" name="rate" value="3" />
+                                                            <label for="star3" title="text"></label>
+                                                            <input type="radio" id="star2" name="rate" value="2" />
+                                                            <label for="star2" title="text"></label>
+                                                            <input type="radio" id="star1" name="rate" value="1" />
+                                                            <label for="star1" title="text"></label>
+                                                        </div>
                                                     </div>
-                                                    <img src="./img/arrow-down-light.svg" alt="">
                                                 </div>
-                                                <div class="selectpicker__body">
-                                                    <li class="items bg-gradient" data-filter="995" data-value="1">
-                                                        Sbject 1
-                                                    </li>
-                                                    <li class="items bg-gradient" data-filter="444" data-value="2">
-                                                        Sbject 2
-                                                    </li>
-                                                </div>
+                                                <h1 class="maps__item--title">Stambas Sastumros Saxeli</h1>
                                             </div>
+                                            <button class="maps__item--fav btn">
+                                                <img src="./img/Heart.svg" alt="" />
+                                            </button>
                                         </div>
+                                        <ul class="maps__item--interier d-flex">
+                                            <li>4 guests</li>
+                                            <li>Double room</li>
+                                            <li>Pool</li>
+                                        </ul>
+                                        <ul class="maps__item--detail d-flex border">
+                                            <li>Breakfast included</li>
+                                            <li>Free cancelation</li>
+                                            <li>No Prepayment</li>
+                                        </ul>
                                     </div>
-                                </div>
-                            </div>
-                        </div><!-- item end  -->
-                        <div class="maps__item d-inline-flex">
-                            <div class="maps__item--slider-out">
-                                <div class="maps__item--slider owl-carousel owl-theme owl-loaded">
-                                    <div class="maps__item--cover">
-                                        <img src="./img//cover/cover1.png" alt="">
-                                    </div>
-                                    <div class="maps__item--cover">
-                                        <img src="./img//cover/room.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="maps__item--dots d-flex justify-content-center"></div>
-                                <div class="photos__slider--navs"></div>
-                            </div>
-                            <div class="maps__item--texts d-inline-flex flex-column justify-content-between">
-                                <div>
-                                    <div class="d-flex justify-content-between align-items-start">
+                                    <div class="maps__item--foter">
                                         <div>
-                                            <div class="d-flex align-items-center">
-                                                <p class="maps__item--location">Hotel in vake </p>
-                                                <div class="maps__item--rating rating d-flex">
-                                                    <div class="rate">
-                                                        <input type="radio" id="star5" name="rate" value="5" />
-                                                        <label for="star5" title="text"></label>
-                                                        <input type="radio" id="star4" name="rate" value="4" />
-                                                        <label for="star4" title="text"></label>
-                                                        <input type="radio" id="star3" name="rate" value="3" />
-                                                        <label for="star3" title="text"></label>
-                                                        <input type="radio" id="star2" name="rate" value="2" />
-                                                        <label for="star2" title="text"></label>
-                                                        <input type="radio" id="star1" name="rate" value="1" />
-                                                        <label for="star1" title="text"></label>
-                                                      </div>  
+                                            <button class="maps__item--leftroom home__add-list--btn btn text">
+                                                <p class="gradient notgradient d-flex align-items-center">
+                                                    <img src="./img/fire.svg" alt="" />
+                                                    2 Rooms left
+                                                </p>
+                                            </button>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-end">
+                                            <div class="home__item--rating d-flex align-items-center">4.5 <span>(2,429)</span></div>
+                                            <div class="d-flex flex-column align-items-end">
+                                                <div class="maps__item--pracent">-30%</div>
+                                                <div class="maps__item--price">
+                                                    <span class="maps__item--old-price">$54</span>
+                                                    <span>$24 / night</span>
                                                 </div>
-                                            </div>
-                                            <h1 class="maps__item--title">Stambas Sastumros Saxeli</h1>
-                                        </div>
-                                        <button class="maps__item--fav btn">
-                                            <img src="./img/map-list-fav.svg" alt="">
-                                            <img src="./img/map-list-fav-active.svg" alt="">
-                                        </button>
-                                    </div>
-                                    <ul class="maps__item--interier d-flex">
-                                        <li>4 guests</li>
-                                        <li>Double room</li>
-                                        <li>Pool</li>
-                                    </ul>
-                                    <ul class="maps__item--detail d-flex border">
-                                        <li>Breakfast included</li>
-                                        <li>Free cancelation</li>
-                                        <li>No Prepayment</li>
-                                    </ul>
-                                </div>
-                                <div class="maps__item--foter">
-                                    <div class="d-flex justify-content-between align-items-end">
-                                        <div class="home__item--rating d-flex align-items-center">
-                                            4.5 <span>(2,429)</span>
-                                        </div>
-                                        <div class="d-flex flex-column align-items-end">
-                                            <div class="maps__item--price">
-                                                <span>$24 / night</span>
-                                            </div>
-                                            <div id="bts-ex-5" class="selectpicker" data-clear="true" data-live="true">
-                                                <div data-id="prov" class="dropdown-toggle selectpicker__head close open d-flex justify-content-between align-items-center">
-                                                    <div class="selectpicker__head--text">
-                                                        Sbject
+                                                <div id="bts-ex-5" class="selectpicker" data-clear="true" data-live="true">
+                                                    <div
+                                                        data-id="prov"
+                                                        class="dropdown-toggle selectpicker__head close open d-flex justify-content-between align-items-center"
+                                                    >
+                                                        <div class="selectpicker__head--text">Sbject</div>
+                                                        <img src="./img/arrow-down-light.svg" alt="" />
                                                     </div>
-                                                    <img src="./img/arrow-down-light.svg" alt="">
-                                                </div>
-                                                <div class="selectpicker__body">
-                                                    <li class="items bg-gradient" data-filter="995" data-value="1">
-                                                        Sbject 1
-                                                    </li>
-                                                    <li class="items bg-gradient" data-filter="444" data-value="2">
-                                                        Sbject 2
-                                                    </li>
+                                                    <div class="selectpicker__body">
+                                                        <li class="items bg-gradient" data-filter="995" data-value="1">Sbject 1</li>
+                                                        <li class="items bg-gradient" data-filter="444" data-value="2">Sbject 2</li>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div><!-- item end  -->
+                            <!-- item end  -->
+                            <div class="maps__item d-inline-flex">
+                                <div class="maps__item--slider-out">
+                                    <div class="maps__item--slider owl-carousel owl-theme owl-loaded">
+                                        <div class="maps__item--cover">
+                                            <img src="./img//cover/cover1.png" alt="" />
+                                        </div>
+                                        <div class="maps__item--cover">
+                                            <img src="./img//cover/room.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="maps__item--dots d-flex justify-content-center"></div>
+                                    <div class="photos__slider--navs"></div>
+                                </div>
+                                <div class="maps__item--texts d-inline-flex flex-column justify-content-between">
+                                    <div>
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <div>
+                                                <div class="d-flex align-items-center">
+                                                    <p class="maps__item--location">Hotel in vake</p>
+                                                    <div class="maps__item--rating rating d-flex">
+                                                        <div class="rate">
+                                                            <input type="radio" id="star5" name="rate" value="5" />
+                                                            <label for="star5" title="text"></label>
+                                                            <input type="radio" id="star4" name="rate" value="4" />
+                                                            <label for="star4" title="text"></label>
+                                                            <input type="radio" id="star3" name="rate" value="3" />
+                                                            <label for="star3" title="text"></label>
+                                                            <input type="radio" id="star2" name="rate" value="2" />
+                                                            <label for="star2" title="text"></label>
+                                                            <input type="radio" id="star1" name="rate" value="1" />
+                                                            <label for="star1" title="text"></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <h1 class="maps__item--title">Stambas Sastumros Saxeli</h1>
+                                            </div>
+                                            <button class="maps__item--fav btn">
+                                                <img src="./img/Heart-filled.svg" alt="" />
+                                            </button>
+                                        </div>
+                                        <ul class="maps__item--interier d-flex">
+                                            <li>4 guests</li>
+                                            <li>Double room</li>
+                                            <li>Pool</li>
+                                        </ul>
+                                        <ul class="maps__item--detail d-flex border">
+                                            <li>Breakfast included</li>
+                                            <li>Free cancelation</li>
+                                            <li>No Prepayment</li>
+                                        </ul>
+                                    </div>
+                                    <div class="maps__item--foter">
+                                        <div class="d-flex justify-content-between align-items-end">
+                                            <div class="home__item--rating d-flex align-items-center">4.5 <span>(2,429)</span></div>
+                                            <div class="d-flex flex-column align-items-end">
+                                                <div class="maps__item--price">
+                                                    <span>$24 / night</span>
+                                                </div>
+                                                <div id="bts-ex-5" class="selectpicker" data-clear="true" data-live="true">
+                                                    <div
+                                                        data-id="prov"
+                                                        class="dropdown-toggle selectpicker__head close open d-flex justify-content-between align-items-center"
+                                                    >
+                                                        <div class="selectpicker__head--text">Sbject</div>
+                                                        <img src="./img/arrow-down-light.svg" alt="" />
+                                                    </div>
+                                                    <div class="selectpicker__body">
+                                                        <li class="items bg-gradient" data-filter="995" data-value="1">Sbject 1</li>
+                                                        <li class="items bg-gradient" data-filter="444" data-value="2">Sbject 2</li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item end  -->
+                        </div>
                     </div>
-                </div>
-                <div class="col-6">
-                    <div class="maps__container">
-                        <iframe class="maps__container--map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11916.983434813208!2d44.80557835!3d41.693627899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sge!4v1651668329240!5m2!1sen!2sge" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="col-6">
+                        <div class="maps__container">
+                            <iframe
+                                class="maps__container--map"
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11916.983434813208!2d44.80557835!3d41.693627899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sge!4v1651668329240!5m2!1sen!2sge"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
-    </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./function/select/bootstrap-select.js"></script>
-    <script src="./function/select/bundle.min.js"></script>
-    <script src="./function/select/livefilter.min.js"></script>
-    <script src="./function/select/tabcomplete.min.js"></script>
-    <script src="./function/owl.carousel.min.js"></script>
-    <script src="./function/function.js"></script>
-    <script>
-        mapItemsSlider()
-    </script>
-</body>
+        <div class="modal" data-modal-target id="settings">
+            <div class="modal__backdrop" data-close-modal></div>
+
+            <div class="modal__content">
+                <button class="modal__close" data-close-modal type="button" aria-label="close modal">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.4922 1.50549L1.50781 16.4899"
+                            stroke="#040921"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        <path
+                            d="M16.4969 16.5L1.5 1.5"
+                            stroke="#040921"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+                </button>
+
+                <div class="modal__container">
+                    <header class="modal__header">
+                        <h2 class="modal__title">Settings</h2>
+                    </header>
+
+                    <div class="modal__body">
+                        <form action="#">
+                            <section class="mb-c6">
+                                <h3 class="text-16 mb-3">Reservation confirmed</h3>
+
+                                <div class="isolated-input">
+                                    <input
+                                        type="text"
+                                        name="newWishlist"
+                                        id="newWishlist"
+                                        class="isolated-input__input"
+                                        value="New wishlist"
+                                        maxlength="50"
+                                        style="padding-right: 220px"
+                                    />
+                                    <div class="isolated-input__right">
+                                        <small>(50 character maximum)</small>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="mb-5">
+                                <h3 class="text-16 mb-4">Who can view this wishlist?</h3>
+
+                                <label for="invited" class="checkbox-regular">
+                                    <input type="checkbox" name="who-can-view" id="invited" />
+                                    <p>Only people who are invited</p>
+                                </label>
+                                <label for="anyone" class="checkbox-regular">
+                                    <input type="checkbox" name="who-can-view" id="anyone" />
+                                    <p>Anyone with the link</p>
+                                </label>
+                            </section>
+
+                            <section class="mb-5">
+                                <h3 class="text-16 mb-3">Who’s invited</h3>
+
+                                <div class="invited-list">
+                                    <div class="invited-person">
+                                        <figure class="invited-person__photo">
+                                            <img src="img/user-placeholder.png" alt="" />
+                                        </figure>
+                                        <div>
+                                            <p class="invited-person__name">James</p>
+                                            <p class="invited-person__role">Owner</p>
+                                        </div>
+                                    </div>
+                                    <div class="invited-person">
+                                        <figure class="invited-person__photo">
+                                            <img src="img/user-placeholder.png" alt="" />
+                                        </figure>
+                                        <div>
+                                            <p class="invited-person__name">Anna</p>
+                                            <p class="invited-person__role">Guest</p>
+                                        </div>
+                                    </div>
+
+                                    <button type="button" class="invite-new" aria-label="add new member to your trip">
+                                        <div class="invite-new__icon">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.83817 14H8.16183V7.98H14V6.02H8.16183V0H5.83817V6.02H0V7.98H5.83817V14Z"
+                                                    fill="#040921"
+                                                />
+                                            </svg>
+                                        </div>
+                                        <p>Add a new member to your trip</p>
+                                    </button>
+                                </div>
+                            </section>
+
+                            <section class="mb-c6">
+                                <div class="isolated-input">
+                                    <textarea name="copy-link" id="copy-link" class="isolated-input__input">http://bit.ly/yvqi8u</textarea>
+                                    <div class="isolated-input__right" style="--pr: 8px">
+                                        <button type="button" id="copy-btn">copy</button>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <button type="button" class="delete-btn">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g opacity="0.72">
+                                                <path
+                                                    d="M20 6H16V5C16 4.20435 15.6839 3.44129 15.1213 2.87868C14.5587 2.31607 13.7956 2 13 2H11C10.2044 2 9.44129 2.31607 8.87868 2.87868C8.31607 3.44129 8 4.20435 8 5V6H4C3.73478 6 3.48043 6.10536 3.29289 6.29289C3.10536 6.48043 3 6.73478 3 7C3 7.26522 3.10536 7.51957 3.29289 7.70711C3.48043 7.89464 3.73478 8 4 8H5V19C5 19.7956 5.31607 20.5587 5.87868 21.1213C6.44129 21.6839 7.20435 22 8 22H16C16.7956 22 17.5587 21.6839 18.1213 21.1213C18.6839 20.5587 19 19.7956 19 19V8H20C20.2652 8 20.5196 7.89464 20.7071 7.70711C20.8946 7.51957 21 7.26522 21 7C21 6.73478 20.8946 6.48043 20.7071 6.29289C20.5196 6.10536 20.2652 6 20 6ZM10 5C10 4.73478 10.1054 4.48043 10.2929 4.29289C10.4804 4.10536 10.7348 4 11 4H13C13.2652 4 13.5196 4.10536 13.7071 4.29289C13.8946 4.48043 14 4.73478 14 5V6H10V5ZM17 19C17 19.2652 16.8946 19.5196 16.7071 19.7071C16.5196 19.8946 16.2652 20 16 20H8C7.73478 20 7.48043 19.8946 7.29289 19.7071C7.10536 19.5196 7 19.2652 7 19V8H17V19Z"
+                                                    fill="#040921"
+                                                />
+                                            </g>
+                                        </svg>
+                                        <p>Delete this wishlist</p>
+                                    </button>
+
+                                    <p class="text-16 text-grey-2">Last modified Mar 24, 2021</p>
+                                </div>
+                            </section>
+
+                            <div class="modal__ctas modal__ctas--fixed">
+                                <button type="button" class="modal__cta modal__cta--transparent" data-close-modal="">cancel</button>
+                                <button type="submit" class="modal__cta modal__cta--primary">save</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // Open settings modal on Map page
+            handleModal()
+
+            function handleModal() {
+                if (!document.querySelector('.modal')) return
+
+                const openModalBtns = document.querySelectorAll('[data-modal-target]')
+                const closeModalBtns = document.querySelectorAll('[data-close-modal]')
+
+                closeModalBtns.forEach((item) => {
+                    item.addEventListener('click', () => {
+                        const modal = item.closest('.modal')
+                        closeModal(modal)
+                    })
+                })
+
+                openModalBtns.forEach((item) => {
+                    item.addEventListener('click', () => {
+                        const modal = document.querySelector(item.dataset.modalTarget)
+                        openModal(modal)
+                    })
+                })
+            }
+
+            function openModal(modal) {
+                modal.classList.add('active')
+            }
+
+            function closeModal(modal) {
+                modal.classList.remove('active')
+            }
+
+            // Copy To Clipboard
+            const copyBtn = document.querySelector('#copy-btn')
+            copyBtn.addEventListener('click', () => copyToClipboard())
+
+            function copyToClipboard() {
+                let copyText = document.querySelector('#copy-link')
+
+                copyText.select()
+                copyText.setSelectionRange(0, 99999) /* For mobile devices */
+
+                navigator.clipboard.writeText(copyText.value)
+
+                /* Alert the copied text */
+                alert('Copied the text: ' + copyText.value)
+            }
+        </script>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="./function/select/bootstrap-select.js"></script>
+        <script src="./function/select/bundle.min.js"></script>
+        <script src="./function/select/livefilter.min.js"></script>
+        <script src="./function/select/tabcomplete.min.js"></script>
+        <script src="./function/owl.carousel.min.js"></script>
+        <script src="./function/function.js"></script>
+        <script>
+            mapItemsSlider()
+        </script>
+    </body>
 </html>

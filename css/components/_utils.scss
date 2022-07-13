@@ -1,9 +1,16 @@
 .text-grey {
     color: color($mainColor, 0.5) !important;
 }
+.text-grey-2 {
+    color: color($mainColor, 0.7) !important;
+}
 
 .text-12 {
     font-size: 12px !important;
+}
+
+.text-16 {
+    font-size: 16px !important;
 }
 
 .underline {
@@ -12,4 +19,8 @@
 
 .no-wrap {
     white-space: nowrap !important;
+}
+
+.mb-c6 {
+    margin-bottom: 32px !important;
 }

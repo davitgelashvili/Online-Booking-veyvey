@@ -2,12 +2,12 @@
     filter: none;
     margin-bottom: 0;
 }
-.maps {
 
+.maps {
     &__head {
         padding: 15px 0;
-        border-bottom: 1px solid color($mainColor, .04);
-        border-top: 1px solid color($mainColor, .04);
+        border-bottom: 1px solid color($mainColor, 0.04);
+        border-top: 1px solid color($mainColor, 0.04);
 
         &--add {
             background-color: transparent;
@@ -15,15 +15,15 @@
             font-size: 14px;
             font-weight: 400;
             line-height: 18px;
-            
+
             &:first-child {
                 margin-right: 32px;
-                border-right: 1px solid color($mainColor, .04);
+                border-right: 1px solid color($mainColor, 0.04);
                 padding-right: 32px;
             }
 
             p {
-                color: color($mainColor, .75);
+                color: color($mainColor, 0.75);
             }
         }
 
@@ -56,7 +56,8 @@
     }
     &__container {
         width: 50%;
-        height:  calc(100vh - 120px);
+        max-width: 830px;
+        height: calc(100vh - 120px);
         position: absolute;
         right: 0;
 
@@ -129,7 +130,7 @@
                 width: 4px;
                 height: 4px;
                 margin: 0 4px;
-                background-color: color($mainColor, .5);
+                background-color: color($mainColor, 0.5);
                 border-radius: 50%;
                 border: none;
 
@@ -143,11 +144,11 @@
             width: 100%;
             margin-left: 40px;
             padding-bottom: 15px;
-            border-bottom: 1px solid color($mainColor, .05);
+            border-bottom: 1px solid color($mainColor, 0.05);
         }
 
         &--location {
-            color: color($mainColor, .5);
+            color: color($mainColor, 0.5);
             font-size: 14px;
             font-weight: 400;
             line-height: 21px;
@@ -176,10 +177,10 @@
 
         &--interier {
             margin-top: 12px;
-            
+
             li {
                 margin: 0 13px;
-                color: color($mainColor, .8);
+                color: color($mainColor, 0.8);
                 font-size: 14px;
                 font-weight: 400;
                 line-height: 17px;
@@ -196,14 +197,14 @@
             margin-top: 10px;
             padding: 9px 10px;
             border-radius: 10px;
-            
+
             li {
-                color: color($mainColor, .5);
+                color: color($mainColor, 0.5);
                 margin: 0 13px;
                 font-size: 14px;
                 font-weight: 700;
                 line-height: 21px;
-                
+
                 &:first-child {
                     list-style: none;
                     margin: 0 10px;
@@ -241,7 +242,7 @@
         }
 
         &--old-price {
-            color: color($mainColor, .5);
+            color: color($mainColor, 0.5);
             font-size: 18px;
             font-weight: 700;
             line-height: 21px;
