@@ -1,155 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="icon" type="image/png" href="./img/active.svg">
-    <link rel="stylesheet" href="./css/bootstrap-grid.css">
-    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="./css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./css/components.css">
-</head>
-<body class="page-profile">
-    <header class="header">
-        <div class="container d-flex align-items-center justify-content-between" style="max-width: 1280px;">
-            <div class="header__logo">
-                <img src="./img/logo.svg" alt="">
-            </div>
-            <ul class="header__menu d-flex">
-                <li class="header__menu--item d-flex">
-                    <a href="" class="header__menu--link d-flex align-items-center active">Home</a>
-                </li>
-                <li class="header__menu--item d-flex">
-                    <a href="" class="header__menu--link d-flex align-items-center">Performance</a>
-                </li>
-                <li class="header__menu--item d-flex">
-                    <a href="" class="header__menu--link d-flex align-items-center">Reservations</a>
-                </li>
-                <li class="header__menu--item d-flex">
-                    <a href="" class="header__menu--link d-flex align-items-center">Reviews</a>
-                </li>
-                <li class="header__menu--item d-flex">
-                    <a href="" class="header__menu--link d-flex align-items-center">Earnings</a>
-                </li>
-                <li class="header__menu--item d-flex">
-                    <a href="" class="header__menu--link d-flex align-items-center">Messages</a>
-                </li>
-            </ul>
-            <div class="header__buttons d-flex align-items-center">
-                <div class="select">
-                    <select id="standard-select">
-                        <option value="Option 1">Option 1</option>
-                        <option value="Option 2">Option 2</option>
-                        <option value="Option 3">Option 3</option>
-                        <option value="Option 4">Option 4</option>
-                        <option value="Option 5">Option 5</option>
-                        <option value="Option length">Option that has too long of a value to fit</option>
-                    </select>
-                    <span class="focus"></span>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="icon" type="image/png" href="./img/active.svg" />
+        <link rel="stylesheet" href="./css/bootstrap-grid.css" />
+        <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="./css/components.css" />
+    </head>
+    <body class="page-profile">
+        <header class="header">
+            <div class="container d-flex align-items-center justify-content-between" style="max-width: 1280px">
+                <div class="header__logo">
+                    <img src="./img/logo.svg" alt="" />
                 </div>
-                <button class="header__buttons--profile btn">
-                    <img src="./img/profile.svg" alt="">
-                </button>
+                <ul class="header__menu d-flex">
+                    <li class="header__menu--item d-flex">
+                        <a href="" class="header__menu--link d-flex align-items-center active">Home</a>
+                    </li>
+                    <li class="header__menu--item d-flex">
+                        <a href="" class="header__menu--link d-flex align-items-center">Performance</a>
+                    </li>
+                    <li class="header__menu--item d-flex">
+                        <a href="" class="header__menu--link d-flex align-items-center">Reservations</a>
+                    </li>
+                    <li class="header__menu--item d-flex">
+                        <a href="" class="header__menu--link d-flex align-items-center">Reviews</a>
+                    </li>
+                    <li class="header__menu--item d-flex">
+                        <a href="" class="header__menu--link d-flex align-items-center">Earnings</a>
+                    </li>
+                    <li class="header__menu--item d-flex">
+                        <a href="" class="header__menu--link d-flex align-items-center">Messages</a>
+                    </li>
+                </ul>
+                <div class="header__buttons d-flex align-items-center">
+                    <div class="select">
+                        <select id="standard-select">
+                            <option value="Option 1">Option 1</option>
+                            <option value="Option 2">Option 2</option>
+                            <option value="Option 3">Option 3</option>
+                            <option value="Option 4">Option 4</option>
+                            <option value="Option 5">Option 5</option>
+                            <option value="Option length">Option that has too long of a value to fit</option>
+                        </select>
+                        <span class="focus"></span>
+                    </div>
+                    <button class="header__buttons--profile btn">
+                        <img src="./img/profile.svg" alt="" />
+                    </button>
+                </div>
             </div>
-        </div>
-    </header>
-    
-    <div class="trips">
-        <div class="container" style="max-width: 1280px;">
-            <h1 class="page-head__title">My trips</h1>
-            <div class="trips__menu">
-                <button class="trips__menu--btn btn active" data-id="0">
-                    Upcoming
-                </button>
-                <button class="trips__menu--btn btn" data-id="1">
-                    Past
-                </button>
-            </div>
-            <div class="trips__body active" data-id="0">
-                <div class="row">
-                    <div class="col-3">
+        </header>
+
+        <div class="trips">
+            <div class="container" style="max-width: 1280px">
+                <h1 class="page-head__title">My trips</h1>
+                <div class="trips__menu">
+                    <button class="trips__menu--btn btn active" data-id="0">Upcoming</button>
+                    <button class="trips__menu--btn btn" data-id="1">Past</button>
+                </div>
+                <div class="trips__body active" data-id="0">
+                    <div class="trips__grid">
                         <div class="trips__item">
                             <figure class="trips__item--cover">
-                                <img src="./img/cover/room.png" alt="">
+                                <img src="./img/cover/room.png" alt="" />
+
+                                <div class="trips__item--icons">
+                                    <div>
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M5.712 11.424C8.928 11.424 11.072 9.136 11.072 5.696V4.976H5.232V6.896H8.848C8.448 8.464 7.184 9.504 5.712 9.504C3.568 9.504 2.144 7.984 2.144 5.696C2.144 3.424 3.568 1.92 5.712 1.92C6.768 1.92 7.856 2.592 8.432 3.6L10.432 3.104C9.472 1.248 7.584 0 5.712 0C2.288 0 0 2.272 0 5.696C0 9.136 2.288 11.424 5.712 11.424Z"
+                                                fill="white"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <img src="img/user-placeholder.png" alt="" />
+                                    </div>
+                                </div>
                             </figure>
-                            <p class="trips__item--date">2022</p>
                             <h1 class="trips__item--title">name</h1>
+                            <p class="trips__item--date">Feb 15, 2021 - Feb 17, 2021</p>
                             <div class="trips__list d-flex align-items-center">
                                 <figure class="trips__list--cover">
-                                    <img src="./img/cover/room.png" alt="">
+                                    <img src="./img/cover/room.png" alt="" />
                                 </figure>
                                 <h1 class="trips__list--title">Stambas Sastumros</h1>
                             </div>
                             <div class="trips__list--all" data-id="0">
                                 <div class="trips__list d-flex align-items-center">
                                     <figure class="trips__list--cover">
-                                        <img src="./img/cover/room.png" alt="">
+                                        <img src="./img/cover/room.png" alt="" />
                                     </figure>
                                     <h1 class="trips__list--title">Stambas Sastumros</h1>
                                 </div>
                                 <div class="trips__list d-flex align-items-center">
                                     <figure class="trips__list--cover">
-                                        <img src="./img/cover/room.png" alt="">
+                                        <img src="./img/cover/room.png" alt="" />
                                     </figure>
                                     <h1 class="trips__list--title">Stambas Sastumros</h1>
                                 </div>
                             </div>
-                            <button class="trips__item--more btn" data-id="0">
-                                Show more trip plans
-                            </button>
+                            <button class="trips__item--more btn" data-id="0">Show more trip plans</button>
                         </div>
-                    </div><!-- item end -->
-                    <div class="col-3">
+                        <!-- item end -->
                         <div class="trips__item">
                             <figure class="trips__item--cover">
-                                <img src="./img/cover/room.png" alt="">
+                                <img src="./img/cover/room.png" alt="" />
+                                <div class="trips__item--icons">
+                                    <div>
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M5.712 11.424C8.928 11.424 11.072 9.136 11.072 5.696V4.976H5.232V6.896H8.848C8.448 8.464 7.184 9.504 5.712 9.504C3.568 9.504 2.144 7.984 2.144 5.696C2.144 3.424 3.568 1.92 5.712 1.92C6.768 1.92 7.856 2.592 8.432 3.6L10.432 3.104C9.472 1.248 7.584 0 5.712 0C2.288 0 0 2.272 0 5.696C0 9.136 2.288 11.424 5.712 11.424Z"
+                                                fill="white"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <img src="img/user-placeholder.png" alt="" />
+                                    </div>
+                                </div>
                             </figure>
-                            <p class="trips__item--date">2022</p>
                             <h1 class="trips__item--title">name</h1>
+                            <p class="trips__item--date">Feb 15, 2021 - Feb 17, 2021</p>
                             <div class="trips__list d-flex align-items-center">
                                 <figure class="trips__list--cover">
-                                    <img src="./img/cover/room.png" alt="">
+                                    <img src="./img/cover/room.png" alt="" />
                                 </figure>
                                 <h1 class="trips__list--title">Stambas Sastumros</h1>
                             </div>
                             <div class="trips__list--all" data-id="1">
                                 <div class="trips__list d-flex align-items-center">
                                     <figure class="trips__list--cover">
-                                        <img src="./img/cover/room.png" alt="">
+                                        <img src="./img/cover/room.png" alt="" />
                                     </figure>
                                     <h1 class="trips__list--title">Stambas Sastumros</h1>
                                 </div>
                                 <div class="trips__list d-flex align-items-center">
                                     <figure class="trips__list--cover">
-                                        <img src="./img/cover/room.png" alt="">
+                                        <img src="./img/cover/room.png" alt="" />
                                     </figure>
                                     <h1 class="trips__list--title">Stambas Sastumros</h1>
                                 </div>
                             </div>
-                            <button class="trips__item--more btn" data-id="1">
-                                Show more trip plans
-                            </button>
+                            <button class="trips__item--more btn active" data-id="1">Show more trip plans</button>
                         </div>
-                    </div><!-- item end -->
+                        <!-- item end -->
+                    </div>
                 </div>
-            </div>
-            <div class="trips__body" data-id="1">
-                2
+                <div class="trips__body" data-id="1">2</div>
             </div>
         </div>
-    </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./function/select/bootstrap-select.js"></script>
-    <script src="./function/select/bundle.min.js"></script>
-    <script src="./function/select/livefilter.min.js"></script>
-    <script src="./function/select/tabcomplete.min.js"></script>
-    <script src="./function/owl.carousel.min.js"></script>
-    <script src="./function/function.js"></script>
-    <script>
-        profileItemSlider();
-    </script>
-</body>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="./function/select/bootstrap-select.js"></script>
+        <script src="./function/select/bundle.min.js"></script>
+        <script src="./function/select/livefilter.min.js"></script>
+        <script src="./function/select/tabcomplete.min.js"></script>
+        <script src="./function/owl.carousel.min.js"></script>
+        <script src="./function/function.js"></script>
+        <script>
+            profileItemSlider()
+        </script>
+    </body>
 </html>
