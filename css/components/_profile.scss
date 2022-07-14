@@ -351,3 +351,214 @@
     align-items: center;
     gap: 8px;
 }
+
+.profile-dashboard {
+    &__header {
+        margin-bottom: 48px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__user {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+        color: $mainColor;
+    }
+
+    &__join-date {
+        margin-top: 16px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: color($mainColor, 0.5);
+    }
+
+    &__edit-btn {
+        padding: 12px 24px;
+        border: 1px solid rgba(4, 9, 33, 0.16);
+        border-radius: 100vmax;
+        background-color: transparent;
+        cursor: pointer;
+
+        span {
+            background: linear-gradient(246.12deg, #9d50ff 11.55%, #583cf0 104.8%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 20px;
+        }
+    }
+
+    &__section {
+        margin-bottom: 60px;
+
+        &.overlayed {
+            position: relative;
+
+            & > * {
+                opacity: 0.16;
+            }
+        }
+
+        & > h2 {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            color: $mainColor;
+        }
+
+        & > p {
+            margin-top: 24px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            color: color($mainColor, 0.75);
+
+            a {
+                color: inherit;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.edit-profile {
+    &__about,
+    &__work {
+        margin-top: 16px;
+        margin-bottom: 24px;
+        padding: 16px;
+        width: 100%;
+        background: #ffffff;
+        border: 1px solid rgba(4, 9, 33, 0.16);
+        border-radius: 12px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #000000;
+    }
+
+    &__about {
+        height: 200px;
+    }
+
+    &__work {
+        height: 79px;
+    }
+
+    .dropdown {
+        margin-bottom: 16px;
+    }
+
+    &__setting {
+        margin-bottom: 16px;
+        padding: 10px;
+        min-height: 40px;
+        display: flex;
+        align-items: center;
+        gap: 8.75px;
+        border: 1px solid rgba(4, 9, 33, 0.16);
+        border-radius: 10px;
+        background-color: transparent;
+        cursor: pointer;
+        transition: border-radius 200ms ease-in-out;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 7px;
+        font-size: 16px;
+        font-family: inherit;
+
+        svg {
+            display: block;
+        }
+
+        & > div {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+        }
+
+        & > .delete-option {
+            background-color: transparent;
+            border: 0;
+            cursor: pointer;
+        }
+    }
+
+    .add-option {
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+        span {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 0.2px;
+            background: linear-gradient(246.12deg, #9d50ff 11.55%, #583cf0 104.8%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+    }
+
+    .visibility {
+        margin-bottom: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: $mainColor;
+
+        &__desc {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        &__settings {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 8px 16px;
+            background: #ffffff;
+            border: 1px solid rgba(4, 9, 33, 0.16);
+            border-radius: 10px;
+
+            & > button {
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 24px;
+                letter-spacing: 1px;
+                color: rgba(4, 9, 33, 0.24);
+                text-transform: capitalize;
+                background-color: transparent;
+                border: 0;
+                cursor: pointer;
+                transition: color 150ms ease-in-out;
+
+                &.active {
+                    color: #34c588;
+                }
+            }
+        }
+
+        svg {
+            display: block;
+        }
+    }
+}
