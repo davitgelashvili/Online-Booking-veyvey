@@ -24,3 +24,9 @@
 .mb-c6 {
     margin-bottom: 32px !important;
 }
+
+.hide-on-md {
+    @media (max-width: 1337px) {
+        display: none;
+    }
+}
