@@ -363,10 +363,35 @@ body {
   bottom: 0;
   background-color: #040921;
 }
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.header__text-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: #040921;
+  text-decoration: none;
+  background-color: transparent;
+  border: 0;
+}
 .header__buttons--profile {
-  padding: 12px 13px;
+  min-height: 40px;
+  padding: 9.5px 16px;
   border-radius: 10px;
   background-color: #040921;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.header__buttons--profile span {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  text-transform: capitalize;
 }
 .header__buttons--switch {
   margin-right: 16px;
@@ -3703,6 +3728,85 @@ body {
   line-height: 18px;
   letter-spacing: 0.2px;
   color: rgba(4, 9, 33, 0.72);
+}
+
+.dropdown {
+  position: relative;
+  transition: width 200ms ease-in-out;
+}
+.dropdown.open .dropdown__options {
+  max-height: 400px;
+}
+.dropdown.open .dropdown__list {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.dropdown.open .dropdown__trigger {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.dropdown.open .icon {
+  transform: rotate(180deg);
+}
+.dropdown .icon {
+  transition: transform 200ms ease-in-out;
+}
+.dropdown__trigger {
+  padding: 10px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 8.75px;
+  border: 1px solid rgba(4, 9, 33, 0.16);
+  border-radius: 10px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: border-radius 200ms ease-in-out;
+  font-size: 16px;
+  font-family: inherit;
+}
+.dropdown__trigger * {
+  pointer-events: none;
+}
+.dropdown__selected {
+  pointer-events: none;
+}
+.dropdown .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 7px;
+}
+.dropdown__options {
+  position: absolute;
+  left: 0;
+  right: 0;
+  max-height: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  z-index: 10000;
+  transition: max-height 200ms ease-in-out;
+}
+.dropdown__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid rgba(4, 9, 33, 0.16);
+  border-radius: 10px;
+  transition: border-radius 200ms ease-in-out;
+}
+.dropdown__list li {
+  cursor: pointer;
+  font-size: 16px;
+  font-family: inherit;
+}
+.dropdown__list li * {
+  pointer-events: none;
+}
+.dropdown svg {
+  display: block;
 }
 
 /*# sourceMappingURL=components.css.map */
