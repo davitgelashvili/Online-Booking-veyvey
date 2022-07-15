@@ -10,7 +10,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="container mycontainer d-flex align-items-center justify-content-between">
+        <div class="container d-flex align-items-center justify-content-between">
             <div class="header__logo">
                 <img src="./img/logo.svg" alt="">
             </div>
@@ -256,16 +256,19 @@
                                             <br />
                                             <div id="bts-ex-5" class="selectpicker" data-clear="true" data-live="true">
                                                 <div data-id="prov" class="dropdown-toggle selectpicker__head border d-flex justify-content-between align-items-center">
-                                                    <div class="selectpicker__head--text">
+                                                    <div class="selectpicker__head--text d-flex align-items-center">
+                                                        <img src="img/watch.svg" class="home__allcategories--icon" alt=""> 
                                                         Sbject
                                                     </div>
                                                     <img src="./img/arrow-down-light.svg" alt="">
                                                 </div>
                                                 <div class="selectpicker__body">
-                                                    <li class="items bg-gradient" data-filter="995" data-value="1">
+                                                    <li class="items bg-gradient d-flex align-items-center" data-filter="995" data-value="1">
+                                                        <img src="img/watch.svg" class="home__allcategories--icon" alt="">
                                                         Sbject 1
                                                     </li>
-                                                    <li class="items bg-gradient" data-filter="444" data-value="2">
+                                                    <li class="items bg-gradient d-flex align-items-center" data-filter="444" data-value="2">
+                                                        <img src="img/watch.svg" class="home__allcategories--icon" alt="">
                                                         Sbject 2
                                                     </li>
                                                 </div>
@@ -276,16 +279,19 @@
                                             <br />
                                             <div id="bts-ex-5" class="selectpicker" data-clear="true" data-live="true">
                                                 <div data-id="prov" class="dropdown-toggle selectpicker__head border d-flex justify-content-between align-items-center">
-                                                    <div class="selectpicker__head--text">
+                                                    <div class="selectpicker__head--text d-flex align-items-center">
+                                                        <img src="img/watch.svg" class="home__allcategories--icon" alt=""> 
                                                         Sbject
                                                     </div>
                                                     <img src="./img/arrow-down-light.svg" alt="">
                                                 </div>
                                                 <div class="selectpicker__body">
-                                                    <li class="items bg-gradient" data-filter="995" data-value="1">
+                                                    <li class="items bg-gradient d-flex align-items-center" data-filter="995" data-value="1">
+                                                        <img src="img/watch.svg" class="home__allcategories--icon" alt="">
                                                         Sbject 1
                                                     </li>
-                                                    <li class="items bg-gradient" data-filter="444" data-value="2">
+                                                    <li class="items bg-gradient d-flex align-items-center" data-filter="444" data-value="2">
+                                                        <img src="img/watch.svg" class="home__allcategories--icon" alt="">
                                                         Sbject 2
                                                     </li>
                                                 </div>
@@ -383,7 +389,7 @@
                                             </div>
                                         </div>
                                         
-                                        <div class="col-8">
+                                        <div class="col-7">
                                             <br />
                                             <p class="general__item--dec">Reservation policy</p>
                                             <br />
@@ -404,13 +410,13 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-4">
+                                        <div class="col-5">
                                             <br />
                                             <p class="general__item--dec">Price for parking (per day)</p>
                                             <br />
                                             <label class="number border d-flex align-items-center">
                                                 <input type="text" class="number__index" placeholder="GEL" value="GEL">
-                                                <input type="text" class="number__input" value="">
+                                                <input type="text" class="number__input" placeholder="GEL" value="GEL">
                                             </label>
                                         </div>
 
@@ -523,12 +529,51 @@
                                 </div>
                             </div>
                         </div><!-- item end -->
+                        <div class="general__item border">
+                            <div class="general__item--deactive" data-id="2">
+                                <div class="general__item--head">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h1 class="general__item--title d-flex align-items-center">
+                                            <img src="img/comedy-child.svg" alt="" style="margin-right:10px;">
+                                            Can you accomodate children?
+                                        </h1>
+                                        <button class="general__item--edit js-edit-btn d-flex align-items-center btn">
+                                            <img src="./img/item-edit.svg" alt="">
+                                            Edit
+                                        </button>
+                                    </div>
+                                    <p class="general__item--dec">This hotel provides transportation services from and to the airport. Transfers will be charged to your name.</p>
+                                </div>
+                            </div>
+                            <div class="general__item--active" data-id="2">
+                                <div class="general__item--head">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h1 class="general__item--title d-flex align-items-center">
+                                            <img src="img/comedy-child.svg" alt="" style="margin-right:10px;">
+                                            Can you accomodate children?
+                                        </h1>
+                                        <div class="d-flex align-items-center">
+                                            <button class="general__item--cancel js-save-btn general__item--btn btn d-flex align-items-center">
+                                                Cancel
+                                            </button>
+                                            <button class="general__item--save js-save-btn general__item--btn btn border d-flex align-items-center">
+                                                Save
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <p class="general__item--dec">This hotel provides transportation services from and to the airport. Transfers will be charged to your name.</p>
+                                </div>
+                                <div class="general__item--body">
+                                    //test
+                                </div>
+                            </div>
+                        </div><!-- item end -->
                     </div>
                 </div>
                 <div class="col  d-none d-lg-block" style="max-width: 400px; width: 100%;">
 
                     <div class="home__stats">
-                        <div class="home__stats--head d-flex justify-content-start align-items-center">
+                        <div class="home__stats--head d-flex justify-content-start align-items-center" style="margin-top: 50px;">
                             <figure class="home__stats--host-icon">
                                 <img src="./img/host-icon.svg" alt="">
                             </figure>

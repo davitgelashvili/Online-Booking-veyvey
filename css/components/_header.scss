@@ -78,14 +78,8 @@
             }
         }
 
-        &--switch {
-            margin-right: 16px;
-            padding: 6px 12px;
-            background-color: color($mainColor, 0.04);
-            border-radius: 6px;
-            color: $mainColor;
-            font-size: 14px;
-            font-weight: 500;
+        &--valute {
+            margin: 0 35px;
         }
     }
 }

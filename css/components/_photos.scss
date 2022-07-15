@@ -136,6 +136,7 @@
         top: 0;
         left: 0;
         z-index: 5;
+        overflow: auto;
 
         &--head {
             margin: 40px 0;
@@ -215,6 +216,11 @@
 
                 &.owl-next {
                     right: 24px;
+                }
+
+                svg {
+                    width: 20px;
+                    fill: #fff;
                 }
             }
         }
@@ -320,5 +326,23 @@
                 opacity: .72;
             }
         }
+    }
+}
+
+.rotate {
+    padding-bottom: 35px;
+    border-bottom: 1px solid color($mainColor, .16);
+    cursor: pointer;
+    
+    &__icon {
+        width: 20px;
+        margin-right: 10px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: color($mainColor, .75);
     }
 }

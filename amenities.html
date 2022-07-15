@@ -10,7 +10,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="container mycontainer d-flex align-items-center justify-content-between">
+        <div class="container d-flex align-items-center justify-content-between">
             <div class="header__logo">
                 <img src="./img/logo.svg" alt="">
             </div>
@@ -54,7 +54,7 @@
     </header>
     
     <div class="general">
-        <div class="container mycontainer">
+        <div class="container">
             <div class="row justify-content-between">
                 <div class="col" style="max-width: 290px; width: 100%;">
                     <div class="sidebar">
@@ -259,23 +259,33 @@
                                         </label>
                                     </div>
                                     <br />
-                                    <div class="d-flex flex-row flex-wrap">
-                                        <label class="radiobox d-flex align-items-center">
-                                            <div class="d-flex align-items-center">
-                                                <input type="radio" class="radiobox__input" name="ragaca">
-                                                <div class="radiobox__input--checked d-block">
+                                    <div class="d-flex flex-row flex-wrap align-items-center">
+                                        <div class="col-2">
+                                            <label class=" d-flex align-items-center">
+                                                <div class="d-flex align-items-center">
+                                                    <input type="radio" class="radiobox__input paid-active-value" name="ragaca" checked>
+                                                    <div class="radiobox__input--checked d-block">
+                                                    </div>
+                                                    <p class="radiobox__text">Free</p>
                                                 </div>
-                                                <p class="radiobox__text">Free</p>
-                                            </div>
-                                        </label>
-                                        <label class="radiobox d-flex align-items-center">
-                                            <div class="d-flex align-items-center">
-                                                <input type="radio" class="radiobox__input" name="ragaca" checked>
-                                                <div class="radiobox__input--checked d-block">
+                                            </label>
+                                        </div>
+                                        <div class="col-2">
+                                            <label class=" d-flex align-items-center">
+                                                <div class="d-flex align-items-center">
+                                                    <input type="radio" class="radiobox__input paid-active-value paid" name="ragaca">
+                                                    <div class="radiobox__input--checked d-block">
+                                                    </div>
+                                                    <p class="radiobox__text">Paid</p>
                                                 </div>
-                                                <p class="radiobox__text">Paid</p>
-                                            </div>
-                                        </label>
+                                            </label>
+                                        </div>
+                                        <div class="col-4 d-none paid-active-input">
+                                            <label class="number border d-flex align-items-center">
+                                                <input type="text" class="number__input" value="" placeholder="GEL">
+                                                <input type="text" class="number__index" value="" placeholder="77">
+                                            </label>
+                                        </div>
                                     </div>
                                     <br />
                                     <h1 class="general__item--title">Add photo</h1>
@@ -431,5 +441,17 @@
     <script src="./function/select/livefilter.min.js"></script>
     <script src="./function/select/tabcomplete.min.js"></script>
     <script src="./function/function.js"></script>
+
+    <script>
+        $('.paid-active-value').on('change', function(){
+            if($('.paid-active-value.paid').is(':checked')){
+                $('.paid-active-input').removeClass('d-none')
+                $('.paid-active-input').addClass('d-block')
+            }else {
+                $('.paid-active-input').removeClass('d-block')
+                $('.paid-active-input').addClass('d-none')
+            }
+        })
+    </script>
 </body>
 </html>
