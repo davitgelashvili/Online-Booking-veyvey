@@ -5,27 +5,27 @@
         padding: 0 10px;
     }
     .rate:not(:checked) > input {
-        position:absolute;
-        top:-9999px;
+        position: absolute;
+        top: -9999px;
     }
     .rate:not(:checked) > label {
-        float:right;
-        width:1em;
-        overflow:hidden;
-        white-space:nowrap;
-        cursor:pointer;
-        font-size:30px;
-        color:#ccc;
+        float: right;
+        width: 1em;
+        overflow: hidden;
+        white-space: nowrap;
+        cursor: pointer;
+        font-size: 30px;
+        color: #ccc;
     }
     .rate:not(:checked) > label:before {
         content: '★ ';
     }
     .rate > input:checked ~ label {
-        color: #ffc700;    
+        color: #ffc700;
     }
     .rate:not(:checked) > label:hover,
     .rate:not(:checked) > label:hover ~ label {
-        color: #deb217;  
+        color: #deb217;
     }
     .rate > input:checked + label:hover,
     .rate > input:checked + label:hover ~ label,
@@ -33,7 +33,7 @@
     .rate > input:checked ~ label:hover ~ label,
     .rate > label:hover ~ input:checked ~ label {
         color: #c59b08;
-    }                
+    }
 }
 
 .radiobox {
@@ -43,7 +43,7 @@
 
     &__text {
         margin-left: 10px;
-        color: color($mainColor, .5);
+        color: color($mainColor, 0.5);
         font-size: 16px;
         font-weight: 400;
     }
@@ -64,9 +64,9 @@
             ~ .radiobox__text {
                 color: color($mainColor, 1);
             }
-            
-            ~ div{
-                background-color: #9D50FF;
+
+            ~ div {
+                background-color: #9d50ff;
             }
         }
     }
@@ -90,7 +90,7 @@
         width: 120px;
         border-right: 1px solid rgba(4, 9, 33, 0.16) !important;
         border-left: 1px solid rgba(4, 9, 33, 0.16) !important;
-        color: color($mainColor, .5) !important;
+        color: color($mainColor, 0.5) !important;
         // margin-left: -1px;
         // margin-right: -1px;
     }
@@ -99,12 +99,12 @@
         width: 100%;
     }
 
-    &__verify{
+    &__verify {
         padding: 9px 21px;
         right: 12px;
         position: absolute;
         border-radius: 8px;
-        background-color: color($mainColor, .72);
+        background-color: color($mainColor, 0.72);
         color: #fff;
         font-size: 14px;
         font-weight: 400;
@@ -114,7 +114,6 @@
         }
     }
 }
-
 
 .general {
     &--col {
@@ -145,7 +144,6 @@
     }
 
     .upload {
-
         &__cover {
             width: 160px;
             height: 160px;
@@ -245,7 +243,7 @@
                 margin-right: 5px;
 
                 img {
-                    opacity: .5;
+                    opacity: 0.5;
                 }
             }
 
@@ -262,7 +260,7 @@
                 .langs__ckeck--inc {
                     display: none;
                 }
-    
+
                 .langs__ckeck--dec {
                     display: block;
                 }
@@ -271,29 +269,36 @@
     }
 
     &__menu {
+        display: flex;
+        align-items: stretch;
+        gap: 20px;
+        flex-wrap: wrap;
         margin-bottom: 40px;
+
         &--item {
-            margin-right: 20px;
+            min-height: 100%;
             list-style: none;
         }
 
         &--link {
             padding: 10px 17px;
             display: block;
-            color: color($mainColor, .72);
+            color: color($mainColor, 0.72);
             font-size: 16px;
             font-weight: 700;
             text-decoration: none;
+            display: flex;
+            align-items: center;
 
             &:hover {
                 color: color($mainColor, 1);
-                border: 1px solid color($mainColor, .72);
+                border: 1px solid color($mainColor, 0.72);
             }
 
             &.active {
-                background: gradient(.16);
-                border: 1px solid color($mainColor, .0);
-                color: #583CF0;
+                background: gradient(0.16);
+                border: 1px solid color($mainColor, 0);
+                color: #583cf0;
             }
         }
     }
@@ -314,7 +319,7 @@
 
         &:hover {
             color: color($mainColor, 1);
-            border: 1px solid color($mainColor, .72);
+            border: 1px solid color($mainColor, 0.72);
         }
 
         &--title {
@@ -362,7 +367,7 @@
                 background-color: $mainColor;
 
                 path {
-                    stroke: #fff
+                    stroke: #fff;
                 }
             }
         }
@@ -373,7 +378,7 @@
 
         &--cancel {
             margin-right: 24px;
-            color: color($mainColor, .08);
+            color: color($mainColor, 0.08);
             font-size: 17px;
             font-weight: 700;
         }
@@ -384,7 +389,7 @@
 
         &--body {
             margin-top: 12px;
-            border-top: 1px solid color($mainColor, .16);
+            border-top: 1px solid color($mainColor, 0.16);
             padding: 15px 24px;
         }
 
@@ -399,11 +404,11 @@
                 }
 
                 &--no {
-                    color: color(#DE1313, 1);
+                    color: color(#de1313, 1);
                 }
 
                 &--yes {
-                    color: color($mainColor, .24);
+                    color: color($mainColor, 0.24);
                 }
             }
 
@@ -413,13 +418,13 @@
                 opacity: 0;
 
                 &:checked {
-                    ~ div{
+                    ~ div {
                         .onoff__checked--yes {
-                            color: color(#DE1313, 1);
+                            color: color(#de1313, 1);
                         }
 
                         .onoff__checked--no {
-                            color: color($mainColor, .24);
+                            color: color($mainColor, 0.24);
                         }
                     }
                 }
@@ -437,11 +442,11 @@
             }
 
             &__btn {
-                padding:  9px 16px;
+                padding: 9px 16px;
                 cursor: pointer;
             }
         }
-        
+
         .checkbox {
             margin-right: 34px;
             margin-bottom: 20px;
@@ -471,8 +476,8 @@
                 }
 
                 &:checked {
-                    ~ div{
-                        border: 1.5px solid #9D50FF;
+                    ~ div {
+                        border: 1.5px solid #9d50ff;
 
                         img {
                             display: block;
@@ -528,21 +533,21 @@
 
         .rates {
             margin-bottom: 20px;
-            
+
             &__text {
                 width: 100%;
                 margin-left: 24px;
-                
+
                 &--title {
                     margin-bottom: 8px;
                 }
-                
+
                 &--desc {
                     width: 100%;
                     display: block;
                     padding-bottom: 20px;
-                    border-bottom: 1px solid color($mainColor, .16);
-                    color: color($mainColor, .7);
+                    border-bottom: 1px solid color($mainColor, 0.16);
+                    color: color($mainColor, 0.7);
                     font-size: 16px;
                     font-weight: 400;
                 }
@@ -550,7 +555,7 @@
 
             .recomended-text {
                 margin-left: 26px;
-                color: #9D50FF;
+                color: #9d50ff;
                 font-weight: 700;
                 font-size: 14px;
                 line-height: 16px;
@@ -561,7 +566,7 @@
             }
 
             .selectpicker {
-                &__head{
+                &__head {
                     padding: 22px 24px;
 
                     &--text {
@@ -594,8 +599,8 @@
             .notification {
                 padding: 24px;
                 margin-bottom: 8px;
-                background: gradient(.04);
-                border: 1px solid color(#9D50FF, .16);
+                background: gradient(0.04);
+                border: 1px solid color(#9d50ff, 0.16);
                 border-radius: 8px;
 
                 &__head {
@@ -633,18 +638,18 @@
 }
 
 .room {
-    &__footer-btn{
+    &__footer-btn {
         margin-right: 7px;
         padding: 10px 25px;
         border-radius: 8px;
-        border: 1px solid color($mainColor, .16);
+        border: 1px solid color($mainColor, 0.16);
         background-color: #fff;
-        color: color($mainColor, .72);
+        color: color($mainColor, 0.72);
         font-weight: 400;
 
         svg {
             margin-right: 8px;
-            fill: color($mainColor, .72);
+            fill: color($mainColor, 0.72);
         }
 
         &:hover {
@@ -655,7 +660,7 @@
                 fill: color($mainColor, 1);
             }
         }
-    } 
+    }
 }
 
 .edit-select-icon {

@@ -1,297 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/bootstrap-grid.css">
-    <link rel="stylesheet" href="./css/components.css">
-</head>
-<body>
-    <header class="header">
-        <div class="container d-flex align-items-center justify-content-between">
-            <div class="header__logo">
-                <img src="./img/logo.svg" alt="">
-            </div>
-            <ul class="header__menu d-flex">
-                <li class="header__menu--item d-flex">
-                    <a href="" class="header__menu--link d-flex align-items-center active">Home</a>
-                </li>
-                <li class="header__menu--item d-flex">
-                    <a href="" class="header__menu--link d-flex align-items-center">Performance</a>
-                </li>
-                <li class="header__menu--item d-flex">
-                    <a href="" class="header__menu--link d-flex align-items-center">Reservations</a>
-                </li>
-                <li class="header__menu--item d-flex">
-                    <a href="" class="header__menu--link d-flex align-items-center">Reviews</a>
-                </li>
-                <li class="header__menu--item d-flex">
-                    <a href="" class="header__menu--link d-flex align-items-center">Earnings</a>
-                </li>
-                <li class="header__menu--item d-flex">
-                    <a href="" class="header__menu--link d-flex align-items-center">Messages</a>
-                </li>
-            </ul>
-            <div class="header__buttons d-flex align-items-center">
-                <div class="select">
-                    <select id="standard-select">
-                        <option value="Option 1">Option 1</option>
-                        <option value="Option 2">Option 2</option>
-                        <option value="Option 3">Option 3</option>
-                        <option value="Option 4">Option 4</option>
-                        <option value="Option 5">Option 5</option>
-                        <option value="Option length">Option that has too long of a value to fit</option>
-                    </select>
-                    <span class="focus"></span>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/bootstrap-grid.css" />
+        <link rel="stylesheet" href="./css/components.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="container d-flex align-items-center justify-content-between">
+                <div class="header__logo">
+                    <img src="./img/logo.svg" alt="" />
                 </div>
-                <button class="header__buttons--profile btn">
-                    <img src="./img/profile.svg" alt="">
-                </button>
+                <ul class="header__menu d-flex">
+                    <li class="header__menu--item d-flex">
+                        <a href="" class="header__menu--link d-flex align-items-center active">Home</a>
+                    </li>
+                    <li class="header__menu--item d-flex">
+                        <a href="" class="header__menu--link d-flex align-items-center">Performance</a>
+                    </li>
+                    <li class="header__menu--item d-flex">
+                        <a href="" class="header__menu--link d-flex align-items-center">Reservations</a>
+                    </li>
+                    <li class="header__menu--item d-flex">
+                        <a href="" class="header__menu--link d-flex align-items-center">Reviews</a>
+                    </li>
+                    <li class="header__menu--item d-flex">
+                        <a href="" class="header__menu--link d-flex align-items-center">Earnings</a>
+                    </li>
+                    <li class="header__menu--item d-flex">
+                        <a href="" class="header__menu--link d-flex align-items-center">Messages</a>
+                    </li>
+                </ul>
+                <div class="header__buttons d-flex align-items-center">
+                    <div class="select">
+                        <select id="standard-select">
+                            <option value="Option 1">Option 1</option>
+                            <option value="Option 2">Option 2</option>
+                            <option value="Option 3">Option 3</option>
+                            <option value="Option 4">Option 4</option>
+                            <option value="Option 5">Option 5</option>
+                            <option value="Option length">Option that has too long of a value to fit</option>
+                        </select>
+                        <span class="focus"></span>
+                    </div>
+                    <button class="header__buttons--profile btn">
+                        <img src="./img/profile.svg" alt="" />
+                    </button>
+                </div>
             </div>
-        </div>
-    </header>
-    
-    <div class="general">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col" style="max-width: 290px; width: 100%;">
-                    <div class="sidebar">
-                        <div class="sidebar__content">
-                            <div class="d-flex justify-content-end">
-                                <div class="col-4">
-                                    <div class="sidebar__content--section">
-                                        <button class="sidebar__goback btn border d-flex align-items-center">
-                                            <img src="./img/go-back.svg" alt="">
-                                            Go back
-                                        </button>
-                                    </div>
-                                    <div class="sidebar__content--section">
-                                        <div class="sidebar__cover d-flex align-items-end justify-content-center" style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50.34%, rgba(0, 0, 0, 0.48) 100%), url('./img/cover/ersa23.png');">
-                                            <a href="" class="sidebar__cover--link d-flex align-items-center">
-                                                <img src="./img/link-white.svg" alt="">
-                                                View listing
-                                            </a>
+        </header>
+
+        <div class="general">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col" style="max-width: 290px; width: 100%">
+                        <div class="sidebar">
+                            <div class="sidebar__content">
+                                <div class="d-flex justify-content-end">
+                                    <div class="col-4">
+                                        <div class="sidebar__content--section">
+                                            <button class="sidebar__goback btn border d-flex align-items-center">
+                                                <img src="./img/go-back.svg" alt="" />
+                                                Go back
+                                            </button>
                                         </div>
-                                    </div>
-                                    <div class="sidebar__content--section">
-                                        <h1 class="sidebar__title d-flex align-items-center">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                            <img src="./img/arrow-down-light.svg" alt="">
-                                        </h1>
-                                    </div>
-                                    <div class="sidebar__content--section">
-                                        <div class="sidebar__id home__item--id border">
-                                            ID <span>546458</span>
+                                        <div class="sidebar__content--section">
+                                            <div
+                                                class="sidebar__cover d-flex align-items-end justify-content-center"
+                                                style="
+                                                    background-image: linear-gradient(
+                                                            180deg,
+                                                            rgba(0, 0, 0, 0) 50.34%,
+                                                            rgba(0, 0, 0, 0.48) 100%
+                                                        ),
+                                                        url('./img/cover/ersa23.png');
+                                                "
+                                            >
+                                                <a href="" class="sidebar__cover--link d-flex align-items-center">
+                                                    <img src="./img/link-white.svg" alt="" />
+                                                    View listing
+                                                </a>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="sidebar__content--section">
-                                        <ul class="sidebar__menu">
-                                            <li class="sidebar__menu--item">
-                                                <a href="" class="sidebar__menu--link">Overview</a>
-                                            </li>
-                                            <li class="sidebar__menu--item">
-                                                <a href="" class="sidebar__menu--link">General Info</a>
-                                            </li>
-                                            <li class="sidebar__menu--item">
-                                                <a href="" class="sidebar__menu--link">Facilities</a>
-                                            </li>
-                                            <li class="sidebar__menu--item">
-                                                <a href="" class="sidebar__menu--link">Amenities</a>
-                                            </li>
-                                            <li class="sidebar__menu--item">
-                                                <a href="" class="sidebar__menu--link">Pricing</a>
-                                            </li>
-                                            <li class="sidebar__menu--item">
-                                                <a href="" class="sidebar__menu--link">Policies</a>
-                                            </li>
-                                            <li class="sidebar__menu--item">
-                                                <a href="" class="sidebar__menu--link">Co-hosts</a>
-                                            </li>
-                                            <li class="sidebar__menu--item">
-                                                <a href="" class="sidebar__menu--link">Overview</a>
-                                            </li>
-                                            <li class="sidebar__menu--item">
-                                                <a href="" class="sidebar__menu--link">Overview</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="sidebar__content--section">
-                                        <div class="sidebar__select">
-                                            <div id="bts-ex-5" class="selectpicker" data-clear="true" data-live="true">
-                                                <div data-id="prov" class="dropdown-toggle selectpicker__head border d-flex justify-content-between align-items-center">
-                                                    <div class="selectpicker__head--text">
-                                                        <img src="./img/active.svg" alt="">
-                                                        Sbject
+                                        <div class="sidebar__content--section">
+                                            <h1 class="sidebar__title d-flex align-items-center">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                <img src="./img/arrow-down-light.svg" alt="" />
+                                            </h1>
+                                        </div>
+                                        <div class="sidebar__content--section">
+                                            <div class="sidebar__id home__item--id border">ID <span>546458</span></div>
+                                        </div>
+                                        <div class="sidebar__content--section">
+                                            <ul class="sidebar__menu">
+                                                <li class="sidebar__menu--item">
+                                                    <a href="" class="sidebar__menu--link">Overview</a>
+                                                </li>
+                                                <li class="sidebar__menu--item">
+                                                    <a href="" class="sidebar__menu--link">General Info</a>
+                                                </li>
+                                                <li class="sidebar__menu--item">
+                                                    <a href="" class="sidebar__menu--link">Facilities</a>
+                                                </li>
+                                                <li class="sidebar__menu--item">
+                                                    <a href="" class="sidebar__menu--link">Amenities</a>
+                                                </li>
+                                                <li class="sidebar__menu--item">
+                                                    <a href="" class="sidebar__menu--link">Pricing</a>
+                                                </li>
+                                                <li class="sidebar__menu--item">
+                                                    <a href="" class="sidebar__menu--link">Policies</a>
+                                                </li>
+                                                <li class="sidebar__menu--item">
+                                                    <a href="" class="sidebar__menu--link">Co-hosts</a>
+                                                </li>
+                                                <li class="sidebar__menu--item">
+                                                    <a href="" class="sidebar__menu--link">Overview</a>
+                                                </li>
+                                                <li class="sidebar__menu--item">
+                                                    <a href="" class="sidebar__menu--link">Overview</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="sidebar__content--section">
+                                            <div class="sidebar__select">
+                                                <div id="bts-ex-5" class="selectpicker" data-clear="true" data-live="true">
+                                                    <div
+                                                        data-id="prov"
+                                                        class="dropdown-toggle selectpicker__head border d-flex justify-content-between align-items-center"
+                                                    >
+                                                        <div class="selectpicker__head--text">
+                                                            <img src="./img/active.svg" alt="" />
+                                                            Sbject
+                                                        </div>
+                                                        <img src="./img/arrow-down-light.svg" alt="" />
                                                     </div>
-                                                    <img src="./img/arrow-down-light.svg" alt="">
-                                                </div>
-                                                <div class="selectpicker__body">
-                                                    <li class="items bg-gradient" data-filter="995" data-value="0">
-                                                        <img src="./img/active.svg" alt="">
-                                                        Active
-                                                    </li>
-                                                    <li class="items bg-gradient" data-filter="995" data-value="1">
-                                                        <img src="./img/snoozed.svg" alt="">
-                                                        Snoozed
-                                                    </li>
-                                                    <li class="items bg-gradient" data-filter="444" data-value="2">
-                                                        <img src="./img/deactivated.svg" alt="">
-                                                        Deactivated
-                                                    </li>
+                                                    <div class="selectpicker__body">
+                                                        <li class="items bg-gradient" data-filter="995" data-value="0">
+                                                            <img src="./img/active.svg" alt="" />
+                                                            Active
+                                                        </li>
+                                                        <li class="items bg-gradient" data-filter="995" data-value="1">
+                                                            <img src="./img/snoozed.svg" alt="" />
+                                                            Snoozed
+                                                        </li>
+                                                        <li class="items bg-gradient" data-filter="444" data-value="2">
+                                                            <img src="./img/deactivated.svg" alt="" />
+                                                            Deactivated
+                                                        </li>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="sidebar__content--section">
-                                        <button class="sidebar__delete btn">
-                                            Delete listing
-                                        </button>
+                                        <div class="sidebar__content--section">
+                                            <button class="sidebar__delete btn">Delete listing</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col" style="max-width: 730px; width: 100%;">
-                    <div class="page-head d-flex justify-content-between align-items-center">
-                        <h1 class="page-head__title">
-                            Legal company information
-                        </h1>
-                    </div>
-                    <ul class="general__menu d-flex align-items-center"> 
-                        <li class="general__menu--item">
-                            <a href="general-info.html" class="general__menu--link border">Listing info</a>
-                        </li>
-                        <li class="general__menu--item">
-                            <a href="general-rooms.html" class="general__menu--link border">Rooms</a>
-                        </li>
-                        <li class="general__menu--item">
-                            <a href="general-location.html" class="general__menu--link border">Location</a>
-                        </li>
-                        <li class="general__menu--item">
-                            <a href="general-legal.html" class="general__menu--link border">Legal information</a>
-                        </li>
-                        <li class="general__menu--item">
-                            <a href="general-faq.html" class="general__menu--link border active gradient">FAQ</a>
-                        </li>
-                    </ul>
-                    <div class="general__list">
-                        <!-- item -->
-                        <div class="" style="display: block!important;">
-                            
-                            <div class="general__item--deactive">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <h1 class="general__item--title">Question 1</h1>
-                                    <div class="d-flex align-items-center">
-                                        <button class="general__item--cancel general__item--btn btn d-flex align-items-center">
-                                            Cancel
-                                        </button>
-                                        <button class="general__item--save general__item--btn btn border d-flex align-items-center">
-                                            Save
-                                        </button>
+                    <div class="col" style="max-width: 730px; width: 100%">
+                        <div class="page-head d-flex justify-content-between align-items-center">
+                            <h1 class="page-head__title">Legal company information</h1>
+                        </div>
+                        <ul class="general__menu">
+                            <li class="general__menu--item">
+                                <a href="general-info.html" class="general__menu--link border">Listing info</a>
+                            </li>
+                            <li class="general__menu--item">
+                                <a href="general-rooms.html" class="general__menu--link border">Rooms</a>
+                            </li>
+                            <li class="general__menu--item">
+                                <a href="general-location.html" class="general__menu--link border">Location</a>
+                            </li>
+                            <li class="general__menu--item">
+                                <a href="general-legal.html" class="general__menu--link border">Legal information</a>
+                            </li>
+                            <li class="general__menu--item">
+                                <a href="general-faq.html" class="general__menu--link border active gradient">FAQ</a>
+                            </li>
+                        </ul>
+                        <div class="general__list">
+                            <!-- item -->
+                            <div class="" style="display: block !important">
+                                <div class="general__item--deactive">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h1 class="general__item--title">Question 1</h1>
+                                        <div class="d-flex align-items-center">
+                                            <button class="general__item--cancel general__item--btn btn d-flex align-items-center">
+                                                Cancel
+                                            </button>
+                                            <button class="general__item--save general__item--btn btn border d-flex align-items-center">
+                                                Save
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <div class="">
+                                        <label class="number border d-flex align-items-center">
+                                            <input type="text" class="number__input" value="LLT Dusheti 2020" placeholder="Name" />
+                                        </label>
+                                        <br />
+                                        <textarea class="textarea border btn" name="" id=""></textarea>
+                                        <br />
+                                        <br />
+                                        <div>
+                                            <button class="add-room-btn btn text gradient d-flex align-items-center">
+                                                <svg
+                                                    width="14"
+                                                    height="14"
+                                                    viewBox="0 0 14 14"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M6.9987 0.332031C5.68016 0.332031 4.39123 0.723024 3.2949 1.45557C2.19857 2.18811 1.34409 3.2293 0.839504 4.44747C0.33492 5.66565 0.202898 7.00609 0.460132 8.2993C0.717367 9.59251 1.35231 10.7804 2.28466 11.7127C3.21701 12.6451 4.40489 13.28 5.6981 13.5373C6.99131 13.7945 8.33175 13.6625 9.54992 13.1579C10.7681 12.6533 11.8093 11.7988 12.5418 10.7025C13.2744 9.60617 13.6654 8.31724 13.6654 6.9987C13.6654 6.12322 13.4929 5.25631 13.1579 4.44747C12.8229 3.63864 12.3318 2.90371 11.7127 2.28465C11.0937 1.6656 10.3588 1.17453 9.54992 0.839501C8.74109 0.50447 7.87418 0.332031 6.9987 0.332031ZM6.9987 12.332C5.94387 12.332 4.91272 12.0192 4.03566 11.4332C3.1586 10.8472 2.47501 10.0142 2.07134 9.03968C1.66768 8.06514 1.56206 6.99278 1.76785 5.95822C1.97363 4.92365 2.48158 3.97334 3.22746 3.22746C3.97334 2.48158 4.92365 1.97363 5.95822 1.76784C6.99278 1.56206 8.06514 1.66767 9.03968 2.07134C10.0142 2.47501 10.8472 3.15859 11.4332 4.03566C12.0192 4.91272 12.332 5.94386 12.332 6.9987C12.332 8.41319 11.7701 9.76974 10.7699 10.7699C9.76974 11.7701 8.41319 12.332 6.9987 12.332ZM9.66537 6.33203H7.66537V4.33203C7.66537 4.15522 7.59513 3.98565 7.47011 3.86063C7.34508 3.7356 7.17551 3.66536 6.9987 3.66536C6.82189 3.66536 6.65232 3.7356 6.5273 3.86063C6.40227 3.98565 6.33203 4.15522 6.33203 4.33203V6.33203H4.33203C4.15522 6.33203 3.98565 6.40227 3.86063 6.52729C3.73561 6.65232 3.66537 6.82189 3.66537 6.9987C3.66537 7.17551 3.73561 7.34508 3.86063 7.4701C3.98565 7.59513 4.15522 7.66536 4.33203 7.66536H6.33203V9.66537C6.33203 9.84218 6.40227 10.0117 6.5273 10.1368C6.65232 10.2618 6.82189 10.332 6.9987 10.332C7.17551 10.332 7.34508 10.2618 7.47011 10.1368C7.59513 10.0117 7.66537 9.84218 7.66537 9.66537V7.66536H9.66537C9.84218 7.66536 10.0117 7.59513 10.1368 7.4701C10.2618 7.34508 10.332 7.17551 10.332 6.9987C10.332 6.82189 10.2618 6.65232 10.1368 6.52729C10.0117 6.40227 9.84218 6.33203 9.66537 6.33203Z"
+                                                        fill="url(#paint0_linear_1_13430)"
+                                                    />
+                                                    <defs>
+                                                        <linearGradient
+                                                            id="paint0_linear_1_13430"
+                                                            x1="9.7987"
+                                                            y1="-3.38592"
+                                                            x2="-5.20039"
+                                                            y2="3.25498"
+                                                            gradientUnits="userSpaceOnUse"
+                                                        >
+                                                            <stop offset="0.0001" stop-color="#9D50FF" />
+                                                            <stop offset="1" stop-color="#583CF0" />
+                                                        </linearGradient>
+                                                    </defs>
+                                                </svg>
+                                                Add new room
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
-                                <br />
-                                <div class="">
-                                    <label class="number border d-flex align-items-center">
-                                        <input type="text" class="number__input" value="LLT Dusheti 2020" placeholder="Name">
-                                    </label>
-                                    <br />
-                                    <textarea class="textarea border btn" name="" id=""></textarea>
-                                    <br />
-                                    <br />
+                            </div>
+                            <!-- item end -->
+                        </div>
+                    </div>
+                    <div class="col d-none d-xl-block" style="max-width: 400px; width: 100%">
+                        <div class="home__stats">
+                            <div class="home__stats--head d-flex justify-content-between align-items-center">
+                                <h1 class="home__stats--tab-title">Page score tips</h1>
+                            </div>
+                            <div class="home__stats--body">
+                                <div class="home__stats--item d-flex align-items-center">
+                                    <h1 class="home__stats--item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                                    <div class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                                </div>
+                                <!-- item end -->
+                                <div class="home__stats--item d-flex align-items-center">
+                                    <h1 class="home__stats--item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                                    <div class="home__stats--item-desc">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, hic.
+                                    </div>
+                                </div>
+                                <!-- item end -->
+                                <div class="home__stats--item d-flex align-items-center">
+                                    <h1 class="home__stats--item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                                    <div class="home__stats--item-desc">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, hic.
+                                    </div>
+                                </div>
+                                <!-- item end -->
+                            </div>
+                        </div>
+
+                        <div class="home__stats">
+                            <div class="home__stats--head d-flex justify-content-between align-items-center">
+                                <h1 class="home__stats--tab-title">Activities</h1>
+                                <a href="" class="home__stats--tab-link">See all</a>
+                            </div>
+                            <div class="home__stats--body">
+                                <div class="home__stats--item d-flex">
+                                    <figure class="home__stats--item-profile">
+                                        <img src="./img/cover/profile.png" alt="" />
+                                    </figure>
                                     <div>
-                                        <button class="add-room-btn btn text gradient d-flex align-items-center">
-                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M6.9987 0.332031C5.68016 0.332031 4.39123 0.723024 3.2949 1.45557C2.19857 2.18811 1.34409 3.2293 0.839504 4.44747C0.33492 5.66565 0.202898 7.00609 0.460132 8.2993C0.717367 9.59251 1.35231 10.7804 2.28466 11.7127C3.21701 12.6451 4.40489 13.28 5.6981 13.5373C6.99131 13.7945 8.33175 13.6625 9.54992 13.1579C10.7681 12.6533 11.8093 11.7988 12.5418 10.7025C13.2744 9.60617 13.6654 8.31724 13.6654 6.9987C13.6654 6.12322 13.4929 5.25631 13.1579 4.44747C12.8229 3.63864 12.3318 2.90371 11.7127 2.28465C11.0937 1.6656 10.3588 1.17453 9.54992 0.839501C8.74109 0.50447 7.87418 0.332031 6.9987 0.332031ZM6.9987 12.332C5.94387 12.332 4.91272 12.0192 4.03566 11.4332C3.1586 10.8472 2.47501 10.0142 2.07134 9.03968C1.66768 8.06514 1.56206 6.99278 1.76785 5.95822C1.97363 4.92365 2.48158 3.97334 3.22746 3.22746C3.97334 2.48158 4.92365 1.97363 5.95822 1.76784C6.99278 1.56206 8.06514 1.66767 9.03968 2.07134C10.0142 2.47501 10.8472 3.15859 11.4332 4.03566C12.0192 4.91272 12.332 5.94386 12.332 6.9987C12.332 8.41319 11.7701 9.76974 10.7699 10.7699C9.76974 11.7701 8.41319 12.332 6.9987 12.332ZM9.66537 6.33203H7.66537V4.33203C7.66537 4.15522 7.59513 3.98565 7.47011 3.86063C7.34508 3.7356 7.17551 3.66536 6.9987 3.66536C6.82189 3.66536 6.65232 3.7356 6.5273 3.86063C6.40227 3.98565 6.33203 4.15522 6.33203 4.33203V6.33203H4.33203C4.15522 6.33203 3.98565 6.40227 3.86063 6.52729C3.73561 6.65232 3.66537 6.82189 3.66537 6.9987C3.66537 7.17551 3.73561 7.34508 3.86063 7.4701C3.98565 7.59513 4.15522 7.66536 4.33203 7.66536H6.33203V9.66537C6.33203 9.84218 6.40227 10.0117 6.5273 10.1368C6.65232 10.2618 6.82189 10.332 6.9987 10.332C7.17551 10.332 7.34508 10.2618 7.47011 10.1368C7.59513 10.0117 7.66537 9.84218 7.66537 9.66537V7.66536H9.66537C9.84218 7.66536 10.0117 7.59513 10.1368 7.4701C10.2618 7.34508 10.332 7.17551 10.332 6.9987C10.332 6.82189 10.2618 6.65232 10.1368 6.52729C10.0117 6.40227 9.84218 6.33203 9.66537 6.33203Z" fill="url(#paint0_linear_1_13430)"/>
-                                                <defs>
-                                                <linearGradient id="paint0_linear_1_13430" x1="9.7987" y1="-3.38592" x2="-5.20039" y2="3.25498" gradientUnits="userSpaceOnUse">
-                                                <stop offset="0.0001" stop-color="#9D50FF"/>
-                                                <stop offset="1" stop-color="#583CF0"/>
-                                                </linearGradient>
-                                                </defs>
-                                            </svg>
-                                            Add new room
-                                        </button>
+                                        <h1 class="home__stats--item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                                        <div class="home__stats--item-desc">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, hic.
+                                        </div>
+                                        <p class="home__stats--item-date">22.02.22</p>
                                     </div>
                                 </div>
+                                <!-- item end -->
+                                <div class="home__stats--item d-flex">
+                                    <figure class="home__stats--item-profile">
+                                        <img src="./img/cover/profile.png" alt="" />
+                                    </figure>
+                                    <div>
+                                        <h1 class="home__stats--item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                                        <div class="home__stats--item-desc">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, hic.
+                                        </div>
+                                        <p class="home__stats--item-date">22.02.22</p>
+                                    </div>
+                                </div>
+                                <!-- item end -->
                             </div>
-                        </div><!-- item end -->
-
-                    </div>
-                </div>
-                <div class="col d-none d-xl-block" style="max-width: 400px; width: 100%;">
-
-                    <div class="home__stats">
-                        <div class="home__stats--head d-flex justify-content-between align-items-center">
-                            <h1 class="home__stats--tab-title">Page score tips</h1>
-                        </div>
-                        <div class="home__stats--body">
-                            <div class="home__stats--item d-flex align-items-center">
-                                <h1 class="home__stats--item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-                                <div class="">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                </div>
-                            </div><!-- item end -->
-                            <div class="home__stats--item d-flex align-items-center">
-                                <h1 class="home__stats--item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-                                <div class="home__stats--item-desc">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, hic.
-                                </div>
-                            </div><!-- item end -->
-                            <div class="home__stats--item d-flex align-items-center">
-                                <h1 class="home__stats--item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-                                <div class="home__stats--item-desc">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, hic.
-                                </div>
-                            </div><!-- item end -->
-                        </div>
-                    </div>
-
-                    <div class="home__stats">
-                        <div class="home__stats--head d-flex justify-content-between align-items-center">
-                            <h1 class="home__stats--tab-title">Activities</h1>
-                            <a href="" class="home__stats--tab-link">See all</a>
-                        </div>
-                        <div class="home__stats--body">
-                            <div class="home__stats--item d-flex">
-                                <figure class="home__stats--item-profile">
-                                    <img src="./img/cover/profile.png" alt="" />
-                                </figure>
-                                <div>
-                                    <h1 class="home__stats--item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-                                    <div class="home__stats--item-desc">
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, hic.
-                                    </div>
-                                    <p class="home__stats--item-date">22.02.22</p>
-                                </div>
-                            </div><!-- item end -->
-                            <div class="home__stats--item d-flex">
-                                <figure class="home__stats--item-profile">
-                                    <img src="./img/cover/profile.png" alt="" />
-                                </figure>
-                                <div>
-                                    <h1 class="home__stats--item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-                                    <div class="home__stats--item-desc">
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, hic.
-                                    </div>
-                                    <p class="home__stats--item-date">22.02.22</p>
-                                </div>
-                            </div><!-- item end -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./function/select/bootstrap-select.js"></script>
-    <script src="./function/select/bundle.min.js"></script>
-    <script src="./function/select/livefilter.min.js"></script>
-    <script src="./function/select/tabcomplete.min.js"></script>
-    <script src="./function/function.js"></script>
-</body>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="./function/select/bootstrap-select.js"></script>
+        <script src="./function/select/bundle.min.js"></script>
+        <script src="./function/select/livefilter.min.js"></script>
+        <script src="./function/select/tabcomplete.min.js"></script>
+        <script src="./function/function.js"></script>
+    </body>
 </html>

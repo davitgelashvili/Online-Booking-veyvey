@@ -1,476 +1,503 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/bootstrap-grid.css">
-    <link rel="stylesheet" href="./css/components.css">
-</head>
-<body>
-    <header class="header">
-        <div class="container d-flex align-items-center justify-content-between">
-            <div class="header__logo">
-                <img src="./img/logo.svg" alt="">
-            </div>
-            <ul class="header__menu d-flex">
-                <li class="header__menu--item d-flex">
-                    <a href="" class="header__menu--link d-flex align-items-center active">Home</a>
-                </li>
-                <li class="header__menu--item d-flex">
-                    <a href="" class="header__menu--link d-flex align-items-center">Performance</a>
-                </li>
-                <li class="header__menu--item d-flex">
-                    <a href="" class="header__menu--link d-flex align-items-center">Reservations</a>
-                </li>
-                <li class="header__menu--item d-flex">
-                    <a href="" class="header__menu--link d-flex align-items-center">Reviews</a>
-                </li>
-                <li class="header__menu--item d-flex">
-                    <a href="" class="header__menu--link d-flex align-items-center">Earnings</a>
-                </li>
-                <li class="header__menu--item d-flex">
-                    <a href="" class="header__menu--link d-flex align-items-center">Messages</a>
-                </li>
-            </ul>
-            <div class="header__buttons d-flex align-items-center">
-                <div class="select">
-                    <select id="standard-select">
-                        <option value="Option 1">Option 1</option>
-                        <option value="Option 2">Option 2</option>
-                        <option value="Option 3">Option 3</option>
-                        <option value="Option 4">Option 4</option>
-                        <option value="Option 5">Option 5</option>
-                        <option value="Option length">Option that has too long of a value to fit</option>
-                    </select>
-                    <span class="focus"></span>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/bootstrap-grid.css" />
+        <link rel="stylesheet" href="./css/components.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="container d-flex align-items-center justify-content-between">
+                <div class="header__logo">
+                    <img src="./img/logo.svg" alt="" />
                 </div>
-                <button class="header__buttons--profile btn">
-                    <img src="./img/profile.svg" alt="">
-                </button>
+                <ul class="header__menu d-flex">
+                    <li class="header__menu--item d-flex">
+                        <a href="" class="header__menu--link d-flex align-items-center active">Home</a>
+                    </li>
+                    <li class="header__menu--item d-flex">
+                        <a href="" class="header__menu--link d-flex align-items-center">Performance</a>
+                    </li>
+                    <li class="header__menu--item d-flex">
+                        <a href="" class="header__menu--link d-flex align-items-center">Reservations</a>
+                    </li>
+                    <li class="header__menu--item d-flex">
+                        <a href="" class="header__menu--link d-flex align-items-center">Reviews</a>
+                    </li>
+                    <li class="header__menu--item d-flex">
+                        <a href="" class="header__menu--link d-flex align-items-center">Earnings</a>
+                    </li>
+                    <li class="header__menu--item d-flex">
+                        <a href="" class="header__menu--link d-flex align-items-center">Messages</a>
+                    </li>
+                </ul>
+                <div class="header__buttons d-flex align-items-center">
+                    <div class="select">
+                        <select id="standard-select">
+                            <option value="Option 1">Option 1</option>
+                            <option value="Option 2">Option 2</option>
+                            <option value="Option 3">Option 3</option>
+                            <option value="Option 4">Option 4</option>
+                            <option value="Option 5">Option 5</option>
+                            <option value="Option length">Option that has too long of a value to fit</option>
+                        </select>
+                        <span class="focus"></span>
+                    </div>
+                    <button class="header__buttons--profile btn">
+                        <img src="./img/profile.svg" alt="" />
+                    </button>
+                </div>
             </div>
-        </div>
-    </header>
-    
-    <div class="general">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col" style="max-width: 290px; width: 100%;">
-                    <div class="sidebar">
-                        <div class="sidebar__content">
-                            <div class="d-flex justify-content-end">
-                                <div class="col-4">
-                                    <div class="sidebar__content--section">
-                                        <button class="sidebar__goback btn border d-flex align-items-center">
-                                            <img src="./img/go-back.svg" alt="">
-                                            Go back
-                                        </button>
-                                    </div>
-                                    <div class="sidebar__content--section">
-                                        <div class="sidebar__cover d-flex align-items-end justify-content-center" style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50.34%, rgba(0, 0, 0, 0.48) 100%), url('./img/cover/ersa23.png');">
-                                            <a href="" class="sidebar__cover--link d-flex align-items-center">
-                                                <img src="./img/link-white.svg" alt="">
-                                                View listing
-                                            </a>
+        </header>
+
+        <div class="general">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col" style="max-width: 290px; width: 100%">
+                        <div class="sidebar">
+                            <div class="sidebar__content">
+                                <div class="d-flex justify-content-end">
+                                    <div class="col-4">
+                                        <div class="sidebar__content--section">
+                                            <button class="sidebar__goback btn border d-flex align-items-center">
+                                                <img src="./img/go-back.svg" alt="" />
+                                                Go back
+                                            </button>
                                         </div>
-                                    </div>
-                                    <div class="sidebar__content--section">
-                                        <h1 class="sidebar__title d-flex align-items-center">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                            <img src="./img/arrow-down-light.svg" alt="">
-                                        </h1>
-                                    </div>
-                                    <div class="sidebar__content--section">
-                                        <div class="sidebar__id home__item--id border">
-                                            ID <span>546458</span>
+                                        <div class="sidebar__content--section">
+                                            <div
+                                                class="sidebar__cover d-flex align-items-end justify-content-center"
+                                                style="
+                                                    background-image: linear-gradient(
+                                                            180deg,
+                                                            rgba(0, 0, 0, 0) 50.34%,
+                                                            rgba(0, 0, 0, 0.48) 100%
+                                                        ),
+                                                        url('./img/cover/ersa23.png');
+                                                "
+                                            >
+                                                <a href="" class="sidebar__cover--link d-flex align-items-center">
+                                                    <img src="./img/link-white.svg" alt="" />
+                                                    View listing
+                                                </a>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="sidebar__content--section">
-                                        <ul class="sidebar__menu">
-                                            <li class="sidebar__menu--item">
-                                                <a href="" class="sidebar__menu--link">Overview</a>
-                                            </li>
-                                            <li class="sidebar__menu--item">
-                                                <a href="" class="sidebar__menu--link">General Info</a>
-                                            </li>
-                                            <li class="sidebar__menu--item">
-                                                <a href="" class="sidebar__menu--link">Facilities</a>
-                                            </li>
-                                            <li class="sidebar__menu--item">
-                                                <a href="" class="sidebar__menu--link">Amenities</a>
-                                            </li>
-                                            <li class="sidebar__menu--item">
-                                                <a href="" class="sidebar__menu--link">Pricing</a>
-                                            </li>
-                                            <li class="sidebar__menu--item">
-                                                <a href="" class="sidebar__menu--link">Policies</a>
-                                            </li>
-                                            <li class="sidebar__menu--item">
-                                                <a href="" class="sidebar__menu--link">Co-hosts</a>
-                                            </li>
-                                            <li class="sidebar__menu--item">
-                                                <a href="" class="sidebar__menu--link">Overview</a>
-                                            </li>
-                                            <li class="sidebar__menu--item">
-                                                <a href="" class="sidebar__menu--link">Overview</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="sidebar__content--section">
-                                        <div class="sidebar__select">
-                                            <div id="bts-ex-5" class="selectpicker" data-clear="true" data-live="true">
-                                                <div data-id="prov" class="dropdown-toggle selectpicker__head border d-flex justify-content-between align-items-center">
-                                                    <div class="selectpicker__head--text">
-                                                        <img src="./img/active.svg" alt="">
-                                                        Sbject
+                                        <div class="sidebar__content--section">
+                                            <h1 class="sidebar__title d-flex align-items-center">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                <img src="./img/arrow-down-light.svg" alt="" />
+                                            </h1>
+                                        </div>
+                                        <div class="sidebar__content--section">
+                                            <div class="sidebar__id home__item--id border">ID <span>546458</span></div>
+                                        </div>
+                                        <div class="sidebar__content--section">
+                                            <ul class="sidebar__menu">
+                                                <li class="sidebar__menu--item">
+                                                    <a href="" class="sidebar__menu--link">Overview</a>
+                                                </li>
+                                                <li class="sidebar__menu--item">
+                                                    <a href="" class="sidebar__menu--link">General Info</a>
+                                                </li>
+                                                <li class="sidebar__menu--item">
+                                                    <a href="" class="sidebar__menu--link">Facilities</a>
+                                                </li>
+                                                <li class="sidebar__menu--item">
+                                                    <a href="" class="sidebar__menu--link">Amenities</a>
+                                                </li>
+                                                <li class="sidebar__menu--item">
+                                                    <a href="" class="sidebar__menu--link">Pricing</a>
+                                                </li>
+                                                <li class="sidebar__menu--item">
+                                                    <a href="" class="sidebar__menu--link">Policies</a>
+                                                </li>
+                                                <li class="sidebar__menu--item">
+                                                    <a href="" class="sidebar__menu--link">Co-hosts</a>
+                                                </li>
+                                                <li class="sidebar__menu--item">
+                                                    <a href="" class="sidebar__menu--link">Overview</a>
+                                                </li>
+                                                <li class="sidebar__menu--item">
+                                                    <a href="" class="sidebar__menu--link">Overview</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="sidebar__content--section">
+                                            <div class="sidebar__select">
+                                                <div id="bts-ex-5" class="selectpicker" data-clear="true" data-live="true">
+                                                    <div
+                                                        data-id="prov"
+                                                        class="dropdown-toggle selectpicker__head border d-flex justify-content-between align-items-center"
+                                                    >
+                                                        <div class="selectpicker__head--text">
+                                                            <img src="./img/active.svg" alt="" />
+                                                            Sbject
+                                                        </div>
+                                                        <img src="./img/arrow-down-light.svg" alt="" />
                                                     </div>
-                                                    <img src="./img/arrow-down-light.svg" alt="">
-                                                </div>
-                                                <div class="selectpicker__body">
-                                                    <li class="items bg-gradient" data-filter="995" data-value="0">
-                                                        <img src="./img/active.svg" alt="">
-                                                        Active
-                                                    </li>
-                                                    <li class="items bg-gradient" data-filter="995" data-value="1">
-                                                        <img src="./img/snoozed.svg" alt="">
-                                                        Snoozed
-                                                    </li>
-                                                    <li class="items bg-gradient" data-filter="444" data-value="2">
-                                                        <img src="./img/deactivated.svg" alt="">
-                                                        Deactivated
-                                                    </li>
+                                                    <div class="selectpicker__body">
+                                                        <li class="items bg-gradient" data-filter="995" data-value="0">
+                                                            <img src="./img/active.svg" alt="" />
+                                                            Active
+                                                        </li>
+                                                        <li class="items bg-gradient" data-filter="995" data-value="1">
+                                                            <img src="./img/snoozed.svg" alt="" />
+                                                            Snoozed
+                                                        </li>
+                                                        <li class="items bg-gradient" data-filter="444" data-value="2">
+                                                            <img src="./img/deactivated.svg" alt="" />
+                                                            Deactivated
+                                                        </li>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="sidebar__content--section">
-                                        <button class="sidebar__delete btn">
-                                            Delete listing
-                                        </button>
+                                        <div class="sidebar__content--section">
+                                            <button class="sidebar__delete btn">Delete listing</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col" style="max-width: 730px; width: 100%;">
-                    <div class="page-head">
-                        <h1 class="page-head__title">
-                            General info
-                        </h1>
-                    </div>
-                    <ul class="general__menu d-flex align-items-center"> 
-                        <li class="general__menu--item">
-                            <a href="general-info.html" class="general__menu--link border active gradient">Listing info</a>
-                        </li>
-                        <li class="general__menu--item">
-                            <a href="general-rooms.html" class="general__menu--link border">Rooms</a>
-                        </li>
-                        <li class="general__menu--item">
-                            <a href="general-location.html" class="general__menu--link border">Location</a>
-                        </li>
-                        <li class="general__menu--item">
-                            <a href="general-legal.html" class="general__menu--link border">Legal information</a>
-                        </li>
-                        <li class="general__menu--item">
-                            <a href="general-faq.html" class="general__menu--link border">FAQ</a>
-                        </li>
-                    </ul>
-                    <div class="general__list">
-                        <!-- item -->
-                        <div class="general__item border">
-                            <div class="general__item--deactive" data-id="0">
-                                <div class="general__item--head">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <h1 class="general__item--title">Listing type</h1>
-                                        <button class="general__item--edit js-edit-btn d-flex align-items-center btn">
-                                            <img src="./img/item-edit.svg" alt="">
-                                            Edit
-                                        </button>
-                                    </div>
-                                    <p class="general__item--dec">Hotel</p>
-                                </div>
-                            </div>
-                            <div class="general__item--active" data-id="0">
-                                <div class="general__item--head">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <h1 class="general__item--title">Listing type</h1>
-                                        <div class="d-flex align-items-center">
-                                            <button class="general__item--cancel  js-save-btn general__item--btn btn d-flex align-items-center">
-                                                Cancel
-                                            </button>
-                                            <button class="general__item--save  js-save-btn general__item--btn btn border d-flex align-items-center">
-                                                Save
+                    <div class="col" style="max-width: 730px; width: 100%">
+                        <div class="page-head">
+                            <h1 class="page-head__title">General info</h1>
+                        </div>
+                        <ul class="general__menu">
+                            <li class="general__menu--item">
+                                <a href="general-info.html" class="general__menu--link border active gradient">Listing info</a>
+                            </li>
+                            <li class="general__menu--item">
+                                <a href="general-rooms.html" class="general__menu--link border">Rooms</a>
+                            </li>
+                            <li class="general__menu--item">
+                                <a href="general-location.html" class="general__menu--link border">Location</a>
+                            </li>
+                            <li class="general__menu--item">
+                                <a href="general-legal.html" class="general__menu--link border">Legal information</a>
+                            </li>
+                            <li class="general__menu--item">
+                                <a href="general-faq.html" class="general__menu--link border">FAQ</a>
+                            </li>
+                        </ul>
+                        <div class="general__list">
+                            <!-- item -->
+                            <div class="general__item border">
+                                <div class="general__item--deactive" data-id="0">
+                                    <div class="general__item--head">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h1 class="general__item--title">Listing type</h1>
+                                            <button class="general__item--edit js-edit-btn d-flex align-items-center btn">
+                                                <img src="./img/item-edit.svg" alt="" />
+                                                Edit
                                             </button>
                                         </div>
+                                        <p class="general__item--dec">Hotel</p>
                                     </div>
-                                    <p class="general__item--dec">Choose your property type</p>
                                 </div>
-                                <div class="general__item--body">
-                                    <div id="bts-ex-5" class="selectpicker" data-clear="true" data-live="true">
-                                        <div data-id="prov" class="dropdown-toggle selectpicker__head border d-flex justify-content-between align-items-center">
-                                            <div class="selectpicker__head--text">
-                                                Sbject
+                                <div class="general__item--active" data-id="0">
+                                    <div class="general__item--head">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h1 class="general__item--title">Listing type</h1>
+                                            <div class="d-flex align-items-center">
+                                                <button
+                                                    class="general__item--cancel js-save-btn general__item--btn btn d-flex align-items-center"
+                                                >
+                                                    Cancel
+                                                </button>
+                                                <button
+                                                    class="general__item--save js-save-btn general__item--btn btn border d-flex align-items-center"
+                                                >
+                                                    Save
+                                                </button>
                                             </div>
-                                            <img src="./img/arrow-down-light.svg" alt="">
                                         </div>
-                                        <div class="selectpicker__body">
-                                            <li class="items bg-gradient" data-filter="995" data-value="1">
-                                                Sbject 1
-                                            </li>
-                                            <li class="items bg-gradient" data-filter="444" data-value="2">
-                                                Sbject 2
-                                            </li>
-                                        </div>
+                                        <p class="general__item--dec">Choose your property type</p>
                                     </div>
-                                </div>
-                            </div>
-                        </div><!-- item end -->
-                        <!-- item -->
-                        <div class="general__item border">
-                            <div class="general__item--deactive" data-id="1">
-                                <div class="general__item--head">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <h1 class="general__item--title">Listing type</h1>
-                                        <button class="general__item--edit js-edit-btn d-flex align-items-center btn">
-                                            <img src="./img/item-edit.svg" alt="">
-                                            Edit
-                                        </button>
-                                    </div>
-                                    <p class="general__item--dec">Hotel</p>
-                                </div>
-                            </div>
-                            <div class="general__item--active" data-id="1">
-                                <div class="general__item--head">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <h1 class="general__item--title">Listing description</h1>
-                                        <div class="d-flex align-items-center">
-                                            <button class="general__item--cancel js-save-btn general__item--btn btn d-flex align-items-center">
-                                                Cancel
-                                            </button>
-                                            <button class="general__item--save js-save-btn general__item--btn btn border d-flex align-items-center">
-                                                Save
-                                            </button>
+                                    <div class="general__item--body">
+                                        <div id="bts-ex-5" class="selectpicker" data-clear="true" data-live="true">
+                                            <div
+                                                data-id="prov"
+                                                class="dropdown-toggle selectpicker__head border d-flex justify-content-between align-items-center"
+                                            >
+                                                <div class="selectpicker__head--text">Sbject</div>
+                                                <img src="./img/arrow-down-light.svg" alt="" />
+                                            </div>
+                                            <div class="selectpicker__body">
+                                                <li class="items bg-gradient" data-filter="995" data-value="1">Sbject 1</li>
+                                                <li class="items bg-gradient" data-filter="444" data-value="2">Sbject 2</li>
+                                            </div>
                                         </div>
                                     </div>
-                                    <p class="general__item--dec">Choose your property type</p>
-                                </div>
-                                <div class="general__item--body">
-                                    <textarea class="textarea border btn" name="" id="" vale=""></textarea>
                                 </div>
                             </div>
-                        </div><!-- item end -->
-                        <!-- item -->
-                        <div class="general__item border">
-                            <div class="general__item--deactive" data-id="2">
-                                <div class="general__item--head">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <h1 class="general__item--title">Contact number</h1>
-                                        <button class="general__item--edit js-edit-btn d-flex align-items-center btn">
-                                            <img src="./img/item-edit.svg" alt="">
-                                            Edit
-                                        </button>
-                                    </div>
-                                    <p class="general__item--dec">(+995) 595-96-92-96</p>
-                                </div>
-                            </div>
-                            <div class="general__item--active" data-id="2">
-                                <div class="general__item--head">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <h1 class="general__item--title">Listing description</h1>
-                                        <div class="d-flex align-items-center">
-                                            <button class="general__item--cancel js-save-btn general__item--btn btn d-flex align-items-center">
-                                                Cancel
-                                            </button>
-                                            <button class="general__item--save js-save-btn general__item--btn btn border d-flex align-items-center">
-                                                Save
+                            <!-- item end -->
+                            <!-- item -->
+                            <div class="general__item border">
+                                <div class="general__item--deactive" data-id="1">
+                                    <div class="general__item--head">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h1 class="general__item--title">Listing type</h1>
+                                            <button class="general__item--edit js-edit-btn d-flex align-items-center btn">
+                                                <img src="./img/item-edit.svg" alt="" />
+                                                Edit
                                             </button>
                                         </div>
+                                        <p class="general__item--dec">Hotel</p>
                                     </div>
-                                    <p class="general__item--dec">Change your mobile </p>
                                 </div>
-                                <div class="general__item--body">
-                                    <label class="number border d-flex align-items-center">
-                                        <input type="text" class="number__index" placeholder="index" value="(+995)">
-                                        <input type="text" class="number__input" value="591 111 996">
-                                        <button class="number__verify btn">Verify</button>
-                                    </label>
+                                <div class="general__item--active" data-id="1">
+                                    <div class="general__item--head">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h1 class="general__item--title">Listing description</h1>
+                                            <div class="d-flex align-items-center">
+                                                <button
+                                                    class="general__item--cancel js-save-btn general__item--btn btn d-flex align-items-center"
+                                                >
+                                                    Cancel
+                                                </button>
+                                                <button
+                                                    class="general__item--save js-save-btn general__item--btn btn border d-flex align-items-center"
+                                                >
+                                                    Save
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <p class="general__item--dec">Choose your property type</p>
+                                    </div>
+                                    <div class="general__item--body">
+                                        <textarea class="textarea border btn" name="" id="" vale=""></textarea>
+                                    </div>
                                 </div>
                             </div>
-                        </div><!-- item end -->
-                        <!-- item -->
-                        <div class="general__item border">
-                            <div class="general__item--deactive" data-id="3">
-                                <div class="general__item--head">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <h1 class="general__item--title">Property name</h1>
-                                        <button class="general__item--edit js-edit-btn d-flex align-items-center btn">
-                                            <img src="./img/item-edit.svg" alt="">
-                                            Edit
-                                        </button>
-                                    </div>
-                                    <p class="general__item--dec">Holiday Home Chakvi</p>
-                                </div>
-                            </div>
-                            <div class="general__item--active" data-id="3">
-                                <div class="general__item--head">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <h1 class="general__item--title">Property name</h1>
-                                        <div class="d-flex align-items-center">
-                                            <button class="general__item--cancel js-save-btn general__item--btn btn d-flex align-items-center">
-                                                Cancel
-                                            </button>
-                                            <button class="general__item--save js-save-btn general__item--btn btn border d-flex align-items-center">
-                                                Save
+                            <!-- item end -->
+                            <!-- item -->
+                            <div class="general__item border">
+                                <div class="general__item--deactive" data-id="2">
+                                    <div class="general__item--head">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h1 class="general__item--title">Contact number</h1>
+                                            <button class="general__item--edit js-edit-btn d-flex align-items-center btn">
+                                                <img src="./img/item-edit.svg" alt="" />
+                                                Edit
                                             </button>
                                         </div>
+                                        <p class="general__item--dec">(+995) 595-96-92-96</p>
                                     </div>
-                                    <p class="general__item--dec">Edit your property name</p>
                                 </div>
-                                <div class="general__item--body">
-                                    <label class="number border d-flex align-items-center">
-                                        <input type="text" class="number__input" value="Holiday Home Chakvi">
-                                    </label>
-                                </div>
-                            </div>
-                        </div><!-- item end -->
-                        <!-- item -->
-                        <div class="general__item border">
-                            <div class="general__item--deactive" data-id="4">
-                                <div class="general__item--head">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <h1 class="general__item--title">Star rating</h1>
-                                        <button class="general__item--edit js-edit-btn d-flex align-items-center btn">
-                                            <img src="./img/item-edit.svg" alt="">
-                                            Edit
-                                        </button>
+                                <div class="general__item--active" data-id="2">
+                                    <div class="general__item--head">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h1 class="general__item--title">Listing description</h1>
+                                            <div class="d-flex align-items-center">
+                                                <button
+                                                    class="general__item--cancel js-save-btn general__item--btn btn d-flex align-items-center"
+                                                >
+                                                    Cancel
+                                                </button>
+                                                <button
+                                                    class="general__item--save js-save-btn general__item--btn btn border d-flex align-items-center"
+                                                >
+                                                    Save
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <p class="general__item--dec">Change your mobile</p>
                                     </div>
-                                    <div class="rating d-flex">
-                                        <div class="rate">
-                                            <input type="radio" />
-                                            <label title="text"></label>
-                                            <input type="radio" />
-                                            <label title="text"></label>
-                                            <input type="radio" checked />
-                                            <label title="text"></label>
-                                            <input type="radio" />
-                                            <label title="text"></label>
-                                            <input type="radio" />
-                                            <label title="text"></label>
-                                          </div>  
+                                    <div class="general__item--body">
+                                        <label class="number border d-flex align-items-center">
+                                            <input type="text" class="number__index" placeholder="index" value="(+995)" />
+                                            <input type="text" class="number__input" value="591 111 996" />
+                                            <button class="number__verify btn">Verify</button>
+                                        </label>
                                     </div>
                                 </div>
                             </div>
-                            <div class="general__item--active" data-id="4">
-                                <div class="general__item--head">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <h1 class="general__item--title">Star rating</h1>
-                                        <div class="d-flex align-items-center">
-                                            <button class="general__item--cancel js-save-btn general__item--btn btn d-flex align-items-center">
-                                                Cancel
-                                            </button>
-                                            <button class="general__item--save js-save-btn general__item--btn btn border d-flex align-items-center">
-                                                Save
+                            <!-- item end -->
+                            <!-- item -->
+                            <div class="general__item border">
+                                <div class="general__item--deactive" data-id="3">
+                                    <div class="general__item--head">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h1 class="general__item--title">Property name</h1>
+                                            <button class="general__item--edit js-edit-btn d-flex align-items-center btn">
+                                                <img src="./img/item-edit.svg" alt="" />
+                                                Edit
                                             </button>
                                         </div>
+                                        <p class="general__item--dec">Holiday Home Chakvi</p>
                                     </div>
-                                    <p class="general__item--dec">Edit your listing rating</p>
                                 </div>
-                                <div class="general__item--body">
-                                    <div class="rating d-flex">
-                                        <div class="rate">
-                                            <input type="radio" id="star5" name="rate" value="5" />
-                                            <label for="star5" title="text"></label>
-                                            <input type="radio" id="star4" name="rate" value="4" />
-                                            <label for="star4" title="text"></label>
-                                            <input type="radio" id="star3" name="rate" value="3" />
-                                            <label for="star3" title="text"></label>
-                                            <input type="radio" id="star2" name="rate" value="2" />
-                                            <label for="star2" title="text"></label>
-                                            <input type="radio" id="star1" name="rate" value="1" />
-                                            <label for="star1" title="text"></label>
-                                          </div>  
+                                <div class="general__item--active" data-id="3">
+                                    <div class="general__item--head">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h1 class="general__item--title">Property name</h1>
+                                            <div class="d-flex align-items-center">
+                                                <button
+                                                    class="general__item--cancel js-save-btn general__item--btn btn d-flex align-items-center"
+                                                >
+                                                    Cancel
+                                                </button>
+                                                <button
+                                                    class="general__item--save js-save-btn general__item--btn btn border d-flex align-items-center"
+                                                >
+                                                    Save
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <p class="general__item--dec">Edit your property name</p>
+                                    </div>
+                                    <div class="general__item--body">
+                                        <label class="number border d-flex align-items-center">
+                                            <input type="text" class="number__input" value="Holiday Home Chakvi" />
+                                        </label>
                                     </div>
                                 </div>
                             </div>
-                        </div><!-- item end -->
-                    </div>
-                </div>
-                <div class="col d-none d-xl-block" style="max-width: 400px; width: 100%;">
-
-                    <div class="home__stats">
-                        <div class="home__stats--head d-flex justify-content-start align-items-center">
-                            <img src="./img/chart-stats.svg" alt="">
-                            <h1 class="home__stats--tab-title">Page score tips</h1>
-                        </div>
-                        <div class="home__stats--body">
-                            <a href="" class="title">
-                                <div class="home__stats--item">
-                                    <span class="home__stats--item-title">
-                                        Add amenities •
-                                    </span>for your listings, including advance notice and trip duration settings.
+                            <!-- item end -->
+                            <!-- item -->
+                            <div class="general__item border">
+                                <div class="general__item--deactive" data-id="4">
+                                    <div class="general__item--head">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h1 class="general__item--title">Star rating</h1>
+                                            <button class="general__item--edit js-edit-btn d-flex align-items-center btn">
+                                                <img src="./img/item-edit.svg" alt="" />
+                                                Edit
+                                            </button>
+                                        </div>
+                                        <div class="rating d-flex">
+                                            <div class="rate">
+                                                <input type="radio" />
+                                                <label title="text"></label>
+                                                <input type="radio" />
+                                                <label title="text"></label>
+                                                <input type="radio" checked />
+                                                <label title="text"></label>
+                                                <input type="radio" />
+                                                <label title="text"></label>
+                                                <input type="radio" />
+                                                <label title="text"></label>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </a><!-- item end -->
-                            <a href="" class="title">
-                                <div class="home__stats--item">
-                                    <span class="home__stats--item-title">
-                                        Add amenities •
-                                    </span>for your listings, including advance notice and trip duration settings.
+                                <div class="general__item--active" data-id="4">
+                                    <div class="general__item--head">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h1 class="general__item--title">Star rating</h1>
+                                            <div class="d-flex align-items-center">
+                                                <button
+                                                    class="general__item--cancel js-save-btn general__item--btn btn d-flex align-items-center"
+                                                >
+                                                    Cancel
+                                                </button>
+                                                <button
+                                                    class="general__item--save js-save-btn general__item--btn btn border d-flex align-items-center"
+                                                >
+                                                    Save
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <p class="general__item--dec">Edit your listing rating</p>
+                                    </div>
+                                    <div class="general__item--body">
+                                        <div class="rating d-flex">
+                                            <div class="rate">
+                                                <input type="radio" id="star5" name="rate" value="5" />
+                                                <label for="star5" title="text"></label>
+                                                <input type="radio" id="star4" name="rate" value="4" />
+                                                <label for="star4" title="text"></label>
+                                                <input type="radio" id="star3" name="rate" value="3" />
+                                                <label for="star3" title="text"></label>
+                                                <input type="radio" id="star2" name="rate" value="2" />
+                                                <label for="star2" title="text"></label>
+                                                <input type="radio" id="star1" name="rate" value="1" />
+                                                <label for="star1" title="text"></label>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </a><!-- item end -->
-                            <a href="" class="title">
-                                <div class="home__stats--item">
-                                    <span class="home__stats--item-title">
-                                        Add amenities •
-                                    </span>for your listings, including advance notice and trip duration settings.
-                                </div>
-                            </a><!-- item end -->
+                            </div>
+                            <!-- item end -->
                         </div>
                     </div>
-
-                    <div class="home__stats">
-                        <div class="home__stats--head d-flex justify-content-between align-items-center">
-                            <h1 class="home__stats--tab-title">Activities</h1>
-                            <a href="" class="home__stats--tab-link text gradient">See all</a>
+                    <div class="col d-none d-xl-block" style="max-width: 400px; width: 100%">
+                        <div class="home__stats">
+                            <div class="home__stats--head d-flex justify-content-start align-items-center">
+                                <img src="./img/chart-stats.svg" alt="" />
+                                <h1 class="home__stats--tab-title">Page score tips</h1>
+                            </div>
+                            <div class="home__stats--body">
+                                <a href="" class="title">
+                                    <div class="home__stats--item">
+                                        <span class="home__stats--item-title"> Add amenities • </span>for your listings, including advance
+                                        notice and trip duration settings.
+                                    </div> </a
+                                ><!-- item end -->
+                                <a href="" class="title">
+                                    <div class="home__stats--item">
+                                        <span class="home__stats--item-title"> Add amenities • </span>for your listings, including advance
+                                        notice and trip duration settings.
+                                    </div> </a
+                                ><!-- item end -->
+                                <a href="" class="title">
+                                    <div class="home__stats--item">
+                                        <span class="home__stats--item-title"> Add amenities • </span>for your listings, including advance
+                                        notice and trip duration settings.
+                                    </div> </a
+                                ><!-- item end -->
+                            </div>
                         </div>
-                        <div class="home__stats--body">
-                            <div class="home__stats--item d-flex">
-                                <figure class="home__stats--item-profile">
-                                    <img src="./img/cover/profile.png" alt="" />
-                                </figure>
-                                <div>
-                                    <h1 class="home__stats--item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-                                    <div class="home__stats--item-desc">
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, hic.
+
+                        <div class="home__stats">
+                            <div class="home__stats--head d-flex justify-content-between align-items-center">
+                                <h1 class="home__stats--tab-title">Activities</h1>
+                                <a href="" class="home__stats--tab-link text gradient">See all</a>
+                            </div>
+                            <div class="home__stats--body">
+                                <div class="home__stats--item d-flex">
+                                    <figure class="home__stats--item-profile">
+                                        <img src="./img/cover/profile.png" alt="" />
+                                    </figure>
+                                    <div>
+                                        <h1 class="home__stats--item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                                        <div class="home__stats--item-desc">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, hic.
+                                        </div>
+                                        <p class="home__stats--item-date">22.02.22</p>
                                     </div>
-                                    <p class="home__stats--item-date">22.02.22</p>
                                 </div>
-                            </div><!-- item end -->
-                            <div class="home__stats--item d-flex">
-                                <figure class="home__stats--item-profile">
-                                    <img src="./img/cover/profile.png" alt="" />
-                                </figure>
-                                <div>
-                                    <h1 class="home__stats--item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-                                    <div class="home__stats--item-desc">
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, hic.
+                                <!-- item end -->
+                                <div class="home__stats--item d-flex">
+                                    <figure class="home__stats--item-profile">
+                                        <img src="./img/cover/profile.png" alt="" />
+                                    </figure>
+                                    <div>
+                                        <h1 class="home__stats--item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                                        <div class="home__stats--item-desc">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, hic.
+                                        </div>
+                                        <p class="home__stats--item-date">22.02.22</p>
                                     </div>
-                                    <p class="home__stats--item-date">22.02.22</p>
                                 </div>
-                            </div><!-- item end -->
+                                <!-- item end -->
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./function/select/bootstrap-select.js"></script>
-    <script src="./function/select/bundle.min.js"></script>
-    <script src="./function/select/livefilter.min.js"></script>
-    <script src="./function/select/tabcomplete.min.js"></script>
-    <script src="./function/function.js"></script>
-</body>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="./function/select/bootstrap-select.js"></script>
+        <script src="./function/select/bundle.min.js"></script>
+        <script src="./function/select/livefilter.min.js"></script>
+        <script src="./function/select/tabcomplete.min.js"></script>
+        <script src="./function/function.js"></script>
+    </body>
 </html>

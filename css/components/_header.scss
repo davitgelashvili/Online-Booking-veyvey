@@ -26,6 +26,10 @@
             text-decoration: none;
             opacity: 0.6;
 
+            @media (max-width: 1366px) {
+                font-size: 14px;
+            }
+
             &:hover,
             &.active {
                 opacity: 1;

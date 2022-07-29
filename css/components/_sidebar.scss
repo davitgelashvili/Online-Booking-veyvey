@@ -12,7 +12,7 @@
         & > div {
             background-color: #fff;
         }
-        
+
         &--section {
             padding-right: 30px;
         }
@@ -34,7 +34,7 @@
             font-size: 16px;
             font-weight: 700;
             text-decoration: none;
-            
+
             &:hover {
                 text-decoration: underline;
             }
@@ -78,13 +78,18 @@
         &--link {
             display: block;
             margin-bottom: 32px;
-            color: color( $mainColor, .56);
+            color: color($mainColor, 0.56);
             font-size: 18px;
             font-weight: 700;
             text-decoration: none;
 
             &:hover {
-                color: color( #583CF0, 1);
+                color: color(#583cf0, 1);
+            }
+
+            @media (max-width: 1366px) {
+                font-size: 14px;
+                font-weight: 500;
             }
         }
     }
@@ -106,8 +111,13 @@
     &__delete {
         margin-top: 24px;
         background-color: transparent;
-        color: color( $mainColor, .56);
+        color: color($mainColor, 0.56);
         font-size: 18px;
         font-weight: 700;
+
+        @media (max-width: 1366px) {
+            font-size: 14px;
+            font-weight: 500;
+        }
     }
 }
