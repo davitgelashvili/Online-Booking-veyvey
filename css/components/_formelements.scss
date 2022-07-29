@@ -7,6 +7,14 @@
         font-size: 16px;
         font-weight: 400;
 
+        display: flex;
+        align-items: center;
+        gap: 7px;
+
+        svg {
+            display: block;
+        }
+
         img {
             margin-left: 5px;
         }
@@ -18,12 +26,8 @@
         }
 
         &--text {
-            font-size: 16px;
-
-            @media (max-width: 1366px) {
-                font-size: 14px;
-                font-weight: 500;
-            }
+            font-weight: 700;
+            font-size: 14px;
         }
     }
 
@@ -55,6 +59,10 @@
 
             &:hover {
                 background: gradient(0.05);
+            }
+
+            &.active {
+                font-weight: 700;
             }
         }
     }
