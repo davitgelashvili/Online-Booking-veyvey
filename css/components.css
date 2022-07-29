@@ -3552,6 +3552,14 @@ body {
 .maps__head--btn img {
   width: 18px;
 }
+.maps__actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.maps__actions > div:nth-child(1) {
+  display: flex;
+}
 .maps__title {
   margin-top: 48px;
   margin-bottom: 24px;
@@ -3583,7 +3591,6 @@ body {
 }
 .maps__list {
   width: 100%;
-  height: calc(100vh - 120px);
   display: block;
   overflow: auto;
   /* width */
@@ -3602,6 +3609,14 @@ body {
 .maps__item {
   width: 100%;
   margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+@media (max-width: 920px) {
+  .maps__item {
+    flex-direction: column;
+  }
 }
 .maps__item--slider-out {
   width: 290px;
@@ -3644,7 +3659,6 @@ body {
 }
 .maps__item--texts {
   width: 100%;
-  margin-left: 40px;
   padding-bottom: 15px;
   border-bottom: 1px solid rgba(4, 9, 33, 0.05);
 }

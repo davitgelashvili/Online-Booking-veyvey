@@ -58,6 +58,16 @@
         }
     }
 
+    &__actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & > div:nth-child(1) {
+            display: flex;
+        }
+    }
+
     &__title {
         margin-top: 48px;
         margin-bottom: 24px;
@@ -92,7 +102,8 @@
 
     &__list {
         width: 100%;
-        height: calc(100vh - 120px);
+        // ეს რისთვისაა?
+        // height: calc(100vh - 120px);
         display: block;
         overflow: auto;
         /* width */
@@ -114,6 +125,14 @@
     &__item {
         width: 100%;
         margin-bottom: 12px;
+
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+        @media (max-width: 920px) {
+            flex-direction: column;
+        }
 
         &--slider-out {
             width: 290px;
@@ -164,7 +183,6 @@
 
         &--texts {
             width: 100%;
-            margin-left: 40px;
             padding-bottom: 15px;
             border-bottom: 1px solid color($mainColor, 0.05);
         }
