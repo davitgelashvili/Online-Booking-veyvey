@@ -32,7 +32,7 @@
         }
 
         &--date {
-            color: color($mainColor, .72);
+            color: color($mainColor, 0.72);
             font-size: 12px;
             font-weight: 400;
             line-height: 16px;
@@ -48,10 +48,10 @@
 
         &--desc {
             margin-top: 16px;
-            color: color($mainColor, .72);
+            color: color($mainColor, 0.72);
             font-size: 16px;
             font-weight: 400;
-            line-height: 16px;
+            line-height: 1.4;
         }
     }
 }

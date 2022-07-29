@@ -1550,6 +1550,11 @@ body {
   height: 36px;
   overflow: hidden;
 }
+@media (max-width: 1366px) {
+  .review__item--desc .limit-desc-length {
+    font-size: 14px;
+  }
+}
 .review__item--desc .limit-desc-length.shown {
   height: auto;
 }
@@ -1640,6 +1645,7 @@ body {
   display: flex;
 }
 .writing--container {
+  position: relative;
   width: 100%;
   max-width: 1060px;
   height: 100%;
@@ -1688,6 +1694,16 @@ body {
 }
 .writing__score img {
   margin-right: 12px;
+}
+.writing__close {
+  position: absolute;
+  top: 36px;
+  right: 36px;
+  background-color: transparent;
+}
+.writing__close svg {
+  display: block;
+  opacity: 0.6;
 }
 
 .bank__list {
@@ -2414,7 +2430,7 @@ body {
   color: rgba(4, 9, 33, 0.72);
   font-size: 16px;
   font-weight: 400;
-  line-height: 16px;
+  line-height: 1.4;
 }
 
 .hosts__item {
