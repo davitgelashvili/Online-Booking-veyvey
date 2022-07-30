@@ -1066,10 +1066,12 @@ body {
   padding: 24px 0;
   background-color: #fff;
   border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
 }
 .reservation__list--checked {
-  min-width: 32px;
-  min-height: 32px;
+  width: 32px;
+  height: 32px;
   background: #34c488;
   border-radius: 8px;
 }
@@ -1084,12 +1086,8 @@ body {
   overflow: hidden;
   flex-basis: 127px;
   flex-grow: initial;
-  align-self: center;
-}
-.reservation__list--item p {
   display: flex;
-  align-items: center;
-  align-self: flex-start;
+  flex-direction: column;
   justify-content: center;
 }
 .reservation__list--item:nth-of-type(1) {
@@ -1114,6 +1112,11 @@ body {
   color: rgba(4, 9, 33, 0.5);
   cursor: pointer;
   flex-grow: unset;
+}
+@media (max-width: 1366px) {
+  .reservation--head {
+    padding-inline: 20px;
+  }
 }
 .reservation--head:hover {
   color: #040921;

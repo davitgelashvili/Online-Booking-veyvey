@@ -40,16 +40,18 @@
         background-color: #fff;
         border-radius: 12px;
 
+        display: flex;
+        justify-content: space-between;
+
         &--checked {
-            min-width: 32px;
-            min-height: 32px;
+            width: 32px;
+            height: 32px;
             background: #34c488;
             border-radius: 8px;
         }
 
         &--item {
             // max-width: 230px;
-            // height: 42px;
             padding: 0 25px;
             border-right: 1px solid color($mainColor, 0.16);
             flex: 1;
@@ -60,15 +62,10 @@
             overflow: hidden;
             flex-basis: 127px;
             flex-grow: initial;
-            align-self: center;
 
-            p {
-                // width: 100%;
-                display: flex;
-                align-items: center;
-                align-self: flex-start;
-                justify-content: center;
-            }
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
 
             &:nth-of-type(1) {
                 flex-grow: 1;
@@ -99,6 +96,10 @@
         color: color($mainColor, 0.5);
         cursor: pointer;
         flex-grow: unset;
+
+        @media (max-width: 1366px) {
+            padding-inline: 20px;
+        }
 
         &:hover {
             color: color($mainColor, 1);
