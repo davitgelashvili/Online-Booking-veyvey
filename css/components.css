@@ -10,8 +10,12 @@
   font-family: "regular";
   src: url(../fonts/Sk-Modernist-Regular.otf);
 }
+@font-face {
+  font-family: "bold";
+  src: url(../fonts/Sk-Modernist-Bold.otf);
+}
 body {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
 
 .mycontainer {
@@ -104,22 +108,31 @@ body {
   initial-value: 0;
 }
 .pie {
-  --p:20;
-  --b:10px;
-  --c:#9D50FF;
-  --w:140px;
+  --p: 20;
+  --b: 10px;
+  --c: #9d50ff;
+  --w: 140px;
   width: var(--w);
   aspect-ratio: 1;
   position: relative;
   display: inline-grid;
   place-content: center;
-  color: #040921;
-  font-size: 36px;
-  font-weight: 700;
 }
 @media (max-width: 1339px) {
   .pie {
-    --w:96px;
+    --w: 96px;
+  }
+}
+.pie span {
+  position: relative;
+  color: #040921;
+  font-family: bold;
+  font-size: 36px;
+  z-index: 100;
+}
+@media (max-width: 1339px) {
+  .pie span {
+    font-size: 24px;
   }
 }
 
@@ -132,7 +145,7 @@ body {
 
 .pie:before {
   inset: 0;
-  background: radial-gradient(farthest-side, var(--c) 98%, rgba(0, 0, 0, 0)) top/var(--b) var(--b) no-repeat, conic-gradient(var(--c) calc(var(--p) * 1%), #BDBDBD 0);
+  background: radial-gradient(farthest-side, var(--c) 98%, rgba(0, 0, 0, 0)) top/var(--b) var(--b) no-repeat, conic-gradient(var(--c) calc(var(--p) * 1%), #bdbdbd 0);
   -webkit-mask: radial-gradient(farthest-side, rgba(0, 0, 0, 0) calc(99% - var(--b)), #000 calc(100% - var(--b)));
   mask: radial-gradient(farthest-side, rgba(0, 0, 0, 0) calc(99% - var(--b)), #000 calc(100% - var(--b)));
 }
@@ -157,7 +170,7 @@ body {
 
 @keyframes p {
   from {
-    --p:0;
+    --p: 0;
   }
 }
 .tavo-calendar {
@@ -860,37 +873,44 @@ body {
 }
 .home__stats--host-desc {
   width: 100%;
-  height: 61px;
+  height: 64px;
   color: #040921;
   font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.4;
   overflow: hidden;
 }
 .home__stats--host-date {
-  margin-top: 24px;
+  margin-block: 24px 17px;
   padding: 19px 16px;
   background-color: #faf6ff;
   border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media (max-width: 1919px) {
+  .home__stats--host-date {
+    flex-direction: column;
+    gap: 4px;
+    margin-block: 16px;
+  }
 }
 .home__stats--host-date p {
-  color: #040921;
+  color: rgba(4, 9, 33, 0.72);
   font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
 }
-.home__stats--host-date span {
+.home__stats--host-date strong {
   color: #040921;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 16px;
-  line-height: 19px;
 }
 .home__stats--host-footer {
-  margin-top: 17px;
   color: rgba(4, 9, 33, 0.72);
   font-size: 16px;
   font-weight: 400;
-  line-height: 19px;
+  line-height: 1.4;
 }
 
 .sidebar {

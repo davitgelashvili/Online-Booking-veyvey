@@ -13,9 +13,13 @@
     font-family: 'regular';
     src: url(../fonts/Sk-Modernist-Regular.otf);
 }
+@font-face {
+    font-family: 'bold';
+    src: url(../fonts/Sk-Modernist-Bold.otf);
+}
 
 body {
-    background-color: #FAFAFA;
+    background-color: #fafafa;
 }
 
 .mycontainer {
@@ -36,7 +40,7 @@ $headMarginBottom: 45px;
     @return rgba($color, $opacity);
 }
 
-@function gradient($opacity: 1, $color1: #9D50FF, $color2: #9D50FF) {
+@function gradient($opacity: 1, $color1: #9d50ff, $color2: #9d50ff) {
     @return linear-gradient(to right, color($color1, $opacity) 11.55%, color($color2, $opacity) 104.8%);
 }
 
@@ -119,7 +123,7 @@ $headMarginBottom: 45px;
 
     &__desc {
         margin-bottom: 16px;
-        color: color($mainColor, .5);
+        color: color($mainColor, 0.5);
         font-size: 16px;
         font-weight: 400;
         line-height: 24px;

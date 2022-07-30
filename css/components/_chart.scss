@@ -1,56 +1,66 @@
-@property --p{
+@property --p {
     syntax: '<number>';
     inherits: true;
     initial-value: 0;
 }
-  
+
 .pie {
-    --p:20;
-    --b:10px;
-    --c:#9D50FF;
-    --w:140px;
+    --p: 20;
+    --b: 10px;
+    --c: #9d50ff;
+    --w: 140px;
 
     @media (max-width: 1339px) {
-        --w:96px;
+        --w: 96px;
     }
 
-    width:var(--w);
-    aspect-ratio:1;
-    position:relative;
-    display:inline-grid;
-    place-content:center;
-    color: $mainColor;
-    font-size:36px;
-    font-weight:700;
+    width: var(--w);
+    aspect-ratio: 1;
+    position: relative;
+    display: inline-grid;
+    place-content: center;
+
+    span {
+        position: relative;
+        color: $mainColor;
+        font-family: bold;
+        font-size: 36px;
+        z-index: 100;
+
+        @media (max-width: 1339px) {
+            font-size: 24px;
+        }
+    }
 }
 .pie:before,
 .pie:after {
-    content:"";
-    position:absolute;
-    border-radius:50%;
+    content: '';
+    position: absolute;
+    border-radius: 50%;
 }
 .pie:before {
-    inset:0;
-    background:
-      radial-gradient(farthest-side,var(--c) 98%,#0000) top/var(--b) var(--b) no-repeat,
-      conic-gradient(var(--c) calc(var(--p)*1%),#BDBDBD 0);
-    -webkit-mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
-            mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+    inset: 0;
+    background: radial-gradient(farthest-side, var(--c) 98%, #0000) top/var(--b) var(--b) no-repeat,
+        conic-gradient(var(--c) calc(var(--p) * 1%), #bdbdbd 0);
+    -webkit-mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+    mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
 }
 .pie:after {
-    inset:calc(50% - var(--b)/2);
-    background:var(--c);
-    transform:rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
+    inset: calc(50% - var(--b) / 2);
+    background: var(--c);
+    transform: rotate(calc(var(--p) * 3.6deg)) translateY(calc(50% - var(--w) / 2));
 }
 .animate {
-    animation:p 1s .2s both;
+    animation: p 1s 0.2s both;
 }
 .no-round:before {
-    background-size:0 0,auto;
+    background-size: 0 0, auto;
 }
 .no-round:after {
-    content:none;
+    content: none;
 }
 @keyframes p {
-    from{--p:0}
+    from {
+        --p: 0;
+    }
 }
