@@ -33,6 +33,21 @@
 
     &__grid-3 {
         height: 100%;
+        display: grid;
+        grid-template-columns: 290px 910px 400px;
+        justify-content: space-between;
+        gap: 30px;
+
+        @media (max-width: 1800px) {
+            grid-template-columns: 204px 4fr 300px;
+        }
+        @media (max-width: 1199px) {
+            grid-template-columns: 2fr auto;
+        }
+    }
+
+    &__flex {
+        height: 100%;
         display: flex;
         justify-content: space-between;
     }

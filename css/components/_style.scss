@@ -9,6 +9,12 @@
     // display: block !important;
 }
 
+.hide-on-small {
+    @media (max-width: 1280px) {
+        display: none;
+    }
+}
+
 @font-face {
     font-family: 'regular';
     src: url(../fonts/Sk-Modernist-Regular.otf);
