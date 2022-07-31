@@ -4,47 +4,46 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Dashboard</title>
         <link rel="icon" type="image/png" href="./img/active.svg" />
         <link rel="stylesheet" href="./css/bootstrap-grid.css" />
         <link rel="stylesheet" href="./css/components.css" />
     </head>
     <body>
         <header class="header">
-            <div class="container d-flex align-items-center justify-content-between">
-                <div class="header__logo">
-                    <img src="./img/logo.svg" alt="" />
-                </div>
-                <ul class="header__menu d-flex">
-                    <li class="header__menu--item d-flex">
-                        <a href="" class="header__menu--link d-flex align-items-center active">Home</a>
-                    </li>
-                    <li class="header__menu--item d-flex">
-                        <a href="" class="header__menu--link d-flex align-items-center">Performance</a>
-                    </li>
-                    <li class="header__menu--item d-flex">
-                        <a href="" class="header__menu--link d-flex align-items-center">Reservations</a>
-                    </li>
-                    <li class="header__menu--item d-flex">
-                        <a href="" class="header__menu--link d-flex align-items-center">Reviews</a>
-                    </li>
-                    <li class="header__menu--item d-flex">
-                        <a href="" class="header__menu--link d-flex align-items-center">Earnings</a>
-                    </li>
-                    <li class="header__menu--item d-flex">
-                        <a href="" class="header__menu--link d-flex align-items-center">Messages</a>
-                    </li>
-                </ul>
-                <div class="header__buttons d-flex align-items-center">
-                    <button class="header__text-btn btn">Switch to traveling</button>
+            <div class="dashboard-container">
+                <div class="dashboard-header-row">
+                    <div class="header__logo">
+                        <img src="./img/logo.svg" alt="" />
+                    </div>
 
-                    <div class="header__buttons--valute">
-                        <div id="bts-ex-5" class="selectpicker" data-clear="true" data-live="true">
-                            <div
-                                data-id="prov"
-                                class="dropdown-toggle selectpicker__head d-flex justify-content-between align-items-center"
-                            >
-                                <div class="selectpicker__head--text">
+                    <ul class="header__menu">
+                        <li class="header__menu--item d-flex">
+                            <a href="" class="header__menu--link d-flex align-items-center active">Home</a>
+                        </li>
+                        <li class="header__menu--item d-flex">
+                            <a href="" class="header__menu--link d-flex align-items-center">Performance</a>
+                        </li>
+                        <li class="header__menu--item d-flex">
+                            <a href="" class="header__menu--link d-flex align-items-center">Reservations</a>
+                        </li>
+                        <li class="header__menu--item d-flex">
+                            <a href="" class="header__menu--link d-flex align-items-center">Reviews</a>
+                        </li>
+                        <li class="header__menu--item d-flex">
+                            <a href="" class="header__menu--link d-flex align-items-center">Earnings</a>
+                        </li>
+                        <li class="header__menu--item d-flex">
+                            <a href="" class="header__menu--link d-flex align-items-center">Messages</a>
+                        </li>
+                    </ul>
+
+                    <div class="header__buttons header__right">
+                        <button class="header__text-btn">Switch to traveling</button>
+
+                        <div class="dropdown">
+                            <button class="dropdown__trigger">
+                                <div class="dropdown__selected flex">
                                     <img src="img/us-flag.svg" alt="" />
                                     <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -53,35 +52,51 @@
                                         />
                                     </svg>
                                 </div>
-                                <img src="./img/arrow-down-light.svg" alt="" />
-                            </div>
-                            <div class="selectpicker__body">
-                                <li class="items bg-gradient" data-filter="1" data-value="1">
-                                    <img src="img/us-flag.svg" alt="" />
-                                    gel
-                                </li>
-                                <li class="items bg-gradient" data-filter="2" data-value="2">
-                                    <img src="img/us-flag.svg" alt="" />
-                                    eur
-                                </li>
-                                <li class="items bg-gradient" data-filter="2" data-value="2">
-                                    <img src="img/us-flag.svg" alt="" />
-                                    usd
-                                </li>
+
+                                <div class="icon">
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.08464 0.958313L5.0013 5.04165L0.917969 0.958313"
+                                            stroke="#040921"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </div>
+                            </button>
+
+                            <div class="dropdown__options">
+                                <ul class="dropdown__list">
+                                    <li class="flex">
+                                        <img src="img/us-flag.svg" alt="" />
+                                        gel
+                                    </li>
+                                    <li class="flex">
+                                        <img src="img/us-flag.svg" alt="" />
+                                        eur
+                                    </li>
+                                    <li class="flex">
+                                        <img src="img/us-flag.svg" alt="" />
+                                        gbp
+                                    </li>
+                                </ul>
                             </div>
                         </div>
+
+                        <button class="header__buttons--profile btn">
+                            <img src="./img/profile.svg" alt="" />
+                            <!-- <span>join</span> -->
+                        </button>
                     </div>
-                    <button class="header__buttons--profile btn">
-                        <img src="./img/profile.svg" alt="" />
-                    </button>
                 </div>
             </div>
         </header>
 
         <div class="home">
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col" style="max-width: 290px; width: 100%">
+            <div class="dashboard-container">
+                <div class="dashboard-row">
+                    <div>
                         <div class="sidebar">
                             <div class="sidebar__content">
                                 <div class="d-flex justify-content-end">
@@ -188,8 +203,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="home--col">
-                        <div class="col">
+                    <div>
+                        <div>
                             <div class="page-head">
                                 <h1 class="page-head__title">Overview</h1>
                             </div>
@@ -588,7 +603,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col d-none d-xl-block" style="max-width: 400px; width: 100%">
+                    <div>
                         <div class="home__stats">
                             <a href="" class="home__stats--status d-flex justify-content-between align-items-center">
                                 <div class="d-flex flex-column">
@@ -717,6 +732,7 @@
             </div>
         </div>
 
+        <script src="./function/dropdown.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="./function/select/bootstrap-select.js"></script>
         <script src="./function/select/bundle.min.js"></script>

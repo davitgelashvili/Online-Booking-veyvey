@@ -1,335 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/bootstrap-grid.css">
-    <link rel="stylesheet" href="./css/components.css">
-</head>
-<body>
-    <header class="header">
-        <div class="container d-flex align-items-center justify-content-between">
-            <div class="header__logo">
-                <img src="./img/logo.svg" alt="">
-            </div>
-            <ul class="header__menu d-flex">
-                <li class="header__menu--item d-flex">
-                    <a href="" class="header__menu--link d-flex align-items-center active">Home</a>
-                </li>
-                <li class="header__menu--item d-flex">
-                    <a href="" class="header__menu--link d-flex align-items-center">Performance</a>
-                </li>
-                <li class="header__menu--item d-flex">
-                    <a href="" class="header__menu--link d-flex align-items-center">Reservations</a>
-                </li>
-                <li class="header__menu--item d-flex">
-                    <a href="" class="header__menu--link d-flex align-items-center">Reviews</a>
-                </li>
-                <li class="header__menu--item d-flex">
-                    <a href="" class="header__menu--link d-flex align-items-center">Earnings</a>
-                </li>
-                <li class="header__menu--item d-flex">
-                    <a href="" class="header__menu--link d-flex align-items-center">Messages</a>
-                </li>
-            </ul>
-            <div class="header__buttons d-flex align-items-center">
-                <div class="select">
-                    <select id="standard-select">
-                        <option value="Option 1">Option 1</option>
-                        <option value="Option 2">Option 2</option>
-                        <option value="Option 3">Option 3</option>
-                        <option value="Option 4">Option 4</option>
-                        <option value="Option 5">Option 5</option>
-                        <option value="Option length">Option that has too long of a value to fit</option>
-                    </select>
-                    <span class="focus"></span>
-                </div>
-                <button class="header__buttons--profile btn">
-                    <img src="./img/profile.svg" alt="">
-                </button>
-            </div>
-        </div>
-    </header>
-    
-    <div class="general">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col" style="max-width: 290px; width: 100%;">
-                    <div class="sidebar">
-                        <div class="sidebar__content">
-                            <div class="d-flex justify-content-end">
-                                <div class="col-4">
-                                    <div class="sidebar__content--section">
-                                        <button class="sidebar__goback btn border d-flex align-items-center">
-                                            <img src="./img/go-back.svg" alt="">
-                                            Go back
-                                        </button>
-                                    </div>
-                                    <div class="sidebar__content--section">
-                                        <div class="sidebar__cover d-flex align-items-end justify-content-center" style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50.34%, rgba(0, 0, 0, 0.48) 100%), url('./img/cover/ersa23.png');">
-                                            <a href="" class="sidebar__cover--link d-flex align-items-center">
-                                                <img src="./img/link-white.svg" alt="">
-                                                View listing
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="sidebar__content--section">
-                                        <h1 class="sidebar__title d-flex align-items-center">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                            <img src="./img/arrow-down-light.svg" alt="">
-                                        </h1>
-                                    </div>
-                                    <div class="sidebar__content--section">
-                                        <div class="sidebar__id home__item--id border">
-                                            ID <span>546458</span>
-                                        </div>
-                                    </div>
-                                    <div class="sidebar__content--section">
-                                        <ul class="sidebar__menu">
-                                            <li class="sidebar__menu--item">
-                                                <a href="" class="sidebar__menu--link">Calendar</a>
-                                            </li>
-                                            <li class="sidebar__menu--item">
-                                                <a href="" class="sidebar__menu--link">Listing info</a>
-                                            </li>
-                                            <li class="sidebar__menu--item">
-                                                <a href="" class="sidebar__menu--link">Rates & pricing</a>
-                                            </li>
-                                            <li class="sidebar__menu--item">
-                                                <a href="" class="sidebar__menu--link">Photos</a>
-                                            </li>
-                                            <li class="sidebar__menu--item">
-                                                <a href="" class="sidebar__menu--link">Policies</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rates</title>
+        <link rel="stylesheet" href="./css/bootstrap-grid.css" />
+        <link rel="stylesheet" href="./css/components.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="dashboard-container">
+                <div class="dashboard-header-row">
+                    <div class="header__logo">
+                        <img src="./img/logo.svg" alt="" />
                     </div>
-                </div>
-                <div class="col general--col">
-                    <div class="page-head d-flex justify-content-between align-items-center">
-                        <h1 class="page-head__title">
-                            Rates & discounts
-                        </h1>
-                        <div>
-                            <button class="add-room-btn btn text gradient d-flex align-items-center">
-                                <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M18.9009 11.66C18.7406 11.4775 18.6521 11.2429 18.6521 11C18.6521 10.7571 18.7406 10.5225 18.9009 10.34L20.1809 8.90002C20.3219 8.74269 20.4095 8.54472 20.4311 8.33452C20.4526 8.12433 20.407 7.9127 20.3009 7.73002L18.3009 4.27002C18.1958 4.08754 18.0358 3.94289 17.8436 3.8567C17.6515 3.77051 17.437 3.74718 17.2309 3.79002L15.3509 4.17002C15.1117 4.21945 14.8626 4.17961 14.6508 4.05802C14.4389 3.93643 14.2789 3.7415 14.2009 3.51002L13.5909 1.68002C13.5238 1.4814 13.396 1.30888 13.2255 1.18686C13.055 1.06484 12.8505 0.999476 12.6409 1.00002H8.64087C8.42281 0.988635 8.20701 1.04894 8.02644 1.17173C7.84587 1.29452 7.71045 1.47304 7.64087 1.68002L7.08087 3.51002C7.00287 3.7415 6.84284 3.93643 6.63099 4.05802C6.41913 4.17961 6.17009 4.21945 5.93087 4.17002L4.00087 3.79002C3.80542 3.7624 3.60617 3.79324 3.42822 3.87866C3.25027 3.96407 3.10157 4.10025 3.00087 4.27002L1.00087 7.73002C0.892033 7.91067 0.843095 8.1211 0.861055 8.33124C0.879016 8.54138 0.962955 8.74046 1.10087 8.90002L2.37087 10.34C2.53119 10.5225 2.61961 10.7571 2.61961 11C2.61961 11.2429 2.53119 11.4775 2.37087 11.66L1.10087 13.1C0.962955 13.2596 0.879016 13.4587 0.861055 13.6688C0.843095 13.8789 0.892033 14.0894 1.00087 14.27L3.00087 17.73C3.10597 17.9125 3.26599 18.0571 3.45812 18.1433C3.65026 18.2295 3.8647 18.2529 4.07087 18.21L5.95087 17.83C6.19009 17.7806 6.43913 17.8204 6.65099 17.942C6.86284 18.0636 7.02287 18.2585 7.10087 18.49L7.71087 20.32C7.78045 20.527 7.91587 20.7055 8.09644 20.8283C8.27701 20.9511 8.49281 21.0114 8.71087 21H12.7109C12.9205 21.0006 13.125 20.9352 13.2955 20.8132C13.466 20.6912 13.5938 20.5186 13.6609 20.32L14.2709 18.49C14.3489 18.2585 14.5089 18.0636 14.7208 17.942C14.9326 17.8204 15.1817 17.7806 15.4209 17.83L17.3009 18.21C17.507 18.2529 17.7215 18.2295 17.9136 18.1433C18.1058 18.0571 18.2658 17.9125 18.3709 17.73L20.3709 14.27C20.477 14.0873 20.5226 13.8757 20.5011 13.6655C20.4795 13.4553 20.3919 13.2573 20.2509 13.1L18.9009 11.66ZM17.4109 13L18.2109 13.9L16.9309 16.12L15.7509 15.88C15.0307 15.7328 14.2814 15.8551 13.6455 16.2238C13.0095 16.5925 12.531 17.1819 12.3009 17.88L11.9209 19H9.36087L9.00087 17.86C8.77073 17.1619 8.29225 16.5725 7.65628 16.2038C7.0203 15.8351 6.27109 15.7128 5.55087 15.86L4.37087 16.1L3.07087 13.89L3.87087 12.99C4.36283 12.44 4.6348 11.7279 4.6348 10.99C4.6348 10.2521 4.36283 9.54004 3.87087 8.99002L3.07087 8.09002L4.35087 5.89002L5.53087 6.13002C6.25109 6.27724 7.0003 6.1549 7.63628 5.78622C8.27225 5.41753 8.75073 4.82818 8.98087 4.13002L9.36087 3.00002H11.9209L12.3009 4.14002C12.531 4.83818 13.0095 5.42753 13.6455 5.79622C14.2814 6.1649 15.0307 6.28724 15.7509 6.14002L16.9309 5.90002L18.2109 8.12002L17.4109 9.02002C16.9244 9.56878 16.6558 10.2767 16.6558 11.01C16.6558 11.7433 16.9244 12.4513 17.4109 13ZM10.6409 7.00002C9.84975 7.00002 9.07639 7.23461 8.41859 7.67414C7.76079 8.11366 7.24811 8.73838 6.94535 9.46928C6.6426 10.2002 6.56339 11.0045 6.71773 11.7804C6.87207 12.5563 7.25304 13.269 7.81245 13.8284C8.37186 14.3879 9.08459 14.7688 9.86051 14.9232C10.6364 15.0775 11.4407 14.9983 12.1716 14.6955C12.9025 14.3928 13.5272 13.8801 13.9668 13.2223C14.4063 12.5645 14.6409 11.7911 14.6409 11C14.6409 9.93915 14.2194 8.92174 13.4693 8.17159C12.7192 7.42144 11.7017 7.00002 10.6409 7.00002ZM10.6409 13C10.2453 13 9.85863 12.8827 9.52973 12.663C9.20083 12.4432 8.94449 12.1308 8.79311 11.7654C8.64174 11.3999 8.60213 10.9978 8.6793 10.6098C8.75647 10.2219 8.94695 9.86551 9.22666 9.5858C9.50636 9.3061 9.86273 9.11562 10.2507 9.03845C10.6387 8.96128 11.0408 9.00088 11.4062 9.15226C11.7717 9.30363 12.084 9.55998 12.3038 9.88888C12.5236 10.2178 12.6409 10.6045 12.6409 11C12.6409 11.5304 12.4302 12.0392 12.0551 12.4142C11.68 12.7893 11.1713 13 10.6409 13Z" fill="#9d50ff"/>
-                                </svg>    
-                                Edit options
+
+                    <ul class="header__menu">
+                        <li class="header__menu--item d-flex">
+                            <a href="" class="header__menu--link d-flex align-items-center active">Home</a>
+                        </li>
+                        <li class="header__menu--item d-flex">
+                            <a href="" class="header__menu--link d-flex align-items-center">Performance</a>
+                        </li>
+                        <li class="header__menu--item d-flex">
+                            <a href="" class="header__menu--link d-flex align-items-center">Reservations</a>
+                        </li>
+                        <li class="header__menu--item d-flex">
+                            <a href="" class="header__menu--link d-flex align-items-center">Reviews</a>
+                        </li>
+                        <li class="header__menu--item d-flex">
+                            <a href="" class="header__menu--link d-flex align-items-center">Earnings</a>
+                        </li>
+                        <li class="header__menu--item d-flex">
+                            <a href="" class="header__menu--link d-flex align-items-center">Messages</a>
+                        </li>
+                    </ul>
+
+                    <div class="header__buttons header__right">
+                        <button class="header__text-btn">Switch to traveling</button>
+
+                        <div class="dropdown">
+                            <button class="dropdown__trigger">
+                                <div class="dropdown__selected flex">
+                                    <img src="img/us-flag.svg" alt="" />
+                                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.04996 9.74095C8.97269 9.47929 8.87893 9.25155 8.76881 9.05816C8.65876 8.86457 8.50114 8.67574 8.29564 8.49104C8.09039 8.30643 7.90575 8.15776 7.74204 8.04473C7.57841 7.93162 7.35365 7.80515 7.06787 7.66517C6.78234 7.52522 6.55611 7.42107 6.38958 7.35259C6.22283 7.28419 5.98161 7.19043 5.66609 7.07137C5.38635 6.96429 5.17807 6.88242 5.04103 6.82591C4.90414 6.76933 4.72413 6.68902 4.5009 6.58479C4.27776 6.48071 4.11107 6.38839 4.00093 6.30808C3.89081 6.22777 3.77329 6.12957 3.64826 6.01351C3.52322 5.89746 3.43544 5.77392 3.38481 5.64298C3.3343 5.51201 3.30897 5.36912 3.30897 5.21435C3.30897 4.80966 3.48748 4.4792 3.84462 4.22332C4.2018 3.96743 4.66318 3.83943 5.2287 3.83943C5.47858 3.83943 5.73333 3.87361 5.99209 3.94213C6.25085 4.01065 6.47261 4.08784 6.65715 4.17422C6.84186 4.26059 7.01589 4.35585 7.17964 4.45996C7.34336 4.56417 7.45939 4.64298 7.52791 4.69655C7.59636 4.75015 7.63974 4.78583 7.65741 4.80372C7.73491 4.86324 7.81506 4.88403 7.89841 4.86624C7.98766 4.8603 8.05618 4.8126 8.1039 4.72341L8.82726 3.4198C8.89866 3.30081 8.8839 3.18769 8.78264 3.08048C8.74686 3.04477 8.70239 3.00314 8.64844 2.95548C8.59503 2.90782 8.47891 2.82154 8.30018 2.69647C8.12164 2.57151 7.93265 2.45989 7.73337 2.36166C7.53388 2.26352 7.27487 2.16376 6.95638 2.06262C6.63808 1.96133 6.30911 1.89293 5.96973 1.85725V0.285716C5.96973 0.202434 5.94299 0.133945 5.88957 0.0803419C5.83603 0.026864 5.76754 0 5.68408 0H4.4786C4.40123 0 4.33427 0.0282401 4.27773 0.0848141C4.22119 0.141388 4.19292 0.208314 4.19292 0.285716V1.8929C3.25834 2.07141 2.49939 2.47024 1.91604 3.0893C1.33275 3.7084 1.041 4.42853 1.041 5.25006C1.041 5.49409 1.0664 5.72623 1.117 5.94637C1.16754 6.16669 1.23008 6.36462 1.30451 6.54019C1.37888 6.71589 1.48459 6.88845 1.62147 7.05814C1.75836 7.22777 1.88786 7.37363 2.00986 7.4956C2.13192 7.61754 2.29117 7.74407 2.48753 7.87498C2.68403 8.00602 2.85218 8.11175 2.9921 8.19206C3.13205 8.27212 3.31804 8.36469 3.55012 8.46862C3.78226 8.57285 3.96537 8.65163 4.09931 8.70533C4.23326 8.75883 4.41627 8.83333 4.64851 8.92837C4.96991 9.05337 5.20806 9.15013 5.3628 9.21862C5.51767 9.28711 5.71404 9.38234 5.95228 9.50437C6.1903 9.62627 6.36434 9.73792 6.47455 9.83915C6.58466 9.94038 6.68433 10.0654 6.77368 10.2142C6.86303 10.3629 6.90778 10.5207 6.90778 10.6874C6.90778 11.1577 6.72474 11.5207 6.35855 11.7765C5.99253 12.0325 5.56827 12.1605 5.08619 12.1605C4.86614 12.1605 4.64573 12.1368 4.42556 12.0892C3.65173 11.9342 2.92852 11.5622 2.25589 10.9729L2.23803 10.9551C2.18443 10.8898 2.11297 10.863 2.02378 10.8749C1.92852 10.8868 1.86003 10.9226 1.8184 10.9822L0.898708 12.1875C0.80939 12.3065 0.815426 12.4285 0.916596 12.5535C0.9464 12.5893 0.998471 12.643 1.07284 12.7143C1.1474 12.7858 1.28581 12.8973 1.48809 13.0494C1.69043 13.2012 1.91069 13.3439 2.14884 13.478C2.38696 13.6119 2.689 13.7443 3.05515 13.8753C3.4213 14.0061 3.80068 14.0983 4.19357 14.1518V15.7143C4.19357 15.7918 4.22188 15.8587 4.27839 15.9153C4.33496 15.972 4.40189 16.0001 4.47926 16.0001H5.68473C5.7682 16.0001 5.83669 15.9734 5.8902 15.9199C5.94371 15.8664 5.97035 15.7979 5.97035 15.7144V14.1518C6.91698 13.9971 7.68634 13.5908 8.27854 12.9331C8.8708 12.2753 9.16702 11.491 9.16702 10.5804C9.16671 10.2828 9.12808 10.003 9.04996 9.74095Z"
+                                            fill="#040921"
+                                        />
+                                    </svg>
+                                </div>
+
+                                <div class="icon">
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.08464 0.958313L5.0013 5.04165L0.917969 0.958313"
+                                            stroke="#040921"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </div>
                             </button>
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="d-flex align-items-center">
-                            <figure class="edit-select-icon border d-flex align-items-center justify-content-center">
-                                <img src="./img/rates-home.svg" alt="">
-                            </figure>
-                            <h1 class="general__item--title">Select room to edit</h1>
-                        </div>
-                        <div class="col-6">
-                            <div id="bts-ex-5" class="selectpicker" data-clear="true" data-live="true">
-                                <div data-id="prov" class="dropdown-toggle selectpicker__head border general__item d-flex justify-content-between align-items-center">
-                                    <div class="selectpicker__head--text">
-                                        Sbject 
-                                    </div>
-                                    <img src="./img/arrow-down-light.svg" alt="">
-                                </div>
-                                <div class="selectpicker__body">
-                                    <li class="items bg-gradient" data-filter="995" data-value="1">
-                                        Sbject 1
+
+                            <div class="dropdown__options">
+                                <ul class="dropdown__list">
+                                    <li class="flex">
+                                        <img src="img/us-flag.svg" alt="" />
+                                        gel
                                     </li>
-                                    <li class="items bg-gradient" data-filter="444" data-value="2">
-                                        Sbject 2
+                                    <li class="flex">
+                                        <img src="img/us-flag.svg" alt="" />
+                                        eur
                                     </li>
-                                </div>
+                                    <li class="flex">
+                                        <img src="img/us-flag.svg" alt="" />
+                                        gbp
+                                    </li>
+                                </ul>
                             </div>
                         </div>
+
+                        <button class="header__buttons--profile btn">
+                            <img src="./img/profile.svg" alt="" />
+                            <!-- <span>join</span> -->
+                        </button>
                     </div>
-                    <br />
-                    <br />
-                    <div class="general__list">
-                        <!-- item -->
-                        <div class="general__item border">
-                            <div class="general__item--head">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <h1 class="general__item--title">Listing type</h1>
-                                    <div class="d-flex align-items-center">
-                                        <button class="general__item--cancel general__item--btn btn d-flex align-items-center">
-                                            Cancel
-                                        </button>
-                                        <button class="general__item--save general__item--btn btn border d-flex align-items-center">
-                                            Save
-                                        </button>
-                                    </div>
-                                </div>
-                                <p class="general__item--dec">5% cheaper than Standart rate • details </p>
-                            </div>
-                            <div class="general__item--deactive">
-                                <div class="general__item--body">
-                                    <br />
-                                    <div class="rates">
-                                        <label class="radiobox d-flex align-items-center">
-                                            <div class="d-flex align-items-center">
-                                                <input type="radio" class="radiobox__input" name="ragaca">
-                                                <div class="radiobox__input--checked d-block">
-                                                </div>
-                                            </div>
-                                            <div class="rates__text">
-                                                <h1 class="rates__text--title general__item--title">None</h1>
-                                                <p class="rates__text--desc"></p>
-                                            </div>
-                                        </label>
-                                    </div>
-                                    <div class="rates">
-                                        <label class="radiobox d-flex align-items-center">
-                                            <div class="d-flex align-items-center">
-                                                <input type="radio" class="radiobox__input" name="ragaca">
-                                                <div class="radiobox__input--checked d-block">
-                                                </div>
-                                            </div>
-                                            <div class="rates__text">
-                                                <h1 class="rates__text--title general__item--title">Flexible</h1>
-                                                <p class="rates__text--desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus nihil ex commodi accusantium eum optio omnis ratione laboriosam provident, qui nisi numquam eligendi consectetur non impedit? Aperiam beatae voluptates impedit?</p>
-                                            </div>
-                                        </label>
-                                    </div>
-                                    <br />
-                                    <h1 class="general__item--title">Choose rate</h1>
-                                    <br />
-                                    <div class="col-6">
-                                        <div class="home__allcategories rates">
-                                            <div id="bts-ex-5" class="selectpicker" data-clear="true" data-live="true">
-                                                <div data-id="prov" class="dropdown-toggle selectpicker__head border d-flex justify-content-between align-items-center">
-                                                    <div class="selectpicker__head--text">
-                                                        Choose rate policy
-                                                    </div>
-                                                    <img src="./img/arrow-down-light.svg" alt="">
-                                                </div>
-                                                <div class="selectpicker__body border">
-                                                    <li>
-                                                        <label class="home__allcategories--item bg-gradient d-flex align-items-center justify-content-between flex-rewers">
-                                                            <div>
-                                                                <input type="radio" class="home__allcategories--input" value="1" name="categories">
-                                                                <span class="home__allcategories--checked">
-                                                                </span>
-                                                            </div>
-                                                            <div class="home__allcategories--text d-flex align-items-center items">
-                                                                None
-                                                            </div>
-                                                        </label>
-                                                    </li>
-                                                    <li>
-                                                        <label class="home__allcategories--item bg-gradient d-flex align-items-center justify-content-between">
-                                                            <div>
-                                                                <input type="radio" class="home__allcategories--input" value="1" name="categories">
-                                                                <span class="home__allcategories--checked">
-                                                                </span>
-                                                            </div>
-                                                            <div class="home__allcategories--text d-flex align-items-center items">
-                                                                Flexible
-                                                            </div>
-                                                        </label>
-                                                    </li>
-                                                </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="general">
+            <div class="dashboard-container">
+                <div class="dashboard-row">
+                    <div>
+                        <div class="sidebar">
+                            <div class="sidebar__content">
+                                <div class="d-flex justify-content-end">
+                                    <div class="col-4">
+                                        <div class="sidebar__content--section">
+                                            <button class="sidebar__goback btn border d-flex align-items-center">
+                                                <img src="./img/go-back.svg" alt="" />
+                                                Go back
+                                            </button>
+                                        </div>
+                                        <div class="sidebar__content--section">
+                                            <div
+                                                class="sidebar__cover d-flex align-items-end justify-content-center"
+                                                style="
+                                                    background-image: linear-gradient(
+                                                            180deg,
+                                                            rgba(0, 0, 0, 0) 50.34%,
+                                                            rgba(0, 0, 0, 0.48) 100%
+                                                        ),
+                                                        url('./img/cover/ersa23.png');
+                                                "
+                                            >
+                                                <a href="" class="sidebar__cover--link d-flex align-items-center">
+                                                    <img src="./img/link-white.svg" alt="" />
+                                                    View listing
+                                                </a>
                                             </div>
                                         </div>
+                                        <div class="sidebar__content--section">
+                                            <h1 class="sidebar__title d-flex align-items-center">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                <img src="./img/arrow-down-light.svg" alt="" />
+                                            </h1>
+                                        </div>
+                                        <div class="sidebar__content--section">
+                                            <div class="sidebar__id home__item--id border">ID <span>546458</span></div>
+                                        </div>
+                                        <div class="sidebar__content--section">
+                                            <ul class="sidebar__menu">
+                                                <li class="sidebar__menu--item">
+                                                    <a href="" class="sidebar__menu--link">Calendar</a>
+                                                </li>
+                                                <li class="sidebar__menu--item">
+                                                    <a href="" class="sidebar__menu--link">Listing info</a>
+                                                </li>
+                                                <li class="sidebar__menu--item">
+                                                    <a href="" class="sidebar__menu--link">Rates & pricing</a>
+                                                </li>
+                                                <li class="sidebar__menu--item">
+                                                    <a href="" class="sidebar__menu--link">Photos</a>
+                                                </li>
+                                                <li class="sidebar__menu--item">
+                                                    <a href="" class="sidebar__menu--link">Policies</a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                    <br />
-                                    <div class="d-flex justify-content-between">
-                                        <p class="general__item--title">Do you have minimum stay?</p>
-                                        <div class="onoff">
-                                            <label>
-                                                <input type="checkbox" class="onoff__input" checked>
-                                                <div class="onoff__checked border d-flex align-items-center">
-                                                    <p class="onoff__checked--no">No</p>
-                                                    <p class="onoff__checked--yes">Yes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col general--col" style="margin-inline: auto">
+                        <div class="page-head d-flex justify-content-between align-items-center">
+                            <h1 class="page-head__title">Rates & discounts</h1>
+                            <div>
+                                <button class="add-room-btn btn text gradient d-flex align-items-center">
+                                    <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M18.9009 11.66C18.7406 11.4775 18.6521 11.2429 18.6521 11C18.6521 10.7571 18.7406 10.5225 18.9009 10.34L20.1809 8.90002C20.3219 8.74269 20.4095 8.54472 20.4311 8.33452C20.4526 8.12433 20.407 7.9127 20.3009 7.73002L18.3009 4.27002C18.1958 4.08754 18.0358 3.94289 17.8436 3.8567C17.6515 3.77051 17.437 3.74718 17.2309 3.79002L15.3509 4.17002C15.1117 4.21945 14.8626 4.17961 14.6508 4.05802C14.4389 3.93643 14.2789 3.7415 14.2009 3.51002L13.5909 1.68002C13.5238 1.4814 13.396 1.30888 13.2255 1.18686C13.055 1.06484 12.8505 0.999476 12.6409 1.00002H8.64087C8.42281 0.988635 8.20701 1.04894 8.02644 1.17173C7.84587 1.29452 7.71045 1.47304 7.64087 1.68002L7.08087 3.51002C7.00287 3.7415 6.84284 3.93643 6.63099 4.05802C6.41913 4.17961 6.17009 4.21945 5.93087 4.17002L4.00087 3.79002C3.80542 3.7624 3.60617 3.79324 3.42822 3.87866C3.25027 3.96407 3.10157 4.10025 3.00087 4.27002L1.00087 7.73002C0.892033 7.91067 0.843095 8.1211 0.861055 8.33124C0.879016 8.54138 0.962955 8.74046 1.10087 8.90002L2.37087 10.34C2.53119 10.5225 2.61961 10.7571 2.61961 11C2.61961 11.2429 2.53119 11.4775 2.37087 11.66L1.10087 13.1C0.962955 13.2596 0.879016 13.4587 0.861055 13.6688C0.843095 13.8789 0.892033 14.0894 1.00087 14.27L3.00087 17.73C3.10597 17.9125 3.26599 18.0571 3.45812 18.1433C3.65026 18.2295 3.8647 18.2529 4.07087 18.21L5.95087 17.83C6.19009 17.7806 6.43913 17.8204 6.65099 17.942C6.86284 18.0636 7.02287 18.2585 7.10087 18.49L7.71087 20.32C7.78045 20.527 7.91587 20.7055 8.09644 20.8283C8.27701 20.9511 8.49281 21.0114 8.71087 21H12.7109C12.9205 21.0006 13.125 20.9352 13.2955 20.8132C13.466 20.6912 13.5938 20.5186 13.6609 20.32L14.2709 18.49C14.3489 18.2585 14.5089 18.0636 14.7208 17.942C14.9326 17.8204 15.1817 17.7806 15.4209 17.83L17.3009 18.21C17.507 18.2529 17.7215 18.2295 17.9136 18.1433C18.1058 18.0571 18.2658 17.9125 18.3709 17.73L20.3709 14.27C20.477 14.0873 20.5226 13.8757 20.5011 13.6655C20.4795 13.4553 20.3919 13.2573 20.2509 13.1L18.9009 11.66ZM17.4109 13L18.2109 13.9L16.9309 16.12L15.7509 15.88C15.0307 15.7328 14.2814 15.8551 13.6455 16.2238C13.0095 16.5925 12.531 17.1819 12.3009 17.88L11.9209 19H9.36087L9.00087 17.86C8.77073 17.1619 8.29225 16.5725 7.65628 16.2038C7.0203 15.8351 6.27109 15.7128 5.55087 15.86L4.37087 16.1L3.07087 13.89L3.87087 12.99C4.36283 12.44 4.6348 11.7279 4.6348 10.99C4.6348 10.2521 4.36283 9.54004 3.87087 8.99002L3.07087 8.09002L4.35087 5.89002L5.53087 6.13002C6.25109 6.27724 7.0003 6.1549 7.63628 5.78622C8.27225 5.41753 8.75073 4.82818 8.98087 4.13002L9.36087 3.00002H11.9209L12.3009 4.14002C12.531 4.83818 13.0095 5.42753 13.6455 5.79622C14.2814 6.1649 15.0307 6.28724 15.7509 6.14002L16.9309 5.90002L18.2109 8.12002L17.4109 9.02002C16.9244 9.56878 16.6558 10.2767 16.6558 11.01C16.6558 11.7433 16.9244 12.4513 17.4109 13ZM10.6409 7.00002C9.84975 7.00002 9.07639 7.23461 8.41859 7.67414C7.76079 8.11366 7.24811 8.73838 6.94535 9.46928C6.6426 10.2002 6.56339 11.0045 6.71773 11.7804C6.87207 12.5563 7.25304 13.269 7.81245 13.8284C8.37186 14.3879 9.08459 14.7688 9.86051 14.9232C10.6364 15.0775 11.4407 14.9983 12.1716 14.6955C12.9025 14.3928 13.5272 13.8801 13.9668 13.2223C14.4063 12.5645 14.6409 11.7911 14.6409 11C14.6409 9.93915 14.2194 8.92174 13.4693 8.17159C12.7192 7.42144 11.7017 7.00002 10.6409 7.00002ZM10.6409 13C10.2453 13 9.85863 12.8827 9.52973 12.663C9.20083 12.4432 8.94449 12.1308 8.79311 11.7654C8.64174 11.3999 8.60213 10.9978 8.6793 10.6098C8.75647 10.2219 8.94695 9.86551 9.22666 9.5858C9.50636 9.3061 9.86273 9.11562 10.2507 9.03845C10.6387 8.96128 11.0408 9.00088 11.4062 9.15226C11.7717 9.30363 12.084 9.55998 12.3038 9.88888C12.5236 10.2178 12.6409 10.6045 12.6409 11C12.6409 11.5304 12.4302 12.0392 12.0551 12.4142C11.68 12.7893 11.1713 13 10.6409 13Z"
+                                            fill="#9d50ff"
+                                        />
+                                    </svg>
+                                    Edit options
+                                </button>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                <figure class="edit-select-icon border d-flex align-items-center justify-content-center">
+                                    <img src="./img/rates-home.svg" alt="" />
+                                </figure>
+                                <h1 class="general__item--title">Select room to edit</h1>
+                            </div>
+                            <div class="col-6">
+                                <div id="bts-ex-5" class="selectpicker" data-clear="true" data-live="true">
+                                    <div
+                                        data-id="prov"
+                                        class="dropdown-toggle selectpicker__head border general__item d-flex justify-content-between align-items-center"
+                                    >
+                                        <div class="selectpicker__head--text">Sbject</div>
+                                        <img src="./img/arrow-down-light.svg" alt="" />
+                                    </div>
+                                    <div class="selectpicker__body">
+                                        <li class="items bg-gradient" data-filter="995" data-value="1">Sbject 1</li>
+                                        <li class="items bg-gradient" data-filter="444" data-value="2">Sbject 2</li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <br />
+                        <div class="general__list">
+                            <!-- item -->
+                            <div class="general__item border">
+                                <div class="general__item--head">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h1 class="general__item--title">Listing type</h1>
+                                        <div class="d-flex align-items-center">
+                                            <button class="general__item--cancel general__item--btn btn d-flex align-items-center">
+                                                Cancel
+                                            </button>
+                                            <button class="general__item--save general__item--btn btn border d-flex align-items-center">
+                                                Save
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <p class="general__item--dec">5% cheaper than Standart rate • details</p>
+                                </div>
+                                <div class="general__item--deactive">
+                                    <div class="general__item--body">
+                                        <br />
+                                        <div class="rates">
+                                            <label class="radiobox d-flex align-items-center">
+                                                <div class="d-flex align-items-center">
+                                                    <input type="radio" class="radiobox__input" name="ragaca" />
+                                                    <div class="radiobox__input--checked d-block"></div>
+                                                </div>
+                                                <div class="rates__text">
+                                                    <h1 class="rates__text--title general__item--title">None</h1>
+                                                    <p class="rates__text--desc"></p>
                                                 </div>
                                             </label>
                                         </div>
-                                    </div>
-                                    <br />
-                                    <h1 class="general__item--title">Rate plan</h1>
-                                    <br />
-                                    <div class="col-6">
-                                        <div class="home__allcategories rates">
-                                            <div id="bts-ex-5" class="selectpicker" data-clear="true" data-live="true">
-                                                <div data-id="prov" class="dropdown-toggle selectpicker__head border d-flex justify-content-between align-items-center">
-                                                    <div class="selectpicker__head--text">
-                                                        Choose rate policy
-                                                    </div>
-                                                    <img src="./img/arrow-down-light.svg" alt="">
+                                        <div class="rates">
+                                            <label class="radiobox d-flex align-items-center">
+                                                <div class="d-flex align-items-center">
+                                                    <input type="radio" class="radiobox__input" name="ragaca" />
+                                                    <div class="radiobox__input--checked d-block"></div>
                                                 </div>
-                                                <div class="selectpicker__body border">
-                                                    <li>
-                                                        <label class="home__allcategories--item bg-gradient d-flex align-items-center justify-content-between">
-                                                            <div>
-                                                                <input type="radio" class="home__allcategories--input" value="1" name="categories">
-                                                                <span class="home__allcategories--checked">
-                                                                </span>
-                                                            </div>
-                                                            <div class="home__allcategories--text d-flex align-items-center items">
-                                                                None
-                                                            </div>
-                                                        </label>
-                                                    </li>
-                                                    <li>
-                                                        <label class="home__allcategories--item bg-gradient d-flex align-items-center justify-content-between">
-                                                            <div>
-                                                                <input type="radio" class="home__allcategories--input" value="1" name="categories">
-                                                                <span class="home__allcategories--checked">
-                                                                </span>
-                                                            </div>
-                                                            <div class="home__allcategories--text d-flex align-items-center items">
-                                                                Flexible
-                                                            </div>
-                                                        </label>
-                                                    </li>
+                                                <div class="rates__text">
+                                                    <h1 class="rates__text--title general__item--title">Flexible</h1>
+                                                    <p class="rates__text--desc">
+                                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus nihil ex commodi
+                                                        accusantium eum optio omnis ratione laboriosam provident, qui nisi numquam eligendi
+                                                        consectetur non impedit? Aperiam beatae voluptates impedit?
+                                                    </p>
                                                 </div>
-                                            </div>
+                                            </label>
                                         </div>
-                                    </div>
-                                    <br />
-                                    <h1 class="general__item--title">Discount rate</h1>
-                                    <br />
-                                    <div class="col-12">
-                                        <div class="d-flex align-items-center">
+                                        <br />
+                                        <h1 class="general__item--title">Choose rate</h1>
+                                        <br />
+                                        <div class="col-6">
                                             <div class="home__allcategories rates">
                                                 <div id="bts-ex-5" class="selectpicker" data-clear="true" data-live="true">
-                                                    <div data-id="prov" class="dropdown-toggle d-flex justify-content-between align-items-center">
-                                                        <label class="number border d-flex align-items-center">
-                                                            <input type="text" class="number__input" value="" placeholder="Number of rooms">
-                                                            <input type="text" class="number__index" value="" placeholder="number">
-                                                            <i class="btn" style="position: absolute; right: 24px;">
-                                                                <img src="./img/arrow-up-down.svg" alt="">
-                                                            </i>
-                                                        </label>
+                                                    <div
+                                                        data-id="prov"
+                                                        class="dropdown-toggle selectpicker__head border d-flex justify-content-between align-items-center"
+                                                    >
+                                                        <div class="selectpicker__head--text">Choose rate policy</div>
+                                                        <img src="./img/arrow-down-light.svg" alt="" />
                                                     </div>
                                                     <div class="selectpicker__body border">
                                                         <li>
-                                                            <label class="home__allcategories--item bg-gradient d-flex align-items-center justify-content-between">
+                                                            <label
+                                                                class="home__allcategories--item bg-gradient d-flex align-items-center justify-content-between flex-rewers"
+                                                            >
                                                                 <div>
-                                                                    <input type="radio" class="home__allcategories--input" value="1" name="categories">
-                                                                    <span class="home__allcategories--checked">
-                                                                    </span>
+                                                                    <input
+                                                                        type="radio"
+                                                                        class="home__allcategories--input"
+                                                                        value="1"
+                                                                        name="categories"
+                                                                    />
+                                                                    <span class="home__allcategories--checked"> </span>
                                                                 </div>
-                                                                <div class="home__allcategories--text d-flex align-items-center">
+                                                                <div class="home__allcategories--text d-flex align-items-center items">
                                                                     None
                                                                 </div>
                                                             </label>
                                                         </li>
                                                         <li>
-                                                            <label class="home__allcategories--item bg-gradient d-flex align-items-center justify-content-between">
+                                                            <label
+                                                                class="home__allcategories--item bg-gradient d-flex align-items-center justify-content-between"
+                                                            >
                                                                 <div>
-                                                                    <input type="radio" class="home__allcategories--input" value="1" name="categories">
-                                                                    <span class="home__allcategories--checked">
-                                                                    </span>
+                                                                    <input
+                                                                        type="radio"
+                                                                        class="home__allcategories--input"
+                                                                        value="1"
+                                                                        name="categories"
+                                                                    />
+                                                                    <span class="home__allcategories--checked"> </span>
                                                                 </div>
-                                                                <div class="home__allcategories--text d-flex align-items-center">
+                                                                <div class="home__allcategories--text d-flex align-items-center items">
                                                                     Flexible
                                                                 </div>
                                                             </label>
@@ -337,145 +298,287 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="rates">
-                                                <div class="recomended-text d-flex align-items-center">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M7.00004 6.33331C6.82323 6.33331 6.65366 6.40355 6.52864 6.52858C6.40361 6.6536 6.33338 6.82317 6.33338 6.99998V9.66665C6.33338 9.84346 6.40361 10.013 6.52864 10.1381C6.65366 10.2631 6.82323 10.3333 7.00004 10.3333C7.17685 10.3333 7.34642 10.2631 7.47145 10.1381C7.59647 10.013 7.66671 9.84346 7.66671 9.66665V6.99998C7.66671 6.82317 7.59647 6.6536 7.47145 6.52858C7.34642 6.40355 7.17685 6.33331 7.00004 6.33331ZM7.25338 3.71998C7.09107 3.6533 6.90902 3.6533 6.74671 3.71998C6.66488 3.75171 6.59011 3.79929 6.52671 3.85998C6.46782 3.92478 6.42047 3.99919 6.38671 4.07998C6.34939 4.1591 6.33112 4.24586 6.33338 4.33331C6.33287 4.42105 6.34969 4.50803 6.38286 4.58925C6.41604 4.67048 6.46492 4.74435 6.52671 4.80665C6.59151 4.86553 6.66592 4.91289 6.74671 4.94665C6.84771 4.98814 6.95735 5.00419 7.06601 4.99339C7.17466 4.98259 7.279 4.94526 7.36985 4.88469C7.4607 4.82412 7.53529 4.74217 7.58705 4.64603C7.63881 4.54989 7.66617 4.4425 7.66671 4.33331C7.66425 4.1568 7.5952 3.98774 7.47338 3.85998C7.40997 3.79929 7.33521 3.75171 7.25338 3.71998ZM7.00004 0.333313C5.6815 0.333313 4.39257 0.724306 3.29624 1.45685C2.19991 2.18939 1.34543 3.23058 0.840847 4.44876C0.336263 5.66693 0.20424 7.00738 0.461475 8.30058C0.71871 9.59379 1.35365 10.7817 2.286 11.714C3.21835 12.6464 4.40623 13.2813 5.69944 13.5385C6.99265 13.7958 8.33309 13.6638 9.55127 13.1592C10.7694 12.6546 11.8106 11.8001 12.5432 10.7038C13.2757 9.60745 13.6667 8.31852 13.6667 6.99998C13.6667 6.1245 13.4943 5.25759 13.1592 4.44876C12.8242 3.63992 12.3331 2.90499 11.7141 2.28593C11.095 1.66688 10.3601 1.17581 9.55127 0.840783C8.74243 0.505751 7.87552 0.333313 7.00004 0.333313ZM7.00004 12.3333C5.94521 12.3333 4.91406 12.0205 4.037 11.4345C3.15994 10.8484 2.47635 10.0155 2.07269 9.04096C1.66902 8.06642 1.5634 6.99406 1.76919 5.9595C1.97498 4.92493 2.48293 3.97462 3.22881 3.22874C3.97469 2.48286 4.925 1.97491 5.95956 1.76912C6.99413 1.56334 8.06648 1.66895 9.04102 2.07262C10.0156 2.47629 10.8485 3.15988 11.4345 4.03694C12.0206 4.914 12.3334 5.94515 12.3334 6.99998C12.3334 8.41447 11.7715 9.77102 10.7713 10.7712C9.77109 11.7714 8.41453 12.3333 7.00004 12.3333Z" fill="#9D50FF"/>
-                                                    </svg>
-        
-                                                    Recommended is 10%
+                                        </div>
+                                        <br />
+                                        <div class="d-flex justify-content-between">
+                                            <p class="general__item--title">Do you have minimum stay?</p>
+                                            <div class="onoff">
+                                                <label>
+                                                    <input type="checkbox" class="onoff__input" checked />
+                                                    <div class="onoff__checked border d-flex align-items-center">
+                                                        <p class="onoff__checked--no">No</p>
+                                                        <p class="onoff__checked--yes">Yes</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <br />
+                                        <h1 class="general__item--title">Rate plan</h1>
+                                        <br />
+                                        <div class="col-6">
+                                            <div class="home__allcategories rates">
+                                                <div id="bts-ex-5" class="selectpicker" data-clear="true" data-live="true">
+                                                    <div
+                                                        data-id="prov"
+                                                        class="dropdown-toggle selectpicker__head border d-flex justify-content-between align-items-center"
+                                                    >
+                                                        <div class="selectpicker__head--text">Choose rate policy</div>
+                                                        <img src="./img/arrow-down-light.svg" alt="" />
+                                                    </div>
+                                                    <div class="selectpicker__body border">
+                                                        <li>
+                                                            <label
+                                                                class="home__allcategories--item bg-gradient d-flex align-items-center justify-content-between"
+                                                            >
+                                                                <div>
+                                                                    <input
+                                                                        type="radio"
+                                                                        class="home__allcategories--input"
+                                                                        value="1"
+                                                                        name="categories"
+                                                                    />
+                                                                    <span class="home__allcategories--checked"> </span>
+                                                                </div>
+                                                                <div class="home__allcategories--text d-flex align-items-center items">
+                                                                    None
+                                                                </div>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <label
+                                                                class="home__allcategories--item bg-gradient d-flex align-items-center justify-content-between"
+                                                            >
+                                                                <div>
+                                                                    <input
+                                                                        type="radio"
+                                                                        class="home__allcategories--input"
+                                                                        value="1"
+                                                                        name="categories"
+                                                                    />
+                                                                    <span class="home__allcategories--checked"> </span>
+                                                                </div>
+                                                                <div class="home__allcategories--text d-flex align-items-center items">
+                                                                    Flexible
+                                                                </div>
+                                                            </label>
+                                                        </li>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <br />
-                                    <h1 class="general__item--title">Free night discount</h1>
-                                    <br />
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <div class="rates">
-                                                <label class="radiobox d-flex align-items-center">
-                                                    <div class="d-flex align-items-center">
-                                                        <input type="radio" class="radiobox__input" name="ragaca">
-                                                        <div class="radiobox__input--checked d-block">
+                                        <br />
+                                        <h1 class="general__item--title">Discount rate</h1>
+                                        <br />
+                                        <div class="col-12">
+                                            <div class="d-flex align-items-center">
+                                                <div class="home__allcategories rates">
+                                                    <div id="bts-ex-5" class="selectpicker" data-clear="true" data-live="true">
+                                                        <div
+                                                            data-id="prov"
+                                                            class="dropdown-toggle d-flex justify-content-between align-items-center"
+                                                        >
+                                                            <label class="number border d-flex align-items-center">
+                                                                <input
+                                                                    type="text"
+                                                                    class="number__input"
+                                                                    value=""
+                                                                    placeholder="Number of rooms"
+                                                                />
+                                                                <input type="text" class="number__index" value="" placeholder="number" />
+                                                                <i class="btn" style="position: absolute; right: 24px">
+                                                                    <img src="./img/arrow-up-down.svg" alt="" />
+                                                                </i>
+                                                            </label>
+                                                        </div>
+                                                        <div class="selectpicker__body border">
+                                                            <li>
+                                                                <label
+                                                                    class="home__allcategories--item bg-gradient d-flex align-items-center justify-content-between"
+                                                                >
+                                                                    <div>
+                                                                        <input
+                                                                            type="radio"
+                                                                            class="home__allcategories--input"
+                                                                            value="1"
+                                                                            name="categories"
+                                                                        />
+                                                                        <span class="home__allcategories--checked"> </span>
+                                                                    </div>
+                                                                    <div class="home__allcategories--text d-flex align-items-center">
+                                                                        None
+                                                                    </div>
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <label
+                                                                    class="home__allcategories--item bg-gradient d-flex align-items-center justify-content-between"
+                                                                >
+                                                                    <div>
+                                                                        <input
+                                                                            type="radio"
+                                                                            class="home__allcategories--input"
+                                                                            value="1"
+                                                                            name="categories"
+                                                                        />
+                                                                        <span class="home__allcategories--checked"> </span>
+                                                                    </div>
+                                                                    <div class="home__allcategories--text d-flex align-items-center">
+                                                                        Flexible
+                                                                    </div>
+                                                                </label>
+                                                            </li>
                                                         </div>
                                                     </div>
-                                                    <div class="rates__text">
-                                                        <h1 class="rates__text--title general__item--title">5 day </h1>
-                                                        <p class="rates__text--desc" style="border: none;">1 free night</p>
+                                                </div>
+                                                <div class="rates">
+                                                    <div class="recomended-text d-flex align-items-center">
+                                                        <svg
+                                                            width="14"
+                                                            height="14"
+                                                            viewBox="0 0 14 14"
+                                                            fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                        >
+                                                            <path
+                                                                d="M7.00004 6.33331C6.82323 6.33331 6.65366 6.40355 6.52864 6.52858C6.40361 6.6536 6.33338 6.82317 6.33338 6.99998V9.66665C6.33338 9.84346 6.40361 10.013 6.52864 10.1381C6.65366 10.2631 6.82323 10.3333 7.00004 10.3333C7.17685 10.3333 7.34642 10.2631 7.47145 10.1381C7.59647 10.013 7.66671 9.84346 7.66671 9.66665V6.99998C7.66671 6.82317 7.59647 6.6536 7.47145 6.52858C7.34642 6.40355 7.17685 6.33331 7.00004 6.33331ZM7.25338 3.71998C7.09107 3.6533 6.90902 3.6533 6.74671 3.71998C6.66488 3.75171 6.59011 3.79929 6.52671 3.85998C6.46782 3.92478 6.42047 3.99919 6.38671 4.07998C6.34939 4.1591 6.33112 4.24586 6.33338 4.33331C6.33287 4.42105 6.34969 4.50803 6.38286 4.58925C6.41604 4.67048 6.46492 4.74435 6.52671 4.80665C6.59151 4.86553 6.66592 4.91289 6.74671 4.94665C6.84771 4.98814 6.95735 5.00419 7.06601 4.99339C7.17466 4.98259 7.279 4.94526 7.36985 4.88469C7.4607 4.82412 7.53529 4.74217 7.58705 4.64603C7.63881 4.54989 7.66617 4.4425 7.66671 4.33331C7.66425 4.1568 7.5952 3.98774 7.47338 3.85998C7.40997 3.79929 7.33521 3.75171 7.25338 3.71998ZM7.00004 0.333313C5.6815 0.333313 4.39257 0.724306 3.29624 1.45685C2.19991 2.18939 1.34543 3.23058 0.840847 4.44876C0.336263 5.66693 0.20424 7.00738 0.461475 8.30058C0.71871 9.59379 1.35365 10.7817 2.286 11.714C3.21835 12.6464 4.40623 13.2813 5.69944 13.5385C6.99265 13.7958 8.33309 13.6638 9.55127 13.1592C10.7694 12.6546 11.8106 11.8001 12.5432 10.7038C13.2757 9.60745 13.6667 8.31852 13.6667 6.99998C13.6667 6.1245 13.4943 5.25759 13.1592 4.44876C12.8242 3.63992 12.3331 2.90499 11.7141 2.28593C11.095 1.66688 10.3601 1.17581 9.55127 0.840783C8.74243 0.505751 7.87552 0.333313 7.00004 0.333313ZM7.00004 12.3333C5.94521 12.3333 4.91406 12.0205 4.037 11.4345C3.15994 10.8484 2.47635 10.0155 2.07269 9.04096C1.66902 8.06642 1.5634 6.99406 1.76919 5.9595C1.97498 4.92493 2.48293 3.97462 3.22881 3.22874C3.97469 2.48286 4.925 1.97491 5.95956 1.76912C6.99413 1.56334 8.06648 1.66895 9.04102 2.07262C10.0156 2.47629 10.8485 3.15988 11.4345 4.03694C12.0206 4.914 12.3334 5.94515 12.3334 6.99998C12.3334 8.41447 11.7715 9.77102 10.7713 10.7712C9.77109 11.7714 8.41453 12.3333 7.00004 12.3333Z"
+                                                                fill="#9D50FF"
+                                                            />
+                                                        </svg>
+
+                                                        Recommended is 10%
                                                     </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br />
+                                        <h1 class="general__item--title">Free night discount</h1>
+                                        <br />
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <div class="rates">
+                                                    <label class="radiobox d-flex align-items-center">
+                                                        <div class="d-flex align-items-center">
+                                                            <input type="radio" class="radiobox__input" name="ragaca" />
+                                                            <div class="radiobox__input--checked d-block"></div>
+                                                        </div>
+                                                        <div class="rates__text">
+                                                            <h1 class="rates__text--title general__item--title">5 day</h1>
+                                                            <p class="rates__text--desc" style="border: none">1 free night</p>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="rates">
+                                                    <label class="radiobox d-flex align-items-center">
+                                                        <div class="d-flex align-items-center">
+                                                            <input type="radio" class="radiobox__input" name="ragaca" />
+                                                            <div class="radiobox__input--checked d-block"></div>
+                                                        </div>
+                                                        <div class="rates__text">
+                                                            <h1 class="rates__text--title general__item--title">5 day</h1>
+                                                            <p class="rates__text--desc" style="border: none">1 free night</p>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="rates">
+                                                    <label class="radiobox d-flex align-items-center">
+                                                        <div class="d-flex align-items-center">
+                                                            <input type="radio" class="radiobox__input" name="ragaca" />
+                                                            <div class="radiobox__input--checked d-block"></div>
+                                                        </div>
+                                                        <div class="rates__text">
+                                                            <h1 class="rates__text--title general__item--title">5 day</h1>
+                                                            <p class="rates__text--desc" style="border: none">1 free night</p>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br />
+                                        <h1 class="general__item--title">Custom discount</h1>
+                                        <br />
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <label class="number border d-flex align-items-center">
+                                                    <input type="text" class="number__input" value="" placeholder="Number of rooms" />
+                                                    <input type="text" class="number__index" value="8 day" placeholder="number" />
+                                                </label>
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="number border d-flex align-items-center">
+                                                    <input type="text" class="number__input" value="" placeholder="Room size" />
+                                                    <input type="text" class="number__index" value="8 day" placeholder="number" />
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="col-4">
-                                            <div class="rates">
-                                                <label class="radiobox d-flex align-items-center">
-                                                    <div class="d-flex align-items-center">
-                                                        <input type="radio" class="radiobox__input" name="ragaca">
-                                                        <div class="radiobox__input--checked d-block">
-                                                        </div>
-                                                    </div>
-                                                    <div class="rates__text">
-                                                        <h1 class="rates__text--title general__item--title">5 day </h1>
-                                                        <p class="rates__text--desc" style="border: none;">1 free night</p>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="rates">
-                                                <label class="radiobox d-flex align-items-center">
-                                                    <div class="d-flex align-items-center">
-                                                        <input type="radio" class="radiobox__input" name="ragaca">
-                                                        <div class="radiobox__input--checked d-block">
-                                                        </div>
-                                                    </div>
-                                                    <div class="rates__text">
-                                                        <h1 class="rates__text--title general__item--title">5 day </h1>
-                                                        <p class="rates__text--desc" style="border: none;">1 free night</p>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <br />
-                                    <h1 class="general__item--title">Custom discount</h1>
-                                    <br />
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <label class="number border d-flex align-items-center">
-                                                <input type="text" class="number__input" value="" placeholder="Number of rooms">
-                                                <input type="text" class="number__index" value="8 day" placeholder="number">
-                                            </label>
-                                        </div>
-                                        <div class="col-6">
-                                            <label class="number border d-flex align-items-center">
-                                                <input type="text" class="number__input" value="" placeholder="Room size">
-                                                <input type="text" class="number__index" value="8 day" placeholder="number">
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <br />
-                                    <div class="rates">
-                                        <div class="notification">
-                                            <div class="notification__head d-flex justify-content-between align-items-center">
-                                                <h1 class="general__item--title">Discount rate</h1>
-                                                <img src="./img/idea.svg" alt="">
-                                            </div>
-                                            <div class="notification__desc">
-                                                48% of bookings are made for just one night. If you set a minimum length of stay, you're likely to lose out on these bookings.
+                                        <br />
+                                        <div class="rates">
+                                            <div class="notification">
+                                                <div class="notification__head d-flex justify-content-between align-items-center">
+                                                    <h1 class="general__item--title">Discount rate</h1>
+                                                    <img src="./img/idea.svg" alt="" />
+                                                </div>
+                                                <div class="notification__desc">
+                                                    48% of bookings are made for just one night. If you set a minimum length of stay, you're
+                                                    likely to lose out on these bookings.
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div><!-- item end -->
-                    </div>
-                </div>
-                <div class="col d-none d-lg-block" style="max-width: 400px; width: 100%;">
-
-                    <div class="home__stats">
-                        <div class="home__stats--head d-flex justify-content-between align-items-center">
-                            <h1 class="home__stats--tab-title">Activities</h1>
-                            <a href="" class="home__stats--tab-link text gradient">See all</a>
+                            <!-- item end -->
                         </div>
-                        <div class="home__stats--body">
-                            <div class="home__stats--item d-flex">
-                                <figure class="home__stats--item-profile">
-                                    <img src="./img/cover/profile.png" alt="" />
-                                </figure>
-                                <div>
-                                    <h1 class="home__stats--item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-                                    <div class="home__stats--item-desc">
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, hic.
+                    </div>
+                    <div>
+                        <div class="home__stats">
+                            <div class="home__stats--head d-flex justify-content-between align-items-center">
+                                <h1 class="home__stats--tab-title">Activities</h1>
+                                <a href="" class="home__stats--tab-link text gradient">See all</a>
+                            </div>
+                            <div class="home__stats--body">
+                                <div class="home__stats--item d-flex">
+                                    <figure class="home__stats--item-profile">
+                                        <img src="./img/cover/profile.png" alt="" />
+                                    </figure>
+                                    <div>
+                                        <h1 class="home__stats--item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                                        <div class="home__stats--item-desc">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, hic.
+                                        </div>
+                                        <p class="home__stats--item-date">22.02.22</p>
                                     </div>
-                                    <p class="home__stats--item-date">22.02.22</p>
                                 </div>
-                            </div><!-- item end -->
-                            <div class="home__stats--item d-flex">
-                                <figure class="home__stats--item-profile">
-                                    <img src="./img/cover/profile.png" alt="" />
-                                </figure>
-                                <div>
-                                    <h1 class="home__stats--item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-                                    <div class="home__stats--item-desc">
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, hic.
+                                <!-- item end -->
+                                <div class="home__stats--item d-flex">
+                                    <figure class="home__stats--item-profile">
+                                        <img src="./img/cover/profile.png" alt="" />
+                                    </figure>
+                                    <div>
+                                        <h1 class="home__stats--item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                                        <div class="home__stats--item-desc">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, hic.
+                                        </div>
+                                        <p class="home__stats--item-date">22.02.22</p>
                                     </div>
-                                    <p class="home__stats--item-date">22.02.22</p>
                                 </div>
-                            </div><!-- item end -->
+                                <!-- item end -->
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./function/select/bootstrap-select.js"></script>
-    <script src="./function/select/bundle.min.js"></script>
-    <script src="./function/select/livefilter.min.js"></script>
-    <script src="./function/select/tabcomplete.min.js"></script>
-    <script src="./function/function.js"></script>
-</body>
+        <script src="./function/dropdown.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="./function/select/bootstrap-select.js"></script>
+        <script src="./function/select/bundle.min.js"></script>
+        <script src="./function/select/livefilter.min.js"></script>
+        <script src="./function/select/tabcomplete.min.js"></script>
+        <script src="./function/function.js"></script>
+    </body>
 </html>
