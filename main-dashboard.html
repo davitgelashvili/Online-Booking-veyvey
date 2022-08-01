@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Main Dashboard</title>
         <link rel="stylesheet" href="./css/bootstrap-grid.css" />
         <link rel="stylesheet" href="./css/components.css" />
     </head>
@@ -428,10 +428,12 @@
                             <!-- item end -->
                         </div>
                     </div>
-                    <div class="col-xl-3">
-                        <div class="home__stats">
-                            <div class="home__stats--head home__stats--head-border d-flex justify-content-between align-items-center">
-                                <h1 class="home__stats--tab-title">Stats</h1>
+
+                    <div class="col-xl-3 aside-right hide-on-sm">
+                        <div class="stats-general">
+                            <header class="stats-general__header stats-general__header--bordered">
+                                <h3>Stats</h3>
+
                                 <div>
                                     <div id="bts-ex-5" class="selectpicker" data-clear="true" data-live="true">
                                         <div
@@ -456,57 +458,72 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="home__stats--body-padding">
-                                <div class="home__stats--info d-flex align-items-center justify-content-between">
+                            </header>
+
+                            <div class="stats-general__body">
+                                <div class="stats-general__item">
                                     <p>Check-in</p>
                                     <span>23</span>
                                 </div>
-                                <div class="home__stats--info d-flex align-items-center justify-content-between">
+                                <div class="stats-general__item">
                                     <p>Check-out</p>
                                     <span>23</span>
                                 </div>
-                                <div class="home__stats--info d-flex align-items-center justify-content-between">
+                                <div class="stats-general__item">
                                     <p>Reservation</p>
                                     <span>23</span>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="home__stats">
-                            <div class="home__stats--head d-flex justify-content-between align-items-center">
-                                <h1 class="home__stats--tab-title">Stats</h1>
-                                <a href="" class="home__stats--tab-link text gradient">See all</a>
-                            </div>
-                            <div class="home__stats--body">
-                                <div class="home__stats--item d-flex">
-                                    <figure class="home__stats--item-profile">
+                        <!-- Sidebar: Activities -->
+                        <div class="side-stats-activities hide-on-md">
+                            <header class="side-stats-activities__header">
+                                <h3>Activities</h3>
+                                <a href="#">See all</a>
+                            </header>
+
+                            <div class="side-stats-activities__body">
+                                <a href="#" class="side-stats-activities__item">
+                                    <figure class="">
                                         <img src="./img/cover/profile.png" alt="" />
                                     </figure>
                                     <div>
-                                        <h1 class="home__stats--item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-                                        <div class="home__stats--item-desc">
-                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, hic.
-                                        </div>
-                                        <p class="home__stats--item-date">22.02.22</p>
+                                        <h4 class="">Room with balcony needs cleaning</h4>
+                                        <p class="">Lorem ipsum dolor sit ament.</p>
+                                        <time class="">April 22, 2022 • 20:20 PM</time>
                                     </div>
-                                </div>
+                                </a>
                                 <!-- item end -->
-                                <div class="home__stats--item d-flex">
-                                    <figure class="home__stats--item-profile">
+
+                                <a href="#" class="side-stats-activities__item">
+                                    <figure class="">
                                         <img src="./img/cover/profile.png" alt="" />
                                     </figure>
                                     <div>
-                                        <h1 class="home__stats--item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-                                        <div class="home__stats--item-desc">
-                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, hic.
-                                        </div>
-                                        <p class="home__stats--item-date">22.02.22</p>
+                                        <h4 class="">Room with balcony needs cleaning</h4>
+                                        <p class="">Lorem ipsum dolor sit ament.</p>
+                                        <time class="">April 22, 2022 • 20:20 PM</time>
                                     </div>
-                                </div>
+                                </a>
                                 <!-- item end -->
                             </div>
                         </div>
+                        <!-- End Sidebar: Activities -->
+
+                        <!-- Sidebar: View activities -->
+                        <div class="side-view-activities">
+                            <button>
+                                <svg viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.92 7.6C18.9 2.91 15.1 0 11 0C6.90001 0 3.10001 2.91 1.08001 7.6C1.02494 7.72617 0.996521 7.86234 0.996521 8C0.996521 8.13766 1.02494 8.27383 1.08001 8.4C3.10001 13.09 6.90001 16 11 16C15.1 16 18.9 13.09 20.92 8.4C20.9751 8.27383 21.0035 8.13766 21.0035 8C21.0035 7.86234 20.9751 7.72617 20.92 7.6ZM11 14C7.83001 14 4.83001 11.71 3.10001 8C4.83001 4.29 7.83001 2 11 2C14.17 2 17.17 4.29 18.9 8C17.17 11.71 14.17 14 11 14ZM11 4C10.2089 4 9.43552 4.2346 8.77773 4.67412C8.11993 5.11365 7.60724 5.73836 7.30449 6.46927C7.00174 7.20017 6.92252 8.00444 7.07686 8.78036C7.2312 9.55628 7.61217 10.269 8.17158 10.8284C8.73099 11.3878 9.44372 11.7688 10.2196 11.9231C10.9956 12.0775 11.7998 11.9983 12.5307 11.6955C13.2616 11.3928 13.8864 10.8801 14.3259 10.2223C14.7654 9.56448 15 8.79113 15 8C15 6.93913 14.5786 5.92172 13.8284 5.17157C13.0783 4.42143 12.0609 4 11 4ZM11 10C10.6044 10 10.2178 9.8827 9.88887 9.66294C9.55997 9.44318 9.30362 9.13082 9.15225 8.76537C9.00087 8.39991 8.96126 7.99778 9.03843 7.60982C9.11561 7.22186 9.30609 6.86549 9.58579 6.58579C9.8655 6.30608 10.2219 6.1156 10.6098 6.03843C10.9978 5.96126 11.3999 6.00087 11.7654 6.15224C12.1308 6.30362 12.4432 6.55996 12.6629 6.88886C12.8827 7.21776 13 7.60444 13 8C13 8.53043 12.7893 9.03914 12.4142 9.41421C12.0391 9.78929 11.5304 10 11 10Z"
+                                    />
+                                </svg>
+
+                                <span>See all activities</span>
+                            </button>
+                        </div>
+                        <!-- Sidebar: View activities -->
                     </div>
                 </div>
             </div>
