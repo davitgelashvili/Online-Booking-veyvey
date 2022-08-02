@@ -53,19 +53,19 @@
     }
 
     &__menu {
-        display: flex;
-        gap: 56px;
+        display: none !important;
 
-        @media (max-width: 1440px) {
-            gap: 32px;
-        }
-
-        @media (max-width: 1366px) {
+        @media (min-width: 1199px) {
+            display: flex !important;
             gap: 24px;
         }
 
-        @media (max-width: 1199px) {
-            display: none !important;
+        @media (min-width: 1439px) {
+            gap: 32px;
+        }
+
+        @media (min-width: 1919px) {
+            gap: 56px;
         }
 
         &--item {
