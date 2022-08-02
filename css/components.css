@@ -380,6 +380,7 @@ body {
 }
 .selectpicker .caret {
   position: relative;
+  width: 10px;
 }
 .selectpicker .caret:before {
   content: url("../img/arrow-down-light.svg");

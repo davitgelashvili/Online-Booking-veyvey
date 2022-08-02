@@ -139,6 +139,7 @@
 
     .caret {
         position: relative;
+        width: 10px;
 
         &:before {
             content: url('../img/arrow-down-light.svg');
