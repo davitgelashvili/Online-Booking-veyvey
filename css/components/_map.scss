@@ -290,3 +290,56 @@
         }
     }
 }
+
+// Map Item Images Slider
+.map-item-images {
+    width: 290px;
+    height: 200px;
+    flex-shrink: 0;
+
+    figure {
+        width: 100%;
+        height: 100%;
+        border-radius: 16px;
+        overflow: hidden;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .swiper-arr-next,
+    .swiper-arr-prev {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 100;
+
+        button {
+            background-color: transparent;
+            border: 0;
+            cursor: pointer;
+        }
+
+        svg {
+            width: 22px;
+            height: 16px;
+            stroke: #fff;
+            fill: none;
+            stroke-width: 2;
+        }
+    }
+
+    .swiper-arr-next {
+        right: 0;
+    }
+
+    .swiper-pagination-bullet {
+        width: 4px;
+        height: 4px;
+        border-radius: 4px;
+        background-color: #fff;
+    }
+}

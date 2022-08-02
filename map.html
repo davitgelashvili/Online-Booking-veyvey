@@ -4,11 +4,10 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Map</title>
         <link rel="icon" type="image/png" href="./img/active.svg" />
         <link rel="stylesheet" href="./css/bootstrap-grid.css" />
-        <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
-        <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
         <link rel="stylesheet" href="./css/components.css" />
     </head>
     <body class="page-profile">
@@ -131,17 +130,41 @@
                     <div class="maps__list">
                         <h3 class="maps__title">300+ Stays in <span class="maps__title--bold">Tbilisi</span></h3>
                         <div class="maps__item">
-                            <div class="maps__item--slider-out">
-                                <div class="maps__item--slider owl-carousel owl-theme owl-loaded">
-                                    <div class="maps__item--cover">
-                                        <img src="./img//cover/cover1.png" alt="" />
+                            <!-- Slider main container -->
+                            <div class="swiper map-item-images">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <figure>
+                                            <img src="./img//cover/cover1.png" alt="" />
+                                        </figure>
                                     </div>
-                                    <div class="maps__item--cover">
-                                        <img src="./img//cover/room.png" alt="" />
+                                    <div class="swiper-slide">
+                                        <figure>
+                                            <img src="./img//cover/room.png" alt="" />
+                                        </figure>
                                     </div>
                                 </div>
-                                <div class="maps__item--dots d-flex justify-content-center"></div>
-                                <div class="photos__slider--navs"></div>
+
+                                <!-- pagination -->
+                                <div class="swiper-pagination"></div>
+
+                                <!-- navigation buttons -->
+                                <div class="swiper-arr-prev">
+                                    <button aria-label="previous image">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M7 16l-4-4m0 0l4-4m-4 4h18" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="swiper-arr-next">
+                                    <button aria-label="next image">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                        </svg>
+                                    </button>
+                                </div>
                             </div>
                             <div class="maps__item--texts d-inline-flex flex-column justify-content-between">
                                 <div>
@@ -218,18 +241,43 @@
                         </div>
                         <!-- item end  -->
                         <div class="maps__item">
-                            <div class="maps__item--slider-out">
-                                <div class="maps__item--slider owl-carousel owl-theme owl-loaded">
-                                    <div class="maps__item--cover">
-                                        <img src="./img//cover/cover1.png" alt="" />
+                            <!-- Slider main container -->
+                            <div class="swiper map-item-images">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <figure>
+                                            <img src="./img//cover/cover1.png" alt="" />
+                                        </figure>
                                     </div>
-                                    <div class="maps__item--cover">
-                                        <img src="./img//cover/room.png" alt="" />
+                                    <div class="swiper-slide">
+                                        <figure>
+                                            <img src="./img//cover/room.png" alt="" />
+                                        </figure>
                                     </div>
                                 </div>
-                                <div class="maps__item--dots d-flex justify-content-center"></div>
-                                <div class="photos__slider--navs"></div>
+
+                                <!-- pagination -->
+                                <div class="swiper-pagination"></div>
+
+                                <!-- navigation buttons -->
+                                <div class="swiper-arr-prev">
+                                    <button aria-label="previous image">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M7 16l-4-4m0 0l4-4m-4 4h18" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="swiper-arr-next">
+                                    <button aria-label="next image">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                        </svg>
+                                    </button>
+                                </div>
                             </div>
+
                             <div class="maps__item--texts d-inline-flex flex-column justify-content-between">
                                 <div>
                                     <div class="d-flex justify-content-between align-items-start">
@@ -496,16 +544,29 @@
         </script>
 
         <script src="./function/dropdown.js"></script>
+        <script src="./function/swiper-bundle.min.js"></script>
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="./function/select/bootstrap-select.js"></script>
         <script src="./function/select/bundle.min.js"></script>
         <script src="./function/select/livefilter.min.js"></script>
         <script src="./function/select/tabcomplete.min.js"></script>
-        <script src="./function/owl.carousel.min.js"></script>
         <script src="./function/function.js"></script>
         <script>
             mapItemsSlider()
+        </script>
+
+        <script>
+            const swiper = new Swiper('.map-item-images', {
+                slidesPerView: 1,
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+                navigation: {
+                    nextEl: '.swiper-arr-next',
+                    prevEl: '.swiper-arr-prev',
+                },
+            })
         </script>
     </body>
 </html>

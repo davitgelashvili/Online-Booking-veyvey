@@ -4600,6 +4600,53 @@ body {
   text-decoration: line-through;
 }
 
+.map-item-images {
+  width: 290px;
+  height: 200px;
+  flex-shrink: 0;
+}
+.map-item-images figure {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.map-item-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.map-item-images .swiper-arr-next,
+.map-item-images .swiper-arr-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+.map-item-images .swiper-arr-next button,
+.map-item-images .swiper-arr-prev button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.map-item-images .swiper-arr-next svg,
+.map-item-images .swiper-arr-prev svg {
+  width: 22px;
+  height: 16px;
+  stroke: #fff;
+  fill: none;
+  stroke-width: 2;
+}
+.map-item-images .swiper-arr-next {
+  right: 0;
+}
+.map-item-images .swiper-pagination-bullet {
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
 .popup__container {
   max-width: 400px;
   width: 100%;
