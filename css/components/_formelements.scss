@@ -1,6 +1,13 @@
 .selectpicker {
     position: relative;
 
+    &--lg {
+        .selectpicker__head {
+            background: #ffffff;
+            padding: 21px 24px;
+        }
+    }
+
     &__head {
         cursor: pointer;
         color: $mainColor;
@@ -8,26 +15,64 @@
         font-weight: 400;
 
         display: flex;
+        justify-content: space-between;
         align-items: center;
         gap: 7px;
 
         svg {
             display: block;
+            flex-shrink: 0;
         }
 
         img {
             margin-left: 5px;
         }
 
+        &--bordered {
+            border: 1px solid rgba(4, 9, 33, 0.16);
+            border-radius: 8px;
+        }
+
         .text {
-            margin-right: 16px;
             display: flex;
             align-items: center;
+            gap: 9.3px;
+            font-weight: 900;
+            font-size: 14px;
+
+            @media (min-width: 1919px) {
+                font-size: 16px;
+                font-weight: 700;
+            }
+
+            svg,
+            img {
+                margin: 0;
+                padding: 0;
+                display: block;
+                flex-shrink: 0;
+            }
         }
 
         &--text {
-            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 9.3px;
+            font-weight: 900;
             font-size: 14px;
+
+            @media (min-width: 1919px) {
+                font-size: 16px;
+                font-weight: 700;
+            }
+
+            svg,
+            img {
+                margin: 0;
+                padding: 0;
+                display: block;
+                flex-shrink: 0;
+            }
         }
     }
 
@@ -37,7 +82,8 @@
         right: 0;
         z-index: 999;
         display: none;
-        width: 160px;
+        // width: 160px;
+        min-width: 100%;
         padding: 5px 0;
         margin: 2px 0 0;
         background-color: #fff;
@@ -49,13 +95,31 @@
             font-weight: 700;
         }
 
+        .items {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
         li {
+            list-style: none;
             padding: 9px 16px;
-            display: block;
             color: $mainColor;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 400;
             cursor: pointer;
+
+            @media (min-width: 1919px) {
+                font-size: 16px;
+            }
+
+            svg,
+            img {
+                display: block;
+                margin: 0;
+                padding: 0;
+                flex-shrink: 0;
+            }
 
             &:hover {
                 background: gradient(0.05);
@@ -127,4 +191,16 @@
     color: $mainColor;
     left: -8px;
     transform: translate(-50%, -12px);
+}
+
+.snoozed-helper-text {
+    margin-top: 12px;
+    font-weight: 700;
+    font-size: 12px;
+    color: #000000;
+    opacity: 0.5;
+
+    @media (min-width: 1919px) {
+        font-size: 14px;
+    }
 }

@@ -125,12 +125,14 @@
         }
     }
 
-    .selectpicker {
-        &__head {
-            padding: 20px 24px;
-        }
-        &__body {
-            width: 100%;
+    &__list {
+        .selectpicker {
+            &__head {
+                padding: 20px 24px;
+            }
+            &__body {
+                width: 100%;
+            }
         }
     }
 
