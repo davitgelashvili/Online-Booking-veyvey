@@ -62,7 +62,7 @@
 
         &__guest {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             gap: 16px;
 
             @media (max-width: 980px) {
@@ -270,6 +270,13 @@
             .home__item--id {
                 padding: 7px 10px;
             }
+        }
+    }
+
+    &__rating {
+        img {
+            width: 10px;
+            height: 10px;
         }
     }
 }

@@ -197,10 +197,14 @@
         }
 
         &--id {
+            padding: 7.5px 10px;
             margin-right: 10px;
             color: rgba(4, 9, 33, 0.5);
             font-size: 14px;
             font-weight: 700;
+            text-transform: uppercase;
+            border: 1px solid rgba(4, 9, 33, 0.08);
+            border-radius: 8px;
 
             span {
                 color: $mainColor;
@@ -214,10 +218,13 @@
             font-weight: 700;
 
             img {
+                width: 18px;
+                height: 18px;
                 margin-right: 4px;
             }
 
             span {
+                margin-left: 4px;
                 color: rgba(4, 9, 33, 0.5);
                 font-weight: 400;
             }
