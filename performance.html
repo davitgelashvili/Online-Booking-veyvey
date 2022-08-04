@@ -181,7 +181,7 @@
                             <!-- hotel end -->
                         </div>
                     </div>
-                    <div class="col-12 col-xl-3">
+                    <aside class="col-12 col-xl-3 aside-right hide-on-small">
                         <div class="home__stats">
                             <div class="home__stats--head d-flex justify-content-start align-items-center">
                                 <figure class="home__stats--host-icon">
@@ -206,75 +206,87 @@
                             </div>
                         </div>
 
-                        <div class="home__stats">
-                            <div class="home__stats--head home__stats--head-border d-flex justify-content-between align-items-center">
-                                <h1 class="home__stats--tab-title">Stats</h1>
+                        <div class="stats-general">
+                            <header class="stats-general__header stats-general__header--bordered">
+                                <h3>Stats</h3>
+
                                 <div>
                                     <div id="bts-ex-5" class="selectpicker" data-clear="true" data-live="true">
                                         <div
                                             data-id="prov"
                                             class="dropdown-toggle selectpicker__head d-flex justify-content-between align-items-center"
                                         >
-                                            <div class="selectpicker__head--text">Sbject</div>
-                                            <img src="./img/arrow-down-light.svg" alt="" />
+                                            <div class="selectpicker__head--text">Today</div>
+                                            <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.08336 1.45834L5.00002 5.54168L0.916687 1.45834"
+                                                    stroke="#040921"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
                                         </div>
                                         <div class="selectpicker__body">
-                                            <li class="items bg-gradient" data-filter="1" data-value="1">Sbject 1</li>
-                                            <li class="items bg-gradient" data-filter="2" data-value="2">Sbject 2</li>
+                                            <li class="items bg-gradient active" data-filter="1" data-value="1">Today</li>
+                                            <li class="items bg-gradient" data-filter="2" data-value="2">Past 15 days</li>
+                                            <li class="items bg-gradient" data-filter="2" data-value="3">Past month</li>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="home__stats--body-padding">
-                                <div class="home__stats--info d-flex align-items-center justify-content-between">
+                            </header>
+
+                            <div class="stats-general__body">
+                                <div class="stats-general__item">
                                     <p>Check-in</p>
                                     <span>23</span>
                                 </div>
-                                <div class="home__stats--info d-flex align-items-center justify-content-between">
+                                <div class="stats-general__item">
                                     <p>Check-out</p>
                                     <span>23</span>
                                 </div>
-                                <div class="home__stats--info d-flex align-items-center justify-content-between">
+                                <div class="stats-general__item">
                                     <p>Reservation</p>
                                     <span>23</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="home__stats">
-                            <div class="home__stats--head d-flex justify-content-between align-items-center">
-                                <h1 class="home__stats--tab-title">Stats</h1>
-                                <a href="" class="home__stats--tab-link text gradient">See all</a>
-                            </div>
-                            <div class="home__stats--body">
-                                <div class="home__stats--item d-flex">
-                                    <figure class="home__stats--item-profile">
+
+                        <!-- Sidebar: Activities -->
+                        <div class="side-stats-activities hide-on-md">
+                            <header class="side-stats-activities__header">
+                                <h3>Activities</h3>
+                                <a href="#">See all</a>
+                            </header>
+
+                            <div class="side-stats-activities__body">
+                                <a href="#" class="side-stats-activities__item">
+                                    <figure class="">
                                         <img src="./img/cover/profile.png" alt="" />
                                     </figure>
                                     <div>
-                                        <h1 class="home__stats--item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-                                        <div class="home__stats--item-desc">
-                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, hic.
-                                        </div>
-                                        <p class="home__stats--item-date">22.02.22</p>
+                                        <h4 class="">Room with balcony needs cleaning</h4>
+                                        <p class="">Lorem ipsum dolor sit ament.</p>
+                                        <time class="">April 22, 2022 • 20:20 PM</time>
                                     </div>
-                                </div>
+                                </a>
                                 <!-- item end -->
-                                <div class="home__stats--item d-flex">
-                                    <figure class="home__stats--item-profile">
+
+                                <a href="#" class="side-stats-activities__item">
+                                    <figure class="">
                                         <img src="./img/cover/profile.png" alt="" />
                                     </figure>
                                     <div>
-                                        <h1 class="home__stats--item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-                                        <div class="home__stats--item-desc">
-                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, hic.
-                                        </div>
-                                        <p class="home__stats--item-date">22.02.22</p>
+                                        <h4 class="">Room with balcony needs cleaning</h4>
+                                        <p class="">Lorem ipsum dolor sit ament.</p>
+                                        <time class="">April 22, 2022 • 20:20 PM</time>
                                     </div>
-                                </div>
+                                </a>
                                 <!-- item end -->
                             </div>
                         </div>
-                    </div>
+                        <!-- End Sidebar: Activities -->
+                    </aside>
                 </div>
             </div>
         </div>
