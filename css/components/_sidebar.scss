@@ -14,10 +14,14 @@
         }
 
         &--section {
-            padding-right: 30px;
+            padding-right: 32px;
 
-            @media (max-width: 1440px) {
+            @media (min-width: 1439px) {
                 padding-right: 24px;
+            }
+
+            @media (min-width: 1919px) {
+                padding-right: 30px;
             }
         }
     }

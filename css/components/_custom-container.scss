@@ -46,16 +46,16 @@
 
 .dashboard-row {
     display: grid;
-    grid-template-columns: 290px 910px 400px;
-    gap: 30px;
+    grid-template-columns: 204px 1fr;
     justify-content: space-between;
+    gap: 30px;
 
-    @media (max-width: 1800px) {
-        grid-template-columns: 204px 1fr 290px;
+    @media (min-width: 1439px) {
+        grid-template-columns: 220px 1fr 290px;
     }
 
-    @media (max-width: 1280px) {
-        grid-template-columns: 204px 1fr;
+    @media (min-width: 1919px) {
+        grid-template-columns: 290px 910px 400px;
     }
 }
 

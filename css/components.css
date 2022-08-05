@@ -1140,11 +1140,16 @@ body {
   background-color: #fff;
 }
 .sidebar__content--section {
-  padding-right: 30px;
+  padding-right: 32px;
 }
-@media (max-width: 1440px) {
+@media (min-width: 1439px) {
   .sidebar__content--section {
     padding-right: 24px;
+  }
+}
+@media (min-width: 1919px) {
+  .sidebar__content--section {
+    padding-right: 30px;
   }
 }
 .sidebar__cover {
@@ -1878,6 +1883,22 @@ body {
   font-size: 34px;
   font-weight: 700;
 }
+.overview__icon {
+  display: block;
+  margin-bottom: 10px;
+}
+.overview__icon svg {
+  display: block;
+  width: 15px;
+  height: 15px;
+  fill: #040921;
+}
+@media (min-width: 1919px) {
+  .overview__icon svg {
+    width: 20px;
+    height: 20px;
+  }
+}
 
 .reservation {
   margin-bottom: 48px;
@@ -2474,7 +2495,7 @@ body {
   font-weight: 700;
 }
 .review__item--btn:hover {
-  background: linear-gradient(to right, #9d50ff 11.55%, #9d50ff 104.8%);
+  background: linear-gradient(246.12deg, #9d50ff 11.55%, #583cf0 104.8%);
 }
 .review__item--status {
   margin-top: 12px;
@@ -5142,18 +5163,18 @@ body {
 
 .dashboard-row {
   display: grid;
-  grid-template-columns: 290px 910px 400px;
-  gap: 30px;
+  grid-template-columns: 204px 1fr;
   justify-content: space-between;
+  gap: 30px;
 }
-@media (max-width: 1800px) {
+@media (min-width: 1439px) {
   .dashboard-row {
-    grid-template-columns: 204px 1fr 290px;
+    grid-template-columns: 220px 1fr 290px;
   }
 }
-@media (max-width: 1280px) {
+@media (min-width: 1919px) {
   .dashboard-row {
-    grid-template-columns: 204px 1fr;
+    grid-template-columns: 290px 910px 400px;
   }
 }
 
