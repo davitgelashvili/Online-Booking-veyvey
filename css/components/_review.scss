@@ -7,6 +7,13 @@
         background-color: #fff;
         border-radius: 12px;
 
+        &--actions {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
         &__grid {
             display: grid;
             grid-template-columns: 3fr 4fr 397px;
@@ -126,20 +133,30 @@
 
         &--desc {
             margin-top: 6px;
-            color: color(#000, 0.75);
-            font-size: 16px;
+            font-size: 12px;
+            color: rgba(4, 9, 33, 0.75);
             line-height: 18px;
             font-weight: 400;
             position: relative;
+
+            @media (min-width: 1919px) {
+                color: color(#000, 0.75);
+                font-size: 16px;
+                line-height: 24px;
+            }
 
             .restricted {
                 overflow: hidden;
                 text-overflow: ellipsis;
                 display: -webkit-box;
-                line-height: 16px; /* fallback */
-                max-height: 32px; /* fallback */
+                line-height: 18px; /* fallback */
+                max-height: 44px; /* fallback */
                 -webkit-line-clamp: 2; /* number of lines to show */
                 -webkit-box-orient: vertical;
+
+                @media (min-width: 1919px) {
+                    line-height: 24px;
+                }
             }
 
             .see-more-btn {
@@ -209,11 +226,20 @@
         }
 
         &--btn {
-            padding: 18px 23px;
+            width: 140px;
+            padding-block: 14px;
             background: gradient(0.1);
             border-radius: 12px;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 700;
+
+            @media (min-width: 1919px) {
+                width: 180px;
+                padding-block: 18px;
+                border-radius: 12px;
+                font-size: 16px;
+                letter-spacing: -0.32px;
+            }
 
             &:hover {
                 background: linear-gradient(246.12deg, #9d50ff 11.55%, #583cf0 104.8%);
@@ -222,10 +248,17 @@
 
         &--status {
             margin-top: 12px;
-            color: #000;
-            font-size: 16px;
             font-weight: 400;
+            font-size: 12px;
+            line-height: 12px;
+            color: #040921;
+            opacity: 0.75;
             text-align: center;
+
+            @media (min-width: 1919px) {
+                font-size: 16px;
+                color: #000;
+            }
         }
 
         &.loading > * {

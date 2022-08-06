@@ -2323,6 +2323,12 @@ body {
   background-color: #fff;
   border-radius: 12px;
 }
+.review__item--actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .review__item__grid {
   display: grid;
   grid-template-columns: 3fr 4fr 397px;
@@ -2432,23 +2438,35 @@ body {
 }
 .review__item--desc {
   margin-top: 6px;
-  color: rgba(0, 0, 0, 0.75);
-  font-size: 16px;
+  font-size: 12px;
+  color: rgba(4, 9, 33, 0.75);
   line-height: 18px;
   font-weight: 400;
   position: relative;
+}
+@media (min-width: 1919px) {
+  .review__item--desc {
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 .review__item--desc .restricted {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  line-height: 16px;
+  line-height: 18px;
   /* fallback */
-  max-height: 32px;
+  max-height: 44px;
   /* fallback */
   -webkit-line-clamp: 2;
   /* number of lines to show */
   -webkit-box-orient: vertical;
+}
+@media (min-width: 1919px) {
+  .review__item--desc .restricted {
+    line-height: 24px;
+  }
 }
 .review__item--desc .see-more-btn {
   position: absolute;
@@ -2510,21 +2528,39 @@ body {
   all: unset;
 }
 .review__item--btn {
-  padding: 18px 23px;
+  width: 140px;
+  padding-block: 14px;
   background: linear-gradient(to right, rgba(157, 80, 255, 0.1) 11.55%, rgba(157, 80, 255, 0.1) 104.8%);
   border-radius: 12px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
+}
+@media (min-width: 1919px) {
+  .review__item--btn {
+    width: 180px;
+    padding-block: 18px;
+    border-radius: 12px;
+    font-size: 16px;
+    letter-spacing: -0.32px;
+  }
 }
 .review__item--btn:hover {
   background: linear-gradient(246.12deg, #9d50ff 11.55%, #583cf0 104.8%);
 }
 .review__item--status {
   margin-top: 12px;
-  color: #000;
-  font-size: 16px;
   font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #040921;
+  opacity: 0.75;
   text-align: center;
+}
+@media (min-width: 1919px) {
+  .review__item--status {
+    font-size: 16px;
+    color: #000;
+  }
 }
 .review__item.loading > * {
   position: relative;
