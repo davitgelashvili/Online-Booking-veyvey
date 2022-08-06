@@ -1221,9 +1221,8 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-family: bold;
   font-size: 12px;
-  font-weight: 900;
+  font-weight: 700;
   color: rgba(4, 9, 33, 0.5);
   border: 1px solid rgba(4, 9, 33, 0.16);
   border-radius: 8px;
@@ -1255,15 +1254,14 @@ body {
 }
 .sidebar__menu--link {
   display: block;
-  font-family: bold;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 700;
   color: rgba(4, 9, 33, 0.56);
   text-decoration: none;
   transition: color 150ms ease-in-out;
 }
 .sidebar__menu--link.active {
-  font-weight: 900;
+  font-weight: 700;
   color: #040921;
 }
 .sidebar__menu--link:hover {
@@ -1342,8 +1340,7 @@ body {
   border-bottom: 0.75px solid rgba(4, 9, 33, 0.08);
 }
 .stats-general__header h3 {
-  font-family: bold;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 14px;
   color: #040921;
 }
@@ -1437,8 +1434,7 @@ body {
   }
 }
 .stats-channel-status__texts h3 {
-  font-family: bold;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 14px;
   color: #040921;
 }
@@ -1534,8 +1530,7 @@ body {
   }
 }
 .stats-earnings__header h3 {
-  font-family: bold;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 14px;
   color: #040921;
 }
@@ -1614,8 +1609,7 @@ body {
   border-bottom: 0.75px solid rgba(4, 9, 33, 0.08);
 }
 .stats-page-score__header h3 {
-  font-family: bold;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 14px;
   color: #040921;
 }
@@ -1687,9 +1681,8 @@ body {
   gap: 5.33px;
 }
 .stats-page-score__item strong {
-  font-family: bold;
   font-size: 14px;
-  font-weight: 900;
+  font-weight: 700;
   color: #040921;
 }
 @media (min-width: 1919px) {
@@ -1722,8 +1715,7 @@ body {
   }
 }
 .side-stats-activities__header h3 {
-  font-family: bold;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 18px;
   color: #040921;
 }
@@ -1733,8 +1725,7 @@ body {
   }
 }
 .side-stats-activities__header a {
-  font-family: bold;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 12px;
   color: #040921;
   opacity: 0.72;
@@ -1779,8 +1770,7 @@ body {
   }
 }
 .side-stats-activities__item h4 {
-  font-family: bold;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 12px;
   color: #040921;
 }
