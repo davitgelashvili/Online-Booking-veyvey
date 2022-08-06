@@ -94,12 +94,16 @@
         }
 
         &--profile {
-            min-width: 72px;
-            max-width: 72px;
-            height: 72px;
-            border-radius: 50%;
+            width: 64px;
+            height: 64px;
+            border-radius: 100%;
             overflow: hidden;
             margin-right: 18px;
+
+            @media (min-width: 1919px) {
+                width: 72px;
+                height: 72px;
+            }
 
             img {
                 width: 100%;

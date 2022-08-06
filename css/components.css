@@ -2402,12 +2402,17 @@ body {
   }
 }
 .review__item--profile {
-  min-width: 72px;
-  max-width: 72px;
-  height: 72px;
-  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
   overflow: hidden;
   margin-right: 18px;
+}
+@media (min-width: 1919px) {
+  .review__item--profile {
+    width: 72px;
+    height: 72px;
+  }
 }
 .review__item--profile img {
   width: 100%;
