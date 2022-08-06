@@ -546,94 +546,181 @@
 
                         <div class="messages">
                             <div class="page-head d-flex justify-content-between align-items-center">
-                                <h1 class="page-head__title">New messages</h1>
+                                <h2 class="page-head__title">New messages</h2>
                                 <a href="" class="home__stats--tab-link text gradient">See all messages</a>
                             </div>
-                            <div class="row">
-                                <div class="col-6">
-                                    <a href="" class="title">
-                                        <div class="messages__item border d-flex align-items-start">
-                                            <figure class="messages__item--profile">
+
+                            <div class="messages__grid">
+                                <!-- message -->
+                                <div class="message">
+                                    <a href="#" class="message__link">
+                                        <div class="message__container">
+                                            <figure class="message__profile-icon">
                                                 <img src="./img/cover/profile.png" alt="" />
                                             </figure>
-                                            <div class="messages__item--text">
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <h1 class="messages__item--name">Harry</h1>
-                                                    <p class="messages__item--date">10.08.2020</p>
-                                                </div>
-                                                <p class="messages__item--long-date">Trip completed • Aug 17, 2020 - Aug 25, 2020</p>
-                                                <div class="messages__item--desc d-flex align-items-center">
-                                                    <img src="./img/sms.svg" alt="" />
-                                                    Scusa, mi signiori.
+
+                                            <div class="message__content">
+                                                <header class="message__header">
+                                                    <div class="message__top">
+                                                        <h3 class="message__user">Harry</h3>
+                                                        <time>10.08.2020</time>
+                                                    </div>
+                                                    <div class="message__meta">
+                                                        <p>Trip completed • <time>Aug 17, 2020 - Aug 25, 2020</time></p>
+                                                    </div>
+                                                </header>
+
+                                                <div class="message__text">
+                                                    <span class="message__icon">
+                                                        <svg
+                                                            width="10"
+                                                            height="10"
+                                                            viewBox="0 0 10 10"
+                                                            fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                        >
+                                                            <path
+                                                                d="M5.49976 4.49902H2.49976C2.36715 4.49902 2.23997 4.5517 2.1462 4.64547C2.05243 4.73924 1.99976 4.86642 1.99976 4.99902C1.99976 5.13163 2.05243 5.25881 2.1462 5.35258C2.23997 5.44634 2.36715 5.49902 2.49976 5.49902H5.49976C5.63236 5.49902 5.75954 5.44634 5.85331 5.35258C5.94708 5.25881 5.99976 5.13163 5.99976 4.99902C5.99976 4.86642 5.94708 4.73924 5.85331 4.64547C5.75954 4.5517 5.63236 4.49902 5.49976 4.49902ZM7.49976 2.49902H2.49976C2.36715 2.49902 2.23997 2.5517 2.1462 2.64547C2.05243 2.73924 1.99976 2.86642 1.99976 2.99902C1.99976 3.13163 2.05243 3.25881 2.1462 3.35258C2.23997 3.44634 2.36715 3.49902 2.49976 3.49902H7.49976C7.63236 3.49902 7.75954 3.44634 7.85331 3.35258C7.94708 3.25881 7.99976 3.13163 7.99976 2.99902C7.99976 2.86642 7.94708 2.73924 7.85331 2.64547C7.75954 2.5517 7.63236 2.49902 7.49976 2.49902ZM8.49976 -0.000976562H1.49976C1.10193 -0.000976562 0.7204 0.157059 0.439096 0.438363C0.157791 0.719668 -0.000244141 1.1012 -0.000244141 1.49902V6.49902C-0.000244141 6.89685 0.157791 7.27838 0.439096 7.55968C0.7204 7.84099 1.10193 7.99902 1.49976 7.99902H7.29476L9.14476 9.85402C9.19148 9.90036 9.24688 9.93703 9.3078 9.96191C9.36872 9.98679 9.43395 9.9994 9.49976 9.99902C9.56534 10.0007 9.63042 9.98701 9.68976 9.95902C9.78106 9.92151 9.85923 9.85781 9.9144 9.77595C9.96956 9.69409 9.99926 9.59774 9.99976 9.49902V1.49902C9.99976 1.1012 9.84172 0.719668 9.56042 0.438363C9.27911 0.157059 8.89758 -0.000976562 8.49976 -0.000976562ZM8.99976 8.29402L7.85476 7.14402C7.80804 7.09768 7.75263 7.06102 7.69171 7.03614C7.63079 7.01126 7.56556 6.99864 7.49976 6.99902H1.49976C1.36715 6.99902 1.23997 6.94634 1.1462 6.85258C1.05243 6.75881 0.999756 6.63163 0.999756 6.49902V1.49902C0.999756 1.36642 1.05243 1.23924 1.1462 1.14547C1.23997 1.0517 1.36715 0.999023 1.49976 0.999023H8.49976C8.63236 0.999023 8.75954 1.0517 8.85331 1.14547C8.94708 1.23924 8.99976 1.36642 8.99976 1.49902V8.29402Z"
+                                                                fill="#040921"
+                                                            />
+                                                        </svg>
+                                                    </span>
+                                                    Scusa, mi signiori. Je voudrais presente...
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
-                                <!-- end -->
-                                <div class="col-6">
-                                    <a href="" class="title">
-                                        <div class="messages__item border d-flex align-items-start">
-                                            <figure class="messages__item--profile">
+                                <!-- end message -->
+
+                                <!-- message -->
+                                <div class="message">
+                                    <a href="#" class="message__link">
+                                        <div class="message__container">
+                                            <figure class="message__profile-icon">
                                                 <img src="./img/cover/profile.png" alt="" />
                                             </figure>
-                                            <div class="messages__item--text">
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <h1 class="messages__item--name">Harry</h1>
-                                                    <p class="messages__item--date">10.08.2020</p>
-                                                </div>
-                                                <p class="messages__item--long-date">Trip completed • Aug 17, 2020 - Aug 25, 2020</p>
-                                                <div class="messages__item--desc d-flex align-items-center">
-                                                    <img src="./img/sms.svg" alt="" />
-                                                    Scusa, mi signiori.
+
+                                            <div class="message__content">
+                                                <header class="message__header">
+                                                    <div class="message__top">
+                                                        <h3 class="message__user">Harry</h3>
+                                                        <time>10.08.2020</time>
+                                                    </div>
+                                                    <div class="message__meta">
+                                                        <p>Trip completed • <time>Aug 17, 2020 - Aug 25, 2020</time></p>
+                                                    </div>
+                                                </header>
+
+                                                <div class="message__text">
+                                                    <span class="message__icon">
+                                                        <svg
+                                                            width="10"
+                                                            height="10"
+                                                            viewBox="0 0 10 10"
+                                                            fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                        >
+                                                            <path
+                                                                d="M5.49976 4.49902H2.49976C2.36715 4.49902 2.23997 4.5517 2.1462 4.64547C2.05243 4.73924 1.99976 4.86642 1.99976 4.99902C1.99976 5.13163 2.05243 5.25881 2.1462 5.35258C2.23997 5.44634 2.36715 5.49902 2.49976 5.49902H5.49976C5.63236 5.49902 5.75954 5.44634 5.85331 5.35258C5.94708 5.25881 5.99976 5.13163 5.99976 4.99902C5.99976 4.86642 5.94708 4.73924 5.85331 4.64547C5.75954 4.5517 5.63236 4.49902 5.49976 4.49902ZM7.49976 2.49902H2.49976C2.36715 2.49902 2.23997 2.5517 2.1462 2.64547C2.05243 2.73924 1.99976 2.86642 1.99976 2.99902C1.99976 3.13163 2.05243 3.25881 2.1462 3.35258C2.23997 3.44634 2.36715 3.49902 2.49976 3.49902H7.49976C7.63236 3.49902 7.75954 3.44634 7.85331 3.35258C7.94708 3.25881 7.99976 3.13163 7.99976 2.99902C7.99976 2.86642 7.94708 2.73924 7.85331 2.64547C7.75954 2.5517 7.63236 2.49902 7.49976 2.49902ZM8.49976 -0.000976562H1.49976C1.10193 -0.000976562 0.7204 0.157059 0.439096 0.438363C0.157791 0.719668 -0.000244141 1.1012 -0.000244141 1.49902V6.49902C-0.000244141 6.89685 0.157791 7.27838 0.439096 7.55968C0.7204 7.84099 1.10193 7.99902 1.49976 7.99902H7.29476L9.14476 9.85402C9.19148 9.90036 9.24688 9.93703 9.3078 9.96191C9.36872 9.98679 9.43395 9.9994 9.49976 9.99902C9.56534 10.0007 9.63042 9.98701 9.68976 9.95902C9.78106 9.92151 9.85923 9.85781 9.9144 9.77595C9.96956 9.69409 9.99926 9.59774 9.99976 9.49902V1.49902C9.99976 1.1012 9.84172 0.719668 9.56042 0.438363C9.27911 0.157059 8.89758 -0.000976562 8.49976 -0.000976562ZM8.99976 8.29402L7.85476 7.14402C7.80804 7.09768 7.75263 7.06102 7.69171 7.03614C7.63079 7.01126 7.56556 6.99864 7.49976 6.99902H1.49976C1.36715 6.99902 1.23997 6.94634 1.1462 6.85258C1.05243 6.75881 0.999756 6.63163 0.999756 6.49902V1.49902C0.999756 1.36642 1.05243 1.23924 1.1462 1.14547C1.23997 1.0517 1.36715 0.999023 1.49976 0.999023H8.49976C8.63236 0.999023 8.75954 1.0517 8.85331 1.14547C8.94708 1.23924 8.99976 1.36642 8.99976 1.49902V8.29402Z"
+                                                                fill="#040921"
+                                                            />
+                                                        </svg>
+                                                    </span>
+                                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam suscipit veniam earum.
+                                                    Beatae, vel eos eum harum sapiente facere porro modi tempore dolorum, repellat sunt iste
+                                                    minus totam voluptates itaque! Perspiciatis accusantium similique delectus iure minus
+                                                    repellat dolorem itaque aliquid.
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
-                                <!-- end -->
-                                <div class="col-6">
-                                    <a href="" class="title">
-                                        <div class="messages__item border d-flex align-items-start">
-                                            <figure class="messages__item--profile">
+                                <!-- end message -->
+
+                                <!-- message -->
+                                <div class="message">
+                                    <a href="#" class="message__link">
+                                        <div class="message__container">
+                                            <figure class="message__profile-icon">
                                                 <img src="./img/cover/profile.png" alt="" />
                                             </figure>
-                                            <div class="messages__item--text">
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <h1 class="messages__item--name">Harry</h1>
-                                                    <p class="messages__item--date">10.08.2020</p>
-                                                </div>
-                                                <p class="messages__item--long-date">Trip completed • Aug 17, 2020 - Aug 25, 2020</p>
-                                                <div class="messages__item--desc d-flex align-items-center">
-                                                    <img src="./img/sms.svg" alt="" />
-                                                    Scusa, mi signiori.
+
+                                            <div class="message__content">
+                                                <header class="message__header">
+                                                    <div class="message__top">
+                                                        <h3 class="message__user">Harry</h3>
+                                                        <time>10.08.2020</time>
+                                                    </div>
+                                                    <div class="message__meta">
+                                                        <p>Trip completed • <time>Aug 17, 2020 - Aug 25, 2020</time></p>
+                                                    </div>
+                                                </header>
+
+                                                <div class="message__text">
+                                                    <span class="message__icon">
+                                                        <svg
+                                                            width="10"
+                                                            height="10"
+                                                            viewBox="0 0 10 10"
+                                                            fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                        >
+                                                            <path
+                                                                d="M5.49976 4.49902H2.49976C2.36715 4.49902 2.23997 4.5517 2.1462 4.64547C2.05243 4.73924 1.99976 4.86642 1.99976 4.99902C1.99976 5.13163 2.05243 5.25881 2.1462 5.35258C2.23997 5.44634 2.36715 5.49902 2.49976 5.49902H5.49976C5.63236 5.49902 5.75954 5.44634 5.85331 5.35258C5.94708 5.25881 5.99976 5.13163 5.99976 4.99902C5.99976 4.86642 5.94708 4.73924 5.85331 4.64547C5.75954 4.5517 5.63236 4.49902 5.49976 4.49902ZM7.49976 2.49902H2.49976C2.36715 2.49902 2.23997 2.5517 2.1462 2.64547C2.05243 2.73924 1.99976 2.86642 1.99976 2.99902C1.99976 3.13163 2.05243 3.25881 2.1462 3.35258C2.23997 3.44634 2.36715 3.49902 2.49976 3.49902H7.49976C7.63236 3.49902 7.75954 3.44634 7.85331 3.35258C7.94708 3.25881 7.99976 3.13163 7.99976 2.99902C7.99976 2.86642 7.94708 2.73924 7.85331 2.64547C7.75954 2.5517 7.63236 2.49902 7.49976 2.49902ZM8.49976 -0.000976562H1.49976C1.10193 -0.000976562 0.7204 0.157059 0.439096 0.438363C0.157791 0.719668 -0.000244141 1.1012 -0.000244141 1.49902V6.49902C-0.000244141 6.89685 0.157791 7.27838 0.439096 7.55968C0.7204 7.84099 1.10193 7.99902 1.49976 7.99902H7.29476L9.14476 9.85402C9.19148 9.90036 9.24688 9.93703 9.3078 9.96191C9.36872 9.98679 9.43395 9.9994 9.49976 9.99902C9.56534 10.0007 9.63042 9.98701 9.68976 9.95902C9.78106 9.92151 9.85923 9.85781 9.9144 9.77595C9.96956 9.69409 9.99926 9.59774 9.99976 9.49902V1.49902C9.99976 1.1012 9.84172 0.719668 9.56042 0.438363C9.27911 0.157059 8.89758 -0.000976562 8.49976 -0.000976562ZM8.99976 8.29402L7.85476 7.14402C7.80804 7.09768 7.75263 7.06102 7.69171 7.03614C7.63079 7.01126 7.56556 6.99864 7.49976 6.99902H1.49976C1.36715 6.99902 1.23997 6.94634 1.1462 6.85258C1.05243 6.75881 0.999756 6.63163 0.999756 6.49902V1.49902C0.999756 1.36642 1.05243 1.23924 1.1462 1.14547C1.23997 1.0517 1.36715 0.999023 1.49976 0.999023H8.49976C8.63236 0.999023 8.75954 1.0517 8.85331 1.14547C8.94708 1.23924 8.99976 1.36642 8.99976 1.49902V8.29402Z"
+                                                                fill="#040921"
+                                                            />
+                                                        </svg>
+                                                    </span>
+                                                    Scusa, mi signiori. Je voudrais presente...
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
-                                <!-- end -->
-                                <div class="col-6">
-                                    <a href="" class="title">
-                                        <div class="messages__item border d-flex align-items-start">
-                                            <figure class="messages__item--profile">
+                                <!-- end message -->
+
+                                <!-- message -->
+                                <div class="message">
+                                    <a href="#" class="message__link">
+                                        <div class="message__container">
+                                            <figure class="message__profile-icon">
                                                 <img src="./img/cover/profile.png" alt="" />
                                             </figure>
-                                            <div class="messages__item--text">
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <h1 class="messages__item--name">Harry</h1>
-                                                    <p class="messages__item--date">10.08.2020</p>
-                                                </div>
-                                                <p class="messages__item--long-date">Trip completed • Aug 17, 2020 - Aug 25, 2020</p>
-                                                <div class="messages__item--desc d-flex align-items-center">
-                                                    <img src="./img/sms.svg" alt="" />
-                                                    Scusa, mi signiori.
+
+                                            <div class="message__content">
+                                                <header class="message__header">
+                                                    <div class="message__top">
+                                                        <h3 class="message__user">Harry</h3>
+                                                        <time>10.08.2020</time>
+                                                    </div>
+                                                    <div class="message__meta">
+                                                        <p>Trip completed • <time>Aug 17, 2020 - Aug 25, 2020</time></p>
+                                                    </div>
+                                                </header>
+
+                                                <div class="message__text">
+                                                    <span class="message__icon">
+                                                        <svg
+                                                            width="10"
+                                                            height="10"
+                                                            viewBox="0 0 10 10"
+                                                            fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                        >
+                                                            <path
+                                                                d="M5.49976 4.49902H2.49976C2.36715 4.49902 2.23997 4.5517 2.1462 4.64547C2.05243 4.73924 1.99976 4.86642 1.99976 4.99902C1.99976 5.13163 2.05243 5.25881 2.1462 5.35258C2.23997 5.44634 2.36715 5.49902 2.49976 5.49902H5.49976C5.63236 5.49902 5.75954 5.44634 5.85331 5.35258C5.94708 5.25881 5.99976 5.13163 5.99976 4.99902C5.99976 4.86642 5.94708 4.73924 5.85331 4.64547C5.75954 4.5517 5.63236 4.49902 5.49976 4.49902ZM7.49976 2.49902H2.49976C2.36715 2.49902 2.23997 2.5517 2.1462 2.64547C2.05243 2.73924 1.99976 2.86642 1.99976 2.99902C1.99976 3.13163 2.05243 3.25881 2.1462 3.35258C2.23997 3.44634 2.36715 3.49902 2.49976 3.49902H7.49976C7.63236 3.49902 7.75954 3.44634 7.85331 3.35258C7.94708 3.25881 7.99976 3.13163 7.99976 2.99902C7.99976 2.86642 7.94708 2.73924 7.85331 2.64547C7.75954 2.5517 7.63236 2.49902 7.49976 2.49902ZM8.49976 -0.000976562H1.49976C1.10193 -0.000976562 0.7204 0.157059 0.439096 0.438363C0.157791 0.719668 -0.000244141 1.1012 -0.000244141 1.49902V6.49902C-0.000244141 6.89685 0.157791 7.27838 0.439096 7.55968C0.7204 7.84099 1.10193 7.99902 1.49976 7.99902H7.29476L9.14476 9.85402C9.19148 9.90036 9.24688 9.93703 9.3078 9.96191C9.36872 9.98679 9.43395 9.9994 9.49976 9.99902C9.56534 10.0007 9.63042 9.98701 9.68976 9.95902C9.78106 9.92151 9.85923 9.85781 9.9144 9.77595C9.96956 9.69409 9.99926 9.59774 9.99976 9.49902V1.49902C9.99976 1.1012 9.84172 0.719668 9.56042 0.438363C9.27911 0.157059 8.89758 -0.000976562 8.49976 -0.000976562ZM8.99976 8.29402L7.85476 7.14402C7.80804 7.09768 7.75263 7.06102 7.69171 7.03614C7.63079 7.01126 7.56556 6.99864 7.49976 6.99902H1.49976C1.36715 6.99902 1.23997 6.94634 1.1462 6.85258C1.05243 6.75881 0.999756 6.63163 0.999756 6.49902V1.49902C0.999756 1.36642 1.05243 1.23924 1.1462 1.14547C1.23997 1.0517 1.36715 0.999023 1.49976 0.999023H8.49976C8.63236 0.999023 8.75954 1.0517 8.85331 1.14547C8.94708 1.23924 8.99976 1.36642 8.99976 1.49902V8.29402Z"
+                                                                fill="#040921"
+                                                            />
+                                                        </svg>
+                                                    </span>
+                                                    Scusa, mi signiori. Je voudrais presente...
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
-                                <!-- end -->
+                                <!-- end message -->
                             </div>
 
                             <div class="empty d-inline-flex">
