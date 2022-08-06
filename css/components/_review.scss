@@ -125,14 +125,34 @@
         }
 
         &--desc {
-            // height: 36px;
-            overflow: hidden;
             margin-top: 6px;
             color: color(#000, 0.75);
             font-size: 16px;
             line-height: 18px;
             font-weight: 400;
             position: relative;
+
+            .restricted {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                line-height: 16px; /* fallback */
+                max-height: 32px; /* fallback */
+                -webkit-line-clamp: 2; /* number of lines to show */
+                -webkit-box-orient: vertical;
+            }
+
+            .see-more-btn {
+                position: absolute;
+                right: -20px;
+                bottom: 1px;
+                background-color: transparent;
+                border: none;
+                font-family: inherit;
+                font-weight: 700;
+                font-size: 12px;
+                cursor: pointer;
+            }
 
             .show-full-text {
                 display: inline;

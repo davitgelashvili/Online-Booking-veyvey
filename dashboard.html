@@ -479,10 +479,14 @@
                                         </div>
                                         <div class="review__item--date">Trip dates • Aug 17,2020 - Aug 25, 2020</div>
                                         <div class="review__item--desc">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                            <p>
-                                                Unde dignissimos eveniet consequatur ipsam voluptates et quam vel illum. Perspiciatis, odit?
+                                            <p class="restricted">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi vero sit optio dicta
+                                                voluptatem error labore aperiam similique? Adipisci cum eum cupiditate impedit magni, amet
+                                                debitis placeat ipsum quam pariatur. Ratione, qui quod voluptatum odio aspernatur,
+                                                praesentium, perspiciatis officia molestiae aperiam earum officiis alias fugit veritatis.
+                                                Enim quisquam ex temporibus.
                                             </p>
+                                            <button class="see-more-btn">see more</button>
                                         </div>
                                     </div>
                                 </div>
@@ -944,6 +948,17 @@
                 </div>
             </div>
         </div>
+
+        <script>
+            const seeMoreBtns = document.querySelectorAll('.see-more-btn')
+
+            seeMoreBtns.forEach((btn) => {
+                btn.addEventListener('click', () => {
+                    const paragraph = btn.previousElementSibling
+                    paragraph.classList.toggle('restricted')
+                })
+            })
+        </script>
 
         <script src="./function/dropdown.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

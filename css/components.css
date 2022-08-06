@@ -2431,13 +2431,35 @@ body {
   opacity: 0.3;
 }
 .review__item--desc {
-  overflow: hidden;
   margin-top: 6px;
   color: rgba(0, 0, 0, 0.75);
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   position: relative;
+}
+.review__item--desc .restricted {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 16px;
+  /* fallback */
+  max-height: 32px;
+  /* fallback */
+  -webkit-line-clamp: 2;
+  /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+.review__item--desc .see-more-btn {
+  position: absolute;
+  right: -20px;
+  bottom: 1px;
+  background-color: transparent;
+  border: none;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
 }
 .review__item--desc .show-full-text {
   display: inline;
@@ -5296,7 +5318,7 @@ body {
 
 @font-face {
   font-family: "Sk-Modernist";
-  src: url("Sk-Modernist-Bold.woff2") format("woff2"), url("../fonts/Sk-Modernist-Bold.woff") format("woff");
+  src: url("../fonts/Sk-Modernist-Bold.woff2") format("woff2"), url("../fonts/Sk-Modernist-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
