@@ -1880,8 +1880,13 @@ body {
 }
 .overview__stats--count {
   color: #040921;
-  font-size: 34px;
+  font-size: 28px;
   font-weight: 700;
+}
+@media (min-width: 1919px) {
+  .overview__stats--count {
+    font-size: 34px;
+  }
 }
 .overview__icon {
   display: block;
