@@ -34,15 +34,16 @@
     &__grid-3 {
         height: 100%;
         display: grid;
-        grid-template-columns: 290px 910px 400px;
+        grid-template-columns: 2fr auto;
         justify-content: space-between;
         gap: 30px;
 
-        @media (max-width: 1800px) {
+        @media (min-width: 1245px) {
             grid-template-columns: 204px 4fr 300px;
         }
-        @media (max-width: 1199px) {
-            grid-template-columns: 2fr auto;
+
+        @media (min-width: 1919px) {
+            grid-template-columns: 290px 910px 400px;
         }
     }
 
@@ -55,7 +56,7 @@
     &__menu {
         display: none !important;
 
-        @media (min-width: 1199px) {
+        @media (min-width: 1245px) {
             display: flex !important;
             gap: 24px;
         }

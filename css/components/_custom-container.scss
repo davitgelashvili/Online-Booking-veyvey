@@ -50,12 +50,33 @@
     justify-content: space-between;
     gap: 30px;
 
+    @media (min-width: 1315px) {
+        grid-template-columns: 204px auto 204px;
+
+        & > div:nth-child(2) {
+            max-width: 704px;
+        }
+    }
+
     @media (min-width: 1439px) {
-        grid-template-columns: 220px 1fr 290px;
+        grid-template-columns: 220px auto 290px;
+
+        & > div:nth-child(2) {
+            max-width: 655px;
+        }
+    }
+    @media (min-width: 1500px) {
+        & > div:nth-child(2) {
+            max-width: unset;
+        }
     }
 
     @media (min-width: 1919px) {
         grid-template-columns: 290px 910px 400px;
+
+        // & > div:nth-child(2) {
+        //     max-width: unset;
+        // }
     }
 }
 
