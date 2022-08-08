@@ -52,10 +52,6 @@
 
     @media (min-width: 1315px) {
         grid-template-columns: 204px auto 204px;
-
-        & > div:nth-child(2) {
-            max-width: 704px;
-        }
     }
 
     @media (min-width: 1439px) {
@@ -73,10 +69,6 @@
 
     @media (min-width: 1919px) {
         grid-template-columns: 290px 910px 400px;
-
-        // & > div:nth-child(2) {
-        //     max-width: unset;
-        // }
     }
 }
 
