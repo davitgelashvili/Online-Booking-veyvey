@@ -573,8 +573,13 @@ body {
 .header__right {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 16px;
   justify-self: end;
+}
+@media (min-width: 1919px) {
+  .header__right {
+    gap: 24px;
+  }
 }
 .header__text-btn {
   font-weight: 700;
@@ -607,13 +612,26 @@ body {
   border-radius: 10px;
 }
 .header__buttons--profile {
-  height: 40px;
-  padding: 9.5px 16px;
+  height: 32px;
+  width: 32px;
   border-radius: 10px;
   background-color: #040921;
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 4px;
+  flex-shrink: 0;
+}
+@media (min-width: 1919px) {
+  .header__buttons--profile {
+    height: 40px;
+    width: 40px;
+  }
+}
+.header__buttons--profile img {
+  width: 12px;
+  height: auto;
+  object-fit: contain;
 }
 .header__buttons--profile span {
   font-weight: 700;
@@ -624,6 +642,39 @@ body {
 }
 .header__buttons--valute {
   margin: 0 35px;
+}
+.header__grey-btn {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  align-items: center;
+  background: rgba(4, 9, 33, 0.04);
+  border-radius: 6px;
+  border: 0;
+  height: 32px;
+  padding: 0 17px;
+  cursor: pointer;
+  text-decoration: none;
+}
+@media (min-width: 1919px) {
+  .header__grey-btn {
+    height: 40px;
+  }
+}
+.header__grey-btn span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #040921;
+}
+.header__grey-btn--square {
+  padding: 0;
+  width: 32px;
+}
+@media (min-width: 1919px) {
+  .header__grey-btn--square {
+    width: 40px;
+  }
 }
 
 .home--col {
