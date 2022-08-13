@@ -51,11 +51,11 @@
     gap: 30px;
 
     @media (min-width: 1315px) {
-        grid-template-columns: 204px auto 204px;
+        grid-template-columns: 204px 1fr 204px;
     }
 
     @media (min-width: 1439px) {
-        grid-template-columns: 220px auto 290px;
+        grid-template-columns: 220px 1fr 290px;
 
         & > div:nth-child(2) {
             max-width: 655px;

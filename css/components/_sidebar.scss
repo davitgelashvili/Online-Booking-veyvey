@@ -144,6 +144,8 @@
             font-size: 14px;
             font-weight: 700;
             color: color($mainColor, 0.56);
+            letter-spacing: 0.5px;
+            line-height: 20px;
             text-decoration: none;
             transition: color 150ms ease-in-out;
 
@@ -158,6 +160,7 @@
 
             @media (min-width: 1919px) {
                 font-size: 18px;
+                line-height: 22px;
                 font-weight: 700;
             }
         }
