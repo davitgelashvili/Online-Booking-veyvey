@@ -4,18 +4,24 @@
 }
 
 .map-page-grid {
-    --map-max-width: 830px;
+    --map-max-width: calc(100% + 4rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-    display: grid;
-    grid-template-columns: 1fr var(--map-max-width);
-    gap: 40px;
-
-    @media (max-width: 1600px) {
-        --map-max-width: 500px;
+    @media (min-width: 1199px) {
+        --map-max-width: 465px;
+        flex-direction: row;
     }
-    @media (max-width: 1337px) {
-        --map-max-width: 100%;
-        grid-template-columns: 1fr;
+
+    @media (min-width: 1300px) {
+        --map-max-width: 565px;
+        flex-direction: row;
+    }
+
+    @media (min-width: 1919px) {
+        --map-max-width: 830px;
+        gap: 40px;
     }
 }
 
@@ -82,15 +88,16 @@
     }
     &__container {
         // width: 50%;
-        width: 100%;
-        max-width: var(--map-max-width);
+        // width: 100%;
+        width: var(--map-max-width);
         height: calc(100vh - 120px);
         position: absolute;
         right: 0;
 
-        @media (max-width: 1337px) {
+        @media (max-width: 1199px) {
             position: relative;
             right: unset;
+            margin-inline: -2rem;
         }
 
         &--map {
@@ -106,6 +113,16 @@
         // height: calc(100vh - 120px);
         display: block;
         overflow: auto;
+        max-width: 100%;
+
+        @media (min-width: 1199px) {
+            max-width: calc(50% + 6rem);
+        }
+
+        @media (min-width: 1300px) {
+            max-width: calc(100% - var(--map-max-width) + 2rem);
+        }
+
         /* width */
         &::-webkit-scrollbar {
             width: 1px;
@@ -234,7 +251,7 @@
 
         &--detail {
             width: fit-content;
-            margin-top: 10px;
+            margin-block: 10px;
             padding: 9px 10px;
             border-radius: 10px;
 
@@ -252,7 +269,9 @@
             }
         }
 
-        &--pracent {
+        &--percent {
+            position: absolute;
+            top: -30px;
             margin-bottom: 11px;
             padding: 2px 8px;
             background-color: $mainColor;
@@ -272,12 +291,20 @@
         }
 
         &--leftroom {
-            margin-top: 10px;
             padding: 5px 10px;
             border-radius: 8px;
 
-            img {
-                margin-right: 8px;
+            p {
+                height: 30px;
+                display: flex;
+                gap: 8px;
+                align-items: center;
+
+                &:hover {
+                    svg path {
+                        fill: #fff !important;
+                    }
+                }
             }
         }
 

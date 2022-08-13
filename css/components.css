@@ -4677,20 +4677,27 @@ body {
 }
 
 .map-page-grid {
-  --map-max-width: 830px;
-  display: grid;
-  grid-template-columns: 1fr var(--map-max-width);
-  gap: 40px;
+  --map-max-width: calc(100% + 4rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-@media (max-width: 1600px) {
+@media (min-width: 1199px) {
   .map-page-grid {
-    --map-max-width: 500px;
+    --map-max-width: 465px;
+    flex-direction: row;
   }
 }
-@media (max-width: 1337px) {
+@media (min-width: 1300px) {
   .map-page-grid {
-    --map-max-width: 100%;
-    grid-template-columns: 1fr;
+    --map-max-width: 565px;
+    flex-direction: row;
+  }
+}
+@media (min-width: 1919px) {
+  .map-page-grid {
+    --map-max-width: 830px;
+    gap: 40px;
   }
 }
 
@@ -4746,16 +4753,16 @@ body {
   font-weight: 700;
 }
 .maps__container {
-  width: 100%;
-  max-width: var(--map-max-width);
+  width: var(--map-max-width);
   height: calc(100vh - 120px);
   position: absolute;
   right: 0;
 }
-@media (max-width: 1337px) {
+@media (max-width: 1199px) {
   .maps__container {
     position: relative;
     right: unset;
+    margin-inline: -2rem;
   }
 }
 .maps__container--map {
@@ -4767,9 +4774,20 @@ body {
   width: 100%;
   display: block;
   overflow: auto;
+  max-width: 100%;
   /* width */
   /* Track */
   /* Handle */
+}
+@media (min-width: 1199px) {
+  .maps__list {
+    max-width: calc(50% + 6rem);
+  }
+}
+@media (min-width: 1300px) {
+  .maps__list {
+    max-width: calc(100% - var(--map-max-width) + 2rem);
+  }
 }
 .maps__list::-webkit-scrollbar {
   width: 1px;
@@ -4874,7 +4892,7 @@ body {
 }
 .maps__item--detail {
   width: fit-content;
-  margin-top: 10px;
+  margin-block: 10px;
   padding: 9px 10px;
   border-radius: 10px;
 }
@@ -4889,7 +4907,9 @@ body {
   list-style: none;
   margin: 0 10px;
 }
-.maps__item--pracent {
+.maps__item--percent {
+  position: absolute;
+  top: -30px;
   margin-bottom: 11px;
   padding: 2px 8px;
   background-color: #040921;
@@ -4907,12 +4927,17 @@ body {
   line-height: 21px;
 }
 .maps__item--leftroom {
-  margin-top: 10px;
   padding: 5px 10px;
   border-radius: 8px;
 }
-.maps__item--leftroom img {
-  margin-right: 8px;
+.maps__item--leftroom p {
+  height: 30px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.maps__item--leftroom p:hover svg path {
+  fill: #fff !important;
 }
 .maps__item--old-price {
   color: rgba(4, 9, 33, 0.5);
