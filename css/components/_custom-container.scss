@@ -19,28 +19,39 @@
 
 // narrow container
 .cstm-container-narrow {
-    width: 1280px;
     margin-inline: auto;
+    width: 100%;
+    padding-inline: 2rem;
 
-    @media (max-width: 1366px) {
-        width: 100%;
+    @media (min-width: 1230px) {
+        max-width: 1224px;
         padding-inline: 1rem;
+    }
+
+    @media (min-width: 1365px) {
+        width: 1280px;
     }
 }
 
 // Dashboard container
 .dashboard-container {
-    padding-inline: 100px;
     width: 100%;
-    max-width: 1920px;
     margin-inline: auto;
+    padding-inline: 2rem;
 
-    @media (max-width: 1440px) {
-        padding-inline: 80px;
+    @media (min-width: 1230px) {
+        max-width: 1224px;
+        padding-inline: 1rem;
     }
 
-    @media (max-width: 1200px) {
-        padding-inline: 1rem;
+    @media (min-width: 1439px) {
+        padding-inline: 80px;
+        max-width: 100%;
+    }
+
+    @media (min-width: 1919px) {
+        padding-inline: 100px;
+        max-width: 1920px;
     }
 }
 
@@ -50,7 +61,7 @@
     justify-content: space-between;
     gap: 30px;
 
-    @media (min-width: 1315px) {
+    @media (min-width: 1199px) {
         grid-template-columns: 204px 1fr 204px;
     }
 
@@ -58,10 +69,10 @@
         grid-template-columns: 220px 1fr 290px;
 
         & > div:nth-child(2) {
-            max-width: 655px;
+            max-width: 690px;
         }
     }
-    @media (min-width: 1500px) {
+    @media (min-width: 1444px) {
         & > div:nth-child(2) {
             max-width: unset;
         }

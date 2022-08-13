@@ -6,7 +6,7 @@
   font-family: "Sk-Modernist", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1199px) {
   .hide-on-small {
     display: none !important;
   }
@@ -1651,13 +1651,14 @@ body {
   }
 }
 .stats-page-score__header {
-  padding: 24px;
+  padding: 16px;
   display: flex;
   gap: 10.5px;
   align-items: center;
 }
 @media (min-width: 1919px) {
   .stats-page-score__header {
+    padding: 24px;
     padding-top: 32px;
   }
 }
@@ -1704,7 +1705,7 @@ body {
   }
 }
 .stats-page-score__subtitle {
-  padding: 24px;
+  padding: 16px;
   padding-top: 0;
   padding-bottom: 11px;
   font-weight: 400;
@@ -1715,6 +1716,7 @@ body {
 @media (min-width: 1919px) {
   .stats-page-score__subtitle {
     font-size: 16px;
+    padding: 24px;
   }
 }
 .stats-page-score__body {
@@ -1723,7 +1725,7 @@ body {
 }
 .stats-page-score__item {
   display: block;
-  padding-inline: 24px;
+  padding-inline: 16px;
   padding-block: 4px;
   font-size: 12px;
   color: hsla(230deg, 78%, 7%, 0.749);
@@ -1732,6 +1734,7 @@ body {
 @media (min-width: 1919px) {
   .stats-page-score__item {
     font-size: 16px;
+    padding-inline: 24px;
   }
 }
 .stats-page-score__item:hover, .stats-page-score__item:active {
@@ -3939,6 +3942,16 @@ body {
   font-weight: 700;
   line-height: 29px;
 }
+.profile__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+@media (min-width: 1919px) {
+  .profile__row {
+    gap: 40px;
+  }
+}
 .profile .sidebar__content {
   background-color: #fcfaff;
 }
@@ -4115,7 +4128,13 @@ body {
   color: #040921;
   font-size: 18px;
   font-weight: 700;
-  line-height: 21px;
+  line-height: 26px;
+}
+@media (min-width: 1919px) {
+  .profile__items--title {
+    line-height: 21px;
+    letter-spacing: -0.32px;
+  }
 }
 .profile__items--dots {
   width: 100%;
@@ -4259,6 +4278,9 @@ body {
 .profile-dashboard__section.overlayed > * {
   opacity: 0.16;
 }
+.profile-dashboard__section.disabled * {
+  pointer-events: none;
+}
 .profile-dashboard__section > h2 {
   font-weight: 700;
   font-size: 24px;
@@ -4392,6 +4414,34 @@ body {
 }
 .edit-profile .visibility svg {
   display: block;
+}
+
+.hotel-images-slider {
+  width: 290px;
+  height: 200px;
+  flex-shrink: 0;
+}
+@media (min-width: 1919px) {
+  .hotel-images-slider {
+    width: 274px;
+  }
+}
+.hotel-images-slider figure {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.hotel-images-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hotel-images-slider .swiper-pagination-bullet {
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #fff;
 }
 
 .trips__menu {
@@ -5366,30 +5416,43 @@ body {
 }
 
 .cstm-container-narrow {
-  width: 1280px;
   margin-inline: auto;
+  width: 100%;
+  padding-inline: 2rem;
 }
-@media (max-width: 1366px) {
+@media (min-width: 1230px) {
   .cstm-container-narrow {
-    width: 100%;
+    max-width: 1224px;
     padding-inline: 1rem;
+  }
+}
+@media (min-width: 1365px) {
+  .cstm-container-narrow {
+    width: 1280px;
   }
 }
 
 .dashboard-container {
-  padding-inline: 100px;
   width: 100%;
-  max-width: 1920px;
   margin-inline: auto;
+  padding-inline: 2rem;
 }
-@media (max-width: 1440px) {
+@media (min-width: 1230px) {
   .dashboard-container {
-    padding-inline: 80px;
+    max-width: 1224px;
+    padding-inline: 1rem;
   }
 }
-@media (max-width: 1200px) {
+@media (min-width: 1439px) {
   .dashboard-container {
-    padding-inline: 1rem;
+    padding-inline: 80px;
+    max-width: 100%;
+  }
+}
+@media (min-width: 1919px) {
+  .dashboard-container {
+    padding-inline: 100px;
+    max-width: 1920px;
   }
 }
 
@@ -5399,7 +5462,7 @@ body {
   justify-content: space-between;
   gap: 30px;
 }
-@media (min-width: 1315px) {
+@media (min-width: 1199px) {
   .dashboard-row {
     grid-template-columns: 204px 1fr 204px;
   }
@@ -5409,10 +5472,10 @@ body {
     grid-template-columns: 220px 1fr 290px;
   }
   .dashboard-row > div:nth-child(2) {
-    max-width: 655px;
+    max-width: 690px;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1444px) {
   .dashboard-row > div:nth-child(2) {
     max-width: unset;
   }
