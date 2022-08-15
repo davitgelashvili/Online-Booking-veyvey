@@ -4070,6 +4070,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 @media (min-width: 1439px) {
   .profile__menu {
@@ -4077,9 +4078,13 @@ body {
   }
 }
 .profile__menu--item {
-  width: 100%;
   display: flex;
   list-style: none;
+}
+@media (min-width: 1439px) {
+  .profile__menu--item {
+    width: 100%;
+  }
 }
 .profile__menu--link {
   position: relative;
