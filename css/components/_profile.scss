@@ -47,10 +47,15 @@
         padding: 65px 0;
 
         &--img {
-            width: 144px;
-            height: 144px;
+            width: 96px;
+            height: 96px;
             border-radius: 50%;
             overflow: hidden;
+
+            @media (min-width: 1919px) {
+                width: 144px;
+                height: 144px;
+            }
 
             img {
                 width: 100%;
@@ -65,17 +70,38 @@
         &--title {
             color: $mainColor;
             font-weight: 700;
-            font-size: 32px;
+            font-size: 24px;
             line-height: 38px;
+
+            @media (min-width: 1919px) {
+                font-size: 32px;
+            }
         }
 
         &--date {
-            margin-top: 8px;
+            margin-top: 4px;
             color: color($mainColor, 0.5);
             font-weight: 400;
             font-size: 16px;
             line-height: 19px;
+
+            @media (min-width: 1919px) {
+                margin-top: 8px;
+            }
         }
+    }
+
+    &__change-photo {
+        margin-top: 8px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        text-decoration-line: underline;
+        color: #040921;
+        background-color: transparent;
+        border: 0;
+        display: block;
+        cursor: pointer;
     }
 
     &__list {
@@ -122,6 +148,13 @@
     }
 
     &__menu {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+
+        @media (min-width: 1439px) {
+            flex-direction: column;
+        }
         &--item {
             width: 100%;
             display: flex;
@@ -129,6 +162,7 @@
         }
 
         &--link {
+            position: relative;
             width: 100%;
             margin: 8px 0;
             color: $mainColor;
@@ -140,7 +174,72 @@
             &:hover,
             &.active {
                 .profile__menu--icon {
-                    background-color: #583cf0;
+                    background: linear-gradient(246.12deg, #9d50ff 11.55%, #583cf0 104.8%);
+                }
+            }
+
+            &:hover {
+                .tooltip {
+                    opacity: 1;
+                }
+            }
+
+            .tooltip {
+                pointer-events: none;
+                position: absolute;
+                width: 224px;
+                left: 100%;
+                top: 0;
+                background: #ffffff;
+                border-radius: 12px;
+                padding: 15px 24px;
+                opacity: 0;
+                z-index: 100;
+                transition: all 150ms ease-in-out;
+                box-shadow: 0px 4px 8px rgba(4, 9, 33, 0.08);
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: -20px;
+                    width: 24px;
+                    height: 24px;
+                    background: #fff;
+                    border-radius: 4px;
+                    transform: rotate(45deg) translateY(-50%);
+
+                    @media (min-width: 1439px) {
+                        all: unset;
+                    }
+                }
+
+                @media (min-width: 1439px) {
+                    all: unset;
+                    display: inline;
+                }
+
+                p {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    max-height: 40px; /* fallback */
+                    -webkit-line-clamp: 2; /* number of lines to show */
+                    -webkit-box-orient: vertical;
+
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+
+                    color: #040921;
+
+                    @media (min-width: 1439px) {
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 24px;
+                        color: #000000;
+                        max-height: 48px; /* fallback */
+                    }
                 }
             }
         }
@@ -150,11 +249,17 @@
             height: 48px;
             margin-right: 16px;
             border-radius: 50%;
-            background-color: $mainColor;
+            background-color: color($mainColor, 0.3);
+            flex-shrink: 0;
+
+            @media (min-width: 1439px) {
+                background-color: $mainColor;
+            }
 
             img {
                 width: 100%;
                 height: 100%;
+                flex-shrink: 0;
             }
         }
     }
