@@ -3942,6 +3942,18 @@ body {
   font-weight: 700;
   line-height: 29px;
 }
+.profile__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #040921;
+}
+@media (min-width: 1919px) {
+  .profile__title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
 .profile__row {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -4005,6 +4017,15 @@ body {
   margin-bottom: 49px;
   line-height: 1.5;
 }
+.profile__about--text {
+  font-size: 16px;
+  color: #040921;
+}
+@media (min-width: 1919px) {
+  .profile__about--text {
+    font-size: 18px;
+  }
+}
 .profile__about--list {
   margin-top: 33px;
   display: flex;
@@ -4015,6 +4036,7 @@ body {
   display: flex;
   gap: 12px;
   align-items: center;
+  font-size: 18px;
 }
 .profile__menu--item {
   width: 100%;
@@ -4056,30 +4078,46 @@ body {
   align-items: center;
   color: rgba(4, 9, 33, 0.7);
   font-weight: 400;
+  font-size: 16px;
+}
+@media (min-width: 1919px) {
+  .profile__verified--item {
+    font-size: 18px;
+  }
 }
 .profile__verified--link {
   color: rgba(4, 9, 33, 0.7);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 22px;
   text-decoration: none;
   display: flex;
   gap: 9px;
   color: #040921;
 }
+@media (min-width: 1919px) {
+  .profile__verified--link {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
 .profile__verified--icon {
   margin-right: 14px;
 }
 .profile__verified--text {
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #040921;
+  line-height: 22px;
+}
+@media (min-width: 1919px) {
+  .profile__verified--text {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 .profile__verified--text a {
-  color: #040921;
-  font-weight: 700;
-}
-.profile__verified--text span {
-  color: #040921;
+  color: inherit;
   font-weight: 700;
 }
 .profile__soc--item {
@@ -4283,9 +4321,14 @@ body {
 }
 .profile-dashboard__section > h2 {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 29px;
   color: #040921;
+}
+@media (min-width: 1919px) {
+  .profile-dashboard__section > h2 {
+    font-size: 24px;
+  }
 }
 .profile-dashboard__section > p {
   margin-top: 24px;

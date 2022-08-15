@@ -10,6 +10,18 @@
         line-height: 29px;
     }
 
+    &__title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        color: #040921;
+
+        @media (min-width: 1919px) {
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+
     &__row {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -85,6 +97,15 @@
         margin-bottom: 49px;
         line-height: 1.5;
 
+        &--text {
+            font-size: 16px;
+            color: #040921;
+
+            @media (min-width: 1919px) {
+                font-size: 18px;
+            }
+        }
+
         &--list {
             margin-top: 33px;
             display: flex;
@@ -95,6 +116,7 @@
                 display: flex;
                 gap: 12px;
                 align-items: center;
+                font-size: 18px;
             }
         }
     }
@@ -149,17 +171,27 @@
             align-items: center;
             color: color($mainColor, 0.7);
             font-weight: 400;
+            font-size: 16px;
+
+            @media (min-width: 1919px) {
+                font-size: 18px;
+            }
         }
 
         &--link {
             color: color($mainColor, 0.7);
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 700;
-            line-height: 24px;
+            line-height: 22px;
             text-decoration: none;
             display: flex;
             gap: 9px;
             color: $mainColor;
+
+            @media (min-width: 1919px) {
+                font-size: 18px;
+                line-height: 26px;
+            }
         }
 
         &--icon {
@@ -167,16 +199,18 @@
         }
 
         &--text {
-            font-size: 16px;
-            line-height: 20px;
+            font-size: 14px;
+            font-weight: 400;
+            color: #040921;
+            line-height: 22px;
 
-            a {
-                color: $mainColor;
-                font-weight: 700;
+            @media (min-width: 1919px) {
+                font-size: 16px;
+                line-height: 20px;
             }
 
-            span {
-                color: $mainColor;
+            a {
+                color: inherit;
                 font-weight: 700;
             }
         }
@@ -427,9 +461,13 @@
 
         & > h2 {
             font-weight: 700;
-            font-size: 24px;
+            font-size: 20px;
             line-height: 29px;
             color: $mainColor;
+
+            @media (min-width: 1919px) {
+                font-size: 24px;
+            }
         }
 
         & > p {
